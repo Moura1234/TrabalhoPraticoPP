@@ -9,5 +9,5 @@ package Schedule;
  * @author joaom
  */
 public class Schedule {
-    private 
+    private int varialel;
 }
