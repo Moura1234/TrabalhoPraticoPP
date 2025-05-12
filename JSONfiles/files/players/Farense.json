@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Ricardo Velho",
+            "birthDate": "1998-08-20",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.pt/ricardo-velho/profil/spieler/4294",
+            "number": 33
+        },
+        {
+            "name": "Kaique Pereira",
+            "birthDate": "2003-04-16",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.pt/kaique-pereira/profil/spieler/4294",
+            "number": 1
+        },
+        {
+            "name": "Tomás Ribeiro",
+            "birthDate": "1999-04-02",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/tomas-ribeiro/profil/spieler/4294",
+            "number": 5
+        },
+        {
+            "name": "Marco Moreno",
+            "birthDate": "2001-02-20",
+            "nationality": "Spanish",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/marco-moreno/profil/spieler/4294",
+            "number": 3
+        },
+        {
+            "name": "Lucas Áfrico",
+            "birthDate": "1995-02-05",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/lucas-africo/profil/spieler/4294",
+            "number": 44
+        },
+        {
+            "name": "Artur Jorge",
+            "birthDate": "1994-08-14",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/artur-jorge/profil/spieler/4294",
+            "number": 4
+        },
+        {
+            "name": "Raúl Silva",
+            "birthDate": "1989-11-04",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/raul-silva/profil/spieler/4294",
+            "number": 34
+        },
+        {
+            "name": "Paulo Victor",
+            "birthDate": "2001-04-13",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/paulo-victor/profil/spieler/4294",
+            "number": 2
+        },
+        {
+            "name": "Pastor",
+            "birthDate": "2000-02-20",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/pastor/profil/spieler/4294",
+            "number": 28
+        },
+        {
+            "name": "Rivaldo",
+            "birthDate": "2000-09-18",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/rivaldo/profil/spieler/4294",
+            "number": 70
+        },
+        {
+            "name": "Cláudio Falcão",
+            "birthDate": "1994-07-03",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/claudio-falcao/profil/spieler/4294",
+            "number": 29
+        },
+        {
+            "name": "Miguel Menino",
+            "birthDate": "2003-01-10",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/miguel-menino/profil/spieler/4294",
+            "number": 93
+        },
+        {
+            "name": "Neto",
+            "birthDate": "1991-09-02",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/neto/profil/spieler/4294",
+            "number": 6
+        },
+        {
+            "name": "Filipe Soares",
+            "birthDate": "1999-05-20",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/filipe-soares/profil/spieler/4294",
+            "number": 21
+        },
+        {
+            "name": "Marco Matias",
+            "birthDate": "1989-05-10",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/marco-matias/profil/spieler/4294",
+            "number": 77
+        },
+        {
+            "name": "Darío Poveda",
+            "birthDate": "1997-03-13",
+            "nationality": "Spanish",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/dario-poveda/profil/spieler/4294",
+            "number": 14
+        },
+        {
+            "name": "Elves Baldé",
+            "birthDate": "1999-10-02",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/elves-balde/profil/spieler/4294",
+            "number": 7
+        },
+        {
+            "name": "Tomané",
+            "birthDate": "1992-10-23",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/tomane/profil/spieler/4294",
+            "number": 9
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "squad": [
+        {
+            "name": "João Gonçalves",
+            "birthDate": "2000-06-15",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/joao-goncalves/profil/spieler/618785",
+            "number": 99
+        },
+        {
+            "name": "Tomáš Vaclík",
+            "birthDate": "1989-03-29",
+            "nationality": "Czech",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/tomas-vaclik/profil/spieler/618785",
+            "number": 31
+        },
+        {
+            "name": "César",
+            "birthDate": "1992-07-12",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/cesar/profil/spieler/618785",
+            "number": 1
+        },
+        {
+            "name": "Rodrigo Abascal",
+            "birthDate": "1994-04-14",
+            "nationality": "Uruguayan",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/rodrigo-abascal/profil/spieler/618785",
+            "number": 26
+        },
+        {
+            "name": "Sidoine Fogning",
+            "birthDate": "2001-10-24",
+            "nationality": "Cameroonian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/sidoine-fogning/profil/spieler/618785",
+            "number": 13
+        },
+        {
+            "name": "Vitaliy Lystsov",
+            "birthDate": "1995-06-11",
+            "nationality": "Russian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/vitaliy-lystsov/profil/spieler/618785",
+            "number": 95
+        },
+        {
+            "name": "Steven Vitória",
+            "birthDate": "1987-01-11",
+            "nationality": "Canadian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/steven-vitoria/profil/spieler/618785",
+            "number": 19
+        },
+        {
+            "name": "Pedro Gomes",
+            "birthDate": "2003-05-22",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/pedro-gomes/profil/spieler/618785",
+            "number": 15
+        },
+        {
+            "name": "Miguel Reisinho",
+            "birthDate": "1998-09-10",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/miguel-reisinho/profil/spieler/618785",
+            "number": 10
+        },
+        {
+            "name": "Marco van Ginkel",
+            "birthDate": "1992-12-01",
+            "nationality": "Dutch",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/marco-van-ginkel/profil/spieler/618785",
+            "number": 8
+        },
+        {
+            "name": "Joel Silva",
+            "birthDate": "2002-07-15",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/joel-silva/profil/spieler/618785",
+            "number": 16
+        },
+        {
+            "name": "Salvador Agra",
+            "birthDate": "1991-11-11",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/salvador-agra/profil/spieler/618785",
+            "number": 7
+        },
+        {
+            "name": "Robert Bozenik",
+            "birthDate": "1999-11-18",
+            "nationality": "Slovakian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/robert-bozenik/profil/spieler/618785",
+            "number": 9
+        },
+        {
+            "name": "Moussa Koné",
+            "birthDate": "1996-12-30",
+            "nationality": "Senegalese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/moussa-kone/profil/spieler/618785",
+            "number": 14
+        },
+        {
+            "name": "Manuel Namora",
+            "birthDate": "1997-05-22",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/manuel-namora/profil/spieler/618785",
+            "number": 17
+        },
+        {
+            "name": "Tiago Machado",
+            "birthDate": "2003-04-10",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/tiago-machado/profil/spieler/618785",
+            "number": 23
+        },
+
+        {
+            "name": "Gonçalo Miguel",
+            "birthDate": "2002-07-15",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/goncalo-miguel/profil/spieler/618785",
+            "number": 35
+        },
+        
+        {
+            "name": "Marco Ribeiro",
+            "birthDate": "2005-08-15",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/marco-ribeiro/profil/spieler/618785",
+            "number": 88
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Francisco Meixedo",
+            "birthDate": "2001-05-19",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/francisco-meixedo/profil/spieler/2431",
+            "number": 1
+        },
+        {
+            "name": "Marko Gudžulić",
+            "birthDate": "2002-07-05",
+            "nationality": "Serbian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/marko-gudzulic/profil/spieler/2431",
+            "number": 93
+        },
+        {
+            "name": "Ferro",
+            "birthDate": "1997-03-26",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/ferro/profil/spieler/2431",
+            "number": 4
+        },
+        {
+            "name": "Issiar Dramé",
+            "birthDate": "1999-02-16",
+            "nationality": "French",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/issiar-drame/profil/spieler/2431",
+            "number": 5
+        },
+        {
+            "name": "Nilton",
+            "birthDate": "2001-05-25",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/nilton/profil/spieler/2431",
+            "number": 25
+        },
+        {
+            "name": "Rúben Lima",
+            "birthDate": "1989-10-03",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/ruben-lima/profil/spieler/2431",
+            "number": 28
+        },
+        {
+            "name": "Diogo Travassos",
+            "birthDate": "2004-03-31",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/diogo-travassos/profil/spieler/2431",
+            "number": 2
+        },
+        {
+            "name": "Leonel Bucca",
+            "birthDate": "1999-03-20",
+            "nationality": "Argentinian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/leonel-bucca/profil/spieler/2431",
+            "number": 26
+        },
+        {
+            "name": "Daniel Cabral",
+            "birthDate": "2002-05-14",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/daniel-cabral/profil/spieler/2431",
+            "number": 8
+        },
+        {
+            "name": "Igor Jesus",
+            "birthDate": "2003-03-07",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/igor-jesus/profil/spieler/2431",
+            "number": 6
+        },
+        {
+            "name": "Léo Cordeiro",
+            "birthDate": "1995-09-27",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/leo-cordeiro/profil/spieler/2431",
+            "number": 22
+        },
+        {
+            "name": "Paulo Moreira",
+            "birthDate": "2000-02-17",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/paulo-moreira/profil/spieler/2431",
+            "number": 19
+        },
+        {
+            "name": "Alan Ruiz",
+            "birthDate": "1993-08-19",
+            "nationality": "Argentinian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/alan-ruiz/profil/spieler/2431",
+            "number": 10
+        },
+        {
+            "name": "André Luiz",
+            "birthDate": "2002-02-23",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/andre-luiz/profil/spieler/2431",
+            "number": 7
+        },
+        {
+            "name": "Caio Santana",
+            "birthDate": "2004-03-22",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/caio-santana/profil/spieler/2431",
+            "number": 38
+        },
+        {
+            "name": "Jovane Cabral",
+            "birthDate": "1998-06-14",
+            "nationality": "Cape Verdean",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/jovane-cabral/profil/spieler/2431",
+            "number": 97
+        },
+        {
+            "name": "Kikas",
+            "birthDate": "1998-09-17",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/kikas/profil/spieler/2431",
+            "number": 29
+        },
+        {
+            "name": "Bilal Mazhar",
+            "birthDate": "2003-11-21",
+            "nationality": "Egyptian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/bilal-mazhar/profil/spieler/2431",
+            "number": 99
+        }
+    ]
+}

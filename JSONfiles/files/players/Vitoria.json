@@ -1,0 +1,149 @@
+{
+    "squad": [
+        {
+            "name": "Bruno Varela",
+            "birthDate": "1994-11-04",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.pt/bruno-varela/profil/spieler/2420",
+            "number": 14
+        },
+        {
+            "name": "Charles",
+            "birthDate": "1994-02-04",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.pt/charles/profil/spieler/2420",
+            "number": 27
+        },
+        {
+            "name": "Toni Borevković",
+            "birthDate": "1997-06-18",
+            "nationality": "Croatian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/toni-borevkovic/profil/spieler/2420",
+            "number": 24
+        },
+        {
+            "name": "Mikel Villanueva",
+            "birthDate": "1993-04-14",
+            "nationality": "Venezuelan",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/mikel-villanueva/profil/spieler/2420",
+            "number": 3
+        },
+        {
+            "name": "Hevertton",
+            "birthDate": "2001-02-01",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/hevertton/profil/spieler/2420",
+            "number": 22
+        },
+        {
+            "name": "Óscar Rivas",
+            "birthDate": "2000-03-27",
+            "nationality": "Colombian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/oscar-rivas/profil/spieler/2420",
+            "number": 15
+        },
+        {
+            "name": "João Mendes",
+            "birthDate": "2000-04-13",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/joao-mendes/profil/spieler/2420",
+            "number": 13
+        },
+        {
+            "name": "Maga",
+            "birthDate": "2002-11-16",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/maga/profil/spieler/2420",
+            "number": 2
+        },
+        {
+            "name": "Tomás Händel",
+            "birthDate": "2000-11-27",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/tomas-handel/profil/spieler/2420",
+            "number": 8
+        },
+        {
+            "name": "Tiago Silva",
+            "birthDate": "1993-06-02",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/tiago-silva/profil/spieler/2420",
+            "number": 10
+        },
+        {
+            "name": "Nuno Santos",
+            "birthDate": "1999-03-02",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/nuno-santos/profil/spieler/2420",
+            "number": 77
+        },
+        {
+            "name": "João Mendes",
+            "birthDate": "1994-10-21",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/joao-mendes/profil/spieler/2420",
+            "number": 17
+        },
+        {
+            "name": "Samu",
+            "birthDate": "1996-04-21",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/samu/profil/spieler/2420",
+            "number": 20
+        },
+        {
+            "name": "Marco Cruz",
+            "birthDate": "2004-02-23",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/marco-cruz/profil/spieler/2420",
+            "number": 5
+        },
+        {
+            "name": "Jesús Ramírez",
+            "birthDate": "1998-05-04",
+            "nationality": "Venezuelan",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/jesus-ramirez/profil/spieler/2420",
+            "number": 9
+        },
+        {
+            "name": "Nélson Oliveira",
+            "birthDate": "1991-08-08",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/nelson-oliveira/profil/spieler/2420",
+            "number": 7
+        },
+        {
+            "name": "Dieu-Merci Michel",
+            "birthDate": "2004-02-09",
+            "nationality": "Congolese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/dieu-merci-michel/profil/spieler/2420",
+            "number": 86
+        },
+
+        {
+            "name": "Gustavo Silva",
+            "birthDate": "1999-06-01",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/gustavo-silva/profil/spieler/2420",
+            "number": 71
+        }
+    ]
+}

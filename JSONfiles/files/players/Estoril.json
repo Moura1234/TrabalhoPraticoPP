@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Joel Robles",
+            "birthDate": "1990-06-17",
+            "nationality": "Spanish",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/joel-robles/profil/spieler/618785",
+            "number": 27
+        },
+        {
+            "name": "Kevin Chamorro",
+            "birthDate": "2000-04-08",
+            "nationality": "Costa Rican",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/kevin-chamorro/profil/spieler/618785",
+            "number": 1
+        },
+        {
+            "name": "Eliaquim Mangala",
+            "birthDate": "1991-02-13",
+            "nationality": "French",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/eliaquim-mangala/profil/spieler/618785",
+            "number": 5
+        },
+        {
+            "name": "Pedro Álvaro",
+            "birthDate": "2000-03-02",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/pedro-alvaro/profil/spieler/618785",
+            "number": 23
+        },
+        {
+            "name": "Felix Bacher",
+            "birthDate": "2000-10-25",
+            "nationality": "Austrian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/felix-bacher/profil/spieler/618785",
+            "number": 25
+        },
+        {
+            "name": "Pedro Amaral",
+            "birthDate": "1997-08-25",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/pedro-amaral/profil/spieler/618785",
+            "number": 24
+        },
+        {
+            "name": "Gonçalo Costa",
+            "birthDate": "2000-02-18",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/goncalo-costa/profil/spieler/618785",
+            "number": 18
+        },
+        {
+            "name": "Wagner Pina",
+            "birthDate": "2002-11-03",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/wagner-pina/profil/spieler/618785",
+            "number": 20
+        },
+        {
+            "name": "Pedro Carvalho",
+            "birthDate": "2003-02-14",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/pedro-carvalho/profil/spieler/618785",
+            "number": 22
+        },
+        {
+            "name": "Vinicius Zanocelo",
+            "birthDate": "2001-01-30",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/vinicius-zanocelo/profil/spieler/618785",
+            "number": 7
+        },
+        {
+            "name": "Jordan Holsgrove",
+            "birthDate": "1999-09-10",
+            "nationality": "Scottish",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/jordan-holsgrove/profil/spieler/618785",
+            "number": 10
+        },
+        {
+            "name": "Xeka",
+            "birthDate": "1994-11-10",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/xeka/profil/spieler/618785",
+            "number": 88
+        },
+        {
+            "name": "Jandro Orellana",
+            "birthDate": "2000-08-07",
+            "nationality": "Spanish",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/jandro-orellana/profil/spieler/618785",
+            "number": 6
+        },
+        {
+            "name": "João Carvalho",
+            "birthDate": "1997-03-09",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/joao-carvalho/profil/spieler/618785",
+            "number": 12
+        },
+        {
+            "name": "Alejandro Marqués",
+            "birthDate": "2000-08-04",
+            "nationality": "Venezuelan",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/alejandro-marques/profil/spieler/618785",
+            "number": 9
+        },
+        {
+            "name": "Yanis Begraoui",
+            "birthDate": "2001-07-04",
+            "nationality": "French",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/yanis-begraoui/profil/spieler/618785",
+            "number": 14
+        },
+        {
+            "name": "Israel Salazar",
+            "birthDate": "2003-05-10",
+            "nationality": "Spanish",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/israel-salazar/profil/spieler/618785",
+            "number": 92
+        },
+        {
+            "name": "André Lacximicant",
+            "birthDate": "2001-09-15",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/andre-lacximicant/profil/spieler/618785",
+            "number": 19
+        }
+    ]
+}

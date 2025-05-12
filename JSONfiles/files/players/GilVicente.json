@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Andrew",
+            "birthDate": "2001-07-01",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/andrew/profil/spieler/2424",
+            "number": 42
+        },
+        {
+            "name": "Miloš Gordić",
+            "birthDate": "2000-03-05",
+            "nationality": "Serbian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/milos-gordic/profil/spieler/2424",
+            "number": 51
+        },
+        {
+            "name": "Brian Araújo",
+            "birthDate": "2000-04-29",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/brian-araujo/profil/spieler/2424",
+            "number": 99
+        },
+        {
+            "name": "Marvin Elimbi",
+            "birthDate": "2003-02-20",
+            "nationality": "French",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/marvin-elimbi/profil/spieler/2424",
+            "number": 4
+        },
+        {
+            "name": "Jonathan Buatu",
+            "birthDate": "1993-09-27",
+            "nationality": "Angolan",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/jonathan-buatu/profil/spieler/2424",
+            "number": 39
+        },
+        {
+            "name": "Josué Sá",
+            "birthDate": "1992-06-17",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/josue-sa/profil/spieler/2424",
+            "number": 23
+        },
+        {
+            "name": "Rúben Fernandes",
+            "birthDate": "1986-05-06",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/ruben-fernandes/profil/spieler/2424",
+            "number": 26
+        },
+        {
+            "name": "Sandro Cruz",
+            "birthDate": "2001-05-12",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/sandro-cruz/profil/spieler/2424",
+            "number": 57
+        },
+        {
+            "name": "Zé Carlos",
+            "birthDate": "1998-07-31",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/ze-carlos/profil/spieler/2424",
+            "number": 2
+        },
+        {
+            "name": "Jesús Castillo",
+            "birthDate": "2001-06-11",
+            "nationality": "Peruvian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/jesus-castillo/profil/spieler/2424",
+            "number": 6
+        },
+        {
+            "name": "Facundo Cáseres",
+            "birthDate": "2001-05-28",
+            "nationality": "Argentinian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/facundo-caseres/profil/spieler/2424",
+            "number": 5
+        },
+        {
+            "name": "João Teixeira",
+            "birthDate": "1994-02-06",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/joao-teixeira/profil/spieler/2424",
+            "number": 18
+        },
+        {
+            "name": "Kanya Fujimoto",
+            "birthDate": "1999-07-01",
+            "nationality": "Japanese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/kanya-fujimoto/profil/spieler/2424",
+            "number": 10
+        },
+        {
+            "name": "Santi García",
+            "birthDate": "2001-08-29",
+            "nationality": "Spanish",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/santi-garcia/profil/spieler/2424",
+            "number": 19
+        },
+        {
+            "name": "Félix Correia",
+            "birthDate": "2001-01-22",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/felix-correia/profil/spieler/2424",
+            "number": 71
+        },
+        {
+            "name": "Jordi Mboula",
+            "birthDate": "1999-03-16",
+            "nationality": "Spanish",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/jordi-mboula/profil/spieler/2424",
+            "number": 77
+        },
+        {
+            "name": "Jorge Aguirre",
+            "birthDate": "2000-01-05",
+            "nationality": "Spanish",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/jorge-aguirre/profil/spieler/2424",
+            "number": 9
+        },
+        {
+            "name": "Pablo",
+            "birthDate": "2004-01-02",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/pablo/profil/spieler/2424",
+            "number": 90
+        }
+    ]
+}

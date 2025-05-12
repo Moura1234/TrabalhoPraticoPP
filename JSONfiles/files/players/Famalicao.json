@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Ivan Zlobin",
+            "birthDate": "1997-03-07",
+            "nationality": "Russian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/ivan-zlobin/profil/spieler/3329",
+            "number": 1
+        },
+        {
+            "name": "Lazar Carević",
+            "birthDate": "1999-03-16",
+            "nationality": "Montenegrin",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/lazar-carevic/profil/spieler/3329",
+            "number": 25
+        },
+        {
+            "name": "Enea Mihaj",
+            "birthDate": "1998-07-05",
+            "nationality": "Albanian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/enea-mihaj/profil/spieler/3329",
+            "number": 4
+        },
+        {
+            "name": "Justin de Haas",
+            "birthDate": "2000-02-01",
+            "nationality": "Dutch",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/justin-de-haas/profil/spieler/3329",
+            "number": 16
+        },
+        {
+            "name": "Leo Realpe",
+            "birthDate": "2001-02-26",
+            "nationality": "Ecuadorian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/leo-realpe/profil/spieler/3329",
+            "number": 3
+        },
+        {
+            "name": "Rafa Soares",
+            "birthDate": "1995-05-09",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/rafa-soares/profil/spieler/3329",
+            "number": 5
+        },
+        {
+            "name": "Calegari",
+            "birthDate": "2002-02-27",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/calegari/profil/spieler/3329",
+            "number": 2
+        },
+        {
+            "name": "Rodrigo Pinheiro",
+            "birthDate": "2002-08-28",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/rodrigo-pinheiro/profil/spieler/3329",
+            "number": 17
+        },
+        {
+            "name": "Mirko Topić",
+            "birthDate": "2001-02-05",
+            "nationality": "Serbian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/mirko-topic/profil/spieler/3329",
+            "number": 8
+        },
+        {
+            "name": "Tom van de Looi",
+            "birthDate": "1999-07-02",
+            "nationality": "Dutch",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/tom-van-de-looi/profil/spieler/3329",
+            "number": 6
+        },
+        {
+            "name": "Mathias de Amorim",
+            "birthDate": "2004-12-10",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/mathias-de-amorim/profil/spieler/3329",
+            "number": 14
+        },
+        {
+            "name": "Samuel Lobato",
+            "birthDate": "2001-10-19",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/samuel-lobato/profil/spieler/3329",
+            "number": 88
+        },
+        {
+            "name": "Gustavo Sá",
+            "birthDate": "2004-11-11",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/gustavo-sa/profil/spieler/3329",
+            "number": 20
+        },
+        {
+            "name": "Otso Liimatta",
+            "birthDate": "2004-07-10",
+            "nationality": "Finnish",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/otso-liimatta/profil/spieler/3329",
+            "number": 18
+        },
+        {
+            "name": "Óscar Aranda",
+            "birthDate": "2002-04-29",
+            "nationality": "Spanish",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/oscar-aranda/profil/spieler/3329",
+            "number": 11
+        },
+        {
+            "name": "Yassir Zabiri",
+            "birthDate": "2005-02-23",
+            "nationality": "Moroccan",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/yassir-zabiri/profil/spieler/3329",
+            "number": 21
+        },
+        {
+            "name": "Simon Elisor",
+            "birthDate": "1999-07-22",
+            "nationality": "French",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/simon-elisor/profil/spieler/3329",
+            "number": 12
+        },
+        {
+            "name": "Vaclav Sejk",
+            "birthDate": "2002-05-18",
+            "nationality": "Czech",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/vaclav-sejk/profil/spieler/3329",
+            "number": 29
+        }
+    ]
+}

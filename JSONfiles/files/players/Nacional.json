@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Lucas França",
+            "birthDate": "1995-06-17",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/lucas-franca/profil/spieler/982",
+            "number": 37
+        },
+        {
+            "name": "Rui Encarnação",
+            "birthDate": "1998-04-12",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/rui-encarnacao/profil/spieler/982",
+            "number": 1
+        },
+        {
+            "name": "Ulisses",
+            "birthDate": "2000-09-25",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/ulisses/profil/spieler/982",
+            "number": 4
+        },
+        {
+            "name": "Zé Vítor",
+            "birthDate": "1999-07-18",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/ze-vitor/profil/spieler/982",
+            "number": 38
+        },
+        {
+            "name": "Léo Santos",
+            "birthDate": "1997-03-10",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/leo-santos/profil/spieler/982",
+            "number": 34
+        },
+        {
+            "name": "José Gomes",
+            "birthDate": "1996-05-22",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/jose-gomes/profil/spieler/982",
+            "number": 5
+        },
+        {
+            "name": "Garcia",
+            "birthDate": "2001-08-14",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/garcia/profil/spieler/982",
+            "number": 22
+        },
+        {
+            "name": "Matheus Dias",
+            "birthDate": "2002-02-11",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/matheus-dias/profil/spieler/982",
+            "number": 88
+        },
+        {
+            "name": "Djibril Soumaré",
+            "birthDate": "2001-06-27",
+            "nationality": "Senegalese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/djibril-soumare/profil/spieler/982",
+            "number": 27
+        },
+        {
+            "name": "Bruno Costa",
+            "birthDate": "1995-12-30",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/bruno-costa/profil/spieler/982",
+            "number": 8
+        },
+        {
+            "name": "Luís Esteves",
+            "birthDate": "1998-09-05",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/luis-esteves/profil/spieler/982",
+            "number": 10
+        },
+        {
+            "name": "Daniel Penha",
+            "birthDate": "1997-04-15",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/daniel-penha/profil/spieler/982",
+            "number": 17
+        },
+        {
+            "name": "Paulinho",
+            "birthDate": "1996-11-20",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/paulinho/profil/spieler/982",
+            "number": 98
+        },
+        {
+            "name": "Rúben Macedo",
+            "birthDate": "1995-07-08",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/ruben-macedo/profil/spieler/982",
+            "number": 7
+        },
+        {
+            "name": "Fuki Yamada",
+            "birthDate": "2000-03-25",
+            "nationality": "Japanese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/fuki-yamada/profil/spieler/982",
+            "number": 71
+        },
+        {
+            "name": "Arvin Appiah",
+            "birthDate": "1999-12-10",
+            "nationality": "English",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/arvin-appiah/profil/spieler/982",
+            "number": 70
+        },
+        {
+            "name": "Isaac",
+            "birthDate": "2003-05-14",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/isaac/profil/spieler/982",
+            "number": 23
+        },
+        {
+            "name": "Dudu Teodora",
+            "birthDate": "1998-08-30",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/dudu-teodora/profil/spieler/982",
+            "number": 99
+        }
+    ]
+}

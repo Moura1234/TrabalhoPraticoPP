@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Ricardo Batista",
+            "birthDate": "1986-07-13",
+            "nationality": "Portuguese",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.us/ricardo-batista/profil/spieler/3268",
+            "number": 33
+        },
+        {
+            "name": "Patrick Sequeira",
+            "birthDate": "1999-03-01",
+            "nationality": "Costa Rican",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.us/patrick-sequeira/profil/spieler/3268",
+            "number": 1
+        },
+        {
+            "name": "José Fonte",
+            "birthDate": "1983-12-23",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.us/jose-fonte/profil/spieler/3268",
+            "number": 6
+        },
+        {
+            "name": "Ruben Kluivert",
+            "birthDate": "2001-05-21",
+            "nationality": "Dutch",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.us/ruben-kluivert/profil/spieler/3268",
+            "number": 3
+        },
+        {
+            "name": "Leonardo Lelo",
+            "birthDate": "1999-05-20",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.us/leonardo-lelo/profil/spieler/3268",
+            "number": 5
+        },
+        {
+            "name": "André Geraldes",
+            "birthDate": "1991-05-02",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.us/andre-geraldes/profil/spieler/3268",
+            "number": 18
+        },
+        {
+            "name": "Gaizka Larrazabal",
+            "birthDate": "1997-12-17",
+            "nationality": "Spanish",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.us/gaizka-larrazabal/profil/spieler/3268",
+            "number": 72
+        },
+        {
+            "name": "Andrian Kraev",
+            "birthDate": "1998-02-11",
+            "nationality": "Bulgarian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.us/andrian-kraev/profil/spieler/3268",
+            "number": 89
+        },
+        {
+            "name": "Miguel Sousa",
+            "birthDate": "1998-07-15",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.us/miguel-sousa/profil/spieler/3268",
+            "number": 14
+        },
+        {
+            "name": "Rafael Brito",
+            "birthDate": "2001-02-20",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.us/rafael-brito/profil/spieler/3268",
+            "number": 17
+        },
+        {
+            "name": "Pablo Roberto",
+            "birthDate": "1999-04-30",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.us/pablo-roberto/profil/spieler/3268",
+            "number": 80
+        },
+        {
+            "name": "Henrique Pereira",
+            "birthDate": "2002-06-10",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/henrique-pereira/profil/spieler/3268",
+            "number": 52
+        },
+        {
+            "name": "Jeremy Livolant",
+            "birthDate": "1998-01-09",
+            "nationality": "French",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/jeremy-livolant/profil/spieler/3268",
+            "number": 29
+        },
+        {
+            "name": "Samuel Obeng",
+            "birthDate": "1997-05-31",
+            "nationality": "Ghanaian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/samuel-obeng/profil/spieler/3268",
+            "number": 77
+        },
+        {
+            "name": "Cassiano",
+            "birthDate": "1989-10-16",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/cassiano/profil/spieler/3268",
+            "number": 90
+        },
+        {
+            "name": "Max Svensson",
+            "birthDate": "2000-01-19",
+            "nationality": "Swedish",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/max-svensson/profil/spieler/3268",
+            "number": 9
+        },
+        {
+            "name": "Cláudio Mendes Vicente",
+            "birthDate": "2000-07-23",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/claudio-mendes-vicente/profil/spieler/3268",
+            "number": 99
+        },
+        {
+            "name": "Cauê",
+            "birthDate": "2002-03-15",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.us/caue/profil/spieler/3268",
+            "number": 88
+        }
+    ]
+}

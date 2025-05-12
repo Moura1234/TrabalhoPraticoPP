@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Gabriel Batista",
+            "birthDate": "1998-06-03",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/gabriel-batista/profil/spieler/618785",
+            "number": 1
+        },
+        {
+            "name": "Neneca",
+            "birthDate": "2003-08-27",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.com/neneca/profil/spieler/618785",
+            "number": 12
+        },
+        {
+            "name": "Sidney Lima",
+            "birthDate": "1997-01-17",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/sidney-lima/profil/spieler/618785",
+            "number": 23
+        },
+        {
+            "name": "Frederico Venâncio",
+            "birthDate": "1993-02-04",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/frederico-venancio/profil/spieler/618785",
+            "number": 21
+        },
+        {
+            "name": "Luís Rocha",
+            "birthDate": "1986-08-13",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/luis-rocha/profil/spieler/618785",
+            "number": 13
+        },
+        {
+            "name": "Pedro Pacheco",
+            "birthDate": "1997-01-27",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/pedro-pacheco/profil/spieler/618785",
+            "number": 4
+        },
+        {
+            "name": "Matheus Pereira",
+            "birthDate": "2000-12-21",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/matheus-pereira/profil/spieler/618785",
+            "number": 3
+        },
+        {
+            "name": "Lucas Soares",
+            "birthDate": "1998-05-04",
+            "nationality": "Brazilian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.com/lucas-soares/profil/spieler/618785",
+            "number": 42
+        },
+        {
+            "name": "Pedro Ferreira",
+            "birthDate": "1998-01-05",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/pedro-ferreira/profil/spieler/618785",
+            "number": 8
+        },
+        {
+            "name": "Adriano Firmino",
+            "birthDate": "1999-11-04",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/adriano-firmino/profil/spieler/618785",
+            "number": 6
+        },
+        {
+            "name": "Ricardinho",
+            "birthDate": "1998-08-06",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/ricardinho/profil/spieler/618785",
+            "number": 10
+        },
+        {
+            "name": "Gabriel Silva",
+            "birthDate": "2002-03-22",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/gabriel-silva/profil/spieler/618785",
+            "number": 11
+        },
+        {
+            "name": "Vinícius Lopes",
+            "birthDate": "1999-05-07",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/vinicius-lopes/profil/spieler/618785",
+            "number": 70
+        },
+        {
+            "name": "João Costa",
+            "birthDate": "2000-03-07",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/joao-costa/profil/spieler/618785",
+            "number": 17
+        },
+        {
+            "name": "Alisson Safira",
+            "birthDate": "1995-03-17",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.com/alisson-safira/profil/spieler/618785",
+            "number": 9
+        },
+        {
+            "name": "Wendel Silva",
+            "birthDate": "2000-08-02",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/wendel-silva/profil/spieler/2423",
+            "number": 29
+        },
+        {
+            "name": "Dani Borges",
+            "birthDate": "2003-04-06",
+            "nationality": "Brazilian",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/dani-borges/profil/spieler/618785",
+            "number": 41
+        },
+        {
+            "name": "Serginho",
+            "birthDate": "1999-12-01",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.com/serginho/profil/spieler/618785",
+            "number": 35
+        }
+    ]
+}

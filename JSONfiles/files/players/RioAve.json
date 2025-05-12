@@ -1,0 +1,148 @@
+{
+    "squad": [
+        {
+            "name": "Cezary Miszta",
+            "birthDate": "2001-06-11",
+            "nationality": "Polish",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.pt/cezary-miszta/profil/spieler/2425",
+            "number": 1
+        },
+        {
+            "name": "Matheus Teixeira",
+            "birthDate": "1998-03-05",
+            "nationality": "Brazilian",
+            "basePosition": "Goalkeeper",
+            "photo": "https://www.transfermarkt.pt/matheus-teixeira/profil/spieler/2425",
+            "number": 95
+        },
+        {
+            "name": "Jonathan Panzo",
+            "birthDate": "2000-10-25",
+            "nationality": "English",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/jonathan-panzo/profil/spieler/2425",
+            "number": 2
+        },
+        {
+            "name": "Francisco Petrasso",
+            "birthDate": "2001-07-14",
+            "nationality": "Canadian",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/francisco-petrasso/profil/spieler/2425",
+            "number": 23
+        },
+        {
+            "name": "Nelson Abbey",
+            "birthDate": "2002-09-30",
+            "nationality": "English",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/nelson-abbey/profil/spieler/2425",
+            "number": 4
+        },
+        {
+            "name": "João Pedro",
+            "birthDate": "2002-05-22",
+            "nationality": "Portuguese",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/joao-pedro/profil/spieler/2425",
+            "number": 22
+        },
+        {
+            "name": "Omar Richards",
+            "birthDate": "1998-02-15",
+            "nationality": "English",
+            "basePosition": "Defender",
+            "photo": "https://www.transfermarkt.pt/omar-richards/profil/spieler/2425",
+            "number": 98
+        },
+        {
+            "name": "Martim Neto",
+            "birthDate": "2002-03-05",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/martim-neto/profil/spieler/2425",
+            "number": 76
+        },
+        {
+            "name": "João Novais",
+            "birthDate": "1993-02-10",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/joao-novais/profil/spieler/2425",
+            "number": 6
+        },
+        {
+            "name": "João Graça",
+            "birthDate": "1995-07-12",
+            "nationality": "Portuguese",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/joao-graca/profil/spieler/2425",
+            "number": 21
+        },
+        {
+            "name": "Brandon Aguilera",
+            "birthDate": "2003-06-28",
+            "nationality": "Costa Rican",
+            "basePosition": "Midfielder",
+            "photo": "https://www.transfermarkt.pt/brandon-aguilera/profil/spieler/2425",
+            "number": 16
+        },
+        {
+            "name": "Tiago Morais",
+            "birthDate": "2003-01-15",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/tiago-morais/profil/spieler/2425",
+            "number": 11
+        },
+        {
+            "name": "Tobías Medina",
+            "birthDate": "2003-04-10",
+            "nationality": "Argentinian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/tobias-medina/profil/spieler/2425",
+            "number": 27
+        },
+        {
+            "name": "Kiko Bondoso",
+            "birthDate": "1997-10-20",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/kiko-bondoso/profil/spieler/2425",
+            "number": 19
+        },
+        {
+            "name": "André Luiz",
+            "birthDate": "2001-09-15",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/andre-luiz/profil/spieler/2425",
+            "number": 7
+        },
+        {
+            "name": "Clayton",
+            "birthDate": "1998-05-10",
+            "nationality": "Brazilian",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/clayton/profil/spieler/2425",
+            "number": 9
+        },
+        {
+            "name": "Karem Zoabi",
+            "birthDate": "2005-08-22",
+            "nationality": "Israeli",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/karem-zoabi/profil/spieler/2425",
+            "number": 14
+        },
+        {
+            "name": "Tiago Fonseca Morais",
+            "birthDate": "2004-07-18",
+            "nationality": "Portuguese",
+            "basePosition": "Forward",
+            "photo": "https://www.transfermarkt.pt/tiago-fonseca-morais/profil/spieler/2425",
+            "number": 11
+        }
+    ]
+}
