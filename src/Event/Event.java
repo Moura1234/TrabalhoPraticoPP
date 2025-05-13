@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Event implements IEvent, IEventManager {
 
     private String descrition;
-    private int minutegolo;
+    private int minute;
     private IEvent[] events;
     private int eventCount;
 
