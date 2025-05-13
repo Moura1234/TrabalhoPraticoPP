@@ -21,5 +21,7 @@ public class Player {
     private int stamina;
     private int speed;
     private Position position;
+    private int height;
+    
     
 }
