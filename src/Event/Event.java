@@ -8,18 +8,14 @@ import java.io.IOException;
  *
  * @author joaom
  */
-public class Event implements IEvent, IEventManager {
+public class Event implements IEvent {
 
     private String descrition;
     private int minute;
-    private IEvent[] events;
-    private int eventCount;
 
-    public Event(String description, int minute, IEvent[] events, int eventCount) {
+    public Event(String description, int minute) {
         this.descrition = description;
         this.minute = minute;
-        this.events = new IEvent[100];
-        this.eventCount = 0;
     }
 
     @Override
@@ -30,26 +26,6 @@ public class Event implements IEvent, IEventManager {
     @Override
     public int getMinute() {
         return this.minute;
-    }
-
-    @Override
-    public void addEvent(IEvent ievent){
-        
-    }
-    
-    @Override
-    public IEvent[] getEvents(){
-        return new IEvent[0];
-    }
-    
-    @Override
-    public int getEventCount(){
-        return this.eventCount;
-    }
-    
-    @Override
-    public IPlayer getPlayer(){
-        return null;
     }
 
     @Override

@@ -4,13 +4,15 @@
  */
 package Player;
 
+import com.ppstudios.footballmanager.api.contracts.player.*;
 import java.time.LocalDate;
-import Enums.Position;
+import Enums.PlayerPosition;
+import java.io.IOException;
 /**
  *
  * @author joaom
  */
-public class Player {
+public class Player implements IPlayer{
     private String name;
     private LocalDate birthdate;
     private int age;
@@ -20,8 +22,107 @@ public class Player {
     private int passing;
     private int stamina;
     private int speed;
-    private Position position;
-    private int height;
+    private IPlayerPosition position;
+    private String photo;
+    private float height;
+    private float weight;
+    private PreferredFoot prefferredFoot;
     
+    public Player(String name, LocalDate birthdate, int age, String nationality, int number, int shooting, int passing, 
+            int stamina, int speed, IPlayerPosition position, String photo, float height, float weight, PreferredFoot prefferredFoot){
+        this.name = name;
+        this.birthdate = birthdate;
+        this.age = age;
+        this.nationality = nationality;
+        this.number = number;
+        this.shooting = shooting;
+        this.passing = passing;
+        this.stamina = stamina;
+        this.speed = speed;
+        this.position = position;
+        this.photo = photo;
+        this.height = height;
+        this.weight = weight;
+        this.prefferredFoot = prefferredFoot;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public LocalDate getBirthDate() {
+        return this.birthdate;
+    }
+
+    @Override
+    public int getAge() {
+        return this.age;
+    }
+
+    @Override
+    public String getNationality() {
+        return this.nationality;
+    }
     
+    @Override
+    public void setPosition(IPlayerPosition ipp){
+        
+    }
+           
+    @Override
+    public int getNumber() {
+        return this.number;
+    }
+
+    @Override
+    public int getShooting() {
+        return this.shooting;
+    }
+
+    @Override
+    public int getPassing() {
+        return this.passing;
+    }
+
+    @Override
+    public int getStamina() {
+        return this.stamina;
+    }
+
+    @Override
+    public int getSpeed() {
+        return this.speed;
+    }
+
+    @Override
+    public IPlayerPosition getPosition() {
+        return this.position;
+    }
+
+    @Override
+    public String getPhoto() {
+        return this.photo;
+    }
+
+    @Override
+    public float getHeight() {
+        return this.height;
+    }
+
+    @Override
+    public float getWeight() {
+        return this.weight;
+    }
+
+    @Override
+    public PreferredFoot getPreferredFoot() {
+        return this.prefferredFoot;
+    }
+    
+    @Override
+    public void exportToJson() throws IOException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

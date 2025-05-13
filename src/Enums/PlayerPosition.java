@@ -3,15 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Enums;
+import com.ppstudios.footballmanager.api.contracts.player.*;
+
 
 /**
  *
  * @author joaom
  */
-public enum Position {
+
+public enum PlayerPosition {
     GK, LB, CB, RB, CDM, CM, CAM, LW, ST, RW;
 
-    public String PositionToString(Position position) {
+    public String PlayerPositionToString(PlayerPosition position) {
         switch (position) {
             case GK:
                 return "Goalkeeper";
