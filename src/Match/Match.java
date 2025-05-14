@@ -11,7 +11,7 @@ import com.ppstudios.footballmanager.api.contracts.team.ITeam;
  *
  * @author joaom
  */
-public class Match implements IMatch, IClub, ITeam {
+public abstract class Match implements IMatch, IClub, ITeam {
     
     private IClub HomeClub;
     private IClub AwayClub;
