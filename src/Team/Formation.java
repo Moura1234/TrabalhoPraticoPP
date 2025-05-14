@@ -29,8 +29,7 @@ public class Formation implements IFormation {
         return DisplayName;
     }
 
-   
-    
+  
      @Override
     public int getTacticalAdvantage(IFormation i) {
         return this.TacticalAdvantage;
