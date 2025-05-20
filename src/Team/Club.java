@@ -82,7 +82,7 @@ public class Club implements IClub{
         } else {
             System.out.println("Não foi possível adicionar " + player.getName() + ": plantel cheio.");
             return false;
-        } }
+        } 
     }
     
     @Override
@@ -110,3 +110,4 @@ public class Club implements IClub{
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
+

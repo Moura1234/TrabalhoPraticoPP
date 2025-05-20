@@ -56,7 +56,7 @@ public class Team implements ITeam{
         for (int i = 0; i < playerCount; i++) {
             copy[i] = players[i];
         }
-         return copy;sdgh
+         return copy;
  
     }
 
