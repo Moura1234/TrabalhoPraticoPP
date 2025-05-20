@@ -26,10 +26,10 @@ public class Player implements IPlayer{
     private String photo;
     private float height;
     private float weight;
-    private PreferredFoot prefferredFoot;
+    private PreferredFoot preferredFoot;
     
     public Player(String name, LocalDate birthdate, int age, String nationality, int number, int shooting, int passing, 
-            int stamina, int speed, IPlayerPosition position, String photo, float height, float weight, PreferredFoot prefferredFoot){
+            int stamina, int speed, IPlayerPosition position, String photo, float height, float weight, PreferredFoot preferredFoot){
         this.name = name;
         this.birthdate = birthdate;
         this.age = age;
@@ -43,7 +43,7 @@ public class Player implements IPlayer{
         this.photo = photo;
         this.height = height;
         this.weight = weight;
-        this.prefferredFoot = prefferredFoot;
+        this.preferredFoot = preferredFoot;
     }
 
     @Override
@@ -55,7 +55,8 @@ public class Player implements IPlayer{
     public LocalDate getBirthDate() {
         return this.birthdate;
     }
-
+//    return Period.between(this.birthdate, LocalDate.now()).getYears();
+    
     @Override
     public int getAge() {
         return this.age;
@@ -68,7 +69,7 @@ public class Player implements IPlayer{
     
     @Override
     public void setPosition(IPlayerPosition ipp){
-        
+        this.position = ipp;
     }
            
     @Override
@@ -118,11 +119,12 @@ public class Player implements IPlayer{
 
     @Override
     public PreferredFoot getPreferredFoot() {
-        return this.prefferredFoot;
+        return this.preferredFoot;
     }
     
     @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
 }
