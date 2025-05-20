@@ -46,13 +46,22 @@ public class Team implements ITeam{
     
     public int getTeamStrength() {
         
-        return this.teamStrength;
+        
+       IPlayer[] players = club.getPlayers();
+    int total = 0;
+    for (IPlayer p : players) {
+        total += (p.getShooting() + p.getPassing() + p.getSpeed() + p.getStamina()) / 4;
+    }
+    return players.length > 0 ? total / players.length : 0;
+    
+    
     }
 
     @Override
     
     public IPlayer[] getPlayers() {
          IPlayer[] copy = new IPlayer[playerCount];
+         
         for (int i = 0; i < playerCount; i++) {
             copy[i] = players[i];
         }
