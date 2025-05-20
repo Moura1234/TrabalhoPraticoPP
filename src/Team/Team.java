@@ -11,51 +11,56 @@ import com.ppstudios.footballmanager.api.contracts.team.*;
  *
  * @author utilizador
  */
-public class Team implements IClub, ITeam, IPlayer, IFormation {
+public class Team implements ITeam{
 
-    private int TeamStrength;
-    private IFormation Formation;
-    private int PositionCount;
-    private IClub Club;
-    private IPlayer[] Players;
+    private int teamStrength;
+    private IFormation formation;
+    private int positionCount;
+    private int playerCount;
+    private IClub club;
+    private IPlayer[] players;
 
-    public Team(int TeamStrength, IFormation Formation, int PositionCount, IClub Club, IPlayer[] Players) {
-        this.TeamStrength = TeamStrength;
-        this.Formation = Formation;
-        this.PositionCount = PositionCount;
-        this.Club = Club;
-        this.Players = Players;
+    public Team(int teamStrength, IFormation formation, int positionCount, IClub club, IPlayer[] players) {
+        this.teamStrength = teamStrength;
+        this.formation = formation;
+        this.positionCount = positionCount;
+        this.club = club;
+        this.players = players;
+        this.playerCount = 0;
     }
 
+      @Override
+    
+    public IClub getClub() {
+        return this.club;
+    }
+    
+        @Override
+    
+    public IFormation getFormation() {
+        
+        return this.formation;
+    }
     
     @Override
     
     public int getTeamStrength() {
-        return this.TeamStrength;
-    }
-
-    @Override
-    
-    public IClub getClub() {
-        return this.Club;
+        
+        return this.teamStrength;
     }
 
     @Override
     
     public IPlayer[] getPlayers() {
-        return this.Players;
+         IPlayer[] copy = new IPlayer[playerCount];
+        for (int i = 0; i < playerCount; i++) {
+            copy[i] = players[i];
+        }
+         return copy;sdgh
+ 
     }
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
+ }
+

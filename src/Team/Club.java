@@ -76,6 +76,13 @@ public class Club implements IClub{
     @Override
     public void addPlayer(IPlayer ip){
         
+           if (playerCount < MAX_PLAYERS) {
+            players[playerCount++] = player;
+            return true;
+        } else {
+            System.out.println("Não foi possível adicionar " + player.getName() + ": plantel cheio.");
+            return false;
+        } }
     }
     
     @Override
