@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Player;
-import com.ppstudios.footballmanager.api.contracts.player.*;
+import com.ppstudios.footballmanager.api.contracts.player.IPlayerPosition;
 
 
 /**

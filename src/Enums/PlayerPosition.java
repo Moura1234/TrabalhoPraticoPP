@@ -11,11 +11,12 @@ import com.ppstudios.footballmanager.api.contracts.player.*;
  * @author joaom
  */
 
-public enum PlayerPosition {
+public enum PlayerPosition implements IPlayerPosition{
     GK, LB, CB, RB, CDM, CM, CAM, LW, ST, RW;
 
-    public String PlayerPositionToString(PlayerPosition position) {
-        switch (position) {
+    @Override
+    public String getDescription() {
+        switch (this) {
             case GK:
                 return "Goalkeeper";
             case LB:
