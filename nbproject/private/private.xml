@@ -3,24 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Event/Event.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/League/League.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Schedule/Schedule.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Match/Match.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Enums/Team.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Enums/Formation.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Player/Player.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Enums/Club.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Event/EventManager.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Enums/PlayerPosition.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Team/Team.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Team/Formation.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Team/PlayerSelector.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Team/Club.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Event/GoalEvent.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Player/PlayerPosition.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/JSONLoader/JsonManualLoader.java</file>
-            <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Main/main.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/Team.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Player/Player.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/Club.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/Formation.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Player/PlayerPosition.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/JSONLoader/JsonManualLoader.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Enums/PlayerPosition.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Main/main.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/PlayerSelector.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Enums/TacticalAdvantageType.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Enums/Formation.java</file>
         </group>
     </open-files>
 </project-private>
