@@ -76,3 +76,4 @@ public Match (IClub HomeClub, IClub AwayClub, ITeam HomeTeam, ITeam AwayTeam, in
 }
 
 //Ficheiro Match
+//function
