@@ -81,6 +81,18 @@ public class Team implements ITeam{
     }
     
     @Override
+     public int getPositionCount(IPlayerPosition ipp){
+      
+     }
+     
+     @Override
+     public boolean isValidPositionForFormation(IPlayerPosition ipp){
+     return getPositionCount(ipp) > 0;    
+         
+     }
+     
+     
+    @Override
      public void setFormation(IFormation i){
       this.formation = i;   
 

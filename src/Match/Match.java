@@ -44,10 +44,8 @@ public Match (IClub homeClub, IClub awayClub, ITeam homeTeam, ITeam awayTeam, in
         return this.awayClub;
     }
 
-
     @Override
    public ITeam getHomeTeam() {
-       
    return this.homeTeam;
 }
 
