@@ -8,6 +8,7 @@ import com.ppstudios.footballmanager.api.contracts.player.*;
 import java.time.LocalDate;
 import Enums.PlayerPosition;
 import java.io.IOException;
+import com.ppstudios.footballmanager.api.contracts.player.PreferredFoot;
 /**
  *
  * @author joaom

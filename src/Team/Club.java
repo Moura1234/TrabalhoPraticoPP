@@ -21,12 +21,12 @@ public class Club implements IClub{
     private String logo;
     private String playerPosition;
     private String targetPosition;
-    private IPlayer best;
+    private IPlayer selected;
     private int playerCount;
-    private static final int MAX_PLAYERS =18;
+    private static final int MAX_PLAYERS = 18;
     
     public Club (String name, IPlayer[] players, String code, String country, 
-            int foundedYear, String stadiumName, String logo, String playerPosition, String targetPosition, IPlayer best){
+            int foundedYear, String stadiumName, String logo, String playerPosition, String targetPosition, IPlayer selected){
         this.name = name;
         this.players = players;
         this.code = code;
@@ -36,7 +36,7 @@ public class Club implements IClub{
         this.logo = logo;
         this.playerPosition = playerPosition;
         this.targetPosition = targetPosition;
-        this.best = best;
+        this.selected = selected;
         playerCount = 0;
     }
 
@@ -93,8 +93,18 @@ public class Club implements IClub{
     }
     
     @Override
+    public IPlayer selectPlayer(IClub iclub, IPlayerPosition ipp) {
+   return iclub.selectPlayer(this, ipp);
+    }
+    
+    @Override
     public void addPlayer(IPlayer ip){
         
+        if (isPlayer(ip)) {
+    System.out.println("O jogador já se encontra no plantel: " + ip.getName());
+    return;
+}
+
            if (playerCount < MAX_PLAYERS) {
             players[playerCount++] = ip;
         } else {
@@ -127,27 +137,30 @@ public class Club implements IClub{
     }
     }
     
-    @Override
-    public IPlayer selectPlayer(IPlayerSelector ips, IPlayerPosition ipp){
-     
-        return null;
-    }
-    
-  
  
     @Override
     public boolean isValid(){
         
-        return name != null && !name.isEmpty()
-            && code != null && !code.isEmpty()
-            && country != null && !country.isEmpty()
-            && foundedYear > 1800
-            && stadiumName != null && !stadiumName.isEmpty()
-            && logo != null && !logo.isEmpty()
-            && playerCount >= 11;
+   return name != null && !name.isEmpty()
+        && code != null && !code.isEmpty()
+        && country != null && !country.isEmpty()
+        && foundedYear > 1800
+        && stadiumName != null && !stadiumName.isEmpty()
+        && logo != null && !logo.isEmpty()
+        && playerCount >= 11;
+}
         
-    }
     
+       @Override
+    public String toString() {
+        return "Club{" +
+                "name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", country='" + country + '\'' +
+                ", stadium='" + stadiumName + '\'' +
+                ", players=" + playerCount +
+                '}';
+    }
    
     @Override
     public void exportToJson() throws IOException {

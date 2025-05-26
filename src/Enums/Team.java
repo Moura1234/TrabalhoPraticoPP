@@ -9,5 +9,5 @@ package Enums;
  * @author utilizador
  */
 public enum Team {
-    HomeTeam, AwayTeam
+    HomeTeam, AwayTeam,
 }
