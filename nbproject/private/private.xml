@@ -3,7 +3,6 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
             <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/Team.java</file>
             <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Player/Player.java</file>
             <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/Club.java</file>
@@ -15,7 +14,6 @@
             <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Team/PlayerSelector.java</file>
             <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Enums/TacticalAdvantageType.java</file>
             <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Enums/Formation.java</file>
-=======
             <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Event/Event.java</file>
             <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/League/League.java</file>
             <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Schedule/Schedule.java</file>
@@ -35,10 +33,9 @@
             <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/JSONLoader/JsonManualLoader.java</file>
             <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Main/main.java</file>
             <file>file:/C:/Users/utilizador/Documents/2º%20ano/PP/TrabalhoPraticoPP/src/Enums/TacticalAdvantageType.java</file>
-<<<<<<< HEAD
->>>>>>> 609c5d602e4406d45f8efa848eeb7657839989ca
-=======
->>>>>>> 609c5d602e4406d45f8efa848eeb7657839989ca
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/League/League.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Schedule/Schedule.java</file>
+            <file>file:/C:/Users/joaom/Documents/NetBeansProjects/TrabalhoPraticoPP/src/Match/Match.java</file>
         </group>
     </open-files>
 </project-private>

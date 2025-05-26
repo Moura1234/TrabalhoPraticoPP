@@ -4,16 +4,25 @@
  */
 package Player;
 
+
 import com.ppstudios.footballmanager.api.contracts.player.*;
 import java.time.LocalDate;
 import Enums.PlayerPosition;
 import java.io.IOException;
 import com.ppstudios.footballmanager.api.contracts.player.PreferredFoot;
+
+import java.time.LocalDate;
+import Enums.Position;
+
 /**
  *
  * @author joaom
  */
+
 public class Player implements IPlayer{
+
+public class Player {
+
     private String name;
     private LocalDate birthdate;
     private int age;
@@ -22,6 +31,7 @@ public class Player implements IPlayer{
     private int shooting;
     private int passing;
     private int stamina;
+
     private int defense;
     private int speed;
     private IPlayerPosition position;
@@ -137,5 +147,9 @@ public class Player implements IPlayer{
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    private int speed;
+    private Position position;
+
     
 }
