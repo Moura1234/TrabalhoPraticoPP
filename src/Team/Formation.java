@@ -12,34 +12,27 @@ import java.io.IOException;
  * @author utilizador
  */
 public class Formation implements IFormation {
-    
- private String DisplayName;
- private int TacticalAdvantage;
 
-    public Formation(String DisplayName, int TacticalAdvantage) {
-        this.DisplayName = DisplayName;
-        this.TacticalAdvantage = TacticalAdvantage;
-        
-        
+    private String displayName;
+    private int tacticalAdvantage;
+
+    public Formation(String displayName, int tacticalAdvantage) {
+        this.displayName = displayName;
+        this.tacticalAdvantage = tacticalAdvantage;
+
     }
 
     @Override
-    
     public String getDisplayName() {
-        return DisplayName;
+        return this.displayName;
     }
 
-  
-     @Override
+    @Override
     public int getTacticalAdvantage(IFormation i) {
-        return this.TacticalAdvantage;
+        return this.tacticalAdvantage;
     }
-    
+
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    } 
     }
-
-    
-
- 
+}

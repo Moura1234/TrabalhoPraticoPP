@@ -11,5 +11,5 @@ package Enums;
 public enum TacticalAdvantageType {
     OFFENSIVE, DEFENSIVE, BALANCED;
     
-    public String 
+   
 }

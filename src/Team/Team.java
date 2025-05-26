@@ -11,6 +11,7 @@ import com.ppstudios.footballmanager.api.contracts.team.*;
  *
  * @author utilizador
  */
+
 public class Team implements ITeam{
 
     private int teamStrength;
@@ -69,7 +70,15 @@ public class Team implements ITeam{
  
     }
 
-    
+     @Override
+    public String toString() {
+        return "Team{" +
+                "club=" + club.getName() +
+                ", formation=" + formation +
+                ", playerCount=" + playerCount +
+                ", teamStrength=" + teamStrength +
+                '}';
     
  }
+}
 
