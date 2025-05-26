@@ -74,3 +74,5 @@ public Match (IClub HomeClub, IClub AwayClub, ITeam HomeTeam, ITeam AwayTeam, in
         return this.AwayFormation;
     }
 }
+
+//Ficheiro Match
