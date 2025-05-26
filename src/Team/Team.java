@@ -27,7 +27,13 @@ public class Team implements ITeam{
         this.positionCount = positionCount;
         this.club = club;
         this.players = players;
+        
+        
+        if (players != null){
+        this.playerCount = players.length;
+    } else {
         this.playerCount = 0;
+    }
     }
 
       @Override
@@ -53,8 +59,12 @@ public class Team implements ITeam{
     for (IPlayer p : players) {
         total += (p.getShooting() + p.getPassing() + p.getSpeed() + p.getStamina()) / 4;
     }
-    return players.length > 0 ? total / players.length : 0;
-    
+ 
+    if (players.length > 0) {
+        return total / players.length;
+    } else {
+        return 0;
+    }
     
     }
 
@@ -69,6 +79,12 @@ public class Team implements ITeam{
          return copy;
  
     }
+    
+    @Override
+     public void setFormation(IFormation i){
+      this.formation = i;   
+
+     }
 
      @Override
     public String toString() {

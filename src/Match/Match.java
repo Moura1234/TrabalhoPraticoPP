@@ -11,69 +11,73 @@ import com.ppstudios.footballmanager.api.contracts.team.ITeam;
  *
  * @author joaom
  */
-public abstract class Match implements IMatch, IClub, ITeam {
+public class Match implements IMatch {
     
-    private IClub HomeClub;
-    private IClub AwayClub;
-    private ITeam HomeTeam;
-    private ITeam AwayTeam;
-    private int HomeGoals;
-    private int AwayGoals;
-    private Formation HomeFormation;
-    private Formation AwayFormation;
+    private IClub homeClub;
+    private IClub awayClub;
+    private ITeam homeTeam;
+    private ITeam awayTeam;
+    private int homeGoals;
+    private int awayGoals;
+    private Formation homeFormation;
+    private Formation awayFormation;
 
-public Match (IClub HomeClub, IClub AwayClub, ITeam HomeTeam, ITeam AwayTeam, int HomeGoals, int AwayGoals, Formation HomeFormation, Formation AwayFormation) {
-        this.HomeClub = HomeClub;
-        this.AwayClub = AwayClub;
-        this.HomeTeam = HomeTeam;
-        this.AwayTeam = AwayTeam;
-        this.HomeGoals = HomeGoals;
-        this.AwayGoals = AwayGoals;
-        this.HomeFormation = HomeFormation;
-        this.AwayFormation = AwayFormation;
+public Match (IClub homeClub, IClub awayClub, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, Formation homeFormation, Formation awayFormation) {
+        this.homeClub = homeClub;
+        this.awayClub = awayClub;
+        this.homeTeam = homeTeam;
+        this.awayTeam = awayTeam;
+        this.homeGoals = homeGoals;
+        this.awayGoals = awayGoals;
+        this.homeFormation = homeFormation;
+        this.awayFormation = awayFormation;
 }
 
 
     @Override
-    
     public IClub getHomeClub() {
-        return this.HomeClub;
+        return this.homeClub;
     }
 
     @Override
     public IClub getAwayClub() {
-        return this.AwayClub;
+        return this.awayClub;
     }
 
 
     @Override
    public ITeam getHomeTeam() {
        
-   return this.HomeTeam;
-
+   return this.homeTeam;
 }
 
     @Override
     public ITeam getAwayTeam(){
-        return this.AwayTeam;
+        return this.awayTeam;
     }
 
     public int getHomeGoals() {
-        return this.HomeGoals;
+        return this.homeGoals;
     }
 
     public int getAwayGoals() {
-        return this.AwayGoals;
+        return this.awayGoals;
     }
 
     public Formation getHomeFormation() {
-        return this.HomeFormation;
+        return this.homeFormation;
     }
 
     public Formation getAwayFormation() {
-        return this.AwayFormation;
+        return this.awayFormation;
+    }
+    
+    public String getResult() {
+        
+        return homeClub.getName() + " " + homeGoals + " - " + awayGoals + " " + awayClub.getName();
+}
+     @Override
+    public String toString() {
+        return "Match between " + homeClub.getName() + " and " + awayClub.getName();
     }
 }
-
-//Ficheiro Match
-//function

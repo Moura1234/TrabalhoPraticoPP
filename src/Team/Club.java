@@ -113,7 +113,7 @@ public class Club implements IClub{
            if (playerCount < MAX_PLAYERS) {
             players[playerCount++] = ip;
         } else {
-            System.out.println("Não foi possível adicionar " + ip.getName() + ": plantel cheio.");
+            System.out.println("Não foi possível adicionar " + ip.getName() + ": Plantel cheio.");
     
         } 
     }
