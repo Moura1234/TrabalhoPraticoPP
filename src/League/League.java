@@ -27,7 +27,12 @@ public class League implements ILeague{
     
     @Override 
     public ISeason[] getSeasons(){
-        return new ISeason[0];
+          ISeason[] result = new ISeason[seasonCount];
+    for (int i = 0; i < seasonCount; i++) {
+        result[i] = seasons[i];
+    }
+    return result;
+     
     }
     
      @Override

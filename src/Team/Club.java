@@ -93,8 +93,13 @@ public class Club implements IClub{
     }
     
     @Override
-    public IPlayer selectPlayer(IClub iclub, IPlayerPosition ipp) {
-   return iclub.selectPlayer(this, ipp);
+    public IPlayer selectPlayer(IPlayerSelector ips, IPlayerPosition ipp) {
+    for (int i = 0; i < playerCount; i++) {
+        if (players[i].getPosition().equals(ipp)) {
+            return players[i];
+        }
+    }
+    return null;
     }
     
     @Override
