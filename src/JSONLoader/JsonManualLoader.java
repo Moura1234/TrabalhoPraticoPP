@@ -18,7 +18,7 @@ import com.ppstudios.footballmanager.api.contracts.player.*;
 public class JsonManualLoader {
 
     public static IPlayer[] loadPlayersFromJson(String path) {
-        IPlayer[] players = new IPlayer[18]; // Assumindo 18 jogadores por equipa
+        IPlayer[] players = new IPlayer[18]; 
         int index = 0;
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {

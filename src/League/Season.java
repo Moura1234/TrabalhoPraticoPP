@@ -68,7 +68,7 @@ public class Season implements ISeason{
 
     for (int i = 0; i < clubCount; i++) {
         if (currentClubs[i].equals(iclub)) {
-            return false; // o clube já existe
+            return false; // clube existe
         }
     }
 
@@ -117,10 +117,10 @@ public class Season implements ISeason{
             IClub homeClub = currentClubs[homeIndex];
             IClub awayClub = currentClubs[awayIndex];
 
-            IPlayer[] homePlayers = homeClub.getPlayers(); // método getPlayers()
+            IPlayer[] homePlayers = homeClub.getPlayers(); 
             IPlayer[] awayPlayers = awayClub.getPlayers();
 
-            Formation teamFormation = Formation.create433(); // formação realista
+            Formation teamFormation = Formation.create433(); 
 
             ITeam homeTeam = new Team(100, teamFormation, teamFormation.getPositions().length, homeClub, homePlayers);
             ITeam awayTeam = new Team(100, teamFormation, teamFormation.getPositions().length, awayClub, awayPlayers);

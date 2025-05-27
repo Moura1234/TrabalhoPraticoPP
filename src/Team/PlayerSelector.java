@@ -29,7 +29,7 @@ public class PlayerSelector implements IPlayerSelector {
             // confirma se a posição bate certo
             if (!p.getPosition().getDescription().equalsIgnoreCase(ipp.getDescription())) continue;
 
-            // calcula a média dos atributos relevantes
+            // calcula a média dos atributos 
             int score = (p.getShooting() + p.getPassing() + p.getStamina() + p.getSpeed()) / 4;
 
             
