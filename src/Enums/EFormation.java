@@ -8,6 +8,6 @@ package Enums;
  *
  * @author utilizador
  */
-public enum Formation {
+public enum EFormation {
     HomeFormation, AwayFormation
 }

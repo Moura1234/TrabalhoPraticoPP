@@ -1,8 +1,8 @@
 package Match;
 
-import Enums.Club;
-import Enums.Formation;
-import Enums.Team;
+import Enums.EClub;
+import Enums.EFormation;
+import Enums.ETeam;
 import Event.EventManager;
 import com.ppstudios.footballmanager.api.contracts.event.IEvent;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
@@ -23,15 +23,15 @@ public class Match implements IMatch {
     private ITeam awayTeam;
     private int homeGoals;
     private int awayGoals;
-    private Formation homeFormation;
-    private Formation awayFormation;
+    private EFormation homeFormation;
+    private EFormation awayFormation;
     private int round;
     private IEvent [] event;
     private EventManager eventManager = new EventManager();
     
     private int eventCount;
 
-public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, Formation homeFormation, Formation awayFormation, int round,IEvent[] event, int eventCount) {
+public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, EFormation homeFormation, EFormation awayFormation, int round,IEvent[] event, int eventCount) {
         this.homeClub = homeClub;
         this.awayClub = awayClub;
         this.played = played;
@@ -127,11 +127,11 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
     return this.round;    
     }
 
-    public Formation getHomeFormation() {
+    public EFormation getHomeFormation() {
         return this.homeFormation;
     }
 
-    public Formation getAwayFormation() {
+    public EFormation getAwayFormation() {
         return this.awayFormation;
     }
     

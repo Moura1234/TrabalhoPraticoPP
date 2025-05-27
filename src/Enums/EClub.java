@@ -8,6 +8,6 @@ package Enums;
  *
  * @author utilizador
  */
-public enum Club {
+public enum EClub {
    HomeClub, AwayClub 
 }

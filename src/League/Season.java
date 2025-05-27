@@ -126,8 +126,8 @@ public class Season implements ISeason{
             ITeam awayTeam = new Team(100, teamFormation, teamFormation.getPositions().length, awayClub, awayPlayers);
 
             // Enum indica se é jogo em casa ou fora
-            Enums.Formation homeFormation = Enums.Formation.HomeFormation;
-            Enums.Formation awayFormation = Enums.Formation.AwayFormation;
+            Enums.EFormation homeFormation = Enums.EFormation.HomeFormation;
+            Enums.EFormation awayFormation = Enums.EFormation.AwayFormation;
 
             IMatch game = new Match(
                 homeClub, awayClub,

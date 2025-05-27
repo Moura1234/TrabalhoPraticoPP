@@ -99,4 +99,8 @@ public class JsonManualLoader {
     private static float extractFloat(String line) {
         return Float.parseFloat(line.split(":")[1].trim().replace(",", ""));
     }
+    
+    
+
+
 }

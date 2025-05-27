@@ -5,9 +5,21 @@
 package Main;
 
 import java.time.LocalDate;
-import Enums.PlayerPosition;
+import Enums.*;
 import com.ppstudios.footballmanager.api.contracts.player.*;
-import Player.Player;
+import com.ppstudios.footballmanager.api.contracts.event.*;
+import com.ppstudios.footballmanager.api.contracts.league.*;
+import com.ppstudios.footballmanager.api.contracts.match.*;
+import com.ppstudios.footballmanager.api.contracts.simulation.*;
+import com.ppstudios.footballmanager.api.contracts.team.*;
+import Event.*;
+import JSONLoader.*;
+import League.*;
+import Match.*;
+import Player.*;
+import Simulation.*;
+import Team.*;
+import Enums.*;
 
 
 /**
@@ -20,9 +32,11 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Player p1 = new Player("Nabo", LocalDate.parse("1999-09-19"), 26, "PT", 12, 0,0,0,0, PlayerPosition.CAM, "f", 177, 71, PreferredFoot.Right);
         
-        System.out.println(p1);
+
     }
-    
 }
+
+    
+    
+
