@@ -81,7 +81,7 @@ public class Club implements IClub{
     }
 
    
-    public String getTargetPosition() {
+    public String getTargetPosition() { // n esta na interface
         return targetPosition;
     }
     

@@ -26,7 +26,7 @@ public class Formation implements IFormation {
     }
     
 public Position[] getPositions() {
-    return positions;
+    return this.positions;
 }
 
     @Override

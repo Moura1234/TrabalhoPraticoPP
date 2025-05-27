@@ -57,7 +57,7 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
 
     @Override
     public boolean isPlayed(){
-    return played;
+    return this.played;
         
     }
     

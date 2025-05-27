@@ -12,9 +12,7 @@ import java.io.IOException;
  *
  * @author utilizador
  */
-
-public class Team implements ITeam{
-
+public class Team implements ITeam {
     private int teamStrength;
     private IFormation formation;
     private int positionCount;
@@ -29,116 +27,106 @@ public class Team implements ITeam{
         this.positionCount = positionCount;
         this.club = club;
         this.players = players;
-        
-     
-        if (players != null){
-        this.playerCount = players.length;
-    } else {
-        this.playerCount = 0;
 
+        if (players != null) {
+            this.playerCount = players.length;
+        } else {
+            this.playerCount = 0;
+
+        }
     }
-   }
 
-      @Override
+    @Override
     public IClub getClub() {
         return this.club;
     }
-    
-        @Override
+
+    @Override
     public IFormation getFormation() {
-        
         return this.formation;
     }
-    
+
     @Override
     public int getTeamStrength() {
-        
-        
-       IPlayer[] players = club.getPlayers();
-    int total = 0;
-    for (IPlayer p : players) {
-        total += (p.getShooting() + p.getPassing() + p.getSpeed() + p.getStamina()) / 4;
-    }
- 
-    if (players.length > 0) {
-        return total / players.length;
-    } else {
-        return 0;
-    }
-    
+        IPlayer[] players = club.getPlayers();
+        int total = 0;
+        for (IPlayer p : players) {
+            total += (p.getShooting() + p.getPassing() + p.getSpeed() + p.getStamina()) / 4;
+        }
+
+        if (players.length > 0) {
+            return total / players.length;
+        } else {
+            return 0;
+        }
+
     }
 
     @Override
     public IPlayer[] getPlayers() {
-         IPlayer[] copy = new IPlayer[playerCount];
-         
+        IPlayer[] copy = new IPlayer[playerCount];
+
         for (int i = 0; i < playerCount; i++) {
             copy[i] = players[i];
         }
-         return copy;
- 
+        return copy;
+
     }
-    
+
     @Override
-    public void addPlayer(IPlayer ip){
-        
-    
-      for (int i = 0; i < playerCount; i++) {
-        if (players[i] == ip) {
-            System.out.println("O jogador já se encontra na equipa: " + ip.getName());
-            return;
-        }   
-      }
-      if (playerCount < MAX_PLAYERS) {
-        players[playerCount++] = ip;
-        System.out.println("Jogador adicionado à equipa: " + ip.getName());
-    } else {
-        System.out.println("Plantel cheio. Não foi possível adicionar: " + ip.getName());
-    }
-    }
-    
-    
-    
-    @Override
-     public int getPositionCount(IPlayerPosition ipp){
-         
-   int count = 0;
-    for (int i = 0; i < playerCount; i++) {
-        if (players[i].getPosition().equals(ipp)) {
-            count++;
+    public void addPlayer(IPlayer ip) {
+        for (int i = 0; i < playerCount; i++) {
+            if (players[i] == ip) {
+                System.out.println("O jogador já se encontra na equipa: " + ip.getName());
+                return;
+            }
+        }
+        if (playerCount < MAX_PLAYERS) {
+            players[playerCount++] = ip;
+            System.out.println("Jogador adicionado à equipa: " + ip.getName());
+        } else {
+            System.out.println("Plantel cheio. Não foi possível adicionar: " + ip.getName());
         }
     }
-    return count;
+
+    @Override
+    public int getPositionCount(IPlayerPosition ipp) {
+        int count = 0;
+        for (int i = 0; i < playerCount; i++) {
+            if (players[i].getPosition().equals(ipp)) {
+                count++;
+            }
+        }
+        return count;
     }
 
-     
-     @Override
-     public boolean isValidPositionForFormation(IPlayerPosition ipp){
-     return getPositionCount(ipp) > 0;    
-         
-     }
-     
-     
     @Override
-     public void setFormation(IFormation i){
-      this.formation = i;   
+    public boolean isValidPositionForFormation(IPlayerPosition ipp) {
+        return getPositionCount(ipp) > 0;
 
-     }
+    }
 
-     @Override
+    @Override
+    public void setFormation(IFormation i) {
+        this.formation = i;
+
+    }
+
+    @Override
     public String toString() {
-        return "Team{" +
-                "club=" + club.getName() +
-                ", formation=" + formation +
-                ", playerCount=" + playerCount +
-                ", teamStrength=" + teamStrength +
-                '}';
- }
-    
+        return "Team{"
+                + "club=" + club.getName()
+                + ", formation=" + formation
+                + ", playerCount=" + playerCount
+                + ", teamStrength=" + teamStrength
+                + '}';
+    }
+
     @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
+
 }
+
 

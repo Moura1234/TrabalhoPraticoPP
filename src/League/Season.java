@@ -54,7 +54,7 @@ public class Season implements ISeason{
 
     @Override
     public int getYear() {
-        return year;
+        return this.year;
     }
     
     @Override
@@ -165,7 +165,7 @@ public class Season implements ISeason{
      
      @Override
      public int getCurrentRound() {
-        return currentRound;
+        return this.currentRound;
     }
      
      @Override
@@ -199,57 +199,57 @@ public class Season implements ISeason{
      
      @Override
      public IStanding[] getLeagueStandings() {
-        return leagueStandings;
+        return this.leagueStandings;
     }
      
      @Override
      public ISchedule getSchedule() {
-        return schedule;
+        return this.schedule;
     }
      
      @Override
     public int getPointsPerWin() {
-        return pointsPerWin;
+        return this.pointsPerWin;
     }
 
     @Override
     public int getPointsPerDraw() {
-        return pointsPerDraw;
+        return this.pointsPerDraw;
     }
 
     @Override
     public int getPointsPerLoss() {
-        return pointsPerLoss;
+        return this.pointsPerLoss;
     }
     
     @Override
     public String getName() {
-        return name;
+        return this.name;
     }
 
     @Override
     public int getMaxTeams() {
-        return maxTeams;
+        return this.maxTeams;
     }
 
     @Override
     public int getMaxRounds() {
-        return maxRounds;
+        return this.maxRounds;
     }
 
     @Override
     public int getCurrentMatches() {
-        return currentMatches;
+        return this.currentMatches;
     }
     
     @Override
     public int getNumberOfCurrentTeams() {
-        return numberOfCurrentTeams;
+        return this.numberOfCurrentTeams;
     }
 
     @Override
     public IClub[] getCurrentClubs() {
-        return currentClubs;
+        return this.currentClubs;
     }    
     
     @Override

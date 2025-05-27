@@ -37,47 +37,47 @@ public class Standing implements IStanding {
 
     @Override
     public ITeam getTeam() {
-        return team;
+        return this.team;
     }
 
     @Override
     public int getPoints() {
-        return points;
+        return this.points;
     }
 
     @Override
     public int getWins() {
-        return win;
+        return this.win;
     }
 
     @Override
     public int getDraws() {
-        return draw;
+        return this.draw;
     }
 
     @Override
     public int getLosses() {
-        return loss;
+        return this.loss;
     }
 
     @Override
     public int getGoalScored() {
-        return goalsScored;
+        return this.goalsScored;
     }
 
     @Override
     public int getGoalsConceded() {
-        return goalsConceded;
+        return this.goalsConceded;
     }
 
     @Override
     public int getTotalMatches() {
-        return totalMatches;
+        return this.totalMatches;
     }
     
     @Override
     public int getGoalDifference() {
-        return goalsScored - goalsConceded;
+        return this.goalsScored - this.goalsConceded;
     }
     
     @Override
