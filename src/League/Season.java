@@ -3,13 +3,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package League;
+import Enums.PlayerPosition;
+import Enums.Position;
 import com.ppstudios.footballmanager.api.contracts.league.*;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
 import com.ppstudios.footballmanager.api.contracts.team.IClub;
 import com.ppstudios.footballmanager.api.contracts.simulation.MatchSimulatorStrategy;
 import java.io.IOException;
 import Match.Match;
+import Team.Formation;
 import Team.Team;
+import com.ppstudios.footballmanager.api.contracts.event.IEvent;
+import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
+import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 
 
@@ -101,30 +107,39 @@ public class Season implements ISeason{
     int matchesPerRound = clubCount / 2;
     IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
 
+    // Exemplo de posições (podes ajustar conforme o teu enum Position)
+    
+
+    IFormation defaultFormation = new Formation("4-3-3", 5, positions);
+
     for (int round = 0; round < totalRounds; round++) {
         for (int match = 0; match < matchesPerRound; match++) {
             int homeIndex = (round + match) % (clubCount - 1);
             int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
 
             if (match == 0) {
-                awayIndex = clubCount - 1; // fixa o último clube
+                awayIndex = clubCount - 1;
             }
 
             IClub homeClub = currentClubs[homeIndex];
             IClub awayClub = currentClubs[awayIndex];
 
-            ITeam homeTeam = new Team(); // cria a equipa com jogadores do clube
-            ITeam awayTeam = new Team(); 
+            // ⚠️ Podes ter de ajustar se o IClub não tiver getPlayers()
+            IPlayer[] homePlayers = homeClub.getPlayers();  
+            IPlayer[] awayPlayers = awayClub.getPlayers();
 
-            IMatch game = new Match(homeClub, awayClub, false, homeTeam, awayTeam, 0, 0, null, null, round);
+            ITeam homeTeam = new Team(100, defaultFormation, positions.length, homeClub, homePlayers);
+            ITeam awayTeam = new Team(100, defaultFormation, positions.length, awayClub, awayPlayers);
+
+            IMatch game = new Match(homeClub, awayClub, false, homeTeam, awayTeam, 0, 0, defaultFormation, defaultFormation, round, new IEvent[90], 0);
 
             matches[round][match] = game;
         }
     }
 
     schedule = new Schedule(matches);
+}
   
-     }
      
      @Override
      public IMatch[] getMatches(){
@@ -258,3 +273,4 @@ public class Season implements ISeason{
     }
     
 }
+

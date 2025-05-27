@@ -4,15 +4,18 @@
  */
 package Enums;
 
+import com.ppstudios.footballmanager.api.contracts.player.IPlayerPosition;
+
 /**
  *
  * @author joaom
  */
-public enum Position {
+public enum Position implements IPlayerPosition{
     GK, LB, CB, RB, CDM, CM, CAM, LW, ST, RW;
 
-    public String PositionToString(Position position) {
-        switch (position) {
+    @Override
+    public String getDescription() {
+        switch (this) {
             case GK:
                 return "Goalkeeper";
             case LB:
