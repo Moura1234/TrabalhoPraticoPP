@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package League;
-import Enums.PlayerPosition;
 import Enums.Position;
 import com.ppstudios.footballmanager.api.contracts.league.*;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
@@ -102,15 +101,9 @@ public class Season implements ISeason{
      
      @Override
      public void generateSchedule(){
-         
-    int totalRounds = clubCount - 1;
+        int totalRounds = clubCount - 1;
     int matchesPerRound = clubCount / 2;
     IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
-
-    // Exemplo de posições (podes ajustar conforme o teu enum Position)
-    
-
-    IFormation defaultFormation = new Formation("4-3-3", 5, positions);
 
     for (int round = 0; round < totalRounds; round++) {
         for (int match = 0; match < matchesPerRound; match++) {
@@ -118,20 +111,33 @@ public class Season implements ISeason{
             int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
 
             if (match == 0) {
-                awayIndex = clubCount - 1;
+                awayIndex = clubCount - 1; // último clube fixo
             }
 
             IClub homeClub = currentClubs[homeIndex];
             IClub awayClub = currentClubs[awayIndex];
 
-            // ⚠️ Podes ter de ajustar se o IClub não tiver getPlayers()
-            IPlayer[] homePlayers = homeClub.getPlayers();  
+            IPlayer[] homePlayers = homeClub.getPlayers(); // método getPlayers()
             IPlayer[] awayPlayers = awayClub.getPlayers();
 
-            ITeam homeTeam = new Team(100, defaultFormation, positions.length, homeClub, homePlayers);
-            ITeam awayTeam = new Team(100, defaultFormation, positions.length, awayClub, awayPlayers);
+            Formation teamFormation = Formation.create433(); // formação realista
 
-            IMatch game = new Match(homeClub, awayClub, false, homeTeam, awayTeam, 0, 0, defaultFormation, defaultFormation, round, new IEvent[90], 0);
+            ITeam homeTeam = new Team(100, teamFormation, teamFormation.getPositions().length, homeClub, homePlayers);
+            ITeam awayTeam = new Team(100, teamFormation, teamFormation.getPositions().length, awayClub, awayPlayers);
+
+            // Enum indica se é jogo em casa ou fora
+            Enums.Formation homeFormation = Enums.Formation.HomeFormation;
+            Enums.Formation awayFormation = Enums.Formation.AwayFormation;
+
+            IMatch game = new Match(
+                homeClub, awayClub,
+                false,
+                homeTeam, awayTeam,
+                0, 0,
+                homeFormation, awayFormation,
+                round,
+                new IEvent[90], 0
+            );
 
             matches[round][match] = game;
         }
@@ -139,6 +145,8 @@ public class Season implements ISeason{
 
     schedule = new Schedule(matches);
 }
+
+
   
      
      @Override

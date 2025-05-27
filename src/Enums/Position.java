@@ -34,8 +34,10 @@ public enum Position implements IPlayerPosition{
                 return "Left Winger";    
             case ST:
                 return "Striker";    
-            default:
-                return "Right Winger";    
+            case RW:
+                return "Right Winger";
+            default:   
+                return "No position was found";
         }
     }
 }
