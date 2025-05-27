@@ -30,7 +30,7 @@ public class MatchSimulator implements MatchSimulatorStrategy{
 
         if (match.isPlayed()) throw new IllegalStateException("Match already played.");
         if (match.getHomeTeam() == null || match.getAwayTeam() == null)
-            throw new IllegalStateException("Teams not initialized.");
+            throw new IllegalStateException("Match not initialized.");
 
         Team home = (Team) match.getHomeTeam();
         Team away = (Team) match.getAwayTeam();

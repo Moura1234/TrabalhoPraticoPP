@@ -23,23 +23,23 @@ public class PlayerSelector implements IPlayerSelector {
         int bestScore = -1;
 
         for (IPlayer p : iclub.getPlayers()) {
-            // Verifica nulidade e posição
+            // verifica se é nulo e a posição
             if (p == null || p.getPosition() == null || p.getPosition().getDescription() == null) continue;
 
-            // Confirma se a posição bate certo
+            // confirma se a posição bate certo
             if (!p.getPosition().getDescription().equalsIgnoreCase(ipp.getDescription())) continue;
 
-            // Calcula média dos atributos relevantes
+            // calcula a média dos atributos relevantes
             int score = (p.getShooting() + p.getPassing() + p.getStamina() + p.getSpeed()) / 4;
 
-            // Atualiza se for o melhor até agora
+            
             if (score > bestScore) {
                 best = p;
                 bestScore = score;
             }
         }
 
-        return best; // pode ser null se ninguém for elegível
+        return best; 
     }
     
     }
