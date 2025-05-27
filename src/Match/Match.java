@@ -3,12 +3,12 @@ package Match;
 import Enums.Club;
 import Enums.Formation;
 import Enums.Team;
-import com.ppstudios.footballmanager.api.contracts.event.*;
+import Event.EventManager;
+import com.ppstudios.footballmanager.api.contracts.event.IEvent;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
 import com.ppstudios.footballmanager.api.contracts.team.IClub;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.io.IOException;
-import Event.EventManager;
 
 /**
  *
@@ -27,8 +27,9 @@ public class Match implements IMatch {
     private Formation awayFormation;
     private int round;
     private IEvent [] event;
-    private int eventCount;
     private EventManager eventManager = new EventManager();
+    
+    private int eventCount;
 
 public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, Formation homeFormation, Formation awayFormation, int round,IEvent[] event, int eventCount) {
         this.homeClub = homeClub;
@@ -74,6 +75,14 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
 
     public int getHomeGoals() {
         return this.homeGoals;
+    }
+
+    public void setHomeGoals(int homeGoals) {
+        this.homeGoals = homeGoals;
+    }
+
+    public void setAwayGoals(int awayGoals) {
+        this.awayGoals = awayGoals;
     }
 
     public int getAwayGoals() {
@@ -145,19 +154,28 @@ if (iteam.getClub().equals(homeClub)) {
 }
     @Override
     public void addEvent (IEvent ievent){
-        eventManager.addEvent(ievent);
+       eventManager.addEvent(ievent); 
      }
     
     @Override
     public IEvent[] getEvents(){
-        return eventManager.getEvents();
+    return eventManager.getEvents();    
      }
+    
+    public void setEvents(IEvent[] events) {
+        this.event = events;
+    }
     
     @Override
      public int getEventCount(){
-         return eventManager.getEventCount();
+         return eventManager.getEventCount();  
      }
      
+     public void setEventCount(int eventCount) {
+    this.eventCount = eventCount;
+    }
+     
+    
      @Override
     public String toString() {
         return "Match between " + homeClub.getName() + " and " + awayClub.getName();
@@ -167,5 +185,6 @@ if (iteam.getClub().equals(homeClub)) {
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-}
+    }
+
 

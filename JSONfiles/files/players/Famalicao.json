@@ -6,7 +6,12 @@
             "nationality": "Russian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/ivan-zlobin/profil/spieler/3329",
-            "number": 1
+            "number": 1,
+            "shooting": 1,
+            "passing": 57,
+            "stamina": 41,
+            "defense": 59,
+            "speed": 23
         },
         {
             "name": "Lazar Carević",
@@ -14,7 +19,12 @@
             "nationality": "Montenegrin",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/lazar-carevic/profil/spieler/3329",
-            "number": 25
+            "number": 25,
+            "shooting": 6,
+            "passing": 48,
+            "stamina": 36,
+            "defense": 57,
+            "speed": 48
         },
         {
             "name": "Enea Mihaj",
@@ -22,7 +32,12 @@
             "nationality": "Albanian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/enea-mihaj/profil/spieler/3329",
-            "number": 4
+            "number": 4,
+            "shooting": 40,
+            "passing": 51,
+            "stamina": 68,
+            "defense": 73,
+            "speed": 69
         },
         {
             "name": "Justin de Haas",
@@ -30,7 +45,12 @@
             "nationality": "Dutch",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/justin-de-haas/profil/spieler/3329",
-            "number": 16
+            "number": 16,
+            "shooting": 22,
+            "passing": 42,
+            "stamina": 60,
+            "defense": 86,
+            "speed": 51
         },
         {
             "name": "Leo Realpe",
@@ -38,7 +58,12 @@
             "nationality": "Ecuadorian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/leo-realpe/profil/spieler/3329",
-            "number": 3
+            "number": 3,
+            "shooting": 37,
+            "passing": 52,
+            "stamina": 68,
+            "defense": 74,
+            "speed": 70
         },
         {
             "name": "Rafa Soares",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/rafa-soares/profil/spieler/3329",
-            "number": 5
+            "number": 5,
+            "shooting": 31,
+            "passing": 63,
+            "stamina": 60,
+            "defense": 73,
+            "speed": 68
         },
         {
             "name": "Calegari",
@@ -54,7 +84,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/calegari/profil/spieler/3329",
-            "number": 2
+            "number": 2,
+            "shooting": 27,
+            "passing": 42,
+            "stamina": 68,
+            "defense": 90,
+            "speed": 70
         },
         {
             "name": "Rodrigo Pinheiro",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/rodrigo-pinheiro/profil/spieler/3329",
-            "number": 17
+            "number": 17,
+            "shooting": 31,
+            "passing": 65,
+            "stamina": 66,
+            "defense": 80,
+            "speed": 51
         },
         {
             "name": "Mirko Topić",
@@ -70,7 +110,12 @@
             "nationality": "Serbian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/mirko-topic/profil/spieler/3329",
-            "number": 8
+            "number": 8,
+            "shooting": 57,
+            "passing": 82,
+            "stamina": 87,
+            "defense": 68,
+            "speed": 69
         },
         {
             "name": "Tom van de Looi",
@@ -78,7 +123,12 @@
             "nationality": "Dutch",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/tom-van-de-looi/profil/spieler/3329",
-            "number": 6
+            "number": 6,
+            "shooting": 69,
+            "passing": 83,
+            "stamina": 88,
+            "defense": 70,
+            "speed": 68
         },
         {
             "name": "Mathias de Amorim",
@@ -86,7 +136,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/mathias-de-amorim/profil/spieler/3329",
-            "number": 14
+            "number": 14,
+            "shooting": 65,
+            "passing": 89,
+            "stamina": 80,
+            "defense": 75,
+            "speed": 73
         },
         {
             "name": "Samuel Lobato",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/samuel-lobato/profil/spieler/3329",
-            "number": 88
+            "number": 88,
+            "shooting": 58,
+            "passing": 72,
+            "stamina": 87,
+            "defense": 72,
+            "speed": 64
         },
         {
             "name": "Gustavo Sá",
@@ -102,7 +162,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/gustavo-sa/profil/spieler/3329",
-            "number": 20
+            "number": 20,
+            "shooting": 50,
+            "passing": 70,
+            "stamina": 83,
+            "defense": 61,
+            "speed": 76
         },
         {
             "name": "Otso Liimatta",
@@ -110,7 +175,12 @@
             "nationality": "Finnish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/otso-liimatta/profil/spieler/3329",
-            "number": 18
+            "number": 18,
+            "shooting": 58,
+            "passing": 74,
+            "stamina": 87,
+            "defense": 76,
+            "speed": 61
         },
         {
             "name": "Óscar Aranda",
@@ -118,7 +188,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/oscar-aranda/profil/spieler/3329",
-            "number": 11
+            "number": 11,
+            "shooting": 80,
+            "passing": 67,
+            "stamina": 69,
+            "defense": 32,
+            "speed": 78
         },
         {
             "name": "Yassir Zabiri",
@@ -126,7 +201,12 @@
             "nationality": "Moroccan",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/yassir-zabiri/profil/spieler/3329",
-            "number": 21
+            "number": 21,
+            "shooting": 92,
+            "passing": 63,
+            "stamina": 78,
+            "defense": 31,
+            "speed": 81
         },
         {
             "name": "Simon Elisor",
@@ -134,7 +214,12 @@
             "nationality": "French",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/simon-elisor/profil/spieler/3329",
-            "number": 12
+            "number": 12,
+            "shooting": 88,
+            "passing": 65,
+            "stamina": 70,
+            "defense": 29,
+            "speed": 78
         },
         {
             "name": "Vaclav Sejk",
@@ -142,7 +227,12 @@
             "nationality": "Czech",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/vaclav-sejk/profil/spieler/3329",
-            "number": 29
+            "number": 29,
+            "shooting": 83,
+            "passing": 66,
+            "stamina": 72,
+            "defense": 37,
+            "speed": 82
         }
     ]
 }

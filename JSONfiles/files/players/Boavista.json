@@ -6,7 +6,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/joao-goncalves/profil/spieler/618785",
-            "number": 99
+            "number": 99,
+            "shooting": 15,
+            "passing": 46,
+            "stamina": 44,
+            "defense": 40,
+            "speed": 28
         },
         {
             "name": "Tomáš Vaclík",
@@ -14,7 +19,12 @@
             "nationality": "Czech",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/tomas-vaclik/profil/spieler/618785",
-            "number": 31
+            "number": 31,
+            "shooting": 9,
+            "passing": 33,
+            "stamina": 36,
+            "defense": 44,
+            "speed": 44
         },
         {
             "name": "César",
@@ -22,7 +32,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/cesar/profil/spieler/618785",
-            "number": 1
+            "number": 1,
+            "shooting": 20,
+            "passing": 44,
+            "stamina": 54,
+            "defense": 64,
+            "speed": 37
         },
         {
             "name": "Rodrigo Abascal",
@@ -30,7 +45,12 @@
             "nationality": "Uruguayan",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/rodrigo-abascal/profil/spieler/618785",
-            "number": 26
+            "number": 26,
+            "shooting": 28,
+            "passing": 40,
+            "stamina": 70,
+            "defense": 86,
+            "speed": 58
         },
         {
             "name": "Sidoine Fogning",
@@ -38,7 +58,12 @@
             "nationality": "Cameroonian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/sidoine-fogning/profil/spieler/618785",
-            "number": 13
+            "number": 13,
+            "shooting": 21,
+            "passing": 63,
+            "stamina": 80,
+            "defense": 82,
+            "speed": 68
         },
         {
             "name": "Vitaliy Lystsov",
@@ -46,7 +71,12 @@
             "nationality": "Russian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/vitaliy-lystsov/profil/spieler/618785",
-            "number": 95
+            "number": 95,
+            "shooting": 28,
+            "passing": 43,
+            "stamina": 61,
+            "defense": 83,
+            "speed": 60
         },
         {
             "name": "Steven Vitória",
@@ -54,7 +84,12 @@
             "nationality": "Canadian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/steven-vitoria/profil/spieler/618785",
-            "number": 19
+            "number": 19,
+            "shooting": 27,
+            "passing": 60,
+            "stamina": 70,
+            "defense": 84,
+            "speed": 64
         },
         {
             "name": "Pedro Gomes",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/pedro-gomes/profil/spieler/618785",
-            "number": 15
+            "number": 15,
+            "shooting": 25,
+            "passing": 49,
+            "stamina": 77,
+            "defense": 81,
+            "speed": 56
         },
         {
             "name": "Miguel Reisinho",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/miguel-reisinho/profil/spieler/618785",
-            "number": 10
+            "number": 10,
+            "shooting": 57,
+            "passing": 70,
+            "stamina": 87,
+            "defense": 69,
+            "speed": 63
         },
         {
             "name": "Marco van Ginkel",
@@ -78,7 +123,12 @@
             "nationality": "Dutch",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/marco-van-ginkel/profil/spieler/618785",
-            "number": 8
+            "number": 8,
+            "shooting": 60,
+            "passing": 70,
+            "stamina": 88,
+            "defense": 67,
+            "speed": 69
         },
         {
             "name": "Joel Silva",
@@ -86,7 +136,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/joel-silva/profil/spieler/618785",
-            "number": 16
+            "number": 16,
+            "shooting": 64,
+            "passing": 85,
+            "stamina": 87,
+            "defense": 75,
+            "speed": 63
         },
         {
             "name": "Salvador Agra",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/salvador-agra/profil/spieler/618785",
-            "number": 7
+            "number": 7,
+            "shooting": 95,
+            "passing": 60,
+            "stamina": 65,
+            "defense": 25,
+            "speed": 86
         },
         {
             "name": "Robert Bozenik",
@@ -102,7 +162,12 @@
             "nationality": "Slovakian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/robert-bozenik/profil/spieler/618785",
-            "number": 9
+            "number": 9,
+            "shooting": 89,
+            "passing": 75,
+            "stamina": 78,
+            "defense": 36,
+            "speed": 85
         },
         {
             "name": "Moussa Koné",
@@ -110,7 +175,12 @@
             "nationality": "Senegalese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/moussa-kone/profil/spieler/618785",
-            "number": 14
+            "number": 14,
+            "shooting": 83,
+            "passing": 67,
+            "stamina": 75,
+            "defense": 25,
+            "speed": 71
         },
         {
             "name": "Manuel Namora",
@@ -118,7 +188,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/manuel-namora/profil/spieler/618785",
-            "number": 17
+            "number": 17,
+            "shooting": 83,
+            "passing": 78,
+            "stamina": 77,
+            "defense": 29,
+            "speed": 73
         },
         {
             "name": "Tiago Machado",
@@ -126,25 +201,38 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/tiago-machado/profil/spieler/618785",
-            "number": 23
+            "number": 23,
+            "shooting": 87,
+            "passing": 65,
+            "stamina": 69,
+            "defense": 29,
+            "speed": 73
         },
-
         {
             "name": "Gonçalo Miguel",
             "birthDate": "2002-07-15",
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/goncalo-miguel/profil/spieler/618785",
-            "number": 35
+            "number": 35,
+            "shooting": 38,
+            "passing": 62,
+            "stamina": 73,
+            "defense": 74,
+            "speed": 68
         },
-        
         {
             "name": "Marco Ribeiro",
             "birthDate": "2005-08-15",
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/marco-ribeiro/profil/spieler/618785",
-            "number": 88
+            "number": 88,
+            "shooting": 68,
+            "passing": 90,
+            "stamina": 79,
+            "defense": 71,
+            "speed": 65
         }
     ]
 }

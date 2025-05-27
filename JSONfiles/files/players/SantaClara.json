@@ -6,7 +6,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/gabriel-batista/profil/spieler/618785",
-            "number": 1
+            "number": 1,
+            "shooting": 1,
+            "passing": 45,
+            "stamina": 31,
+            "defense": 40,
+            "speed": 40
         },
         {
             "name": "Neneca",
@@ -14,7 +19,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/neneca/profil/spieler/618785",
-            "number": 12
+            "number": 12,
+            "shooting": 2,
+            "passing": 40,
+            "stamina": 55,
+            "defense": 60,
+            "speed": 34
         },
         {
             "name": "Sidney Lima",
@@ -22,7 +32,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/sidney-lima/profil/spieler/618785",
-            "number": 23
+            "number": 23,
+            "shooting": 37,
+            "passing": 67,
+            "stamina": 60,
+            "defense": 70,
+            "speed": 56
         },
         {
             "name": "Frederico Venâncio",
@@ -30,7 +45,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/frederico-venancio/profil/spieler/618785",
-            "number": 21
+            "number": 21,
+            "shooting": 36,
+            "passing": 55,
+            "stamina": 67,
+            "defense": 73,
+            "speed": 65
         },
         {
             "name": "Luís Rocha",
@@ -38,7 +58,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/luis-rocha/profil/spieler/618785",
-            "number": 13
+            "number": 13,
+            "shooting": 23,
+            "passing": 60,
+            "stamina": 76,
+            "defense": 90,
+            "speed": 55
         },
         {
             "name": "Pedro Pacheco",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/pedro-pacheco/profil/spieler/618785",
-            "number": 4
+            "number": 4,
+            "shooting": 24,
+            "passing": 50,
+            "stamina": 61,
+            "defense": 84,
+            "speed": 68
         },
         {
             "name": "Matheus Pereira",
@@ -54,7 +84,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/matheus-pereira/profil/spieler/618785",
-            "number": 3
+            "number": 3,
+            "shooting": 25,
+            "passing": 65,
+            "stamina": 64,
+            "defense": 90,
+            "speed": 68
         },
         {
             "name": "Lucas Soares",
@@ -62,7 +97,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/lucas-soares/profil/spieler/618785",
-            "number": 42
+            "number": 42,
+            "shooting": 31,
+            "passing": 41,
+            "stamina": 71,
+            "defense": 83,
+            "speed": 68
         },
         {
             "name": "Pedro Ferreira",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/pedro-ferreira/profil/spieler/618785",
-            "number": 8
+            "number": 8,
+            "shooting": 59,
+            "passing": 82,
+            "stamina": 89,
+            "defense": 62,
+            "speed": 75
         },
         {
             "name": "Adriano Firmino",
@@ -78,7 +123,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/adriano-firmino/profil/spieler/618785",
-            "number": 6
+            "number": 6,
+            "shooting": 66,
+            "passing": 79,
+            "stamina": 72,
+            "defense": 67,
+            "speed": 76
         },
         {
             "name": "Ricardinho",
@@ -86,7 +136,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/ricardinho/profil/spieler/618785",
-            "number": 10
+            "number": 10,
+            "shooting": 61,
+            "passing": 87,
+            "stamina": 82,
+            "defense": 68,
+            "speed": 64
         },
         {
             "name": "Gabriel Silva",
@@ -94,7 +149,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/gabriel-silva/profil/spieler/618785",
-            "number": 11
+            "number": 11,
+            "shooting": 95,
+            "passing": 64,
+            "stamina": 73,
+            "defense": 36,
+            "speed": 90
         },
         {
             "name": "Vinícius Lopes",
@@ -102,7 +162,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/vinicius-lopes/profil/spieler/618785",
-            "number": 70
+            "number": 70,
+            "shooting": 92,
+            "passing": 79,
+            "stamina": 64,
+            "defense": 21,
+            "speed": 78
         },
         {
             "name": "João Costa",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/joao-costa/profil/spieler/618785",
-            "number": 17
+            "number": 17,
+            "shooting": 84,
+            "passing": 77,
+            "stamina": 79,
+            "defense": 23,
+            "speed": 71
         },
         {
             "name": "Alisson Safira",
@@ -118,7 +188,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/alisson-safira/profil/spieler/618785",
-            "number": 9
+            "number": 9,
+            "shooting": 93,
+            "passing": 76,
+            "stamina": 76,
+            "defense": 33,
+            "speed": 72
         },
         {
             "name": "Wendel Silva",
@@ -126,7 +201,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/wendel-silva/profil/spieler/2423",
-            "number": 29
+            "number": 29,
+            "shooting": 86,
+            "passing": 73,
+            "stamina": 68,
+            "defense": 21,
+            "speed": 81
         },
         {
             "name": "Dani Borges",
@@ -134,7 +214,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/dani-borges/profil/spieler/618785",
-            "number": 41
+            "number": 41,
+            "shooting": 70,
+            "passing": 89,
+            "stamina": 85,
+            "defense": 64,
+            "speed": 77
         },
         {
             "name": "Serginho",
@@ -142,7 +227,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/serginho/profil/spieler/618785",
-            "number": 35
+            "number": 35,
+            "shooting": 54,
+            "passing": 71,
+            "stamina": 79,
+            "defense": 61,
+            "speed": 78
         }
     ]
 }

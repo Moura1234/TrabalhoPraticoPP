@@ -6,7 +6,12 @@
             "nationality": "Czech",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/lukas-hornicek/profil/spieler/618785",
-            "number": 91
+            "number": 91,
+            "shooting": 13,
+            "passing": 47,
+            "stamina": 47,
+            "defense": 69,
+            "speed": 44
         },
         {
             "name": "Tiago Sá",
@@ -14,7 +19,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/tiago-sa/profil/spieler/618785",
-            "number": 12
+            "number": 12,
+            "shooting": 7,
+            "passing": 41,
+            "stamina": 30,
+            "defense": 53,
+            "speed": 38
         },
         {
             "name": "Sikou Niakaté",
@@ -22,7 +32,12 @@
             "nationality": "Malian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/sikou-niakate/profil/spieler/618785",
-            "number": 4
+            "number": 4,
+            "shooting": 28,
+            "passing": 59,
+            "stamina": 66,
+            "defense": 70,
+            "speed": 60
         },
         {
             "name": "Bright Arrey-Mbi",
@@ -30,7 +45,12 @@
             "nationality": "German",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/bright-arrey-mbi/profil/spieler/618785",
-            "number": 26
+            "number": 26,
+            "shooting": 29,
+            "passing": 55,
+            "stamina": 78,
+            "defense": 90,
+            "speed": 69
         },
         {
             "name": "João Ferreira",
@@ -38,7 +58,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/joao-ferreira/profil/spieler/1075",
-            "number": 13
+            "number": 13,
+            "shooting": 24,
+            "passing": 57,
+            "stamina": 74,
+            "defense": 84,
+            "speed": 58
         },
         {
             "name": "Robson Bambu",
@@ -46,7 +71,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/robson-bambu/profil/spieler/618785",
-            "number": 3
+            "number": 3,
+            "shooting": 31,
+            "passing": 59,
+            "stamina": 73,
+            "defense": 88,
+            "speed": 50
         },
         {
             "name": "Paulo Oliveira",
@@ -54,7 +84,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/paulo-oliveira/profil/spieler/618785",
-            "number": 15
+            "number": 15,
+            "shooting": 24,
+            "passing": 66,
+            "stamina": 69,
+            "defense": 82,
+            "speed": 63
         },
         {
             "name": "Rodrigo Zalazar",
@@ -62,7 +97,12 @@
             "nationality": "Uruguayan",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/rodrigo-zalazar/profil/spieler/618785",
-            "number": 16
+            "number": 16,
+            "shooting": 66,
+            "passing": 85,
+            "stamina": 76,
+            "defense": 79,
+            "speed": 61
         },
         {
             "name": "João Moutinho",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/joao-moutinho/profil/spieler/618785",
-            "number": 8
+            "number": 8,
+            "shooting": 63,
+            "passing": 83,
+            "stamina": 88,
+            "defense": 67,
+            "speed": 78
         },
         {
             "name": "Ricardo Horta",
@@ -78,7 +123,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/ricardo-horta/profil/spieler/618785",
-            "number": 21
+            "number": 21,
+            "shooting": 94,
+            "passing": 62,
+            "stamina": 73,
+            "defense": 38,
+            "speed": 73
         },
         {
             "name": "Fran Navarro",
@@ -86,7 +136,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/fran-navarro/profil/spieler/618785",
-            "number": 39
+            "number": 39,
+            "shooting": 84,
+            "passing": 72,
+            "stamina": 70,
+            "defense": 26,
+            "speed": 72
         },
         {
             "name": "Amine El Ouazzani",
@@ -94,7 +149,12 @@
             "nationality": "Moroccan",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/amine-el-ouazzani/profil/spieler/618785",
-            "number": 9
+            "number": 9,
+            "shooting": 82,
+            "passing": 65,
+            "stamina": 68,
+            "defense": 26,
+            "speed": 87
         },
         {
             "name": "Ismaël Gharbi",
@@ -102,7 +162,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/ismael-gharbi/profil/spieler/618785",
-            "number": 20
+            "number": 20,
+            "shooting": 89,
+            "passing": 69,
+            "stamina": 65,
+            "defense": 20,
+            "speed": 83
         },
         {
             "name": "Gabri Martínez",
@@ -110,7 +175,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/gabri-martinez/profil/spieler/618785",
-            "number": 77
+            "number": 77,
+            "shooting": 87,
+            "passing": 60,
+            "stamina": 71,
+            "defense": 38,
+            "speed": 82
         },
         {
             "name": "Roger Fernandes",
@@ -118,7 +188,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/roger-fernandes/profil/spieler/618785",
-            "number": 11
+            "number": 11,
+            "shooting": 86,
+            "passing": 77,
+            "stamina": 69,
+            "defense": 29,
+            "speed": 75
         },
         {
             "name": "Jean-Baptiste Gorby",
@@ -126,7 +201,12 @@
             "nationality": "French",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/jean-baptiste-gorby/profil/spieler/618785",
-            "number": 29
+            "number": 29,
+            "shooting": 66,
+            "passing": 75,
+            "stamina": 80,
+            "defense": 80,
+            "speed": 63
         },
         {
             "name": "Thiago Helguera",
@@ -134,7 +214,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/thiago-helguera/profil/spieler/618785",
-            "number": 22
+            "number": 22,
+            "shooting": 55,
+            "passing": 79,
+            "stamina": 85,
+            "defense": 77,
+            "speed": 74
         },
         {
             "name": "Uroš Račić",
@@ -142,7 +227,12 @@
             "nationality": "Serbian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/uros-racic/profil/spieler/618785",
-            "number": 10
+            "number": 10,
+            "shooting": 58,
+            "passing": 77,
+            "stamina": 74,
+            "defense": 68,
+            "speed": 73
         }
     ]
 }

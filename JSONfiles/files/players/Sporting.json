@@ -6,7 +6,12 @@
             "nationality": "Uruguayan",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/franco-israel/profil/spieler/618785",
-            "number": 1
+            "number": 1,
+            "shooting": 2,
+            "passing": 42,
+            "stamina": 36,
+            "defense": 62,
+            "speed": 25
         },
         {
             "name": "Rui Silva",
@@ -14,7 +19,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/rui-silva/profil/spieler/257462",
-            "number": 24
+            "number": 24,
+            "shooting": 2,
+            "passing": 49,
+            "stamina": 46,
+            "defense": 40,
+            "speed": 35
         },
         {
             "name": "Diogo Pinto",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/diogo-pinto/profil/spieler/618785",
-            "number": 51
+            "number": 51,
+            "shooting": 4,
+            "passing": 49,
+            "stamina": 31,
+            "defense": 42,
+            "speed": 25
         },
         {
             "name": "Gonçalo Inácio",
@@ -30,7 +45,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/goncalo-inacio/profil/spieler/618785",
-            "number": 25
+            "number": 25,
+            "shooting": 24,
+            "passing": 65,
+            "stamina": 61,
+            "defense": 80,
+            "speed": 69
         },
         {
             "name": "Ousmane Diomande",
@@ -38,7 +58,12 @@
             "nationality": "Ivorian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/ousmane-diomande/profil/spieler/618785",
-            "number": 26
+            "number": 26,
+            "shooting": 23,
+            "passing": 51,
+            "stamina": 78,
+            "defense": 79,
+            "speed": 67
         },
         {
             "name": "Zeno Debast",
@@ -46,7 +71,12 @@
             "nationality": "Belgian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/zeno-debast/profil/spieler/618785",
-            "number": 6
+            "number": 6,
+            "shooting": 31,
+            "passing": 58,
+            "stamina": 80,
+            "defense": 76,
+            "speed": 68
         },
         {
             "name": "Eduardo Quaresma",
@@ -54,7 +84,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/eduardo-quaresma/profil/spieler/618785",
-            "number": 72
+            "number": 72,
+            "shooting": 26,
+            "passing": 45,
+            "stamina": 76,
+            "defense": 89,
+            "speed": 62
         },
         {
             "name": "Jeremiah St. Juste",
@@ -62,7 +97,12 @@
             "nationality": "Dutch",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/jeremiah-st-juste/profil/spieler/618785",
-            "number": 3
+            "number": 3,
+            "shooting": 29,
+            "passing": 57,
+            "stamina": 78,
+            "defense": 78,
+            "speed": 65
         },
         {
             "name": "Nuno Santos",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/nuno-santos/profil/spieler/618785",
-            "number": 11
+            "number": 11,
+            "shooting": 33,
+            "passing": 58,
+            "stamina": 70,
+            "defense": 75,
+            "speed": 53
         },
         {
             "name": "Matheus Reis",
@@ -78,7 +123,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/matheus-reis/profil/spieler/618785",
-            "number": 2
+            "number": 2,
+            "shooting": 25,
+            "passing": 53,
+            "stamina": 80,
+            "defense": 90,
+            "speed": 63
         },
         {
             "name": "Iván Fresneda",
@@ -86,7 +136,12 @@
             "nationality": "Spanish",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/ivan-fresneda/profil/spieler/618785",
-            "number": 22
+            "number": 22,
+            "shooting": 30,
+            "passing": 54,
+            "stamina": 61,
+            "defense": 84,
+            "speed": 50
         },
         {
             "name": "Ricardo Esgaio",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/ricardo-esgaio/profil/spieler/618785",
-            "number": 47
+            "number": 47,
+            "shooting": 39,
+            "passing": 70,
+            "stamina": 67,
+            "defense": 83,
+            "speed": 66
         },
         {
             "name": "Morten Hjulmand",
@@ -102,7 +162,12 @@
             "nationality": "Danish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/morten-hjulmand/profil/spieler/618785",
-            "number": 42
+            "number": 42,
+            "shooting": 54,
+            "passing": 89,
+            "stamina": 72,
+            "defense": 75,
+            "speed": 72
         },
         {
             "name": "Pedro Gonçalves",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/pedro-goncalves/profil/spieler/618785",
-            "number": 8
+            "number": 8,
+            "shooting": 56,
+            "passing": 77,
+            "stamina": 80,
+            "defense": 63,
+            "speed": 68
         },
         {
             "name": "Hidemasa Morita",
@@ -118,7 +188,12 @@
             "nationality": "Japanese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/hidemasa-morita/profil/spieler/618785",
-            "number": 5
+            "number": 5,
+            "shooting": 50,
+            "passing": 79,
+            "stamina": 72,
+            "defense": 73,
+            "speed": 76
         },
         {
             "name": "Daniel Bragança",
@@ -126,7 +201,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/daniel-braganca/profil/spieler/618785",
-            "number": 23
+            "number": 23,
+            "shooting": 55,
+            "passing": 85,
+            "stamina": 88,
+            "defense": 60,
+            "speed": 65
         },
         {
             "name": "Francisco Trincão",
@@ -134,7 +214,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/francisco-trincao/profil/spieler/618785",
-            "number": 17
+            "number": 17,
+            "shooting": 81,
+            "passing": 67,
+            "stamina": 80,
+            "defense": 39,
+            "speed": 82
         },
         {
             "name": "Viktor Gyökeres",
@@ -142,7 +227,12 @@
             "nationality": "Swedish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/viktor-gyokeres/profil/spieler/618785",
-            "number": 9
+            "number": 9,
+            "shooting": 80,
+            "passing": 65,
+            "stamina": 68,
+            "defense": 33,
+            "speed": 82
         }
     ]
 }

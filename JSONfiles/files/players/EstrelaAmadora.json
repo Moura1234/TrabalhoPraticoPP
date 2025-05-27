@@ -6,7 +6,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/francisco-meixedo/profil/spieler/2431",
-            "number": 1
+            "number": 1,
+            "shooting": 15,
+            "passing": 48,
+            "stamina": 59,
+            "defense": 52,
+            "speed": 48
         },
         {
             "name": "Marko Gudžulić",
@@ -14,7 +19,12 @@
             "nationality": "Serbian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/marko-gudzulic/profil/spieler/2431",
-            "number": 93
+            "number": 93,
+            "shooting": 6,
+            "passing": 43,
+            "stamina": 60,
+            "defense": 67,
+            "speed": 42
         },
         {
             "name": "Ferro",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/ferro/profil/spieler/2431",
-            "number": 4
+            "number": 4,
+            "shooting": 36,
+            "passing": 58,
+            "stamina": 72,
+            "defense": 78,
+            "speed": 58
         },
         {
             "name": "Issiar Dramé",
@@ -30,7 +45,12 @@
             "nationality": "French",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/issiar-drame/profil/spieler/2431",
-            "number": 5
+            "number": 5,
+            "shooting": 29,
+            "passing": 57,
+            "stamina": 66,
+            "defense": 71,
+            "speed": 52
         },
         {
             "name": "Nilton",
@@ -38,7 +58,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/nilton/profil/spieler/2431",
-            "number": 25
+            "number": 25,
+            "shooting": 22,
+            "passing": 65,
+            "stamina": 65,
+            "defense": 78,
+            "speed": 67
         },
         {
             "name": "Rúben Lima",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/ruben-lima/profil/spieler/2431",
-            "number": 28
+            "number": 28,
+            "shooting": 33,
+            "passing": 45,
+            "stamina": 75,
+            "defense": 77,
+            "speed": 66
         },
         {
             "name": "Diogo Travassos",
@@ -54,7 +84,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/diogo-travassos/profil/spieler/2431",
-            "number": 2
+            "number": 2,
+            "shooting": 33,
+            "passing": 60,
+            "stamina": 77,
+            "defense": 77,
+            "speed": 57
         },
         {
             "name": "Leonel Bucca",
@@ -62,7 +97,12 @@
             "nationality": "Argentinian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/leonel-bucca/profil/spieler/2431",
-            "number": 26
+            "number": 26,
+            "shooting": 54,
+            "passing": 74,
+            "stamina": 83,
+            "defense": 68,
+            "speed": 72
         },
         {
             "name": "Daniel Cabral",
@@ -70,7 +110,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/daniel-cabral/profil/spieler/2431",
-            "number": 8
+            "number": 8,
+            "shooting": 62,
+            "passing": 75,
+            "stamina": 73,
+            "defense": 73,
+            "speed": 60
         },
         {
             "name": "Igor Jesus",
@@ -78,7 +123,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/igor-jesus/profil/spieler/2431",
-            "number": 6
+            "number": 6,
+            "shooting": 59,
+            "passing": 77,
+            "stamina": 72,
+            "defense": 72,
+            "speed": 80
         },
         {
             "name": "Léo Cordeiro",
@@ -86,7 +136,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/leo-cordeiro/profil/spieler/2431",
-            "number": 22
+            "number": 22,
+            "shooting": 62,
+            "passing": 89,
+            "stamina": 77,
+            "defense": 80,
+            "speed": 66
         },
         {
             "name": "Paulo Moreira",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/paulo-moreira/profil/spieler/2431",
-            "number": 19
+            "number": 19,
+            "shooting": 61,
+            "passing": 78,
+            "stamina": 81,
+            "defense": 78,
+            "speed": 60
         },
         {
             "name": "Alan Ruiz",
@@ -102,7 +162,12 @@
             "nationality": "Argentinian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/alan-ruiz/profil/spieler/2431",
-            "number": 10
+            "number": 10,
+            "shooting": 51,
+            "passing": 80,
+            "stamina": 72,
+            "defense": 79,
+            "speed": 80
         },
         {
             "name": "André Luiz",
@@ -110,7 +175,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/andre-luiz/profil/spieler/2431",
-            "number": 7
+            "number": 7,
+            "shooting": 89,
+            "passing": 65,
+            "stamina": 64,
+            "defense": 22,
+            "speed": 88
         },
         {
             "name": "Caio Santana",
@@ -118,7 +188,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/caio-santana/profil/spieler/2431",
-            "number": 38
+            "number": 38,
+            "shooting": 84,
+            "passing": 61,
+            "stamina": 80,
+            "defense": 37,
+            "speed": 71
         },
         {
             "name": "Jovane Cabral",
@@ -126,7 +201,12 @@
             "nationality": "Cape Verdean",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/jovane-cabral/profil/spieler/2431",
-            "number": 97
+            "number": 97,
+            "shooting": 83,
+            "passing": 68,
+            "stamina": 63,
+            "defense": 36,
+            "speed": 86
         },
         {
             "name": "Kikas",
@@ -134,7 +214,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/kikas/profil/spieler/2431",
-            "number": 29
+            "number": 29,
+            "shooting": 83,
+            "passing": 77,
+            "stamina": 71,
+            "defense": 23,
+            "speed": 84
         },
         {
             "name": "Bilal Mazhar",
@@ -142,7 +227,12 @@
             "nationality": "Egyptian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/bilal-mazhar/profil/spieler/2431",
-            "number": 99
+            "number": 99,
+            "shooting": 85,
+            "passing": 68,
+            "stamina": 70,
+            "defense": 31,
+            "speed": 71
         }
     ]
 }

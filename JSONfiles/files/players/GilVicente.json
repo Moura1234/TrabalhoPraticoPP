@@ -6,7 +6,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/andrew/profil/spieler/2424",
-            "number": 42
+            "number": 42,
+            "shooting": 19,
+            "passing": 52,
+            "stamina": 41,
+            "defense": 45,
+            "speed": 27
         },
         {
             "name": "Miloš Gordić",
@@ -14,7 +19,12 @@
             "nationality": "Serbian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/milos-gordic/profil/spieler/2424",
-            "number": 51
+            "number": 51,
+            "shooting": 20,
+            "passing": 39,
+            "stamina": 40,
+            "defense": 64,
+            "speed": 27
         },
         {
             "name": "Brian Araújo",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/brian-araujo/profil/spieler/2424",
-            "number": 99
+            "number": 99,
+            "shooting": 11,
+            "passing": 41,
+            "stamina": 47,
+            "defense": 70,
+            "speed": 49
         },
         {
             "name": "Marvin Elimbi",
@@ -30,7 +45,12 @@
             "nationality": "French",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/marvin-elimbi/profil/spieler/2424",
-            "number": 4
+            "number": 4,
+            "shooting": 28,
+            "passing": 67,
+            "stamina": 60,
+            "defense": 86,
+            "speed": 62
         },
         {
             "name": "Jonathan Buatu",
@@ -38,7 +58,12 @@
             "nationality": "Angolan",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/jonathan-buatu/profil/spieler/2424",
-            "number": 39
+            "number": 39,
+            "shooting": 23,
+            "passing": 59,
+            "stamina": 64,
+            "defense": 77,
+            "speed": 58
         },
         {
             "name": "Josué Sá",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/josue-sa/profil/spieler/2424",
-            "number": 23
+            "number": 23,
+            "shooting": 23,
+            "passing": 51,
+            "stamina": 73,
+            "defense": 76,
+            "speed": 56
         },
         {
             "name": "Rúben Fernandes",
@@ -54,7 +84,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/ruben-fernandes/profil/spieler/2424",
-            "number": 26
+            "number": 26,
+            "shooting": 32,
+            "passing": 57,
+            "stamina": 66,
+            "defense": 79,
+            "speed": 54
         },
         {
             "name": "Sandro Cruz",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/sandro-cruz/profil/spieler/2424",
-            "number": 57
+            "number": 57,
+            "shooting": 38,
+            "passing": 48,
+            "stamina": 64,
+            "defense": 70,
+            "speed": 66
         },
         {
             "name": "Zé Carlos",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/ze-carlos/profil/spieler/2424",
-            "number": 2
+            "number": 2,
+            "shooting": 33,
+            "passing": 70,
+            "stamina": 66,
+            "defense": 81,
+            "speed": 51
         },
         {
             "name": "Jesús Castillo",
@@ -78,7 +123,12 @@
             "nationality": "Peruvian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/jesus-castillo/profil/spieler/2424",
-            "number": 6
+            "number": 6,
+            "shooting": 53,
+            "passing": 86,
+            "stamina": 70,
+            "defense": 61,
+            "speed": 60
         },
         {
             "name": "Facundo Cáseres",
@@ -86,7 +136,12 @@
             "nationality": "Argentinian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/facundo-caseres/profil/spieler/2424",
-            "number": 5
+            "number": 5,
+            "shooting": 62,
+            "passing": 89,
+            "stamina": 82,
+            "defense": 78,
+            "speed": 79
         },
         {
             "name": "João Teixeira",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/joao-teixeira/profil/spieler/2424",
-            "number": 18
+            "number": 18,
+            "shooting": 64,
+            "passing": 70,
+            "stamina": 80,
+            "defense": 77,
+            "speed": 78
         },
         {
             "name": "Kanya Fujimoto",
@@ -102,7 +162,12 @@
             "nationality": "Japanese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/kanya-fujimoto/profil/spieler/2424",
-            "number": 10
+            "number": 10,
+            "shooting": 68,
+            "passing": 87,
+            "stamina": 70,
+            "defense": 70,
+            "speed": 71
         },
         {
             "name": "Santi García",
@@ -110,7 +175,12 @@
             "nationality": "Spanish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/santi-garcia/profil/spieler/2424",
-            "number": 19
+            "number": 19,
+            "shooting": 53,
+            "passing": 73,
+            "stamina": 90,
+            "defense": 60,
+            "speed": 60
         },
         {
             "name": "Félix Correia",
@@ -118,7 +188,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/felix-correia/profil/spieler/2424",
-            "number": 71
+            "number": 71,
+            "shooting": 88,
+            "passing": 60,
+            "stamina": 72,
+            "defense": 28,
+            "speed": 72
         },
         {
             "name": "Jordi Mboula",
@@ -126,7 +201,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/jordi-mboula/profil/spieler/2424",
-            "number": 77
+            "number": 77,
+            "shooting": 92,
+            "passing": 63,
+            "stamina": 74,
+            "defense": 30,
+            "speed": 87
         },
         {
             "name": "Jorge Aguirre",
@@ -134,7 +214,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/jorge-aguirre/profil/spieler/2424",
-            "number": 9
+            "number": 9,
+            "shooting": 86,
+            "passing": 64,
+            "stamina": 67,
+            "defense": 36,
+            "speed": 72
         },
         {
             "name": "Pablo",
@@ -142,7 +227,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/pablo/profil/spieler/2424",
-            "number": 90
+            "number": 90,
+            "shooting": 83,
+            "passing": 77,
+            "stamina": 64,
+            "defense": 36,
+            "speed": 87
         }
     ]
 }

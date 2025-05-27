@@ -6,7 +6,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/ricardo-velho/profil/spieler/4294",
-            "number": 33
+            "number": 33,
+            "shooting": 7,
+            "passing": 37,
+            "stamina": 59,
+            "defense": 63,
+            "speed": 26
         },
         {
             "name": "Kaique Pereira",
@@ -14,7 +19,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/kaique-pereira/profil/spieler/4294",
-            "number": 1
+            "number": 1,
+            "shooting": 14,
+            "passing": 42,
+            "stamina": 31,
+            "defense": 67,
+            "speed": 27
         },
         {
             "name": "Tomás Ribeiro",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/tomas-ribeiro/profil/spieler/4294",
-            "number": 5
+            "number": 5,
+            "shooting": 40,
+            "passing": 56,
+            "stamina": 63,
+            "defense": 87,
+            "speed": 51
         },
         {
             "name": "Marco Moreno",
@@ -30,7 +45,12 @@
             "nationality": "Spanish",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/marco-moreno/profil/spieler/4294",
-            "number": 3
+            "number": 3,
+            "shooting": 36,
+            "passing": 65,
+            "stamina": 71,
+            "defense": 75,
+            "speed": 58
         },
         {
             "name": "Lucas Áfrico",
@@ -38,7 +58,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/lucas-africo/profil/spieler/4294",
-            "number": 44
+            "number": 44,
+            "shooting": 30,
+            "passing": 47,
+            "stamina": 73,
+            "defense": 72,
+            "speed": 70
         },
         {
             "name": "Artur Jorge",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/artur-jorge/profil/spieler/4294",
-            "number": 4
+            "number": 4,
+            "shooting": 29,
+            "passing": 61,
+            "stamina": 79,
+            "defense": 79,
+            "speed": 52
         },
         {
             "name": "Raúl Silva",
@@ -54,7 +84,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/raul-silva/profil/spieler/4294",
-            "number": 34
+            "number": 34,
+            "shooting": 34,
+            "passing": 53,
+            "stamina": 69,
+            "defense": 90,
+            "speed": 56
         },
         {
             "name": "Paulo Victor",
@@ -62,7 +97,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/paulo-victor/profil/spieler/4294",
-            "number": 2
+            "number": 2,
+            "shooting": 20,
+            "passing": 66,
+            "stamina": 66,
+            "defense": 79,
+            "speed": 59
         },
         {
             "name": "Pastor",
@@ -70,7 +110,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/pastor/profil/spieler/4294",
-            "number": 28
+            "number": 28,
+            "shooting": 26,
+            "passing": 62,
+            "stamina": 63,
+            "defense": 84,
+            "speed": 55
         },
         {
             "name": "Rivaldo",
@@ -78,7 +123,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/rivaldo/profil/spieler/4294",
-            "number": 70
+            "number": 70,
+            "shooting": 24,
+            "passing": 41,
+            "stamina": 70,
+            "defense": 85,
+            "speed": 67
         },
         {
             "name": "Cláudio Falcão",
@@ -86,7 +136,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/claudio-falcao/profil/spieler/4294",
-            "number": 29
+            "number": 29,
+            "shooting": 61,
+            "passing": 80,
+            "stamina": 71,
+            "defense": 65,
+            "speed": 77
         },
         {
             "name": "Miguel Menino",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/miguel-menino/profil/spieler/4294",
-            "number": 93
+            "number": 93,
+            "shooting": 68,
+            "passing": 84,
+            "stamina": 79,
+            "defense": 77,
+            "speed": 63
         },
         {
             "name": "Neto",
@@ -102,7 +162,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/neto/profil/spieler/4294",
-            "number": 6
+            "number": 6,
+            "shooting": 62,
+            "passing": 76,
+            "stamina": 82,
+            "defense": 61,
+            "speed": 60
         },
         {
             "name": "Filipe Soares",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/filipe-soares/profil/spieler/4294",
-            "number": 21
+            "number": 21,
+            "shooting": 51,
+            "passing": 86,
+            "stamina": 72,
+            "defense": 68,
+            "speed": 63
         },
         {
             "name": "Marco Matias",
@@ -118,7 +188,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/marco-matias/profil/spieler/4294",
-            "number": 77
+            "number": 77,
+            "shooting": 85,
+            "passing": 64,
+            "stamina": 62,
+            "defense": 21,
+            "speed": 76
         },
         {
             "name": "Darío Poveda",
@@ -126,7 +201,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/dario-poveda/profil/spieler/4294",
-            "number": 14
+            "number": 14,
+            "shooting": 91,
+            "passing": 66,
+            "stamina": 69,
+            "defense": 28,
+            "speed": 75
         },
         {
             "name": "Elves Baldé",
@@ -134,7 +214,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/elves-balde/profil/spieler/4294",
-            "number": 7
+            "number": 7,
+            "shooting": 94,
+            "passing": 62,
+            "stamina": 68,
+            "defense": 23,
+            "speed": 81
         },
         {
             "name": "Tomané",
@@ -142,7 +227,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/tomane/profil/spieler/4294",
-            "number": 9
+            "number": 9,
+            "shooting": 95,
+            "passing": 62,
+            "stamina": 77,
+            "defense": 23,
+            "speed": 76
         }
     ]
 }

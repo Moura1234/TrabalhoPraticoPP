@@ -114,7 +114,7 @@ public class Season implements ISeason{
             IClub awayClub = currentClubs[awayIndex];
 
             ITeam homeTeam = new Team(); // cria a equipa com jogadores do clube
-            ITeam awayTeam = new Team();
+            ITeam awayTeam = new Team(); 
 
             IMatch game = new Match(homeClub, awayClub, false, homeTeam, awayTeam, 0, 0, null, null, round);
 

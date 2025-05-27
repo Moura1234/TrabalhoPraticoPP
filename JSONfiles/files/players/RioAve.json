@@ -6,7 +6,12 @@
             "nationality": "Polish",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/cezary-miszta/profil/spieler/2425",
-            "number": 1
+            "number": 1,
+            "shooting": 4,
+            "passing": 51,
+            "stamina": 31,
+            "defense": 63,
+            "speed": 20
         },
         {
             "name": "Matheus Teixeira",
@@ -14,7 +19,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/matheus-teixeira/profil/spieler/2425",
-            "number": 95
+            "number": 95,
+            "shooting": 17,
+            "passing": 46,
+            "stamina": 46,
+            "defense": 47,
+            "speed": 27
         },
         {
             "name": "Jonathan Panzo",
@@ -22,7 +32,12 @@
             "nationality": "English",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/jonathan-panzo/profil/spieler/2425",
-            "number": 2
+            "number": 2,
+            "shooting": 39,
+            "passing": 70,
+            "stamina": 64,
+            "defense": 76,
+            "speed": 66
         },
         {
             "name": "Francisco Petrasso",
@@ -30,7 +45,12 @@
             "nationality": "Canadian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/francisco-petrasso/profil/spieler/2425",
-            "number": 23
+            "number": 23,
+            "shooting": 26,
+            "passing": 50,
+            "stamina": 67,
+            "defense": 84,
+            "speed": 66
         },
         {
             "name": "Nelson Abbey",
@@ -38,7 +58,12 @@
             "nationality": "English",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/nelson-abbey/profil/spieler/2425",
-            "number": 4
+            "number": 4,
+            "shooting": 32,
+            "passing": 52,
+            "stamina": 66,
+            "defense": 80,
+            "speed": 58
         },
         {
             "name": "João Pedro",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/joao-pedro/profil/spieler/2425",
-            "number": 22
+            "number": 22,
+            "shooting": 38,
+            "passing": 55,
+            "stamina": 80,
+            "defense": 84,
+            "speed": 53
         },
         {
             "name": "Omar Richards",
@@ -54,7 +84,12 @@
             "nationality": "English",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/omar-richards/profil/spieler/2425",
-            "number": 98
+            "number": 98,
+            "shooting": 40,
+            "passing": 42,
+            "stamina": 70,
+            "defense": 70,
+            "speed": 58
         },
         {
             "name": "Martim Neto",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/martim-neto/profil/spieler/2425",
-            "number": 76
+            "number": 76,
+            "shooting": 68,
+            "passing": 75,
+            "stamina": 79,
+            "defense": 69,
+            "speed": 77
         },
         {
             "name": "João Novais",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/joao-novais/profil/spieler/2425",
-            "number": 6
+            "number": 6,
+            "shooting": 57,
+            "passing": 83,
+            "stamina": 80,
+            "defense": 67,
+            "speed": 63
         },
         {
             "name": "João Graça",
@@ -78,7 +123,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/joao-graca/profil/spieler/2425",
-            "number": 21
+            "number": 21,
+            "shooting": 70,
+            "passing": 71,
+            "stamina": 77,
+            "defense": 76,
+            "speed": 70
         },
         {
             "name": "Brandon Aguilera",
@@ -86,7 +136,12 @@
             "nationality": "Costa Rican",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/brandon-aguilera/profil/spieler/2425",
-            "number": 16
+            "number": 16,
+            "shooting": 63,
+            "passing": 87,
+            "stamina": 80,
+            "defense": 61,
+            "speed": 73
         },
         {
             "name": "Tiago Morais",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/tiago-morais/profil/spieler/2425",
-            "number": 11
+            "number": 11,
+            "shooting": 83,
+            "passing": 70,
+            "stamina": 72,
+            "defense": 31,
+            "speed": 76
         },
         {
             "name": "Tobías Medina",
@@ -102,7 +162,12 @@
             "nationality": "Argentinian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/tobias-medina/profil/spieler/2425",
-            "number": 27
+            "number": 27,
+            "shooting": 82,
+            "passing": 67,
+            "stamina": 62,
+            "defense": 31,
+            "speed": 84
         },
         {
             "name": "Kiko Bondoso",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/kiko-bondoso/profil/spieler/2425",
-            "number": 19
+            "number": 19,
+            "shooting": 84,
+            "passing": 61,
+            "stamina": 76,
+            "defense": 24,
+            "speed": 77
         },
         {
             "name": "André Luiz",
@@ -118,7 +188,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/andre-luiz/profil/spieler/2425",
-            "number": 7
+            "number": 7,
+            "shooting": 87,
+            "passing": 73,
+            "stamina": 72,
+            "defense": 34,
+            "speed": 87
         },
         {
             "name": "Clayton",
@@ -126,7 +201,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/clayton/profil/spieler/2425",
-            "number": 9
+            "number": 9,
+            "shooting": 81,
+            "passing": 64,
+            "stamina": 76,
+            "defense": 28,
+            "speed": 88
         },
         {
             "name": "Karem Zoabi",
@@ -134,7 +214,12 @@
             "nationality": "Israeli",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/karem-zoabi/profil/spieler/2425",
-            "number": 14
+            "number": 14,
+            "shooting": 81,
+            "passing": 76,
+            "stamina": 77,
+            "defense": 34,
+            "speed": 78
         },
         {
             "name": "Tiago Fonseca Morais",
@@ -142,7 +227,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/tiago-fonseca-morais/profil/spieler/2425",
-            "number": 11
+            "number": 11,
+            "shooting": 82,
+            "passing": 78,
+            "stamina": 73,
+            "defense": 36,
+            "speed": 78
         }
     ]
 }

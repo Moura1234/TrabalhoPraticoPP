@@ -6,7 +6,12 @@
             "nationality": "Mexican",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/guillermo-ochoa/profil/spieler/296012",
-            "number": 13
+            "number": 13,
+            "shooting": 5,
+            "passing": 38,
+            "stamina": 50,
+            "defense": 49,
+            "speed": 35
         },
         {
             "name": "Pedro Trigueira",
@@ -14,7 +19,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/pedro-trigueira/profil/spieler/296012",
-            "number": 88
+            "number": 88,
+            "shooting": 8,
+            "passing": 48,
+            "stamina": 44,
+            "defense": 62,
+            "speed": 31
         },
         {
             "name": "Fernando Fonseca",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/fernando-fonseca/profil/spieler/296012",
-            "number": 2
+            "number": 2,
+            "shooting": 39,
+            "passing": 43,
+            "stamina": 75,
+            "defense": 79,
+            "speed": 59
         },
         {
             "name": "Cristian Devenish",
@@ -30,7 +45,12 @@
             "nationality": "Colombian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/cristian-devenish/profil/spieler/296012",
-            "number": 42
+            "number": 42,
+            "shooting": 21,
+            "passing": 49,
+            "stamina": 72,
+            "defense": 83,
+            "speed": 67
         },
         {
             "name": "Nacho Rodríguez",
@@ -38,7 +58,12 @@
             "nationality": "Spanish",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/nacho-rodriguez/profil/spieler/296012",
-            "number": 4
+            "number": 4,
+            "shooting": 23,
+            "passing": 56,
+            "stamina": 76,
+            "defense": 71,
+            "speed": 69
         },
         {
             "name": "Jorge Teixeira",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/jorge-teixeira/profil/spieler/296012",
-            "number": 5
+            "number": 5,
+            "shooting": 35,
+            "passing": 64,
+            "stamina": 70,
+            "defense": 72,
+            "speed": 52
         },
         {
             "name": "Baptiste Roux",
@@ -54,7 +84,12 @@
             "nationality": "French",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/baptiste-roux/profil/spieler/296012",
-            "number": 6
+            "number": 6,
+            "shooting": 40,
+            "passing": 44,
+            "stamina": 71,
+            "defense": 74,
+            "speed": 59
         },
         {
             "name": "Kiki Afonso",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/kiki-afonso/profil/spieler/296012",
-            "number": 24
+            "number": 24,
+            "shooting": 26,
+            "passing": 69,
+            "stamina": 76,
+            "defense": 83,
+            "speed": 67
         },
         {
             "name": "Gustavo Assunção",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/gustavo-assuncao/profil/spieler/296012",
-            "number": 12
+            "number": 12,
+            "shooting": 65,
+            "passing": 78,
+            "stamina": 77,
+            "defense": 69,
+            "speed": 77
         },
         {
             "name": "Jaume Grau",
@@ -78,7 +123,12 @@
             "nationality": "Spanish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/jaume-grau/profil/spieler/296012",
-            "number": 15
+            "number": 15,
+            "shooting": 52,
+            "passing": 70,
+            "stamina": 76,
+            "defense": 65,
+            "speed": 73
         },
         {
             "name": "Lucas Piazón",
@@ -86,7 +136,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/lucas-piazon/profil/spieler/296012",
-            "number": 14
+            "number": 14,
+            "shooting": 63,
+            "passing": 81,
+            "stamina": 71,
+            "defense": 76,
+            "speed": 76
         },
         {
             "name": "Giorgi Aburjania",
@@ -94,7 +149,12 @@
             "nationality": "Georgian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/giorgi-aburjania/profil/spieler/296012",
-            "number": 8
+            "number": 8,
+            "shooting": 69,
+            "passing": 75,
+            "stamina": 86,
+            "defense": 69,
+            "speed": 70
         },
         {
             "name": "Jonatan Lucca",
@@ -102,7 +162,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/jonatan-lucca/profil/spieler/296012",
-            "number": 47
+            "number": 47,
+            "shooting": 63,
+            "passing": 85,
+            "stamina": 78,
+            "defense": 74,
+            "speed": 77
         },
         {
             "name": "Vasco Lopes",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/vasco-lopes/profil/spieler/296012",
-            "number": 10
+            "number": 10,
+            "shooting": 83,
+            "passing": 62,
+            "stamina": 71,
+            "defense": 38,
+            "speed": 85
         },
         {
             "name": "Babatunde Akinsola",
@@ -118,7 +188,12 @@
             "nationality": "Nigerian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/babatunde-akinsola/profil/spieler/296012",
-            "number": 11
+            "number": 11,
+            "shooting": 89,
+            "passing": 63,
+            "stamina": 67,
+            "defense": 25,
+            "speed": 78
         },
         {
             "name": "Nenê",
@@ -126,7 +201,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/nene/profil/spieler/296012",
-            "number": 18
+            "number": 18,
+            "shooting": 85,
+            "passing": 65,
+            "stamina": 61,
+            "defense": 33,
+            "speed": 76
         },
         {
             "name": "Rodrigo Ribeiro",
@@ -134,7 +214,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/rodrigo-ribeiro/profil/spieler/296012",
-            "number": 20
+            "number": 20,
+            "shooting": 82,
+            "passing": 75,
+            "stamina": 78,
+            "defense": 36,
+            "speed": 75
         },
         {
             "name": "Zé Luís",
@@ -142,7 +227,12 @@
             "nationality": "Cape Verdean",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/ze-luis/profil/spieler/296012",
-            "number": 29
+            "number": 29,
+            "shooting": 89,
+            "passing": 71,
+            "stamina": 62,
+            "defense": 25,
+            "speed": 80
         }
     ]
 }

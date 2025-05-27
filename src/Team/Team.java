@@ -89,6 +89,10 @@ public class Team implements ITeam {
         }
     }
 
+    public int getPlayerCount() {
+           return this.playerCount;
+}
+    
     @Override
     public int getPositionCount(IPlayerPosition ipp) {
         int count = 0;
@@ -99,6 +103,7 @@ public class Team implements ITeam {
         }
         return count;
     }
+
 
     @Override
     public boolean isValidPositionForFormation(IPlayerPosition ipp) {

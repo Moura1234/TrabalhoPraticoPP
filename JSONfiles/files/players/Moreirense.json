@@ -6,7 +6,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/kewin/profil/spieler/979",
-            "number": 40
+            "number": 40,
+            "shooting": 13,
+            "passing": 42,
+            "stamina": 36,
+            "defense": 57,
+            "speed": 36
         },
         {
             "name": "Caio Secco",
@@ -14,7 +19,12 @@
             "nationality": "Brazilian",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/caio-secco/profil/spieler/979",
-            "number": 22
+            "number": 22,
+            "shooting": 16,
+            "passing": 54,
+            "stamina": 56,
+            "defense": 50,
+            "speed": 29
         },
         {
             "name": "Mika",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.pt/mika/profil/spieler/979",
-            "number": 16
+            "number": 16,
+            "shooting": 11,
+            "passing": 42,
+            "stamina": 44,
+            "defense": 54,
+            "speed": 43
         },
         {
             "name": "Maracás",
@@ -30,7 +45,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/maracas/profil/spieler/979",
-            "number": 26
+            "number": 26,
+            "shooting": 23,
+            "passing": 43,
+            "stamina": 69,
+            "defense": 84,
+            "speed": 52
         },
         {
             "name": "Marcelo",
@@ -38,7 +58,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/marcelo/profil/spieler/979",
-            "number": 44
+            "number": 44,
+            "shooting": 37,
+            "passing": 63,
+            "stamina": 63,
+            "defense": 85,
+            "speed": 50
         },
         {
             "name": "Leonardo Buta",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/leonardo-buta/profil/spieler/979",
-            "number": 15
+            "number": 15,
+            "shooting": 20,
+            "passing": 66,
+            "stamina": 74,
+            "defense": 70,
+            "speed": 61
         },
         {
             "name": "Godfried Frimpong",
@@ -54,7 +84,12 @@
             "nationality": "Dutch",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/godfried-frimpong/profil/spieler/979",
-            "number": 23
+            "number": 23,
+            "shooting": 22,
+            "passing": 49,
+            "stamina": 80,
+            "defense": 76,
+            "speed": 62
         },
         {
             "name": "Dinis Pinto",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.pt/dinis-pinto/profil/spieler/979",
-            "number": 76
+            "number": 76,
+            "shooting": 39,
+            "passing": 66,
+            "stamina": 77,
+            "defense": 71,
+            "speed": 69
         },
         {
             "name": "Ismael",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/ismael/profil/spieler/979",
-            "number": 6
+            "number": 6,
+            "shooting": 57,
+            "passing": 90,
+            "stamina": 81,
+            "defense": 79,
+            "speed": 66
         },
         {
             "name": "Sidnei Tavares",
@@ -78,7 +123,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/sidnei-tavares/profil/spieler/979",
-            "number": 5
+            "number": 5,
+            "shooting": 57,
+            "passing": 74,
+            "stamina": 70,
+            "defense": 72,
+            "speed": 60
         },
         {
             "name": "Alan",
@@ -86,7 +136,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/alan/profil/spieler/979",
-            "number": 11
+            "number": 11,
+            "shooting": 62,
+            "passing": 73,
+            "stamina": 85,
+            "defense": 75,
+            "speed": 60
         },
         {
             "name": "Jeremy Antonisse",
@@ -94,7 +149,12 @@
             "nationality": "Curaçaoan",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/jeremy-antonisse/profil/spieler/979",
-            "number": 17
+            "number": 17,
+            "shooting": 55,
+            "passing": 88,
+            "stamina": 84,
+            "defense": 68,
+            "speed": 66
         },
         {
             "name": "Pedro Santos",
@@ -102,7 +162,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.pt/pedro-santos/profil/spieler/979",
-            "number": 21
+            "number": 21,
+            "shooting": 50,
+            "passing": 83,
+            "stamina": 88,
+            "defense": 67,
+            "speed": 79
         },
         {
             "name": "Hernâni",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/hernani/profil/spieler/979",
-            "number": 7
+            "number": 7,
+            "shooting": 86,
+            "passing": 62,
+            "stamina": 61,
+            "defense": 37,
+            "speed": 70
         },
         {
             "name": "Luís Asué",
@@ -118,7 +188,12 @@
             "nationality": "Equatorial Guinean",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/luis-asue/profil/spieler/979",
-            "number": 9
+            "number": 9,
+            "shooting": 93,
+            "passing": 62,
+            "stamina": 80,
+            "defense": 36,
+            "speed": 79
         },
         {
             "name": "Guilherme Schettine",
@@ -126,7 +201,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/guilherme-schettine/profil/spieler/979",
-            "number": 95
+            "number": 95,
+            "shooting": 84,
+            "passing": 68,
+            "stamina": 71,
+            "defense": 33,
+            "speed": 73
         },
         {
             "name": "Yan Maranhão",
@@ -134,7 +214,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/yan-maranhao/profil/spieler/979",
-            "number": 22
+            "number": 22,
+            "shooting": 95,
+            "passing": 67,
+            "stamina": 70,
+            "defense": 33,
+            "speed": 79
         },
         {
             "name": "Madson",
@@ -142,7 +227,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.pt/madson/profil/spieler/979",
-            "number": 31
+            "number": 31,
+            "shooting": 86,
+            "passing": 71,
+            "stamina": 79,
+            "defense": 29,
+            "speed": 90
         }
     ]
 }

@@ -6,7 +6,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.us/ricardo-batista/profil/spieler/3268",
-            "number": 33
+            "number": 33,
+            "shooting": 11,
+            "passing": 49,
+            "stamina": 40,
+            "defense": 52,
+            "speed": 45
         },
         {
             "name": "Patrick Sequeira",
@@ -14,7 +19,12 @@
             "nationality": "Costa Rican",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.us/patrick-sequeira/profil/spieler/3268",
-            "number": 1
+            "number": 1,
+            "shooting": 8,
+            "passing": 41,
+            "stamina": 48,
+            "defense": 53,
+            "speed": 47
         },
         {
             "name": "José Fonte",
@@ -22,7 +32,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.us/jose-fonte/profil/spieler/3268",
-            "number": 6
+            "number": 6,
+            "shooting": 24,
+            "passing": 59,
+            "stamina": 68,
+            "defense": 76,
+            "speed": 53
         },
         {
             "name": "Ruben Kluivert",
@@ -30,7 +45,12 @@
             "nationality": "Dutch",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.us/ruben-kluivert/profil/spieler/3268",
-            "number": 3
+            "number": 3,
+            "shooting": 21,
+            "passing": 52,
+            "stamina": 78,
+            "defense": 76,
+            "speed": 64
         },
         {
             "name": "Leonardo Lelo",
@@ -38,7 +58,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.us/leonardo-lelo/profil/spieler/3268",
-            "number": 5
+            "number": 5,
+            "shooting": 27,
+            "passing": 56,
+            "stamina": 76,
+            "defense": 85,
+            "speed": 67
         },
         {
             "name": "André Geraldes",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.us/andre-geraldes/profil/spieler/3268",
-            "number": 18
+            "number": 18,
+            "shooting": 35,
+            "passing": 42,
+            "stamina": 64,
+            "defense": 75,
+            "speed": 59
         },
         {
             "name": "Gaizka Larrazabal",
@@ -54,7 +84,12 @@
             "nationality": "Spanish",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.us/gaizka-larrazabal/profil/spieler/3268",
-            "number": 72
+            "number": 72,
+            "shooting": 37,
+            "passing": 68,
+            "stamina": 68,
+            "defense": 81,
+            "speed": 66
         },
         {
             "name": "Andrian Kraev",
@@ -62,7 +97,12 @@
             "nationality": "Bulgarian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.us/andrian-kraev/profil/spieler/3268",
-            "number": 89
+            "number": 89,
+            "shooting": 68,
+            "passing": 77,
+            "stamina": 80,
+            "defense": 73,
+            "speed": 68
         },
         {
             "name": "Miguel Sousa",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.us/miguel-sousa/profil/spieler/3268",
-            "number": 14
+            "number": 14,
+            "shooting": 70,
+            "passing": 81,
+            "stamina": 75,
+            "defense": 71,
+            "speed": 64
         },
         {
             "name": "Rafael Brito",
@@ -78,7 +123,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.us/rafael-brito/profil/spieler/3268",
-            "number": 17
+            "number": 17,
+            "shooting": 64,
+            "passing": 83,
+            "stamina": 81,
+            "defense": 74,
+            "speed": 76
         },
         {
             "name": "Pablo Roberto",
@@ -86,7 +136,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.us/pablo-roberto/profil/spieler/3268",
-            "number": 80
+            "number": 80,
+            "shooting": 69,
+            "passing": 86,
+            "stamina": 73,
+            "defense": 65,
+            "speed": 71
         },
         {
             "name": "Henrique Pereira",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/henrique-pereira/profil/spieler/3268",
-            "number": 52
+            "number": 52,
+            "shooting": 92,
+            "passing": 60,
+            "stamina": 73,
+            "defense": 22,
+            "speed": 79
         },
         {
             "name": "Jeremy Livolant",
@@ -102,7 +162,12 @@
             "nationality": "French",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/jeremy-livolant/profil/spieler/3268",
-            "number": 29
+            "number": 29,
+            "shooting": 83,
+            "passing": 69,
+            "stamina": 77,
+            "defense": 35,
+            "speed": 71
         },
         {
             "name": "Samuel Obeng",
@@ -110,7 +175,12 @@
             "nationality": "Ghanaian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/samuel-obeng/profil/spieler/3268",
-            "number": 77
+            "number": 77,
+            "shooting": 82,
+            "passing": 79,
+            "stamina": 66,
+            "defense": 22,
+            "speed": 84
         },
         {
             "name": "Cassiano",
@@ -118,7 +188,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/cassiano/profil/spieler/3268",
-            "number": 90
+            "number": 90,
+            "shooting": 88,
+            "passing": 76,
+            "stamina": 65,
+            "defense": 24,
+            "speed": 88
         },
         {
             "name": "Max Svensson",
@@ -126,7 +201,12 @@
             "nationality": "Swedish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/max-svensson/profil/spieler/3268",
-            "number": 9
+            "number": 9,
+            "shooting": 86,
+            "passing": 68,
+            "stamina": 75,
+            "defense": 21,
+            "speed": 72
         },
         {
             "name": "Cláudio Mendes Vicente",
@@ -134,7 +214,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/claudio-mendes-vicente/profil/spieler/3268",
-            "number": 99
+            "number": 99,
+            "shooting": 80,
+            "passing": 74,
+            "stamina": 60,
+            "defense": 26,
+            "speed": 86
         },
         {
             "name": "Cauê",
@@ -142,7 +227,12 @@
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.us/caue/profil/spieler/3268",
-            "number": 88
+            "number": 88,
+            "shooting": 87,
+            "passing": 73,
+            "stamina": 68,
+            "defense": 38,
+            "speed": 84
         }
     ]
 }

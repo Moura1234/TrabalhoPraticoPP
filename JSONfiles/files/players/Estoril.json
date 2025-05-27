@@ -6,7 +6,12 @@
             "nationality": "Spanish",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/joel-robles/profil/spieler/618785",
-            "number": 27
+            "number": 27,
+            "shooting": 11,
+            "passing": 40,
+            "stamina": 57,
+            "defense": 50,
+            "speed": 42
         },
         {
             "name": "Kevin Chamorro",
@@ -14,7 +19,12 @@
             "nationality": "Costa Rican",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/kevin-chamorro/profil/spieler/618785",
-            "number": 1
+            "number": 1,
+            "shooting": 10,
+            "passing": 54,
+            "stamina": 52,
+            "defense": 44,
+            "speed": 40
         },
         {
             "name": "Eliaquim Mangala",
@@ -22,7 +32,12 @@
             "nationality": "French",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/eliaquim-mangala/profil/spieler/618785",
-            "number": 5
+            "number": 5,
+            "shooting": 34,
+            "passing": 70,
+            "stamina": 66,
+            "defense": 72,
+            "speed": 62
         },
         {
             "name": "Pedro Álvaro",
@@ -30,7 +45,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/pedro-alvaro/profil/spieler/618785",
-            "number": 23
+            "number": 23,
+            "shooting": 35,
+            "passing": 48,
+            "stamina": 71,
+            "defense": 80,
+            "speed": 69
         },
         {
             "name": "Felix Bacher",
@@ -38,7 +58,12 @@
             "nationality": "Austrian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/felix-bacher/profil/spieler/618785",
-            "number": 25
+            "number": 25,
+            "shooting": 26,
+            "passing": 68,
+            "stamina": 75,
+            "defense": 81,
+            "speed": 66
         },
         {
             "name": "Pedro Amaral",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/pedro-amaral/profil/spieler/618785",
-            "number": 24
+            "number": 24,
+            "shooting": 27,
+            "passing": 56,
+            "stamina": 79,
+            "defense": 89,
+            "speed": 55
         },
         {
             "name": "Gonçalo Costa",
@@ -54,7 +84,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/goncalo-costa/profil/spieler/618785",
-            "number": 18
+            "number": 18,
+            "shooting": 38,
+            "passing": 63,
+            "stamina": 60,
+            "defense": 79,
+            "speed": 65
         },
         {
             "name": "Wagner Pina",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/wagner-pina/profil/spieler/618785",
-            "number": 20
+            "number": 20,
+            "shooting": 38,
+            "passing": 54,
+            "stamina": 65,
+            "defense": 84,
+            "speed": 55
         },
         {
             "name": "Pedro Carvalho",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/pedro-carvalho/profil/spieler/618785",
-            "number": 22
+            "number": 22,
+            "shooting": 39,
+            "passing": 48,
+            "stamina": 63,
+            "defense": 87,
+            "speed": 67
         },
         {
             "name": "Vinicius Zanocelo",
@@ -78,7 +123,12 @@
             "nationality": "Brazilian",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/vinicius-zanocelo/profil/spieler/618785",
-            "number": 7
+            "number": 7,
+            "shooting": 52,
+            "passing": 73,
+            "stamina": 81,
+            "defense": 77,
+            "speed": 73
         },
         {
             "name": "Jordan Holsgrove",
@@ -86,7 +136,12 @@
             "nationality": "Scottish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/jordan-holsgrove/profil/spieler/618785",
-            "number": 10
+            "number": 10,
+            "shooting": 55,
+            "passing": 87,
+            "stamina": 71,
+            "defense": 76,
+            "speed": 62
         },
         {
             "name": "Xeka",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/xeka/profil/spieler/618785",
-            "number": 88
+            "number": 88,
+            "shooting": 52,
+            "passing": 85,
+            "stamina": 82,
+            "defense": 73,
+            "speed": 73
         },
         {
             "name": "Jandro Orellana",
@@ -102,7 +162,12 @@
             "nationality": "Spanish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/jandro-orellana/profil/spieler/618785",
-            "number": 6
+            "number": 6,
+            "shooting": 54,
+            "passing": 71,
+            "stamina": 81,
+            "defense": 62,
+            "speed": 62
         },
         {
             "name": "João Carvalho",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/joao-carvalho/profil/spieler/618785",
-            "number": 12
+            "number": 12,
+            "shooting": 56,
+            "passing": 73,
+            "stamina": 81,
+            "defense": 71,
+            "speed": 77
         },
         {
             "name": "Alejandro Marqués",
@@ -118,7 +188,12 @@
             "nationality": "Venezuelan",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/alejandro-marques/profil/spieler/618785",
-            "number": 9
+            "number": 9,
+            "shooting": 89,
+            "passing": 64,
+            "stamina": 67,
+            "defense": 20,
+            "speed": 88
         },
         {
             "name": "Yanis Begraoui",
@@ -126,7 +201,12 @@
             "nationality": "French",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/yanis-begraoui/profil/spieler/618785",
-            "number": 14
+            "number": 14,
+            "shooting": 94,
+            "passing": 77,
+            "stamina": 74,
+            "defense": 33,
+            "speed": 87
         },
         {
             "name": "Israel Salazar",
@@ -134,7 +214,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/israel-salazar/profil/spieler/618785",
-            "number": 92
+            "number": 92,
+            "shooting": 82,
+            "passing": 71,
+            "stamina": 60,
+            "defense": 22,
+            "speed": 72
         },
         {
             "name": "André Lacximicant",
@@ -142,7 +227,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/andre-lacximicant/profil/spieler/618785",
-            "number": 19
+            "number": 19,
+            "shooting": 85,
+            "passing": 60,
+            "stamina": 74,
+            "defense": 21,
+            "speed": 87
         }
     ]
 }

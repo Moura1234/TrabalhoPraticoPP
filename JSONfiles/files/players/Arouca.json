@@ -6,7 +6,12 @@
             "nationality": "Portuguese",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/joao-valido/profil/spieler/8024",
-            "number": 1
+            "number": 1,
+            "shooting": 14,
+            "passing": 31,
+            "stamina": 60,
+            "defense": 51,
+            "speed": 44
         },
         {
             "name": "Nico Mantl",
@@ -14,7 +19,12 @@
             "nationality": "German",
             "basePosition": "Goalkeeper",
             "photo": "https://www.transfermarkt.com/nico-mantl/profil/spieler/8024",
-            "number": 58
+            "number": 58,
+            "shooting": 19,
+            "passing": 59,
+            "stamina": 54,
+            "defense": 70,
+            "speed": 25
         },
         {
             "name": "Boris Popović",
@@ -22,7 +32,12 @@
             "nationality": "Serbian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/boris-popovic/profil/spieler/8024",
-            "number": 13
+            "number": 13,
+            "shooting": 28,
+            "passing": 52,
+            "stamina": 61,
+            "defense": 84,
+            "speed": 50
         },
         {
             "name": "José Fontán",
@@ -30,7 +45,12 @@
             "nationality": "Spanish",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/jose-fontan/profil/spieler/8024",
-            "number": 3
+            "number": 3,
+            "shooting": 33,
+            "passing": 44,
+            "stamina": 75,
+            "defense": 86,
+            "speed": 59
         },
         {
             "name": "Matías Rocha",
@@ -38,7 +58,12 @@
             "nationality": "Uruguayan",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/matias-rocha/profil/spieler/8024",
-            "number": 4
+            "number": 4,
+            "shooting": 26,
+            "passing": 52,
+            "stamina": 78,
+            "defense": 74,
+            "speed": 61
         },
         {
             "name": "Tiago Esgaio",
@@ -46,7 +71,12 @@
             "nationality": "Portuguese",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/tiago-esgaio/profil/spieler/8024",
-            "number": 28
+            "number": 28,
+            "shooting": 21,
+            "passing": 68,
+            "stamina": 70,
+            "defense": 88,
+            "speed": 70
         },
         {
             "name": "Weverson",
@@ -54,7 +84,12 @@
             "nationality": "Brazilian",
             "basePosition": "Defender",
             "photo": "https://www.transfermarkt.com/weverson/profil/spieler/8024",
-            "number": 26
+            "number": 26,
+            "shooting": 28,
+            "passing": 47,
+            "stamina": 67,
+            "defense": 83,
+            "speed": 52
         },
         {
             "name": "David Simão",
@@ -62,7 +97,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/david-simao/profil/spieler/8024",
-            "number": 5
+            "number": 5,
+            "shooting": 67,
+            "passing": 87,
+            "stamina": 79,
+            "defense": 70,
+            "speed": 76
         },
         {
             "name": "Pedro Moreira",
@@ -70,7 +110,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/pedro-moreira/profil/spieler/8024",
-            "number": 20
+            "number": 20,
+            "shooting": 65,
+            "passing": 78,
+            "stamina": 81,
+            "defense": 64,
+            "speed": 62
         },
         {
             "name": "Mamadou Loum",
@@ -78,7 +123,12 @@
             "nationality": "Senegalese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/mamadou-loum/profil/spieler/8024",
-            "number": 31
+            "number": 31,
+            "shooting": 64,
+            "passing": 76,
+            "stamina": 82,
+            "defense": 63,
+            "speed": 71
         },
         {
             "name": "Taichi Fukui",
@@ -86,7 +136,12 @@
             "nationality": "Japanese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/taichi-fukui/profil/spieler/8024",
-            "number": 21
+            "number": 21,
+            "shooting": 69,
+            "passing": 82,
+            "stamina": 84,
+            "defense": 65,
+            "speed": 66
         },
         {
             "name": "Pedro Santos",
@@ -94,7 +149,12 @@
             "nationality": "Portuguese",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/pedro-santos/profil/spieler/8024",
-            "number": 89
+            "number": 89,
+            "shooting": 64,
+            "passing": 80,
+            "stamina": 88,
+            "defense": 61,
+            "speed": 64
         },
         {
             "name": "Pablo Gozálbez",
@@ -102,7 +162,12 @@
             "nationality": "Spanish",
             "basePosition": "Midfielder",
             "photo": "https://www.transfermarkt.com/pablo-gozalbez/profil/spieler/8024",
-            "number": 22
+            "number": 22,
+            "shooting": 66,
+            "passing": 72,
+            "stamina": 74,
+            "defense": 65,
+            "speed": 79
         },
         {
             "name": "Henrique Araújo",
@@ -110,7 +175,12 @@
             "nationality": "Portuguese",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/henrique-araujo/profil/spieler/8024",
-            "number": 39
+            "number": 39,
+            "shooting": 81,
+            "passing": 60,
+            "stamina": 76,
+            "defense": 22,
+            "speed": 78
         },
         {
             "name": "Jason",
@@ -118,7 +188,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/jason/profil/spieler/8024",
-            "number": 10
+            "number": 10,
+            "shooting": 89,
+            "passing": 69,
+            "stamina": 71,
+            "defense": 35,
+            "speed": 85
         },
         {
             "name": "Miguel Puche",
@@ -126,7 +201,12 @@
             "nationality": "Spanish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/miguel-puche/profil/spieler/8024",
-            "number": 11
+            "number": 11,
+            "shooting": 89,
+            "passing": 79,
+            "stamina": 67,
+            "defense": 25,
+            "speed": 81
         },
         {
             "name": "Morlaye Sylla",
@@ -134,7 +214,12 @@
             "nationality": "Guinean",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/morlaye-sylla/profil/spieler/8024",
-            "number": 2
+            "number": 2,
+            "shooting": 80,
+            "passing": 69,
+            "stamina": 77,
+            "defense": 22,
+            "speed": 85
         },
         {
             "name": "Güven Yalçın",
@@ -142,7 +227,12 @@
             "nationality": "Turkish",
             "basePosition": "Forward",
             "photo": "https://www.transfermarkt.com/guven-yalcin/profil/spieler/8024",
-            "number": 50
+            "number": 50,
+            "shooting": 87,
+            "passing": 67,
+            "stamina": 79,
+            "defense": 33,
+            "speed": 72
         }
     ]
 }
