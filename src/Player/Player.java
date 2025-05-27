@@ -7,7 +7,7 @@ package Player;
 
 import com.ppstudios.footballmanager.api.contracts.player.*;
 import java.time.LocalDate;
-import Enums.PlayerPosition;
+import Enums.Position;
 import java.io.IOException;
 import com.ppstudios.footballmanager.api.contracts.player.PreferredFoot;
 
@@ -22,8 +22,7 @@ import Enums.Position;
 public class Player implements IPlayer{
 
     private String name;
-    private LocalDate birthdate;
-    private int age;
+    private LocalDate birthDate;
     private String nationality;
     private int number;
     private int shooting;
@@ -31,17 +30,16 @@ public class Player implements IPlayer{
     private int stamina;
     private int defense;
     private int speed;
-    private IPlayerPosition position;
+    private Position position;
     private String photo;
     private float height;
     private float weight;
     private PreferredFoot preferredFoot;
     
-    public Player(String name, LocalDate birthdate, int age, String nationality, int number, int shooting, int passing, 
-            int stamina,int defense, int speed, IPlayerPosition position, String photo, float height, float weight, PreferredFoot preferredFoot){
+    public Player(String name, LocalDate birthDate, String nationality, int number, int shooting, int passing, 
+            int stamina,int defense, int speed, Position position, String photo, float height, float weight, PreferredFoot preferredFoot){
         this.name = name;
-        this.birthdate = birthdate;
-        this.age = age;
+        this.birthDate = birthDate;
         this.nationality = nationality;
         this.number = number;
         this.shooting = shooting;
@@ -63,12 +61,12 @@ public class Player implements IPlayer{
 
     @Override
     public LocalDate getBirthDate() {
-        return this.birthdate;
+        return this.birthDate;
     }
     
     @Override
     public int getAge() {
-        return this.age;
+        return 3;
     }
 
     @Override
@@ -102,7 +100,7 @@ public class Player implements IPlayer{
     }
 
     public LocalDate getBirthdate() {
-        return birthdate;
+        return birthDate;
     }
 
     public int getDefense() {

@@ -8,6 +8,7 @@ package JSONLoader;
  *
  * @author utilizador
  */
+import Enums.Position;
 import Player.Player;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -23,8 +24,9 @@ public class JsonManualLoader {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line;
             String name = "", nationality = "", photo = "", birthDate = "", preferredFoot = "";
-            int number = 0, shooting = 0, passing = 0, stamina = 0, speed = 0;
+            int number = 0, shooting = 0, passing = 0, stamina = 0, defense = 0, speed = 0;
             float height = 0f, weight = 0f;
+            Position position = null;
 
             while ((line = br.readLine()) != null) {
                 line = line.trim();
@@ -35,8 +37,6 @@ public class JsonManualLoader {
                     birthDate = extractString(line);
                 } else if (line.startsWith("\"nationality\"")) {
                     nationality = extractString(line);
-                } else if (line.startsWith("\"photo\"")) {
-                    photo = extractString(line);
                 } else if (line.startsWith("\"number\"")) {
                     number = extractInt(line);
                 } else if (line.startsWith("\"shooting\"")) {
@@ -45,8 +45,14 @@ public class JsonManualLoader {
                     passing = extractInt(line);
                 } else if (line.startsWith("\"stamina\"")) {
                     stamina = extractInt(line);
+                }  else if (line.startsWith("\"defense\"")) {
+                    defense = extractInt(line);
                 } else if (line.startsWith("\"speed\"")) {
                     speed = extractInt(line);
+                } else if (line.startsWith("\"position\"")) {
+                    position = Position.valueOf(extractString(line));    
+                } else if (line.startsWith("\"photo\"")) {
+                    photo = extractString(line);
                 } else if (line.startsWith("\"height\"")) {
                     height = extractFloat(line);
                 } else if (line.startsWith("\"weight\"")) {
@@ -58,12 +64,14 @@ public class JsonManualLoader {
                         name,
                         LocalDate.parse(birthDate),
                         nationality,
-                        photo,
                         number,
                         shooting,
                         passing,
                         stamina,
-                        speed,
+                        defense,
+                        speed,    
+                        position,
+                        photo,
                         height,
                         weight,
                         PreferredFoot.valueOf(preferredFoot)
@@ -71,6 +79,7 @@ public class JsonManualLoader {
                     players[index++] = p;
                 }
             }
+            
 
         } catch (Exception e) {
             e.printStackTrace();
