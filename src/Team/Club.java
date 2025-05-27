@@ -85,8 +85,7 @@ public class Club implements IClub{
         return targetPosition;
     }
     
-    
-
+ 
     @Override
     public int getPlayerCount() {
         return this.playerCount;
@@ -108,7 +107,7 @@ public class Club implements IClub{
         if (isPlayer(ip)) {
     System.out.println("O jogador já se encontra no plantel: " + ip.getName());
     return;
-}
+    }
 
            if (playerCount < MAX_PLAYERS) {
             players[playerCount++] = ip;

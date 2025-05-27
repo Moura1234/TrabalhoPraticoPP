@@ -6,6 +6,7 @@ package Team;
 
 import com.ppstudios.footballmanager.api.contracts.player.*;
 import com.ppstudios.footballmanager.api.contracts.team.*;
+import java.io.IOException;
 
 /**
  *
@@ -20,6 +21,7 @@ public class Team implements ITeam{
     private int playerCount;
     private IClub club;
     private IPlayer[] players;
+    private static final int MAX_PLAYERS = 18;
 
     public Team(int teamStrength, IFormation formation, int positionCount, IClub club, IPlayer[] players) {
         this.teamStrength = teamStrength;
@@ -28,29 +30,27 @@ public class Team implements ITeam{
         this.club = club;
         this.players = players;
         
-        
+     
         if (players != null){
         this.playerCount = players.length;
     } else {
         this.playerCount = 0;
+
     }
-    }
+   }
 
       @Override
-    
     public IClub getClub() {
         return this.club;
     }
     
         @Override
-    
     public IFormation getFormation() {
         
         return this.formation;
     }
     
     @Override
-    
     public int getTeamStrength() {
         
         
@@ -69,7 +69,6 @@ public class Team implements ITeam{
     }
 
     @Override
-    
     public IPlayer[] getPlayers() {
          IPlayer[] copy = new IPlayer[playerCount];
          
@@ -81,9 +80,37 @@ public class Team implements ITeam{
     }
     
     @Override
+    public void addPlayer(IPlayer ip){
+        
+    
+      for (int i = 0; i < playerCount; i++) {
+        if (players[i] == ip) {
+            System.out.println("O jogador já se encontra na equipa: " + ip.getName());
+            return;
+        }   
+      }
+      if (playerCount < MAX_PLAYERS) {
+        players[playerCount++] = ip;
+        System.out.println("Jogador adicionado à equipa: " + ip.getName());
+    } else {
+        System.out.println("Plantel cheio. Não foi possível adicionar: " + ip.getName());
+    }
+    }
+    
+    
+    
+    @Override
      public int getPositionCount(IPlayerPosition ipp){
-      
-     }
+         
+   int count = 0;
+    for (int i = 0; i < playerCount; i++) {
+        if (players[i].getPosition().equals(ipp)) {
+            count++;
+        }
+    }
+    return count;
+    }
+
      
      @Override
      public boolean isValidPositionForFormation(IPlayerPosition ipp){
@@ -106,7 +133,12 @@ public class Team implements ITeam{
                 ", playerCount=" + playerCount +
                 ", teamStrength=" + teamStrength +
                 '}';
-    
  }
+    
+    @Override
+    public void exportToJson() throws IOException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
 }
 

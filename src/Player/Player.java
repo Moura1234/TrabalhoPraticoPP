@@ -21,8 +21,6 @@ import Enums.Position;
 
 public class Player implements IPlayer{
 
-public class Player {
-
     private String name;
     private LocalDate birthdate;
     private int age;
@@ -31,7 +29,6 @@ public class Player {
     private int shooting;
     private int passing;
     private int stamina;
-
     private int defense;
     private int speed;
     private IPlayerPosition position;
@@ -68,7 +65,6 @@ public class Player {
     public LocalDate getBirthDate() {
         return this.birthdate;
     }
-//    return Period.between(this.birthdate, LocalDate.now()).getYears();
     
     @Override
     public int getAge() {
@@ -148,8 +144,6 @@ public class Player {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    private int speed;
-    private Position position;
 
     
 }

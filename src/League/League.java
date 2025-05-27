@@ -16,7 +16,7 @@ public class League implements ILeague{
     
     public League(String name, ISeason[] seasons, int seasonCount){
         this.name = name;
-        this.seasons = new ISeason[10];
+        this.seasons = new ISeason[MAX_SEASONS];
         this.seasonCount = 0;
     }
     
@@ -69,13 +69,14 @@ public class League implements ILeague{
         return null;
     }
     
+     @Override
+    public String toString() {
+        return "League{name='" + name + "', seasonCount=" + seasonCount + "}";
+    }
+    
     @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
-     @Override
-    public String toString() {
-        return "League{name='" + name + "', seasonCount=" + seasonCount + "}";
-    }
 }
