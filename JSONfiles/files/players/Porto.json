@@ -27,45 +27,6 @@
             "speed": 39
         },
         {
-            "name": "Samuel Portugal",
-            "birthDate": "1994-03-29",
-            "nationality": "Brasileiro",
-            "basePosition": "Goalkeeper",
-            "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/samuel-portugal.jpg",
-            "number": 94,
-            "shooting": 17,
-            "passing": 37,
-            "stamina": 38,
-            "defense": 67,
-            "speed": 32
-        },
-        {
-            "name": "Gonçalo Ribeiro",
-            "birthDate": "2006-01-15",
-            "nationality": "Português",
-            "basePosition": "Goalkeeper",
-            "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/goncalo-ribeiro.jpg",
-            "number": 91,
-            "shooting": 5,
-            "passing": 33,
-            "stamina": 33,
-            "defense": 46,
-            "speed": 46
-        },
-        {
-            "name": "Zaidu Sanusi",
-            "birthDate": "1997-06-13",
-            "nationality": "Nigeriano",
-            "basePosition": "Defender",
-            "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/zaidu-sanusi.jpg",
-            "number": 12,
-            "shooting": 22,
-            "passing": 48,
-            "stamina": 69,
-            "defense": 89,
-            "speed": 62
-        },
-        {
             "name": "Iván Marcano",
             "birthDate": "1987-06-23",
             "nationality": "Espanhol",
@@ -79,25 +40,12 @@
             "speed": 63
         },
         {
-            "name": "Otávio",
-            "birthDate": "2002-04-21",
-            "nationality": "Brasileiro",
-            "basePosition": "Defender",
-            "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/otavio.jpg",
-            "number": 3,
-            "shooting": 33,
-            "passing": 44,
-            "stamina": 77,
-            "defense": 75,
-            "speed": 61
-        },
-        {
-            "name": "Tiago Djaló",
-            "birthDate": "2000-04-09",
+            "name": "Tiago Rodrigues",
+            "birthDate": "2005-04-02",
             "nationality": "Português",
             "basePosition": "Defender",
             "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/tiago-djalo.jpg",
-            "number": 2,
+            "number": 5,
             "shooting": 31,
             "passing": 41,
             "stamina": 62,
@@ -222,19 +170,6 @@
             "speed": 69
         },
         {
-            "name": "Matheus Uribe",
-            "birthDate": "1991-01-21",
-            "nationality": "Colombiano",
-            "basePosition": "Midfielder",
-            "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/matheus-uribe.jpg",
-            "number": 5,
-            "shooting": 57,
-            "passing": 87,
-            "stamina": 75,
-            "defense": 61,
-            "speed": 76
-        },
-        {
             "name": "Fábio Vieira",
             "birthDate": "2000-05-30",
             "nationality": "Portuguese",
@@ -246,19 +181,6 @@
             "stamina": 90,
             "defense": 65,
             "speed": 63
-        },
-        {
-            "name": "Pepe",
-            "birthDate": "1983-02-26",
-            "nationality": "Português",
-            "basePosition": "Defender",
-            "photo": "https://www.fcporto.pt/-/media/images/fcporto/plantel/2024-2025/pepe.jpg",
-            "number": 3,
-            "shooting": 24,
-            "passing": 52,
-            "stamina": 67,
-            "defense": 76,
-            "speed": 70
         },
         {
             "name": "Mehdi Taremi",
@@ -293,8 +215,8 @@
             "basePosition": "Midfielder",
             "photo": "https://www.fcporto.pt/pt/futebol/fcporto/jogador/rodrigo-mora",
             "number": 86,
-            "shooting": 55,
-            "passing": 74,
+            "shooting": 93,
+            "passing": 94,
             "stamina": 77,
             "defense": 79,
             "speed": 76

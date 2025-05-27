@@ -14,19 +14,6 @@
             "speed": 28
         },
         {
-            "name": "Samuel Soares",
-            "birthDate": "2002-06-15",
-            "nationality": "Portuguese",
-            "basePosition": "Goalkeeper",
-            "photo": "https://www.slbenfica.pt/pt-pt/players/samuel-soares",
-            "number": 24,
-            "shooting": 6,
-            "passing": 30,
-            "stamina": 49,
-            "defense": 41,
-            "speed": 41
-        },
-        {
             "name": "Anatoliy Trubin",
             "birthDate": "2001-08-01",
             "nationality": "Ukrainian",
@@ -90,19 +77,6 @@
             "stamina": 61,
             "defense": 75,
             "speed": 52
-        },
-        {
-            "name": "Adrian Bajrami",
-            "birthDate": "2002-04-05",
-            "nationality": "Albanian",
-            "basePosition": "Defender",
-            "photo": "https://www.slbenfica.pt/pt-pt/players/adrian-bajrami",
-            "number": 81,
-            "shooting": 34,
-            "passing": 58,
-            "stamina": 71,
-            "defense": 87,
-            "speed": 67
         },
         {
             "name": "Jan-Niklas Beste",
@@ -209,19 +183,6 @@
             "speed": 68
         },
         {
-            "name": "Manu Silva",
-            "birthDate": "2000-06-23",
-            "nationality": "Portuguese",
-            "basePosition": "Midfielder",
-            "photo": "https://www.slbenfica.pt/pt-pt/players/manu-silva",
-            "number": 16,
-            "shooting": 59,
-            "passing": 83,
-            "stamina": 90,
-            "defense": 67,
-            "speed": 78
-        },
-        {
             "name": "Hugo Sequeira",
             "birthDate": "2002-04-01",
             "nationality": "Portuguese",
@@ -261,43 +222,18 @@
             "speed": 77
         },
         {
-            "name": "Luka Jovic",
-            "birthDate": "1997-01-23",
-            "nationality": "Serbian",
-            "basePosition": "Forward",
-            "photo": "https://www.slbenfica.pt/pt-pt/players/luka-jovic",
-            "number": 77,
-            "shooting": 95,
-            "passing": 61,
-            "stamina": 77,
-            "defense": 34,
-            "speed": 74
-        },
-        {
             "name": "David Neres",
             "birthDate": "1997-03-03",
             "nationality": "Brazilian",
             "basePosition": "Forward",
             "photo": "https://www.slbenfica.pt/pt-pt/players/david-neres",
             "number": 50,
-            "shooting": 91,
+            "shooting": 81,
             "passing": 74,
             "stamina": 73,
             "defense": 27,
             "speed": 75
-        },
-        {
-            "name": "Rafa Silva",
-            "birthDate": "1993-05-17",
-            "nationality": "Portuguese",
-            "basePosition": "Forward",
-            "photo": "https://www.slbenfica.pt/pt-pt/players/rafa-silva",
-            "number": 27,
-            "shooting": 81,
-            "passing": 75,
-            "stamina": 75,
-            "defense": 30,
-            "speed": 83
         }
+       
     ]
 }
