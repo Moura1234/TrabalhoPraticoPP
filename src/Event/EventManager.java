@@ -3,37 +3,49 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Event;
-import com.ppstudios.footballmanager.api.contracts.event.*;
-import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
-import java.io.IOException;
 
+import com.ppstudios.footballmanager.api.contracts.event.*;
 
 /**
  *
  * @author joaom
  */
-public class EventManager implements IEventManager{
+public class EventManager implements IEventManager {
+
     private IEvent[] events;
     private int eventCount;
     
-    public EventManager(IEvent[] events, int eventCount){
-        this.events = new IEvent[100];
+    public EventManager() {
+        this.events = new IEvent[200];
         this.eventCount = 0;
     }
-    
-    @Override
-    public void addEvent(IEvent ievent){
-        
+
+    public EventManager(IEvent[] events, int eventCount) {
+        this.events = events;
+        this.eventCount = eventCount;
     }
-    
+
     @Override
-    public IEvent[] getEvents(){
-        return new IEvent[0];
+    public void addEvent(IEvent ievent) {
+        if (eventCount < events.length) {
+            events[eventCount++] = ievent;
+        } else {
+            System.out.println("Limite de eventos atingido.");
+        }
     }
-    
+
     @Override
-    public int getEventCount(){
+    public IEvent[] getEvents() {
+        IEvent[] copy = new IEvent[eventCount];
+        for (int i = 0; i < eventCount; i++) {
+            copy[i] = events[i];
+        }
+        return copy;
+    }
+
+    @Override
+    public int getEventCount() {
         return this.eventCount;
     }
-    
+
 }

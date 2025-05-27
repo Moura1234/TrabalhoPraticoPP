@@ -1,7 +1,6 @@
 package Event;
 
 import com.ppstudios.footballmanager.api.contracts.event.*;
-import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 import java.io.IOException;
 
 /**
@@ -10,17 +9,17 @@ import java.io.IOException;
  */
 public class Event implements IEvent {
 
-    private String descrition;
+    private String description;
     private int minute;
 
     public Event(String description, int minute) {
-        this.descrition = description;
+        this.description = description;
         this.minute = minute;
     }
 
     @Override
     public String getDescription() {
-        return this.descrition;
+        return this.description;
     }
 
     @Override
