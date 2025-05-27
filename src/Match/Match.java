@@ -3,12 +3,11 @@ package Match;
 import Enums.Club;
 import Enums.Formation;
 import Enums.Team;
-import com.ppstudios.footballmanager.api.contracts.event.*;
+import com.ppstudios.footballmanager.api.contracts.event.IEvent;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
 import com.ppstudios.footballmanager.api.contracts.team.IClub;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.io.IOException;
-import Event.EventManager;
 
 /**
  *
@@ -27,8 +26,8 @@ public class Match implements IMatch {
     private Formation awayFormation;
     private int round;
     private IEvent [] event;
+    
     private int eventCount;
-    private EventManager eventManager = new EventManager();
 
 public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, Formation homeFormation, Formation awayFormation, int round,IEvent[] event, int eventCount) {
         this.homeClub = homeClub;
@@ -145,19 +144,31 @@ if (iteam.getClub().equals(homeClub)) {
 }
     @Override
     public void addEvent (IEvent ievent){
-        eventManager.addEvent(ievent);
+        
+       if (eventCount < event.length) {
+        event[eventCount++] = ievent;
+    } else {
+        System.out.println("Limite de eventos atingido para este jogo.");
+    }  
      }
     
     @Override
     public IEvent[] getEvents(){
-        return eventManager.getEvents();
+        
+       IEvent[] copy = new IEvent[eventCount];
+    for (int i = 0; i < eventCount; i++) {
+        copy[i] = event[i];
+    }
+    return copy;     
      }
     
     @Override
      public int getEventCount(){
-         return eventManager.getEventCount();
+         
+      return this.eventCount;   
      }
      
+    
      @Override
     public String toString() {
         return "Match between " + homeClub.getName() + " and " + awayClub.getName();
