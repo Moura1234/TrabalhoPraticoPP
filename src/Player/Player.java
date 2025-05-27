@@ -30,14 +30,14 @@ public class Player implements IPlayer{
     private int stamina;
     private int defense;
     private int speed;
-    private Position position;
+    private IPlayerPosition position;
     private String photo;
     private float height;
     private float weight;
     private PreferredFoot preferredFoot;
     
     public Player(String name, LocalDate birthDate, String nationality, int number, int shooting, int passing, 
-            int stamina,int defense, int speed, Position position, String photo, float height, float weight, PreferredFoot preferredFoot){
+            int stamina,int defense, int speed, IPlayerPosition position, String photo, float height, float weight, PreferredFoot preferredFoot){
         this.name = name;
         this.birthDate = birthDate;
         this.nationality = nationality;
@@ -142,6 +142,4 @@ public class Player implements IPlayer{
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-
-    
 }
