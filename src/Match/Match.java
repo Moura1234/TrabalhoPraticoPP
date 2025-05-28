@@ -91,7 +91,6 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
     
     @Override
      public void setPlayed() {
-         
         this.played = true; 
      }
      

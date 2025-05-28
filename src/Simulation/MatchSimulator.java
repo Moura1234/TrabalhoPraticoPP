@@ -66,7 +66,7 @@ public class MatchSimulator implements MatchSimulatorStrategy {
 
         match.setHomeGoals(homeGoals);
         match.setAwayGoals(awayGoals);
-        match.setPlayed(true);
+        match.setPlayed();
 
         System.out.println(
                 match.getHomeTeam().getClub().getName() + " "
@@ -75,11 +75,11 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         );
     }
 
-    private Player getRandomAttacker(Team team) {
-        Player[] attackers = new Player[team.getPlayerCount()];
+    private IPlayer getRandomAttacker(IPlayer[] players) {
+        Player[] attackers = new Player[players.length];
         int count = 0;
 
-        for (IPlayer p : team.getPlayers()) {
+        for (IPlayer p : players) {
             if (p instanceof Player player) {
                 if (player.getPosition().toString().contains("FORWARD")) {
                     attackers[count] = player;
@@ -94,6 +94,24 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         } else {
             return null;
         }
+    }
+
+    private int getTeamDefense(IPlayer[] players) {
+        int total = 0;
+        int count = 0;
+
+        for (IPlayer p : players) {
+            if (p != null && p.getPosition() != null && p instanceof Player) {
+                Player realPlayer = (Player) p;
+                total += realPlayer.getDefense() + realPlayer.getStamina();
+                count++;
+            }
+        }
+
+        if (count == 0) {
+            return 1; // evitar divisão por zero
+        }
+        return total / count;
     }
 
     private Player getGoalkeeper(Team team) {
