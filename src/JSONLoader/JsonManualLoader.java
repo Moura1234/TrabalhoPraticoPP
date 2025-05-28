@@ -75,7 +75,7 @@ public class JsonManualLoader {
                 PreferredFoot foot = PreferredFoot.fromString(preferredFoot);
                 
                 if (position == null) {
-        System.out.println("️ Jogador com posição inválida: " + name);
+        System.out.println("️ Jogador com posicao invalida: " + name);
         continue; // ignora este jogador
     }
                 IPlayer p = new Player(

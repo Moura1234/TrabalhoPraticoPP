@@ -59,17 +59,17 @@ for (int i = 0; i < clubs.length; i++) {
                         fileName = "Sporting"; break;
                     case "Sporting Clube de Braga":
                         fileName = "Braga"; break;
-                    case "Vitória Sport Clube":
+                    case "Vitoria Sport Clube":
                         fileName = "Vitoria"; break;
                     case "Boavista Futebol Clube":
                         fileName = "Boavista"; break;
-                    case "Casa Pia Atlético Clube":
+                    case "Casa Pia Atletico Clube":
                         fileName = "CasaPia"; break;
                     case "Grupo Desportivo Estoril Praia":
                         fileName = "Estoril"; break;
                     case "Clube de Futebol Estrela da Amadora":
                         fileName = "EstrelaAmadora"; break;
-                    case "Futebol Clube de Famalicão":
+                    case "Futebol Clube de Famalicao":
                         fileName = "Famalicao"; break;
                     case "Sport Clube Farense":
                         fileName = "Farense"; break;
