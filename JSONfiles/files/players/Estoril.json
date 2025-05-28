@@ -12,7 +12,8 @@
       "defense": 50,
       "speed": 42,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Kevin Chamorro",
@@ -26,7 +27,8 @@
       "defense": 44,
       "speed": 40,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Eliaquim Mangala",
@@ -40,7 +42,8 @@
       "defense": 72,
       "speed": 62,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Pedro Álvaro",
@@ -54,7 +57,8 @@
       "defense": 80,
       "speed": 69,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Felix Bacher",
@@ -68,7 +72,8 @@
       "defense": 81,
       "speed": 66,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Pedro Amaral",
@@ -82,7 +87,8 @@
       "defense": 89,
       "speed": 55,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Gonçalo Costa",
@@ -96,7 +102,8 @@
       "defense": 79,
       "speed": 65,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Wagner Pina",
@@ -110,7 +117,8 @@
       "defense": 84,
       "speed": 55,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Pedro Carvalho",
@@ -124,7 +132,8 @@
       "defense": 87,
       "speed": 67,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Vinicius Zanocelo",
@@ -138,7 +147,8 @@
       "defense": 77,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Jordan Holsgrove",
@@ -152,7 +162,8 @@
       "defense": 76,
       "speed": 62,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Xeka",
@@ -166,7 +177,8 @@
       "defense": 73,
       "speed": 73,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Jandro Orellana",
@@ -180,7 +192,8 @@
       "defense": 62,
       "speed": 62,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "João Carvalho",
@@ -194,7 +207,8 @@
       "defense": 71,
       "speed": 77,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Alejandro Marqués",
@@ -208,7 +222,8 @@
       "defense": 20,
       "speed": 88,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Yanis Begraoui",
@@ -222,7 +237,8 @@
       "defense": 33,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Israel Salazar",
@@ -236,7 +252,8 @@
       "defense": 22,
       "speed": 72,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "André Lacximicant",
@@ -250,7 +267,8 @@
       "defense": 21,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

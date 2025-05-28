@@ -44,7 +44,7 @@ public class JsonManualLoader {
     try (BufferedReader br = new BufferedReader(new FileReader(path))) {
         String line;
         String name = "", nationality = "", photo = "", birthDate = "", preferredFoot = "";
-        int number = 0, shooting = 0, passing = 0, stamina = 0, defense = 0, speed = 0;
+        int number = 0, shooting = 0, passing = 0, stamina = 0, defense = 0, speed = 0, reflexes = 0;
         float height = 0f, weight = 0f;
         Position position = null;
 
@@ -60,7 +60,9 @@ public class JsonManualLoader {
             else if (line.startsWith("\"stamina\"")) stamina = extractInt(line);
             else if (line.startsWith("\"defense\"")) defense = extractInt(line);
             else if (line.startsWith("\"speed\"")) speed = extractInt(line);
+            else if (line.startsWith("\"reflexes\"")) reflexes = extractInt(line);
             else if (line.startsWith("\"position\""))
+                
             try {
             position = Position.valueOf(extractString(line).toUpperCase());
             } catch (Exception e) {
@@ -88,6 +90,7 @@ public class JsonManualLoader {
                     stamina,
                     defense,
                     speed,
+                    reflexes,
                     position,
                     photo,
                     height,

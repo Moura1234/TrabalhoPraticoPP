@@ -12,7 +12,8 @@
       "defense": 63,
       "speed": 20,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 73
     },
     {
       "name": "Matheus Teixeira",
@@ -26,7 +27,8 @@
       "defense": 47,
       "speed": 27,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Jonathan Panzo",
@@ -40,7 +42,8 @@
       "defense": 76,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Francisco Petrasso",
@@ -54,7 +57,8 @@
       "defense": 84,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Nelson Abbey",
@@ -68,7 +72,8 @@
       "defense": 80,
       "speed": 58,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "João Pedro",
@@ -82,7 +87,8 @@
       "defense": 84,
       "speed": 53,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Omar Richards",
@@ -96,7 +102,8 @@
       "defense": 70,
       "speed": 58,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Martim Neto",
@@ -110,7 +117,8 @@
       "defense": 69,
       "speed": 77,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "João Novais",
@@ -124,7 +132,8 @@
       "defense": 67,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "João Graça",
@@ -138,7 +147,8 @@
       "defense": 76,
       "speed": 70,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Brandon Aguilera",
@@ -152,7 +162,8 @@
       "defense": 61,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Tiago Morais",
@@ -166,7 +177,8 @@
       "defense": 31,
       "speed": 76,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Tobías Medina",
@@ -180,7 +192,8 @@
       "defense": 31,
       "speed": 84,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Kiko Bondoso",
@@ -194,7 +207,8 @@
       "defense": 24,
       "speed": 77,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "André Luiz",
@@ -208,7 +222,8 @@
       "defense": 34,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Clayton",
@@ -222,7 +237,8 @@
       "defense": 28,
       "speed": 88,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Karem Zoabi",
@@ -236,7 +252,8 @@
       "defense": 34,
       "speed": 78,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Tiago Fonseca Morais",
@@ -250,7 +267,8 @@
       "defense": 36,
       "speed": 78,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

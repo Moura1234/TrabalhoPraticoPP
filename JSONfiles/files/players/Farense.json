@@ -12,7 +12,8 @@
       "defense": 63,
       "speed": 26,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 73
     },
     {
       "name": "Kaique Pereira",
@@ -26,7 +27,8 @@
       "defense": 67,
       "speed": 27,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 77
     },
     {
       "name": "Tomás Ribeiro",
@@ -40,7 +42,8 @@
       "defense": 87,
       "speed": 51,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Marco Moreno",
@@ -54,7 +57,8 @@
       "defense": 75,
       "speed": 58,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Lucas Áfrico",
@@ -68,7 +72,8 @@
       "defense": 72,
       "speed": 70,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Artur Jorge",
@@ -82,7 +87,8 @@
       "defense": 79,
       "speed": 52,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Raúl Silva",
@@ -96,7 +102,8 @@
       "defense": 90,
       "speed": 56,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Paulo Victor",
@@ -110,7 +117,8 @@
       "defense": 79,
       "speed": 59,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Pastor",
@@ -124,7 +132,8 @@
       "defense": 84,
       "speed": 55,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Rivaldo",
@@ -138,7 +147,8 @@
       "defense": 85,
       "speed": 67,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Cláudio Falcão",
@@ -152,7 +162,8 @@
       "defense": 65,
       "speed": 77,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Miguel Menino",
@@ -166,7 +177,8 @@
       "defense": 77,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Neto",
@@ -180,7 +192,8 @@
       "defense": 61,
       "speed": 60,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Filipe Soares",
@@ -194,7 +207,8 @@
       "defense": 68,
       "speed": 63,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Marco Matias",
@@ -208,7 +222,8 @@
       "defense": 21,
       "speed": 76,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Darío Poveda",
@@ -222,7 +237,8 @@
       "defense": 28,
       "speed": 75,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Elves Baldé",
@@ -236,7 +252,8 @@
       "defense": 23,
       "speed": 81,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Tomané",
@@ -250,7 +267,8 @@
       "defense": 23,
       "speed": 76,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

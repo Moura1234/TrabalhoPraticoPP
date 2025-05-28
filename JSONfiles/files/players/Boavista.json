@@ -12,7 +12,8 @@
       "defense": 40,
       "speed": 28,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Tomáš Vaclík",
@@ -26,7 +27,8 @@
       "defense": 44,
       "speed": 44,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "César",
@@ -40,7 +42,8 @@
       "defense": 64,
       "speed": 37,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 74
     },
     {
       "name": "Rodrigo Abascal",
@@ -54,7 +57,8 @@
       "defense": 86,
       "speed": 58,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Sidoine Fogning",
@@ -68,7 +72,8 @@
       "defense": 82,
       "speed": 68,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Vitaliy Lystsov",
@@ -82,7 +87,8 @@
       "defense": 83,
       "speed": 60,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Steven Vitória",
@@ -96,7 +102,8 @@
       "defense": 84,
       "speed": 64,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Pedro Gomes",
@@ -110,7 +117,8 @@
       "defense": 81,
       "speed": 56,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Miguel Reisinho",
@@ -124,7 +132,8 @@
       "defense": 69,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Marco van Ginkel",
@@ -138,7 +147,8 @@
       "defense": 67,
       "speed": 69,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Joel Silva",
@@ -152,7 +162,8 @@
       "defense": 75,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Salvador Agra",
@@ -166,7 +177,8 @@
       "defense": 25,
       "speed": 86,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Robert Bozenik",
@@ -180,7 +192,8 @@
       "defense": 36,
       "speed": 85,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Moussa Koné",
@@ -194,7 +207,8 @@
       "defense": 25,
       "speed": 71,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Manuel Namora",
@@ -208,7 +222,8 @@
       "defense": 29,
       "speed": 73,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Tiago Machado",
@@ -222,7 +237,8 @@
       "defense": 29,
       "speed": 73,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Gonçalo Miguel",
@@ -236,7 +252,8 @@
       "defense": 74,
       "speed": 68,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Marco Ribeiro",
@@ -250,7 +267,8 @@
       "defense": 71,
       "speed": 65,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     }
   ]
 }

@@ -12,7 +12,8 @@
       "defense": 45,
       "speed": 27,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Miloš Gordić",
@@ -26,7 +27,8 @@
       "defense": 64,
       "speed": 27,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 74
     },
     {
       "name": "Brian Araújo",
@@ -40,7 +42,8 @@
       "defense": 70,
       "speed": 49,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 80
     },
     {
       "name": "Marvin Elimbi",
@@ -54,7 +57,8 @@
       "defense": 86,
       "speed": 62,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Jonathan Buatu",
@@ -68,7 +72,8 @@
       "defense": 77,
       "speed": 58,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Josué Sá",
@@ -82,7 +87,8 @@
       "defense": 76,
       "speed": 56,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Rúben Fernandes",
@@ -96,7 +102,8 @@
       "defense": 79,
       "speed": 54,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Sandro Cruz",
@@ -110,7 +117,8 @@
       "defense": 70,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Zé Carlos",
@@ -124,7 +132,8 @@
       "defense": 81,
       "speed": 51,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Jesús Castillo",
@@ -138,7 +147,8 @@
       "defense": 61,
       "speed": 60,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Facundo Cáseres",
@@ -152,7 +162,8 @@
       "defense": 78,
       "speed": 79,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "João Teixeira",
@@ -166,7 +177,8 @@
       "defense": 77,
       "speed": 78,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Kanya Fujimoto",
@@ -180,7 +192,8 @@
       "defense": 70,
       "speed": 71,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Santi García",
@@ -194,7 +207,8 @@
       "defense": 60,
       "speed": 60,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Félix Correia",
@@ -208,7 +222,8 @@
       "defense": 28,
       "speed": 72,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Jordi Mboula",
@@ -222,7 +237,8 @@
       "defense": 30,
       "speed": 87,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Jorge Aguirre",
@@ -236,7 +252,8 @@
       "defense": 36,
       "speed": 72,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Pablo",
@@ -250,7 +267,8 @@
       "defense": 36,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

@@ -12,7 +12,8 @@
       "defense": 49,
       "speed": 35,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 70
     },
     {
       "name": "Pedro Trigueira",
@@ -26,7 +27,8 @@
       "defense": 62,
       "speed": 31,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 70
     },
     {
       "name": "Fernando Fonseca",
@@ -40,7 +42,8 @@
       "defense": 79,
       "speed": 59,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Cristian Devenish",
@@ -54,7 +57,8 @@
       "defense": 83,
       "speed": 67,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Nacho Rodríguez",
@@ -68,7 +72,8 @@
       "defense": 71,
       "speed": 69,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Jorge Teixeira",
@@ -82,7 +87,8 @@
       "defense": 72,
       "speed": 52,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Baptiste Roux",
@@ -96,7 +102,8 @@
       "defense": 74,
       "speed": 59,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Kiki Afonso",
@@ -110,7 +117,8 @@
       "defense": 83,
       "speed": 67,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Gustavo Assunção",
@@ -124,7 +132,8 @@
       "defense": 69,
       "speed": 77,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Jaume Grau",
@@ -138,7 +147,8 @@
       "defense": 65,
       "speed": 73,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Lucas Piazón",
@@ -152,7 +162,8 @@
       "defense": 76,
       "speed": 76,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Giorgi Aburjania",
@@ -166,7 +177,8 @@
       "defense": 69,
       "speed": 70,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Jonatan Lucca",
@@ -180,7 +192,8 @@
       "defense": 74,
       "speed": 77,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Vasco Lopes",
@@ -194,7 +207,8 @@
       "defense": 38,
       "speed": 85,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Babatunde Akinsola",
@@ -208,7 +222,8 @@
       "defense": 25,
       "speed": 78,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Nenê",
@@ -222,7 +237,8 @@
       "defense": 33,
       "speed": 76,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Rodrigo Ribeiro",
@@ -236,7 +252,8 @@
       "defense": 36,
       "speed": 75,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Zé Luís",
@@ -250,7 +267,8 @@
       "defense": 25,
       "speed": 80,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

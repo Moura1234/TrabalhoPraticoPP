@@ -12,7 +12,8 @@
       "defense": 46,
       "speed": 41,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Rui Encarnação",
@@ -26,7 +27,8 @@
       "defense": 54,
       "speed": 42,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 64
     },
     {
       "name": "Ulisses",
@@ -40,7 +42,8 @@
       "defense": 74,
       "speed": 55,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Zé Vítor",
@@ -54,7 +57,8 @@
       "defense": 70,
       "speed": 53,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Léo Santos",
@@ -68,7 +72,8 @@
       "defense": 78,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "José Gomes",
@@ -82,7 +87,8 @@
       "defense": 82,
       "speed": 53,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Garcia",
@@ -96,7 +102,8 @@
       "defense": 81,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Matheus Dias",
@@ -110,7 +117,8 @@
       "defense": 62,
       "speed": 68,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Djibril Soumaré",
@@ -124,7 +132,8 @@
       "defense": 68,
       "speed": 69,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Bruno Costa",
@@ -138,7 +147,8 @@
       "defense": 80,
       "speed": 80,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Luís Esteves",
@@ -152,7 +162,8 @@
       "defense": 79,
       "speed": 70,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Daniel Penha",
@@ -166,7 +177,8 @@
       "defense": 60,
       "speed": 64,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Paulinho",
@@ -180,7 +192,8 @@
       "defense": 20,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Rúben Macedo",
@@ -194,7 +207,8 @@
       "defense": 37,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Fuki Yamada",
@@ -208,7 +222,8 @@
       "defense": 39,
       "speed": 79,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Arvin Appiah",
@@ -222,7 +237,8 @@
       "defense": 36,
       "speed": 71,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Isaac",
@@ -236,7 +252,8 @@
       "defense": 36,
       "speed": 86,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Dudu Teodora",
@@ -250,7 +267,8 @@
       "defense": 28,
       "speed": 76,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

@@ -12,7 +12,8 @@
       "defense": 52,
       "speed": 48,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 62
     },
     {
       "name": "Marko Gudžulić",
@@ -26,7 +27,8 @@
       "defense": 67,
       "speed": 42,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 77
     },
     {
       "name": "Ferro",
@@ -40,7 +42,8 @@
       "defense": 78,
       "speed": 58,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Issiar Dramé",
@@ -54,7 +57,8 @@
       "defense": 71,
       "speed": 52,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Nilton",
@@ -68,7 +72,8 @@
       "defense": 78,
       "speed": 67,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Rúben Lima",
@@ -82,7 +87,8 @@
       "defense": 77,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Diogo Travassos",
@@ -96,7 +102,8 @@
       "defense": 77,
       "speed": 57,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Leonel Bucca",
@@ -110,7 +117,8 @@
       "defense": 68,
       "speed": 72,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Daniel Cabral",
@@ -124,7 +132,8 @@
       "defense": 73,
       "speed": 60,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Igor Jesus",
@@ -138,7 +147,8 @@
       "defense": 72,
       "speed": 80,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Léo Cordeiro",
@@ -152,7 +162,8 @@
       "defense": 80,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Paulo Moreira",
@@ -166,7 +177,8 @@
       "defense": 78,
       "speed": 60,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Alan Ruiz",
@@ -180,7 +192,8 @@
       "defense": 79,
       "speed": 80,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "André Luiz",
@@ -194,7 +207,8 @@
       "defense": 22,
       "speed": 88,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Caio Santana",
@@ -208,7 +222,8 @@
       "defense": 37,
       "speed": 71,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Jovane Cabral",
@@ -222,7 +237,8 @@
       "defense": 36,
       "speed": 86,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Kikas",
@@ -236,7 +252,8 @@
       "defense": 23,
       "speed": 84,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Bilal Mazhar",
@@ -250,7 +267,8 @@
       "defense": 31,
       "speed": 71,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

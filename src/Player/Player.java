@@ -30,14 +30,15 @@ public class Player implements IPlayer{
     private int stamina;
     private int defense;
     private int speed;
+    private int reflexes;
     private IPlayerPosition position;
     private String photo;
     private float height;
     private float weight;
     private PreferredFoot preferredFoot;
     
-    public Player(String name, LocalDate birthDate, String nationality, int number, int shooting, int passing, 
-            int stamina,int defense, int speed, IPlayerPosition position, String photo, float height, float weight, PreferredFoot preferredFoot){
+    public Player(String name, LocalDate birthDate, String nationality, int number, int shooting, int passing, int stamina,int defense, 
+            int speed, int reflexes, IPlayerPosition position, String photo, float height, float weight, PreferredFoot preferredFoot){
         this.name = name;
         this.birthDate = birthDate;
         this.nationality = nationality;
@@ -47,6 +48,7 @@ public class Player implements IPlayer{
         this.stamina = stamina;
         this.defense = defense;
         this.speed = speed;
+        this.reflexes = reflexes;
         this.position = position;
         this.photo = photo;
         this.height = height;
@@ -99,10 +101,6 @@ public class Player implements IPlayer{
         return this.stamina;
     }
 
-    public LocalDate getBirthdate() {
-        return birthDate;
-    }
-
     public int getDefense() {
         return defense;
     }
@@ -112,6 +110,10 @@ public class Player implements IPlayer{
         return this.speed;
     }
 
+    public int getReflexes(){
+        return this.reflexes;
+    }
+    
     @Override
     public IPlayerPosition getPosition() {
         return this.position;

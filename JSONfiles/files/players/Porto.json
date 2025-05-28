@@ -12,7 +12,8 @@
       "defense": 64,
       "speed": 23,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 74
     },
     {
       "name": "Cláudio Ramos",
@@ -26,7 +27,8 @@
       "defense": 60,
       "speed": 39,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 70
     },
     {
       "name": "Iván Marcano",
@@ -40,7 +42,8 @@
       "defense": 74,
       "speed": 63,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Tiago Rodrigues",
@@ -54,7 +57,8 @@
       "defense": 75,
       "speed": 67,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Wendell",
@@ -68,7 +72,8 @@
       "defense": 88,
       "speed": 50,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Nehuén Pérez",
@@ -82,7 +87,8 @@
       "defense": 90,
       "speed": 64,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Martim Fernandes",
@@ -96,7 +102,8 @@
       "defense": 85,
       "speed": 66,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Gabriel Brás",
@@ -110,7 +117,8 @@
       "defense": 72,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Francisco Moura",
@@ -124,7 +132,8 @@
       "defense": 80,
       "speed": 52,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Martim Cunha",
@@ -138,7 +147,8 @@
       "defense": 80,
       "speed": 63,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Zé Pedro",
@@ -152,7 +162,8 @@
       "defense": 86,
       "speed": 59,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Stephen Eustáquio",
@@ -166,7 +177,8 @@
       "defense": 70,
       "speed": 71,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Marko Grujić",
@@ -180,7 +192,8 @@
       "defense": 66,
       "speed": 69,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Fábio Vieira",
@@ -194,7 +207,8 @@
       "defense": 65,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Mehdi Taremi",
@@ -208,7 +222,8 @@
       "defense": 23,
       "speed": 85,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Evanilson",
@@ -222,7 +237,8 @@
       "defense": 38,
       "speed": 86,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Rodrigo Mora",
@@ -236,7 +252,8 @@
       "defense": 79,
       "speed": 76,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Samu Omorodion",
@@ -250,7 +267,8 @@
       "defense": 36,
       "speed": 88,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

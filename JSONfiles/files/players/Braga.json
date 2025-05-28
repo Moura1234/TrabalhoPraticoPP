@@ -12,7 +12,8 @@
       "defense": 69,
       "speed": 44,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 79
     },
     {
       "name": "Tiago Sá",
@@ -26,7 +27,8 @@
       "defense": 53,
       "speed": 38,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 63
     },
     {
       "name": "Sikou Niakaté",
@@ -40,7 +42,8 @@
       "defense": 70,
       "speed": 60,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Bright Arrey-Mbi",
@@ -54,7 +57,8 @@
       "defense": 90,
       "speed": 69,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "João Ferreira",
@@ -68,7 +72,8 @@
       "defense": 84,
       "speed": 58,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Robson Bambu",
@@ -82,7 +87,8 @@
       "defense": 88,
       "speed": 50,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Paulo Oliveira",
@@ -96,7 +102,8 @@
       "defense": 82,
       "speed": 63,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Rodrigo Zalazar",
@@ -110,7 +117,8 @@
       "defense": 79,
       "speed": 61,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "João Moutinho",
@@ -124,7 +132,8 @@
       "defense": 67,
       "speed": 78,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Ricardo Horta",
@@ -138,7 +147,8 @@
       "defense": 38,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Fran Navarro",
@@ -152,7 +162,8 @@
       "defense": 26,
       "speed": 72,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Amine El Ouazzani",
@@ -166,7 +177,8 @@
       "defense": 26,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Ismaël Gharbi",
@@ -180,7 +192,8 @@
       "defense": 20,
       "speed": 83,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Gabri Martínez",
@@ -194,7 +207,8 @@
       "defense": 38,
       "speed": 82,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Roger Fernandes",
@@ -208,7 +222,8 @@
       "defense": 29,
       "speed": 75,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Jean-Baptiste Gorby",
@@ -222,7 +237,8 @@
       "defense": 80,
       "speed": 63,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Thiago Helguera",
@@ -236,7 +252,8 @@
       "defense": 77,
       "speed": 74,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Uroš Račić",
@@ -250,7 +267,8 @@
       "defense": 68,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     }
   ]
 }

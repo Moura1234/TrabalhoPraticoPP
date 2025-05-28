@@ -12,7 +12,8 @@
       "defense": 44,
       "speed": 28,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Anatoliy Trubin",
@@ -26,7 +27,8 @@
       "defense": 53,
       "speed": 45,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 63
     },
     {
       "name": "Álvaro Carreras",
@@ -40,7 +42,8 @@
       "defense": 88,
       "speed": 66,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "António Silva",
@@ -54,7 +57,8 @@
       "defense": 88,
       "speed": 67,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Nicolás Otamendi",
@@ -68,7 +72,8 @@
       "defense": 90,
       "speed": 62,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Alexander Bah",
@@ -82,7 +87,8 @@
       "defense": 75,
       "speed": 52,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Jan-Niklas Beste",
@@ -96,7 +102,8 @@
       "defense": 72,
       "speed": 58,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Issa Kaboré",
@@ -110,7 +117,8 @@
       "defense": 88,
       "speed": 60,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Leandro Santos",
@@ -124,7 +132,8 @@
       "defense": 83,
       "speed": 58,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Florentino Luís",
@@ -138,7 +147,8 @@
       "defense": 61,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Fredrik Aursnes",
@@ -152,7 +162,8 @@
       "defense": 67,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Orkun Kökçü",
@@ -166,7 +177,8 @@
       "defense": 72,
       "speed": 71,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Ángel Di María",
@@ -180,7 +192,8 @@
       "defense": 33,
       "speed": 78,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Renato Sanches",
@@ -194,7 +207,8 @@
       "defense": 76,
       "speed": 68,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Hugo Sequeira",
@@ -208,7 +222,8 @@
       "defense": 35,
       "speed": 72,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "João Rêgo",
@@ -222,7 +237,8 @@
       "defense": 21,
       "speed": 87,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Gonçalo Ramos",
@@ -236,7 +252,8 @@
       "defense": 24,
       "speed": 77,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "David Neres",
@@ -250,7 +267,8 @@
       "defense": 27,
       "speed": 75,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }

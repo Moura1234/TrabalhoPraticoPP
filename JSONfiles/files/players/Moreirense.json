@@ -12,7 +12,8 @@
       "defense": 57,
       "speed": 36,
       "preferredFoot": "right",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 67
     },
     {
       "name": "Caio Secco",
@@ -26,7 +27,8 @@
       "defense": 50,
       "speed": 29,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 60
     },
     {
       "name": "Mika",
@@ -40,7 +42,8 @@
       "defense": 54,
       "speed": 43,
       "preferredFoot": "left",
-      "position": "GOALKEEPER"
+      "position": "GOALKEEPER",
+      "reflexes": 64
     },
     {
       "name": "Maracás",
@@ -54,7 +57,8 @@
       "defense": 84,
       "speed": 52,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Marcelo",
@@ -68,7 +72,8 @@
       "defense": 85,
       "speed": 50,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Leonardo Buta",
@@ -82,7 +87,8 @@
       "defense": 70,
       "speed": 61,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Godfried Frimpong",
@@ -96,7 +102,8 @@
       "defense": 76,
       "speed": 62,
       "preferredFoot": "right",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Dinis Pinto",
@@ -110,7 +117,8 @@
       "defense": 71,
       "speed": 69,
       "preferredFoot": "left",
-      "position": "DEFENDER"
+      "position": "DEFENDER",
+      "reflexes": 0
     },
     {
       "name": "Ismael",
@@ -124,7 +132,8 @@
       "defense": 79,
       "speed": 66,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Sidnei Tavares",
@@ -138,7 +147,8 @@
       "defense": 72,
       "speed": 60,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Alan",
@@ -152,7 +162,8 @@
       "defense": 75,
       "speed": 60,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Jeremy Antonisse",
@@ -166,7 +177,8 @@
       "defense": 68,
       "speed": 66,
       "preferredFoot": "right",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Pedro Santos",
@@ -180,7 +192,8 @@
       "defense": 67,
       "speed": 79,
       "preferredFoot": "left",
-      "position": "MIDFIELDER"
+      "position": "MIDFIELDER",
+      "reflexes": 0
     },
     {
       "name": "Hernâni",
@@ -194,7 +207,8 @@
       "defense": 37,
       "speed": 70,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Luís Asué",
@@ -208,7 +222,8 @@
       "defense": 36,
       "speed": 79,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Guilherme Schettine",
@@ -222,7 +237,8 @@
       "defense": 33,
       "speed": 73,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Yan Maranhão",
@@ -236,7 +252,8 @@
       "defense": 33,
       "speed": 79,
       "preferredFoot": "right",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     },
     {
       "name": "Madson",
@@ -250,7 +267,8 @@
       "defense": 29,
       "speed": 90,
       "preferredFoot": "left",
-      "position": "FORWARD"
+      "position": "FORWARD",
+      "reflexes": 0
     }
   ]
 }
