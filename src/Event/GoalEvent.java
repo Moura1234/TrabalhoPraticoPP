@@ -12,16 +12,21 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
  * @author joaom
  */
 public class GoalEvent extends Event implements IGoalEvent {
-    public String player;
+    public IPlayer player;
     
-    public GoalEvent(String player, String description, int minute){
+    public GoalEvent(IPlayer player, String description, int minute){
         super(description, minute);
         this.player = player;
     }
 
     @Override
     public IPlayer getPlayer(){
-        return null;
+        return player;
+    }
+    
+    @Override
+    public String toString(){
+        return getMinute() + "' - GOAL by " + player.getName();
     }
 }
     
