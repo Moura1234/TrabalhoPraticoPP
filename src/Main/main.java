@@ -20,17 +20,20 @@ import Player.*;
 import Simulation.*;
 import Team.*;
 import Enums.*;
+import Menus.MainMenu;
 
 /**
  *
  * @author joaom
  */
-public class main {
+public class Main {
+    public static IStanding[] leagueStandings;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
 
         try {
             // 1. Carregar clubes do ficheiro JSON
@@ -114,8 +117,6 @@ public class main {
                     ((Club) club).setPlayers(players); // Cast se IClub não tiver setPlayers
                 }
             }
-
-            // 3. Criar classificações
         
 
             
@@ -130,9 +131,9 @@ public class main {
             
         }
            
-                IStanding[] leagueStandings = new Standing[clubs.length];
+                Main.leagueStandings = new Standing[clubs.length];
              for (int i = 0; i < clubs.length; i++) {
-             leagueStandings[i] = new Standing(teams[i]); 
+             Main.leagueStandings[i] = new Standing(teams[i]); 
           }
 
 
@@ -215,47 +216,7 @@ for (int i = 0; i < totalRounds; i++) {
     System.out.println(); // linha em branco entre jornadas
 }
 
-
-for (int i = 0; i < leagueStandings.length - 1; i++) {
-    for (int j = i + 1; j < leagueStandings.length; j++) {
-        Standing s1 = (Standing) leagueStandings[i];
-        Standing s2 = (Standing) leagueStandings[j];
-
-        boolean swap = false;
-
-        if (s2.getPoints() > s1.getPoints()) {
-            swap = true;
-        } else if (s2.getPoints() == s1.getPoints()) {
-            if (s2.getGoalDifference() > s1.getGoalDifference()) {
-                swap = true;
-            }
-        }
-
-        if (swap) {
-            IStanding temp = leagueStandings[i];
-            leagueStandings[i] = leagueStandings[j];
-            leagueStandings[j] = temp;
-        }
-    }
-}
-
-  System.out.println("\n===== League Table =====\n");
-System.out.printf("    %-30s %5s %5s %5s %5s %5s %5s %5s\n",
-    "Team", "Pts", "W", "D", "L", "GS", "GC", "GD");
-
-for (IStanding s : leagueStandings) {
-    Standing st = (Standing) s;
-    System.out.printf("    %-30s %5d %5d %5d %5d %5d %5d %5d\n",
-        st.getTeam().getClub().getName(),
-        st.getPoints(),
-        st.getWins(),
-        st.getDraws(),
-        st.getLosses(),
-        st.getGoalScored(),
-        st.getGoalsConceded(),
-        st.getGoalDifference());
-}
-
+MainMenu.run();
                 
           }
          
