@@ -11,7 +11,8 @@
             "passing": 52,
             "stamina": 41,
             "defense": 45,
-            "speed": 27
+            "speed": 27,
+            "preferredFoot": "left"
         },
         {
             "name": "Miloš Gordić",
@@ -24,7 +25,8 @@
             "passing": 39,
             "stamina": 40,
             "defense": 64,
-            "speed": 27
+            "speed": 27,
+            "preferredFoot": "right"
         },
         {
             "name": "Brian Araújo",
@@ -37,7 +39,8 @@
             "passing": 41,
             "stamina": 47,
             "defense": 70,
-            "speed": 49
+            "speed": 49,
+            "preferredFoot": "left"
         },
         {
             "name": "Marvin Elimbi",
@@ -50,7 +53,8 @@
             "passing": 67,
             "stamina": 60,
             "defense": 86,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "left"
         },
         {
             "name": "Jonathan Buatu",
@@ -63,7 +67,8 @@
             "passing": 59,
             "stamina": 64,
             "defense": 77,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "left"
         },
         {
             "name": "Josué Sá",
@@ -76,7 +81,8 @@
             "passing": 51,
             "stamina": 73,
             "defense": 76,
-            "speed": 56
+            "speed": 56,
+            "preferredFoot": "right"
         },
         {
             "name": "Rúben Fernandes",
@@ -89,7 +95,8 @@
             "passing": 57,
             "stamina": 66,
             "defense": 79,
-            "speed": 54
+            "speed": 54,
+            "preferredFoot": "right"
         },
         {
             "name": "Sandro Cruz",
@@ -102,7 +109,8 @@
             "passing": 48,
             "stamina": 64,
             "defense": 70,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Zé Carlos",
@@ -115,7 +123,8 @@
             "passing": 70,
             "stamina": 66,
             "defense": 81,
-            "speed": 51
+            "speed": 51,
+            "preferredFoot": "right"
         },
         {
             "name": "Jesús Castillo",
@@ -128,7 +137,8 @@
             "passing": 86,
             "stamina": 70,
             "defense": 61,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "right"
         },
         {
             "name": "Facundo Cáseres",
@@ -141,7 +151,8 @@
             "passing": 89,
             "stamina": 82,
             "defense": 78,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "left"
         },
         {
             "name": "João Teixeira",
@@ -154,7 +165,8 @@
             "passing": 70,
             "stamina": 80,
             "defense": 77,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "right"
         },
         {
             "name": "Kanya Fujimoto",
@@ -167,7 +179,8 @@
             "passing": 87,
             "stamina": 70,
             "defense": 70,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "right"
         },
         {
             "name": "Santi García",
@@ -180,7 +193,8 @@
             "passing": 73,
             "stamina": 90,
             "defense": 60,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "right"
         },
         {
             "name": "Félix Correia",
@@ -193,7 +207,8 @@
             "passing": 60,
             "stamina": 72,
             "defense": 28,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "Jordi Mboula",
@@ -206,7 +221,8 @@
             "passing": 63,
             "stamina": 74,
             "defense": 30,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "left"
         },
         {
             "name": "Jorge Aguirre",
@@ -219,7 +235,8 @@
             "passing": 64,
             "stamina": 67,
             "defense": 36,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "Pablo",
@@ -232,7 +249,8 @@
             "passing": 77,
             "stamina": 64,
             "defense": 36,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         }
     ]
 }

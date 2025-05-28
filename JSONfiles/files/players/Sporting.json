@@ -11,7 +11,8 @@
             "passing": 42,
             "stamina": 36,
             "defense": 62,
-            "speed": 25
+            "speed": 25,
+            "preferredFoot": "right"
         },
         {
             "name": "Rui Silva",
@@ -24,7 +25,8 @@
             "passing": 49,
             "stamina": 46,
             "defense": 40,
-            "speed": 35
+            "speed": 35,
+            "preferredFoot": "right"
         },
         {
             "name": "Diogo Pinto",
@@ -37,7 +39,8 @@
             "passing": 49,
             "stamina": 31,
             "defense": 42,
-            "speed": 25
+            "speed": 25,
+            "preferredFoot": "right"
         },
         {
             "name": "Gonçalo Inácio",
@@ -50,7 +53,8 @@
             "passing": 65,
             "stamina": 61,
             "defense": 80,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "Ousmane Diomande",
@@ -63,7 +67,8 @@
             "passing": 51,
             "stamina": 78,
             "defense": 79,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "right"
         },
         {
             "name": "Zeno Debast",
@@ -76,7 +81,8 @@
             "passing": 58,
             "stamina": 80,
             "defense": 76,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Eduardo Quaresma",
@@ -89,7 +95,8 @@
             "passing": 45,
             "stamina": 76,
             "defense": 89,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "left"
         },
         {
             "name": "Jeremiah St. Juste",
@@ -102,7 +109,8 @@
             "passing": 57,
             "stamina": 78,
             "defense": 78,
-            "speed": 65
+            "speed": 65,
+            "preferredFoot": "right"
         },
         {
             "name": "Nuno Santos",
@@ -115,7 +123,8 @@
             "passing": 58,
             "stamina": 70,
             "defense": 75,
-            "speed": 53
+            "speed": 53,
+            "preferredFoot": "right"
         },
         {
             "name": "Matheus Reis",
@@ -128,7 +137,8 @@
             "passing": 53,
             "stamina": 80,
             "defense": 90,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "right"
         },
         {
             "name": "Iván Fresneda",
@@ -141,7 +151,8 @@
             "passing": 54,
             "stamina": 61,
             "defense": 84,
-            "speed": 50
+            "speed": 50,
+            "preferredFoot": "left"
         },
         {
             "name": "Ricardo Esgaio",
@@ -154,7 +165,8 @@
             "passing": 70,
             "stamina": 67,
             "defense": 83,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Morten Hjulmand",
@@ -167,7 +179,8 @@
             "passing": 89,
             "stamina": 72,
             "defense": 75,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Gonçalves",
@@ -180,7 +193,8 @@
             "passing": 77,
             "stamina": 80,
             "defense": 63,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "left"
         },
         {
             "name": "Hidemasa Morita",
@@ -193,7 +207,8 @@
             "passing": 79,
             "stamina": 72,
             "defense": 73,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "right"
         },
         {
             "name": "Daniel Bragança",
@@ -206,7 +221,8 @@
             "passing": 85,
             "stamina": 88,
             "defense": 60,
-            "speed": 65
+            "speed": 65,
+            "preferredFoot": "right"
         },
         {
             "name": "Francisco Trincão",
@@ -219,7 +235,8 @@
             "passing": 67,
             "stamina": 80,
             "defense": 39,
-            "speed": 82
+            "speed": 82,
+            "preferredFoot": "right"
         },
         {
             "name": "Viktor Gyökeres",
@@ -232,7 +249,8 @@
             "passing": 65,
             "stamina": 68,
             "defense": 33,
-            "speed": 82
+            "speed": 82,
+            "preferredFoot": "left"
         }
     ]
 }

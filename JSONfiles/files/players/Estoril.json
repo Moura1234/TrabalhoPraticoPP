@@ -11,7 +11,8 @@
             "passing": 40,
             "stamina": 57,
             "defense": 50,
-            "speed": 42
+            "speed": 42,
+            "preferredFoot": "right"
         },
         {
             "name": "Kevin Chamorro",
@@ -24,7 +25,8 @@
             "passing": 54,
             "stamina": 52,
             "defense": 44,
-            "speed": 40
+            "speed": 40,
+            "preferredFoot": "right"
         },
         {
             "name": "Eliaquim Mangala",
@@ -37,7 +39,8 @@
             "passing": 70,
             "stamina": 66,
             "defense": 72,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "left"
         },
         {
             "name": "Pedro Álvaro",
@@ -50,7 +53,8 @@
             "passing": 48,
             "stamina": 71,
             "defense": 80,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "right"
         },
         {
             "name": "Felix Bacher",
@@ -63,7 +67,8 @@
             "passing": 68,
             "stamina": 75,
             "defense": 81,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Amaral",
@@ -76,7 +81,8 @@
             "passing": 56,
             "stamina": 79,
             "defense": 89,
-            "speed": 55
+            "speed": 55,
+            "preferredFoot": "left"
         },
         {
             "name": "Gonçalo Costa",
@@ -89,7 +95,8 @@
             "passing": 63,
             "stamina": 60,
             "defense": 79,
-            "speed": 65
+            "speed": 65,
+            "preferredFoot": "left"
         },
         {
             "name": "Wagner Pina",
@@ -102,7 +109,8 @@
             "passing": 54,
             "stamina": 65,
             "defense": 84,
-            "speed": 55
+            "speed": 55,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Carvalho",
@@ -115,7 +123,8 @@
             "passing": 48,
             "stamina": 63,
             "defense": 87,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "Vinicius Zanocelo",
@@ -128,7 +137,8 @@
             "passing": 73,
             "stamina": 81,
             "defense": 77,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Jordan Holsgrove",
@@ -141,7 +151,8 @@
             "passing": 87,
             "stamina": 71,
             "defense": 76,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "left"
         },
         {
             "name": "Xeka",
@@ -154,7 +165,8 @@
             "passing": 85,
             "stamina": 82,
             "defense": 73,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "right"
         },
         {
             "name": "Jandro Orellana",
@@ -167,7 +179,8 @@
             "passing": 71,
             "stamina": 81,
             "defense": 62,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "left"
         },
         {
             "name": "João Carvalho",
@@ -180,7 +193,8 @@
             "passing": 73,
             "stamina": 81,
             "defense": 71,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "Alejandro Marqués",
@@ -193,7 +207,8 @@
             "passing": 64,
             "stamina": 67,
             "defense": 20,
-            "speed": 88
+            "speed": 88,
+            "preferredFoot": "left"
         },
         {
             "name": "Yanis Begraoui",
@@ -206,7 +221,8 @@
             "passing": 77,
             "stamina": 74,
             "defense": 33,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         },
         {
             "name": "Israel Salazar",
@@ -219,7 +235,8 @@
             "passing": 71,
             "stamina": 60,
             "defense": 22,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "André Lacximicant",
@@ -232,7 +249,8 @@
             "passing": 60,
             "stamina": 74,
             "defense": 21,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         }
     ]
 }

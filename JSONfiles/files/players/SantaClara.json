@@ -11,7 +11,8 @@
             "passing": 45,
             "stamina": 31,
             "defense": 40,
-            "speed": 40
+            "speed": 40,
+            "preferredFoot": "left"
         },
         {
             "name": "Neneca",
@@ -24,7 +25,8 @@
             "passing": 40,
             "stamina": 55,
             "defense": 60,
-            "speed": 34
+            "speed": 34,
+            "preferredFoot": "right"
         },
         {
             "name": "Sidney Lima",
@@ -37,7 +39,8 @@
             "passing": 67,
             "stamina": 60,
             "defense": 70,
-            "speed": 56
+            "speed": 56,
+            "preferredFoot": "left"
         },
         {
             "name": "Frederico Venâncio",
@@ -50,7 +53,8 @@
             "passing": 55,
             "stamina": 67,
             "defense": 73,
-            "speed": 65
+            "speed": 65,
+            "preferredFoot": "left"
         },
         {
             "name": "Luís Rocha",
@@ -63,7 +67,8 @@
             "passing": 60,
             "stamina": 76,
             "defense": 90,
-            "speed": 55
+            "speed": 55,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Pacheco",
@@ -76,7 +81,8 @@
             "passing": 50,
             "stamina": 61,
             "defense": 84,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Matheus Pereira",
@@ -89,7 +95,8 @@
             "passing": 65,
             "stamina": 64,
             "defense": 90,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Lucas Soares",
@@ -102,7 +109,8 @@
             "passing": 41,
             "stamina": 71,
             "defense": 83,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Ferreira",
@@ -115,7 +123,8 @@
             "passing": 82,
             "stamina": 89,
             "defense": 62,
-            "speed": 75
+            "speed": 75,
+            "preferredFoot": "right"
         },
         {
             "name": "Adriano Firmino",
@@ -128,7 +137,8 @@
             "passing": 79,
             "stamina": 72,
             "defense": 67,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "left"
         },
         {
             "name": "Ricardinho",
@@ -141,7 +151,8 @@
             "passing": 87,
             "stamina": 82,
             "defense": 68,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "right"
         },
         {
             "name": "Gabriel Silva",
@@ -154,7 +165,8 @@
             "passing": 64,
             "stamina": 73,
             "defense": 36,
-            "speed": 90
+            "speed": 90,
+            "preferredFoot": "left"
         },
         {
             "name": "Vinícius Lopes",
@@ -167,7 +179,8 @@
             "passing": 79,
             "stamina": 64,
             "defense": 21,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "right"
         },
         {
             "name": "João Costa",
@@ -180,7 +193,8 @@
             "passing": 77,
             "stamina": 79,
             "defense": 23,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "right"
         },
         {
             "name": "Alisson Safira",
@@ -193,7 +207,8 @@
             "passing": 76,
             "stamina": 76,
             "defense": 33,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "Wendel Silva",
@@ -206,7 +221,8 @@
             "passing": 73,
             "stamina": 68,
             "defense": 21,
-            "speed": 81
+            "speed": 81,
+            "preferredFoot": "left"
         },
         {
             "name": "Dani Borges",
@@ -219,7 +235,8 @@
             "passing": 89,
             "stamina": 85,
             "defense": 64,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "Serginho",
@@ -232,7 +249,8 @@
             "passing": 71,
             "stamina": 79,
             "defense": 61,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         }
     ]
 }

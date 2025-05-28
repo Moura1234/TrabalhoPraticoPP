@@ -11,7 +11,8 @@
             "passing": 33,
             "stamina": 35,
             "defense": 40,
-            "speed": 31
+            "speed": 31,
+            "preferredFoot": "left"
         },
         {
             "name": "Charles",
@@ -24,7 +25,8 @@
             "passing": 57,
             "stamina": 43,
             "defense": 62,
-            "speed": 50
+            "speed": 50,
+            "preferredFoot": "right"
         },
         {
             "name": "Toni Borevković",
@@ -37,7 +39,8 @@
             "passing": 70,
             "stamina": 77,
             "defense": 82,
-            "speed": 65
+            "speed": 65,
+            "preferredFoot": "left"
         },
         {
             "name": "Mikel Villanueva",
@@ -50,7 +53,8 @@
             "passing": 53,
             "stamina": 72,
             "defense": 84,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "right"
         },
         {
             "name": "Hevertton",
@@ -63,7 +67,8 @@
             "passing": 47,
             "stamina": 76,
             "defense": 83,
-            "speed": 55
+            "speed": 55,
+            "preferredFoot": "left"
         },
         {
             "name": "Óscar Rivas",
@@ -76,7 +81,8 @@
             "passing": 69,
             "stamina": 77,
             "defense": 77,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "right"
         },
         {
             "name": "João Mendes",
@@ -89,7 +95,8 @@
             "passing": 57,
             "stamina": 72,
             "defense": 72,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "right"
         },
         {
             "name": "Maga",
@@ -102,7 +109,8 @@
             "passing": 61,
             "stamina": 62,
             "defense": 71,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "right"
         },
         {
             "name": "Tomás Händel",
@@ -115,7 +123,8 @@
             "passing": 77,
             "stamina": 73,
             "defense": 72,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "right"
         },
         {
             "name": "Tiago Silva",
@@ -128,7 +137,8 @@
             "passing": 71,
             "stamina": 83,
             "defense": 61,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "left"
         },
         {
             "name": "Nuno Santos",
@@ -141,7 +151,8 @@
             "passing": 84,
             "stamina": 88,
             "defense": 62,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "João Mendes",
@@ -154,7 +165,8 @@
             "passing": 78,
             "stamina": 76,
             "defense": 70,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "left"
         },
         {
             "name": "Samu",
@@ -167,7 +179,8 @@
             "passing": 74,
             "stamina": 80,
             "defense": 73,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "right"
         },
         {
             "name": "Marco Cruz",
@@ -180,7 +193,8 @@
             "passing": 74,
             "stamina": 73,
             "defense": 61,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "right"
         },
         {
             "name": "Jesús Ramírez",
@@ -193,7 +207,8 @@
             "passing": 62,
             "stamina": 75,
             "defense": 20,
-            "speed": 74
+            "speed": 74,
+            "preferredFoot": "left"
         },
         {
             "name": "Nélson Oliveira",
@@ -206,7 +221,8 @@
             "passing": 70,
             "stamina": 78,
             "defense": 35,
-            "speed": 75
+            "speed": 75,
+            "preferredFoot": "left"
         },
         {
             "name": "Dieu-Merci Michel",
@@ -219,7 +235,8 @@
             "passing": 63,
             "stamina": 79,
             "defense": 25,
-            "speed": 80
+            "speed": 80,
+            "preferredFoot": "right"
         },
         {
             "name": "Gustavo Silva",
@@ -232,7 +249,8 @@
             "passing": 67,
             "stamina": 60,
             "defense": 35,
-            "speed": 89
+            "speed": 89,
+            "preferredFoot": "right"
         }
     ]
 }

@@ -11,7 +11,8 @@
             "passing": 37,
             "stamina": 59,
             "defense": 63,
-            "speed": 26
+            "speed": 26,
+            "preferredFoot": "right"
         },
         {
             "name": "Kaique Pereira",
@@ -24,7 +25,8 @@
             "passing": 42,
             "stamina": 31,
             "defense": 67,
-            "speed": 27
+            "speed": 27,
+            "preferredFoot": "left"
         },
         {
             "name": "Tomás Ribeiro",
@@ -37,7 +39,8 @@
             "passing": 56,
             "stamina": 63,
             "defense": 87,
-            "speed": 51
+            "speed": 51,
+            "preferredFoot": "left"
         },
         {
             "name": "Marco Moreno",
@@ -50,7 +53,8 @@
             "passing": 65,
             "stamina": 71,
             "defense": 75,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "right"
         },
         {
             "name": "Lucas Áfrico",
@@ -63,7 +67,8 @@
             "passing": 47,
             "stamina": 73,
             "defense": 72,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "left"
         },
         {
             "name": "Artur Jorge",
@@ -76,7 +81,8 @@
             "passing": 61,
             "stamina": 79,
             "defense": 79,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "right"
         },
         {
             "name": "Raúl Silva",
@@ -89,7 +95,8 @@
             "passing": 53,
             "stamina": 69,
             "defense": 90,
-            "speed": 56
+            "speed": 56,
+            "preferredFoot": "right"
         },
         {
             "name": "Paulo Victor",
@@ -102,7 +109,8 @@
             "passing": 66,
             "stamina": 66,
             "defense": 79,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "left"
         },
         {
             "name": "Pastor",
@@ -115,7 +123,8 @@
             "passing": 62,
             "stamina": 63,
             "defense": 84,
-            "speed": 55
+            "speed": 55,
+            "preferredFoot": "left"
         },
         {
             "name": "Rivaldo",
@@ -128,7 +137,8 @@
             "passing": 41,
             "stamina": 70,
             "defense": 85,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "right"
         },
         {
             "name": "Cláudio Falcão",
@@ -141,7 +151,8 @@
             "passing": 80,
             "stamina": 71,
             "defense": 65,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "Miguel Menino",
@@ -154,7 +165,8 @@
             "passing": 84,
             "stamina": 79,
             "defense": 77,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "Neto",
@@ -167,7 +179,8 @@
             "passing": 76,
             "stamina": 82,
             "defense": 61,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "right"
         },
         {
             "name": "Filipe Soares",
@@ -180,7 +193,8 @@
             "passing": 86,
             "stamina": 72,
             "defense": 68,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "right"
         },
         {
             "name": "Marco Matias",
@@ -193,7 +207,8 @@
             "passing": 64,
             "stamina": 62,
             "defense": 21,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "right"
         },
         {
             "name": "Darío Poveda",
@@ -206,7 +221,8 @@
             "passing": 66,
             "stamina": 69,
             "defense": 28,
-            "speed": 75
+            "speed": 75,
+            "preferredFoot": "left"
         },
         {
             "name": "Elves Baldé",
@@ -219,7 +235,8 @@
             "passing": 62,
             "stamina": 68,
             "defense": 23,
-            "speed": 81
+            "speed": 81,
+            "preferredFoot": "left"
         },
         {
             "name": "Tomané",
@@ -232,7 +249,8 @@
             "passing": 62,
             "stamina": 77,
             "defense": 23,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "right"
         }
     ]
 }

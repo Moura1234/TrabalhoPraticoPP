@@ -11,7 +11,8 @@
             "passing": 47,
             "stamina": 47,
             "defense": 69,
-            "speed": 44
+            "speed": 44,
+            "preferredFoot": "right"
         },
         {
             "name": "Tiago Sá",
@@ -24,7 +25,8 @@
             "passing": 41,
             "stamina": 30,
             "defense": 53,
-            "speed": 38
+            "speed": 38,
+            "preferredFoot": "right"
         },
         {
             "name": "Sikou Niakaté",
@@ -37,7 +39,8 @@
             "passing": 59,
             "stamina": 66,
             "defense": 70,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "right"
         },
         {
             "name": "Bright Arrey-Mbi",
@@ -50,7 +53,8 @@
             "passing": 55,
             "stamina": 78,
             "defense": 90,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "João Ferreira",
@@ -63,7 +67,8 @@
             "passing": 57,
             "stamina": 74,
             "defense": 84,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "left"
         },
         {
             "name": "Robson Bambu",
@@ -76,7 +81,8 @@
             "passing": 59,
             "stamina": 73,
             "defense": 88,
-            "speed": 50
+            "speed": 50,
+            "preferredFoot": "left"
         },
         {
             "name": "Paulo Oliveira",
@@ -89,7 +95,8 @@
             "passing": 66,
             "stamina": 69,
             "defense": 82,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "Rodrigo Zalazar",
@@ -102,7 +109,8 @@
             "passing": 85,
             "stamina": 76,
             "defense": 79,
-            "speed": 61
+            "speed": 61,
+            "preferredFoot": "left"
         },
         {
             "name": "João Moutinho",
@@ -115,7 +123,8 @@
             "passing": 83,
             "stamina": 88,
             "defense": 67,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         },
         {
             "name": "Ricardo Horta",
@@ -128,7 +137,8 @@
             "passing": 62,
             "stamina": 73,
             "defense": 38,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Fran Navarro",
@@ -141,7 +151,8 @@
             "passing": 72,
             "stamina": 70,
             "defense": 26,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "Amine El Ouazzani",
@@ -154,7 +165,8 @@
             "passing": 65,
             "stamina": 68,
             "defense": 26,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         },
         {
             "name": "Ismaël Gharbi",
@@ -167,7 +179,8 @@
             "passing": 69,
             "stamina": 65,
             "defense": 20,
-            "speed": 83
+            "speed": 83,
+            "preferredFoot": "left"
         },
         {
             "name": "Gabri Martínez",
@@ -180,7 +193,8 @@
             "passing": 60,
             "stamina": 71,
             "defense": 38,
-            "speed": 82
+            "speed": 82,
+            "preferredFoot": "right"
         },
         {
             "name": "Roger Fernandes",
@@ -193,7 +207,8 @@
             "passing": 77,
             "stamina": 69,
             "defense": 29,
-            "speed": 75
+            "speed": 75,
+            "preferredFoot": "left"
         },
         {
             "name": "Jean-Baptiste Gorby",
@@ -206,7 +221,8 @@
             "passing": 75,
             "stamina": 80,
             "defense": 80,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "right"
         },
         {
             "name": "Thiago Helguera",
@@ -219,7 +235,8 @@
             "passing": 79,
             "stamina": 85,
             "defense": 77,
-            "speed": 74
+            "speed": 74,
+            "preferredFoot": "left"
         },
         {
             "name": "Uroš Račić",
@@ -232,7 +249,8 @@
             "passing": 77,
             "stamina": 74,
             "defense": 68,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         }
     ]
 }

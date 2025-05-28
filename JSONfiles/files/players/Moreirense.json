@@ -11,7 +11,8 @@
             "passing": 42,
             "stamina": 36,
             "defense": 57,
-            "speed": 36
+            "speed": 36,
+            "preferredFoot": "right"
         },
         {
             "name": "Caio Secco",
@@ -24,7 +25,8 @@
             "passing": 54,
             "stamina": 56,
             "defense": 50,
-            "speed": 29
+            "speed": 29,
+            "preferredFoot": "left"
         },
         {
             "name": "Mika",
@@ -37,7 +39,8 @@
             "passing": 42,
             "stamina": 44,
             "defense": 54,
-            "speed": 43
+            "speed": 43,
+            "preferredFoot": "left"
         },
         {
             "name": "Maracás",
@@ -50,7 +53,8 @@
             "passing": 43,
             "stamina": 69,
             "defense": 84,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "left"
         },
         {
             "name": "Marcelo",
@@ -63,7 +67,8 @@
             "passing": 63,
             "stamina": 63,
             "defense": 85,
-            "speed": 50
+            "speed": 50,
+            "preferredFoot": "right"
         },
         {
             "name": "Leonardo Buta",
@@ -76,7 +81,8 @@
             "passing": 66,
             "stamina": 74,
             "defense": 70,
-            "speed": 61
+            "speed": 61,
+            "preferredFoot": "left"
         },
         {
             "name": "Godfried Frimpong",
@@ -89,7 +95,8 @@
             "passing": 49,
             "stamina": 80,
             "defense": 76,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "right"
         },
         {
             "name": "Dinis Pinto",
@@ -102,7 +109,8 @@
             "passing": 66,
             "stamina": 77,
             "defense": 71,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "Ismael",
@@ -115,7 +123,8 @@
             "passing": 90,
             "stamina": 81,
             "defense": 79,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Sidnei Tavares",
@@ -128,7 +137,8 @@
             "passing": 74,
             "stamina": 70,
             "defense": 72,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "left"
         },
         {
             "name": "Alan",
@@ -141,7 +151,8 @@
             "passing": 73,
             "stamina": 85,
             "defense": 75,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "left"
         },
         {
             "name": "Jeremy Antonisse",
@@ -154,7 +165,8 @@
             "passing": 88,
             "stamina": 84,
             "defense": 68,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Santos",
@@ -167,7 +179,8 @@
             "passing": 83,
             "stamina": 88,
             "defense": 67,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "left"
         },
         {
             "name": "Hernâni",
@@ -180,7 +193,8 @@
             "passing": 62,
             "stamina": 61,
             "defense": 37,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "right"
         },
         {
             "name": "Luís Asué",
@@ -193,7 +207,8 @@
             "passing": 62,
             "stamina": 80,
             "defense": 36,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "right"
         },
         {
             "name": "Guilherme Schettine",
@@ -206,7 +221,8 @@
             "passing": 68,
             "stamina": 71,
             "defense": 33,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Yan Maranhão",
@@ -219,7 +235,8 @@
             "passing": 67,
             "stamina": 70,
             "defense": 33,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "right"
         },
         {
             "name": "Madson",
@@ -232,7 +249,8 @@
             "passing": 71,
             "stamina": 79,
             "defense": 29,
-            "speed": 90
+            "speed": 90,
+            "preferredFoot": "left"
         }
     ]
 }

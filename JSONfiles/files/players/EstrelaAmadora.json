@@ -11,7 +11,8 @@
             "passing": 48,
             "stamina": 59,
             "defense": 52,
-            "speed": 48
+            "speed": 48,
+            "preferredFoot": "left"
         },
         {
             "name": "Marko Gudžulić",
@@ -24,7 +25,8 @@
             "passing": 43,
             "stamina": 60,
             "defense": 67,
-            "speed": 42
+            "speed": 42,
+            "preferredFoot": "right"
         },
         {
             "name": "Ferro",
@@ -37,7 +39,8 @@
             "passing": 58,
             "stamina": 72,
             "defense": 78,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "left"
         },
         {
             "name": "Issiar Dramé",
@@ -50,7 +53,8 @@
             "passing": 57,
             "stamina": 66,
             "defense": 71,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "left"
         },
         {
             "name": "Nilton",
@@ -63,7 +67,8 @@
             "passing": 65,
             "stamina": 65,
             "defense": 78,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "Rúben Lima",
@@ -76,7 +81,8 @@
             "passing": 45,
             "stamina": 75,
             "defense": 77,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Diogo Travassos",
@@ -89,7 +95,8 @@
             "passing": 60,
             "stamina": 77,
             "defense": 77,
-            "speed": 57
+            "speed": 57,
+            "preferredFoot": "right"
         },
         {
             "name": "Leonel Bucca",
@@ -102,7 +109,8 @@
             "passing": 74,
             "stamina": 83,
             "defense": 68,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "right"
         },
         {
             "name": "Daniel Cabral",
@@ -115,7 +123,8 @@
             "passing": 75,
             "stamina": 73,
             "defense": 73,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "left"
         },
         {
             "name": "Igor Jesus",
@@ -128,7 +137,8 @@
             "passing": 77,
             "stamina": 72,
             "defense": 72,
-            "speed": 80
+            "speed": 80,
+            "preferredFoot": "right"
         },
         {
             "name": "Léo Cordeiro",
@@ -141,7 +151,8 @@
             "passing": 89,
             "stamina": 77,
             "defense": 80,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Paulo Moreira",
@@ -154,7 +165,8 @@
             "passing": 78,
             "stamina": 81,
             "defense": 78,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "right"
         },
         {
             "name": "Alan Ruiz",
@@ -167,7 +179,8 @@
             "passing": 80,
             "stamina": 72,
             "defense": 79,
-            "speed": 80
+            "speed": 80,
+            "preferredFoot": "left"
         },
         {
             "name": "André Luiz",
@@ -180,7 +193,8 @@
             "passing": 65,
             "stamina": 64,
             "defense": 22,
-            "speed": 88
+            "speed": 88,
+            "preferredFoot": "right"
         },
         {
             "name": "Caio Santana",
@@ -193,7 +207,8 @@
             "passing": 61,
             "stamina": 80,
             "defense": 37,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "right"
         },
         {
             "name": "Jovane Cabral",
@@ -206,7 +221,8 @@
             "passing": 68,
             "stamina": 63,
             "defense": 36,
-            "speed": 86
+            "speed": 86,
+            "preferredFoot": "right"
         },
         {
             "name": "Kikas",
@@ -219,7 +235,8 @@
             "passing": 77,
             "stamina": 71,
             "defense": 23,
-            "speed": 84
+            "speed": 84,
+            "preferredFoot": "right"
         },
         {
             "name": "Bilal Mazhar",
@@ -232,7 +249,8 @@
             "passing": 68,
             "stamina": 70,
             "defense": 31,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "left"
         }
     ]
 }

@@ -11,7 +11,8 @@
             "passing": 56,
             "stamina": 42,
             "defense": 46,
-            "speed": 41
+            "speed": 41,
+            "preferredFoot": "left"
         },
         {
             "name": "Rui Encarnação",
@@ -24,7 +25,8 @@
             "passing": 48,
             "stamina": 49,
             "defense": 54,
-            "speed": 42
+            "speed": 42,
+            "preferredFoot": "left"
         },
         {
             "name": "Ulisses",
@@ -37,7 +39,8 @@
             "passing": 46,
             "stamina": 79,
             "defense": 74,
-            "speed": 55
+            "speed": 55,
+            "preferredFoot": "right"
         },
         {
             "name": "Zé Vítor",
@@ -50,7 +53,8 @@
             "passing": 43,
             "stamina": 77,
             "defense": 70,
-            "speed": 53
+            "speed": 53,
+            "preferredFoot": "right"
         },
         {
             "name": "Léo Santos",
@@ -63,7 +67,8 @@
             "passing": 61,
             "stamina": 70,
             "defense": 78,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "José Gomes",
@@ -76,7 +81,8 @@
             "passing": 60,
             "stamina": 60,
             "defense": 82,
-            "speed": 53
+            "speed": 53,
+            "preferredFoot": "left"
         },
         {
             "name": "Garcia",
@@ -89,7 +95,8 @@
             "passing": 40,
             "stamina": 70,
             "defense": 81,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Matheus Dias",
@@ -102,7 +109,8 @@
             "passing": 85,
             "stamina": 80,
             "defense": 62,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Djibril Soumaré",
@@ -115,7 +123,8 @@
             "passing": 79,
             "stamina": 77,
             "defense": 68,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "right"
         },
         {
             "name": "Bruno Costa",
@@ -128,7 +137,8 @@
             "passing": 89,
             "stamina": 71,
             "defense": 80,
-            "speed": 80
+            "speed": 80,
+            "preferredFoot": "right"
         },
         {
             "name": "Luís Esteves",
@@ -141,7 +151,8 @@
             "passing": 74,
             "stamina": 79,
             "defense": 79,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "right"
         },
         {
             "name": "Daniel Penha",
@@ -154,7 +165,8 @@
             "passing": 73,
             "stamina": 88,
             "defense": 60,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "right"
         },
         {
             "name": "Paulinho",
@@ -167,7 +179,8 @@
             "passing": 76,
             "stamina": 76,
             "defense": 20,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Rúben Macedo",
@@ -180,7 +193,8 @@
             "passing": 61,
             "stamina": 69,
             "defense": 37,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         },
         {
             "name": "Fuki Yamada",
@@ -193,7 +207,8 @@
             "passing": 68,
             "stamina": 69,
             "defense": 39,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "left"
         },
         {
             "name": "Arvin Appiah",
@@ -206,7 +221,8 @@
             "passing": 79,
             "stamina": 65,
             "defense": 36,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "left"
         },
         {
             "name": "Isaac",
@@ -219,7 +235,8 @@
             "passing": 71,
             "stamina": 67,
             "defense": 36,
-            "speed": 86
+            "speed": 86,
+            "preferredFoot": "right"
         },
         {
             "name": "Dudu Teodora",
@@ -232,7 +249,8 @@
             "passing": 67,
             "stamina": 76,
             "defense": 28,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "left"
         }
     ]
 }

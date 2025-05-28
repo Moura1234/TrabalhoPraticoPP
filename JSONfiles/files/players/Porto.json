@@ -11,7 +11,8 @@
             "passing": 53,
             "stamina": 30,
             "defense": 64,
-            "speed": 23
+            "speed": 23,
+            "preferredFoot": "right"
         },
         {
             "name": "Cláudio Ramos",
@@ -24,7 +25,8 @@
             "passing": 45,
             "stamina": 57,
             "defense": 60,
-            "speed": 39
+            "speed": 39,
+            "preferredFoot": "left"
         },
         {
             "name": "Iván Marcano",
@@ -37,7 +39,8 @@
             "passing": 63,
             "stamina": 61,
             "defense": 74,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "right"
         },
         {
             "name": "Tiago Rodrigues",
@@ -50,7 +53,8 @@
             "passing": 41,
             "stamina": 62,
             "defense": 75,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "Wendell",
@@ -63,7 +67,8 @@
             "passing": 64,
             "stamina": 62,
             "defense": 88,
-            "speed": 50
+            "speed": 50,
+            "preferredFoot": "left"
         },
         {
             "name": "Nehuén Pérez",
@@ -76,7 +81,8 @@
             "passing": 47,
             "stamina": 64,
             "defense": 90,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "left"
         },
         {
             "name": "Martim Fernandes",
@@ -89,7 +95,8 @@
             "passing": 56,
             "stamina": 80,
             "defense": 85,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "right"
         },
         {
             "name": "Gabriel Brás",
@@ -102,7 +109,8 @@
             "passing": 40,
             "stamina": 69,
             "defense": 72,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "Francisco Moura",
@@ -115,7 +123,8 @@
             "passing": 54,
             "stamina": 69,
             "defense": 80,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "right"
         },
         {
             "name": "Martim Cunha",
@@ -128,7 +137,8 @@
             "passing": 66,
             "stamina": 63,
             "defense": 80,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "right"
         },
         {
             "name": "Zé Pedro",
@@ -141,7 +151,8 @@
             "passing": 54,
             "stamina": 67,
             "defense": 86,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "left"
         },
         {
             "name": "Stephen Eustáquio",
@@ -154,7 +165,8 @@
             "passing": 90,
             "stamina": 85,
             "defense": 70,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "left"
         },
         {
             "name": "Marko Grujić",
@@ -167,7 +179,8 @@
             "passing": 83,
             "stamina": 80,
             "defense": 66,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "Fábio Vieira",
@@ -180,7 +193,8 @@
             "passing": 90,
             "stamina": 90,
             "defense": 65,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "Mehdi Taremi",
@@ -193,7 +207,8 @@
             "passing": 67,
             "stamina": 65,
             "defense": 23,
-            "speed": 85
+            "speed": 85,
+            "preferredFoot": "left"
         },
         {
             "name": "Evanilson",
@@ -206,7 +221,8 @@
             "passing": 68,
             "stamina": 71,
             "defense": 38,
-            "speed": 86
+            "speed": 86,
+            "preferredFoot": "left"
         },
         {
             "name": "Rodrigo Mora",
@@ -219,7 +235,8 @@
             "passing": 94,
             "stamina": 77,
             "defense": 79,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "right"
         },
         {
             "name": "Samu Omorodion",
@@ -232,7 +249,8 @@
             "passing": 76,
             "stamina": 65,
             "defense": 36,
-            "speed": 88
+            "speed": 88,
+            "preferredFoot": "right"
         }
     ]
 }

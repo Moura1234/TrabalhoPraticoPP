@@ -11,7 +11,8 @@
             "passing": 57,
             "stamina": 41,
             "defense": 59,
-            "speed": 23
+            "speed": 23,
+            "preferredFoot": "right"
         },
         {
             "name": "Lazar Carević",
@@ -24,7 +25,8 @@
             "passing": 48,
             "stamina": 36,
             "defense": 57,
-            "speed": 48
+            "speed": 48,
+            "preferredFoot": "left"
         },
         {
             "name": "Enea Mihaj",
@@ -37,7 +39,8 @@
             "passing": 51,
             "stamina": 68,
             "defense": 73,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "Justin de Haas",
@@ -50,7 +53,8 @@
             "passing": 42,
             "stamina": 60,
             "defense": 86,
-            "speed": 51
+            "speed": 51,
+            "preferredFoot": "left"
         },
         {
             "name": "Leo Realpe",
@@ -63,7 +67,8 @@
             "passing": 52,
             "stamina": 68,
             "defense": 74,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "left"
         },
         {
             "name": "Rafa Soares",
@@ -76,7 +81,8 @@
             "passing": 63,
             "stamina": 60,
             "defense": 73,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Calegari",
@@ -89,7 +95,8 @@
             "passing": 42,
             "stamina": 68,
             "defense": 90,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "left"
         },
         {
             "name": "Rodrigo Pinheiro",
@@ -102,7 +109,8 @@
             "passing": 65,
             "stamina": 66,
             "defense": 80,
-            "speed": 51
+            "speed": 51,
+            "preferredFoot": "right"
         },
         {
             "name": "Mirko Topić",
@@ -115,7 +123,8 @@
             "passing": 82,
             "stamina": 87,
             "defense": 68,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "Tom van de Looi",
@@ -128,7 +137,8 @@
             "passing": 83,
             "stamina": 88,
             "defense": 70,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "left"
         },
         {
             "name": "Mathias de Amorim",
@@ -141,7 +151,8 @@
             "passing": 89,
             "stamina": 80,
             "defense": 75,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Samuel Lobato",
@@ -154,7 +165,8 @@
             "passing": 72,
             "stamina": 87,
             "defense": 72,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "left"
         },
         {
             "name": "Gustavo Sá",
@@ -167,7 +179,8 @@
             "passing": 70,
             "stamina": 83,
             "defense": 61,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "left"
         },
         {
             "name": "Otso Liimatta",
@@ -180,7 +193,8 @@
             "passing": 74,
             "stamina": 87,
             "defense": 76,
-            "speed": 61
+            "speed": 61,
+            "preferredFoot": "right"
         },
         {
             "name": "Óscar Aranda",
@@ -193,7 +207,8 @@
             "passing": 67,
             "stamina": 69,
             "defense": 32,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         },
         {
             "name": "Yassir Zabiri",
@@ -206,7 +221,8 @@
             "passing": 63,
             "stamina": 78,
             "defense": 31,
-            "speed": 81
+            "speed": 81,
+            "preferredFoot": "right"
         },
         {
             "name": "Simon Elisor",
@@ -219,7 +235,8 @@
             "passing": 65,
             "stamina": 70,
             "defense": 29,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         },
         {
             "name": "Vaclav Sejk",
@@ -232,7 +249,8 @@
             "passing": 66,
             "stamina": 72,
             "defense": 37,
-            "speed": 82
+            "speed": 82,
+            "preferredFoot": "left"
         }
     ]
 }

@@ -11,7 +11,8 @@
             "passing": 38,
             "stamina": 50,
             "defense": 49,
-            "speed": 35
+            "speed": 35,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Trigueira",
@@ -24,7 +25,8 @@
             "passing": 48,
             "stamina": 44,
             "defense": 62,
-            "speed": 31
+            "speed": 31,
+            "preferredFoot": "left"
         },
         {
             "name": "Fernando Fonseca",
@@ -37,7 +39,8 @@
             "passing": 43,
             "stamina": 75,
             "defense": 79,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "right"
         },
         {
             "name": "Cristian Devenish",
@@ -50,7 +53,8 @@
             "passing": 49,
             "stamina": 72,
             "defense": 83,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "Nacho Rodríguez",
@@ -63,7 +67,8 @@
             "passing": 56,
             "stamina": 76,
             "defense": 71,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "left"
         },
         {
             "name": "Jorge Teixeira",
@@ -76,7 +81,8 @@
             "passing": 64,
             "stamina": 70,
             "defense": 72,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "left"
         },
         {
             "name": "Baptiste Roux",
@@ -89,7 +95,8 @@
             "passing": 44,
             "stamina": 71,
             "defense": 74,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "left"
         },
         {
             "name": "Kiki Afonso",
@@ -102,7 +109,8 @@
             "passing": 69,
             "stamina": 76,
             "defense": 83,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "Gustavo Assunção",
@@ -115,7 +123,8 @@
             "passing": 78,
             "stamina": 77,
             "defense": 69,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "Jaume Grau",
@@ -128,7 +137,8 @@
             "passing": 70,
             "stamina": 76,
             "defense": 65,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "right"
         },
         {
             "name": "Lucas Piazón",
@@ -141,7 +151,8 @@
             "passing": 81,
             "stamina": 71,
             "defense": 76,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "left"
         },
         {
             "name": "Giorgi Aburjania",
@@ -154,7 +165,8 @@
             "passing": 75,
             "stamina": 86,
             "defense": 69,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "right"
         },
         {
             "name": "Jonatan Lucca",
@@ -167,7 +179,8 @@
             "passing": 85,
             "stamina": 78,
             "defense": 74,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "right"
         },
         {
             "name": "Vasco Lopes",
@@ -180,7 +193,8 @@
             "passing": 62,
             "stamina": 71,
             "defense": 38,
-            "speed": 85
+            "speed": 85,
+            "preferredFoot": "right"
         },
         {
             "name": "Babatunde Akinsola",
@@ -193,7 +207,8 @@
             "passing": 63,
             "stamina": 67,
             "defense": 25,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "right"
         },
         {
             "name": "Nenê",
@@ -206,7 +221,8 @@
             "passing": 65,
             "stamina": 61,
             "defense": 33,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "right"
         },
         {
             "name": "Rodrigo Ribeiro",
@@ -219,7 +235,8 @@
             "passing": 75,
             "stamina": 78,
             "defense": 36,
-            "speed": 75
+            "speed": 75,
+            "preferredFoot": "right"
         },
         {
             "name": "Zé Luís",
@@ -232,7 +249,8 @@
             "passing": 71,
             "stamina": 62,
             "defense": 25,
-            "speed": 80
+            "speed": 80,
+            "preferredFoot": "left"
         }
     ]
 }

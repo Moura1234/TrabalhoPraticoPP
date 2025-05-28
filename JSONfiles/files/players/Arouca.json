@@ -11,7 +11,8 @@
             "passing": 31,
             "stamina": 60,
             "defense": 51,
-            "speed": 44
+            "speed": 44,
+            "preferredFoot": "left"
         },
         {
             "name": "Nico Mantl",
@@ -24,7 +25,8 @@
             "passing": 59,
             "stamina": 54,
             "defense": 70,
-            "speed": 25
+            "speed": 25,
+            "preferredFoot": "left"
         },
         {
             "name": "Boris Popović",
@@ -37,7 +39,8 @@
             "passing": 52,
             "stamina": 61,
             "defense": 84,
-            "speed": 50
+            "speed": 50,
+            "preferredFoot": "left"
         },
         {
             "name": "José Fontán",
@@ -50,7 +53,8 @@
             "passing": 44,
             "stamina": 75,
             "defense": 86,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "left"
         },
         {
             "name": "Matías Rocha",
@@ -63,7 +67,8 @@
             "passing": 52,
             "stamina": 78,
             "defense": 74,
-            "speed": 61
+            "speed": 61,
+            "preferredFoot": "right"
         },
         {
             "name": "Tiago Esgaio",
@@ -76,7 +81,8 @@
             "passing": 68,
             "stamina": 70,
             "defense": 88,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "left"
         },
         {
             "name": "Weverson",
@@ -89,7 +95,8 @@
             "passing": 47,
             "stamina": 67,
             "defense": 83,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "left"
         },
         {
             "name": "David Simão",
@@ -102,7 +109,8 @@
             "passing": 87,
             "stamina": 79,
             "defense": 70,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "left"
         },
         {
             "name": "Pedro Moreira",
@@ -115,7 +123,8 @@
             "passing": 78,
             "stamina": 81,
             "defense": 64,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "right"
         },
         {
             "name": "Mamadou Loum",
@@ -128,7 +137,8 @@
             "passing": 76,
             "stamina": 82,
             "defense": 63,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "right"
         },
         {
             "name": "Taichi Fukui",
@@ -141,7 +151,8 @@
             "passing": 82,
             "stamina": 84,
             "defense": 65,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Pedro Santos",
@@ -154,7 +165,8 @@
             "passing": 80,
             "stamina": 88,
             "defense": 61,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "left"
         },
         {
             "name": "Pablo Gozálbez",
@@ -167,7 +179,8 @@
             "passing": 72,
             "stamina": 74,
             "defense": 65,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "left"
         },
         {
             "name": "Henrique Araújo",
@@ -180,7 +193,8 @@
             "passing": 60,
             "stamina": 76,
             "defense": 22,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         },
         {
             "name": "Jason",
@@ -193,7 +207,8 @@
             "passing": 69,
             "stamina": 71,
             "defense": 35,
-            "speed": 85
+            "speed": 85,
+            "preferredFoot": "right"
         },
         {
             "name": "Miguel Puche",
@@ -206,7 +221,8 @@
             "passing": 79,
             "stamina": 67,
             "defense": 25,
-            "speed": 81
+            "speed": 81,
+            "preferredFoot": "left"
         },
         {
             "name": "Morlaye Sylla",
@@ -219,7 +235,8 @@
             "passing": 69,
             "stamina": 77,
             "defense": 22,
-            "speed": 85
+            "speed": 85,
+            "preferredFoot": "right"
         },
         {
             "name": "Güven Yalçın",
@@ -232,7 +249,8 @@
             "passing": 67,
             "stamina": 79,
             "defense": 33,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "left"
         }
     ]
 }

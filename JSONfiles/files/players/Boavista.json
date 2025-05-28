@@ -11,7 +11,8 @@
             "passing": 46,
             "stamina": 44,
             "defense": 40,
-            "speed": 28
+            "speed": 28,
+            "preferredFoot": "left"
         },
         {
             "name": "Tomáš Vaclík",
@@ -24,7 +25,8 @@
             "passing": 33,
             "stamina": 36,
             "defense": 44,
-            "speed": 44
+            "speed": 44,
+            "preferredFoot": "right"
         },
         {
             "name": "César",
@@ -37,7 +39,8 @@
             "passing": 44,
             "stamina": 54,
             "defense": 64,
-            "speed": 37
+            "speed": 37,
+            "preferredFoot": "left"
         },
         {
             "name": "Rodrigo Abascal",
@@ -50,7 +53,8 @@
             "passing": 40,
             "stamina": 70,
             "defense": 86,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "left"
         },
         {
             "name": "Sidoine Fogning",
@@ -63,7 +67,8 @@
             "passing": 63,
             "stamina": 80,
             "defense": 82,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Vitaliy Lystsov",
@@ -76,7 +81,8 @@
             "passing": 43,
             "stamina": 61,
             "defense": 83,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "left"
         },
         {
             "name": "Steven Vitória",
@@ -89,7 +95,8 @@
             "passing": 60,
             "stamina": 70,
             "defense": 84,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "right"
         },
         {
             "name": "Pedro Gomes",
@@ -102,7 +109,8 @@
             "passing": 49,
             "stamina": 77,
             "defense": 81,
-            "speed": 56
+            "speed": 56,
+            "preferredFoot": "right"
         },
         {
             "name": "Miguel Reisinho",
@@ -115,7 +123,8 @@
             "passing": 70,
             "stamina": 87,
             "defense": 69,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "Marco van Ginkel",
@@ -128,7 +137,8 @@
             "passing": 70,
             "stamina": 88,
             "defense": 67,
-            "speed": 69
+            "speed": 69,
+            "preferredFoot": "right"
         },
         {
             "name": "Joel Silva",
@@ -141,7 +151,8 @@
             "passing": 85,
             "stamina": 87,
             "defense": 75,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "Salvador Agra",
@@ -154,7 +165,8 @@
             "passing": 60,
             "stamina": 65,
             "defense": 25,
-            "speed": 86
+            "speed": 86,
+            "preferredFoot": "right"
         },
         {
             "name": "Robert Bozenik",
@@ -167,7 +179,8 @@
             "passing": 75,
             "stamina": 78,
             "defense": 36,
-            "speed": 85
+            "speed": 85,
+            "preferredFoot": "left"
         },
         {
             "name": "Moussa Koné",
@@ -180,7 +193,8 @@
             "passing": 67,
             "stamina": 75,
             "defense": 25,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "left"
         },
         {
             "name": "Manuel Namora",
@@ -193,7 +207,8 @@
             "passing": 78,
             "stamina": 77,
             "defense": 29,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "right"
         },
         {
             "name": "Tiago Machado",
@@ -206,7 +221,8 @@
             "passing": 65,
             "stamina": 69,
             "defense": 29,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "right"
         },
         {
             "name": "Gonçalo Miguel",
@@ -219,7 +235,8 @@
             "passing": 62,
             "stamina": 73,
             "defense": 74,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Marco Ribeiro",
@@ -232,7 +249,8 @@
             "passing": 90,
             "stamina": 79,
             "defense": 71,
-            "speed": 65
+            "speed": 65,
+            "preferredFoot": "left"
         }
     ]
 }

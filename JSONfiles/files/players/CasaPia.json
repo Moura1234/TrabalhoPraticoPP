@@ -11,7 +11,8 @@
             "passing": 49,
             "stamina": 40,
             "defense": 52,
-            "speed": 45
+            "speed": 45,
+            "preferredFoot": "left"
         },
         {
             "name": "Patrick Sequeira",
@@ -24,7 +25,8 @@
             "passing": 41,
             "stamina": 48,
             "defense": 53,
-            "speed": 47
+            "speed": 47,
+            "preferredFoot": "right"
         },
         {
             "name": "José Fonte",
@@ -37,7 +39,8 @@
             "passing": 59,
             "stamina": 68,
             "defense": 76,
-            "speed": 53
+            "speed": 53,
+            "preferredFoot": "left"
         },
         {
             "name": "Ruben Kluivert",
@@ -50,7 +53,8 @@
             "passing": 52,
             "stamina": 78,
             "defense": 76,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "right"
         },
         {
             "name": "Leonardo Lelo",
@@ -63,7 +67,8 @@
             "passing": 56,
             "stamina": 76,
             "defense": 85,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "André Geraldes",
@@ -76,7 +81,8 @@
             "passing": 42,
             "stamina": 64,
             "defense": 75,
-            "speed": 59
+            "speed": 59,
+            "preferredFoot": "right"
         },
         {
             "name": "Gaizka Larrazabal",
@@ -89,7 +95,8 @@
             "passing": 68,
             "stamina": 68,
             "defense": 81,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "right"
         },
         {
             "name": "Andrian Kraev",
@@ -102,7 +109,8 @@
             "passing": 77,
             "stamina": 80,
             "defense": 73,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "left"
         },
         {
             "name": "Miguel Sousa",
@@ -115,7 +123,8 @@
             "passing": 81,
             "stamina": 75,
             "defense": 71,
-            "speed": 64
+            "speed": 64,
+            "preferredFoot": "left"
         },
         {
             "name": "Rafael Brito",
@@ -128,7 +137,8 @@
             "passing": 83,
             "stamina": 81,
             "defense": 74,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "right"
         },
         {
             "name": "Pablo Roberto",
@@ -141,7 +151,8 @@
             "passing": 86,
             "stamina": 73,
             "defense": 65,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "left"
         },
         {
             "name": "Henrique Pereira",
@@ -154,7 +165,8 @@
             "passing": 60,
             "stamina": 73,
             "defense": 22,
-            "speed": 79
+            "speed": 79,
+            "preferredFoot": "right"
         },
         {
             "name": "Jeremy Livolant",
@@ -167,7 +179,8 @@
             "passing": 69,
             "stamina": 77,
             "defense": 35,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "right"
         },
         {
             "name": "Samuel Obeng",
@@ -180,7 +193,8 @@
             "passing": 79,
             "stamina": 66,
             "defense": 22,
-            "speed": 84
+            "speed": 84,
+            "preferredFoot": "left"
         },
         {
             "name": "Cassiano",
@@ -193,7 +207,8 @@
             "passing": 76,
             "stamina": 65,
             "defense": 24,
-            "speed": 88
+            "speed": 88,
+            "preferredFoot": "left"
         },
         {
             "name": "Max Svensson",
@@ -206,7 +221,8 @@
             "passing": 68,
             "stamina": 75,
             "defense": 21,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "left"
         },
         {
             "name": "Cláudio Mendes Vicente",
@@ -219,7 +235,8 @@
             "passing": 74,
             "stamina": 60,
             "defense": 26,
-            "speed": 86
+            "speed": 86,
+            "preferredFoot": "left"
         },
         {
             "name": "Cauê",
@@ -232,7 +249,8 @@
             "passing": 73,
             "stamina": 68,
             "defense": 38,
-            "speed": 84
+            "speed": 84,
+            "preferredFoot": "left"
         }
     ]
 }

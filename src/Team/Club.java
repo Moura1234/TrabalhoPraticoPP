@@ -49,6 +49,11 @@ public class Club implements IClub{
     public IPlayer[] getPlayers() {
         return this.players;
     }
+    
+    public void setPlayers(IPlayer[] players) {
+    this.players = players;
+    this.playerCount = players.length;
+}
 
     @Override
     public String getCode() {

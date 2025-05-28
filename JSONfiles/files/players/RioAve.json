@@ -11,7 +11,8 @@
             "passing": 51,
             "stamina": 31,
             "defense": 63,
-            "speed": 20
+            "speed": 20,
+            "preferredFoot": "right"
         },
         {
             "name": "Matheus Teixeira",
@@ -24,7 +25,8 @@
             "passing": 46,
             "stamina": 46,
             "defense": 47,
-            "speed": 27
+            "speed": 27,
+            "preferredFoot": "left"
         },
         {
             "name": "Jonathan Panzo",
@@ -37,7 +39,8 @@
             "passing": 70,
             "stamina": 64,
             "defense": 76,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Francisco Petrasso",
@@ -50,7 +53,8 @@
             "passing": 50,
             "stamina": 67,
             "defense": 84,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "left"
         },
         {
             "name": "Nelson Abbey",
@@ -63,7 +67,8 @@
             "passing": 52,
             "stamina": 66,
             "defense": 80,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "right"
         },
         {
             "name": "João Pedro",
@@ -76,7 +81,8 @@
             "passing": 55,
             "stamina": 80,
             "defense": 84,
-            "speed": 53
+            "speed": 53,
+            "preferredFoot": "left"
         },
         {
             "name": "Omar Richards",
@@ -89,7 +95,8 @@
             "passing": 42,
             "stamina": 70,
             "defense": 70,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "right"
         },
         {
             "name": "Martim Neto",
@@ -102,7 +109,8 @@
             "passing": 75,
             "stamina": 79,
             "defense": 69,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "João Novais",
@@ -115,7 +123,8 @@
             "passing": 83,
             "stamina": 80,
             "defense": 67,
-            "speed": 63
+            "speed": 63,
+            "preferredFoot": "left"
         },
         {
             "name": "João Graça",
@@ -128,7 +137,8 @@
             "passing": 71,
             "stamina": 77,
             "defense": 76,
-            "speed": 70
+            "speed": 70,
+            "preferredFoot": "left"
         },
         {
             "name": "Brandon Aguilera",
@@ -141,7 +151,8 @@
             "passing": 87,
             "stamina": 80,
             "defense": 61,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Tiago Morais",
@@ -154,7 +165,8 @@
             "passing": 70,
             "stamina": 72,
             "defense": 31,
-            "speed": 76
+            "speed": 76,
+            "preferredFoot": "left"
         },
         {
             "name": "Tobías Medina",
@@ -167,7 +179,8 @@
             "passing": 67,
             "stamina": 62,
             "defense": 31,
-            "speed": 84
+            "speed": 84,
+            "preferredFoot": "right"
         },
         {
             "name": "Kiko Bondoso",
@@ -180,7 +193,8 @@
             "passing": 61,
             "stamina": 76,
             "defense": 24,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "André Luiz",
@@ -193,7 +207,8 @@
             "passing": 73,
             "stamina": 72,
             "defense": 34,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         },
         {
             "name": "Clayton",
@@ -206,7 +221,8 @@
             "passing": 64,
             "stamina": 76,
             "defense": 28,
-            "speed": 88
+            "speed": 88,
+            "preferredFoot": "right"
         },
         {
             "name": "Karem Zoabi",
@@ -219,7 +235,8 @@
             "passing": 76,
             "stamina": 77,
             "defense": 34,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         },
         {
             "name": "Tiago Fonseca Morais",
@@ -232,7 +249,8 @@
             "passing": 78,
             "stamina": 73,
             "defense": 36,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         }
     ]
 }

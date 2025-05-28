@@ -4,7 +4,6 @@
         "code": "SLB",
         "country": "Portugal",
         "founded": 1904,
-        "isNationalTeam": false,
         "stadium": "Estádio da Luz",
         "logo": "https://media.api-sports.io/football/teams/211.png"
     },
@@ -13,7 +12,6 @@
         "code": "FCP",
         "country": "Portugal",
         "founded": 1893,
-        "isNationalTeam": false,
         "stadium": "Estádio do Dragão",
         "logo": "https://media.api-sports.io/football/teams/212.png"
     },
@@ -22,7 +20,6 @@
         "code": "SCP",
         "country": "Portugal",
         "founded": 1906,
-        "isNationalTeam": false,
         "stadium": "Estádio José Alvalade",
         "logo": "https://media.api-sports.io/football/teams/213.png"
     },
@@ -31,7 +28,6 @@
         "code": "SCB",
         "country": "Portugal",
         "founded": 1921,
-        "isNationalTeam": false,
         "stadium": "Estádio Municipal de Braga",
         "logo": "https://media.api-sports.io/football/teams/214.png"
     },
@@ -40,7 +36,6 @@
         "code": "VSC",
         "country": "Portugal",
         "founded": 1922,
-        "isNationalTeam": false,
         "stadium": "Estádio Dom Afonso Henriques",
         "logo": "https://media.api-sports.io/football/teams/215.png"
     },
@@ -49,7 +44,6 @@
         "code": "BFC",
         "country": "Portugal",
         "founded": 1903,
-        "isNationalTeam": false,
         "stadium": "Estádio do Bessa XXI",
         "logo": "https://media.api-sports.io/football/teams/216.png"
     },
@@ -58,7 +52,6 @@
         "code": "CPAC",
         "country": "Portugal",
         "founded": 1920,
-        "isNationalTeam": false,
         "stadium": "Estádio Municipal de Rio Maior",
         "logo": "https://media.api-sports.io/football/teams/217.png"
     },
@@ -67,7 +60,6 @@
         "code": "GDEP",
         "country": "Portugal",
         "founded": 1939,
-        "isNationalTeam": false,
         "stadium": "Estádio António Coimbra da Mota",
         "logo": "https://media.api-sports.io/football/teams/218.png"
     },
@@ -76,7 +68,6 @@
         "code": "CFEA",
         "country": "Portugal",
         "founded": 2020,
-        "isNationalTeam": false,
         "stadium": "Estádio José Gomes",
         "logo": "https://media.api-sports.io/football/teams/219.png"
     },
@@ -85,7 +76,6 @@
         "code": "FCF",
         "country": "Portugal",
         "founded": 1931,
-        "isNationalTeam": false,
         "stadium": "Estádio Municipal de Famalicão",
         "logo": "https://media.api-sports.io/football/teams/220.png"
     },
@@ -94,7 +84,6 @@
         "code": "SCF",
         "country": "Portugal",
         "founded": 1910,
-        "isNationalTeam": false,
         "stadium": "Estádio de São Luís",
         "logo": "https://media.api-sports.io/football/teams/221.png"
     },
@@ -103,7 +92,6 @@
         "code": "GVFC",
         "country": "Portugal",
         "founded": 1924,
-        "isNationalTeam": false,
         "stadium": "Estádio Cidade de Barcelos",
         "logo": "https://media.api-sports.io/football/teams/222.png"
     },
@@ -112,7 +100,6 @@
         "code": "MFC",
         "country": "Portugal",
         "founded": 1938,
-        "isNationalTeam": false,
         "stadium": "Estádio Comendador Joaquim de Almeida Freitas",
         "logo": "https://media.api-sports.io/football/teams/223.png"
     },
@@ -121,7 +108,6 @@
         "code": "CDN",
         "country": "Portugal",
         "founded": 1910,
-        "isNationalTeam": false,
         "stadium": "Estádio da Madeira",
         "logo": "https://media.api-sports.io/football/teams/224.png"
     },
@@ -130,7 +116,6 @@
         "code": "RAFC",
         "country": "Portugal",
         "founded": 1939,
-        "isNationalTeam": false,
         "stadium": "Estádio dos Arcos",
         "logo": "https://media.api-sports.io/football/teams/225.png"
     },
@@ -139,7 +124,6 @@
         "code": "CDSC",
         "country": "Portugal",
         "founded": 1927,
-        "isNationalTeam": false,
         "stadium": "Estádio de São Miguel",
         "logo": "https://media.api-sports.io/football/teams/226.png"
     },
@@ -148,7 +132,6 @@
         "code": "AVS",
         "country": "Portugal",
         "founded": 2023,
-        "isNationalTeam": false,
         "stadium": "Estádio do CD Aves",
         "logo": "https://media.api-sports.io/football/teams/227.png"
     },
@@ -157,7 +140,6 @@
         "code": "FCA",
         "country": "Portugal",
         "founded": 1951,
-        "isNationalTeam": false,
         "stadium": "Estádio Municipal de Arouca",
         "logo": "https://media.api-sports.io/football/teams/228.png"
     }

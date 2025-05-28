@@ -39,7 +39,7 @@ public class Season implements ISeason{
     private IStanding[] leagueStandings;
     private MatchSimulatorStrategy simulatorStrategy;
     
-    public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding leagueStandings, MatchSimulatorStrategy simulatorStrategy){
+    public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding[] leagueStandings, MatchSimulatorStrategy simulatorStrategy){
         this.name = name;
         this.year = year;
         this.pointsPerWin = pointsPerWin;
@@ -47,14 +47,14 @@ public class Season implements ISeason{
         this.pointsPerLoss = pointsPerLoss;
         this.maxTeams = maxTeams;
         this.maxRounds = maxRounds;
-        this.currentRound = 0;
-        this.currentMatches = 0;
-        this.currentClubs = new IClub [maxTeams];
-        this.clubCount = 0;
-        this.numberOfCurrentTeams = 0;
-        this.schedule = null;
-        this.leagueStandings = new IStanding[maxTeams];
-        this.simulatorStrategy = null; 
+        this.currentRound = currentRound;
+        this.currentMatches = currentMatches;
+        this.currentClubs = currentClubs;
+        this.clubCount = clubCount;
+        this.numberOfCurrentTeams = numberOfCurrentTeams;
+        this.schedule = schedule;
+        this.leagueStandings = leagueStandings;
+        this.simulatorStrategy = simulatorStrategy; 
     }
 
     @Override
@@ -101,7 +101,11 @@ public class Season implements ISeason{
      
      @Override
      public void generateSchedule(){
-        int totalRounds = clubCount - 1;
+         
+         if (clubCount < 2) {
+    throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
+}
+    int totalRounds = clubCount - 1;
     int matchesPerRound = clubCount / 2;
     IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
 

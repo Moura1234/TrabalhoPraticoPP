@@ -11,7 +11,8 @@
             "passing": 30,
             "stamina": 38,
             "defense": 44,
-            "speed": 28
+            "speed": 28,
+            "preferredFoot": "left"
         },
         {
             "name": "Anatoliy Trubin",
@@ -24,7 +25,8 @@
             "passing": 41,
             "stamina": 58,
             "defense": 53,
-            "speed": 45
+            "speed": 45,
+            "preferredFoot": "right"
         },
         {
             "name": "Álvaro Carreras",
@@ -37,7 +39,8 @@
             "passing": 53,
             "stamina": 69,
             "defense": 88,
-            "speed": 66
+            "speed": 66,
+            "preferredFoot": "right"
         },
         {
             "name": "António Silva",
@@ -50,7 +53,8 @@
             "passing": 67,
             "stamina": 79,
             "defense": 88,
-            "speed": 67
+            "speed": 67,
+            "preferredFoot": "left"
         },
         {
             "name": "Nicolás Otamendi",
@@ -63,7 +67,8 @@
             "passing": 56,
             "stamina": 63,
             "defense": 90,
-            "speed": 62
+            "speed": 62,
+            "preferredFoot": "left"
         },
         {
             "name": "Alexander Bah",
@@ -76,7 +81,8 @@
             "passing": 52,
             "stamina": 61,
             "defense": 75,
-            "speed": 52
+            "speed": 52,
+            "preferredFoot": "left"
         },
         {
             "name": "Jan-Niklas Beste",
@@ -89,7 +95,8 @@
             "passing": 55,
             "stamina": 62,
             "defense": 72,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "right"
         },
         {
             "name": "Issa Kaboré",
@@ -102,7 +109,8 @@
             "passing": 60,
             "stamina": 68,
             "defense": 88,
-            "speed": 60
+            "speed": 60,
+            "preferredFoot": "right"
         },
         {
             "name": "Leandro Santos",
@@ -115,7 +123,8 @@
             "passing": 68,
             "stamina": 78,
             "defense": 83,
-            "speed": 58
+            "speed": 58,
+            "preferredFoot": "right"
         },
         {
             "name": "Florentino Luís",
@@ -128,7 +137,8 @@
             "passing": 75,
             "stamina": 72,
             "defense": 61,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Fredrik Aursnes",
@@ -141,7 +151,8 @@
             "passing": 71,
             "stamina": 90,
             "defense": 67,
-            "speed": 73
+            "speed": 73,
+            "preferredFoot": "left"
         },
         {
             "name": "Orkun Kökçü",
@@ -154,7 +165,8 @@
             "passing": 86,
             "stamina": 75,
             "defense": 72,
-            "speed": 71
+            "speed": 71,
+            "preferredFoot": "left"
         },
         {
             "name": "Ángel Di María",
@@ -167,7 +179,8 @@
             "passing": 72,
             "stamina": 64,
             "defense": 33,
-            "speed": 78
+            "speed": 78,
+            "preferredFoot": "left"
         },
         {
             "name": "Renato Sanches",
@@ -180,7 +193,8 @@
             "passing": 73,
             "stamina": 85,
             "defense": 76,
-            "speed": 68
+            "speed": 68,
+            "preferredFoot": "right"
         },
         {
             "name": "Hugo Sequeira",
@@ -193,7 +207,8 @@
             "passing": 64,
             "stamina": 79,
             "defense": 35,
-            "speed": 72
+            "speed": 72,
+            "preferredFoot": "left"
         },
         {
             "name": "João Rêgo",
@@ -206,7 +221,8 @@
             "passing": 72,
             "stamina": 73,
             "defense": 21,
-            "speed": 87
+            "speed": 87,
+            "preferredFoot": "right"
         },
         {
             "name": "Gonçalo Ramos",
@@ -219,7 +235,8 @@
             "passing": 65,
             "stamina": 64,
             "defense": 24,
-            "speed": 77
+            "speed": 77,
+            "preferredFoot": "left"
         },
         {
             "name": "David Neres",
@@ -232,8 +249,8 @@
             "passing": 74,
             "stamina": 73,
             "defense": 27,
-            "speed": 75
+            "speed": 75,
+            "preferredFoot": "left"
         }
-       
     ]
 }
