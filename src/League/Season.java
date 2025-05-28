@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package League;
+
 import Enums.Position;
 import com.ppstudios.footballmanager.api.contracts.league.*;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
@@ -17,12 +18,12 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 
-
 /**
  *
  * @author joaom
  */
-public class Season implements ISeason{
+public class Season implements ISeason {
+
     private String name;
     private int year;
     private int pointsPerWin;
@@ -38,8 +39,8 @@ public class Season implements ISeason{
     private ISchedule schedule;
     private IStanding[] leagueStandings;
     private MatchSimulatorStrategy simulatorStrategy;
-    
-    public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding[] leagueStandings, MatchSimulatorStrategy simulatorStrategy){
+
+    public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding[] leagueStandings, MatchSimulatorStrategy simulatorStrategy) {
         this.name = name;
         this.year = year;
         this.pointsPerWin = pointsPerWin;
@@ -54,187 +55,190 @@ public class Season implements ISeason{
         this.numberOfCurrentTeams = numberOfCurrentTeams;
         this.schedule = schedule;
         this.leagueStandings = leagueStandings;
-        this.simulatorStrategy = simulatorStrategy; 
+        this.simulatorStrategy = simulatorStrategy;
     }
 
     @Override
     public int getYear() {
         return this.year;
     }
-    
+
     @Override
-     public boolean addClub(IClub iclub){
-           if (clubCount >= maxTeams) return false;
-
-    for (int i = 0; i < clubCount; i++) {
-        if (currentClubs[i].equals(iclub)) {
-            return false; // clube existe
+    public boolean addClub(IClub iclub) {
+        if (clubCount >= maxTeams) {
+            return false;
         }
-    }
 
-    currentClubs[clubCount] = iclub;
-    leagueStandings[clubCount] = null; 
-    clubCount++;
-    numberOfCurrentTeams++;
-
-    return true;
-         
-     }
-     
-     @Override
-     public boolean removeClub(IClub iclub){
-         
         for (int i = 0; i < clubCount; i++) {
-        if (currentClubs[i].equals(iclub)) {
-            for (int j = i; j < clubCount - 1; j++) {
-                currentClubs[j] = currentClubs[j + 1];
-                leagueStandings[j] = leagueStandings[j + 1];
+            if (currentClubs[i].equals(iclub)) {
+                return false; // clube existe
             }
-            currentClubs[--clubCount] = null;
-            leagueStandings[clubCount] = null;
-            numberOfCurrentTeams--;
-            return true;
         }
-    }  
-         return false;
-     }
-     
-     @Override
-     public void generateSchedule(){
-         
-         if (clubCount < 2) {
-    throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
-}
-    int totalRounds = clubCount - 1;
-    int matchesPerRound = clubCount / 2;
-    IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
 
-    for (int round = 0; round < totalRounds; round++) {
-        for (int match = 0; match < matchesPerRound; match++) {
-            int homeIndex = (round + match) % (clubCount - 1);
-            int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
+        currentClubs[clubCount] = iclub;
+        leagueStandings[clubCount] = null;
+        clubCount++;
+        numberOfCurrentTeams++;
 
-            if (match == 0) {
-                awayIndex = clubCount - 1; // último clube fixo
+        return true;
+
+    }
+
+    @Override
+    public boolean removeClub(IClub iclub) {
+
+        for (int i = 0; i < clubCount; i++) {
+            if (currentClubs[i].equals(iclub)) {
+                for (int j = i; j < clubCount - 1; j++) {
+                    currentClubs[j] = currentClubs[j + 1];
+                    leagueStandings[j] = leagueStandings[j + 1];
+                }
+                currentClubs[--clubCount] = null;
+                leagueStandings[clubCount] = null;
+                numberOfCurrentTeams--;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public void generateSchedule() {
+        if (clubCount < 2) {
+            throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
+        }
+
+        int totalRounds = clubCount - 1; // 17 jornadas 
+        int matchesPerRound = clubCount / 2; // 9 jogos por jornada
+        IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
+
+        for (int round = 0; round < totalRounds; round++) {
+            for (int match = 0; match < matchesPerRound; match++) {
+                int homeIndex = (round + match) % (clubCount - 1);
+                int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
+
+                if (match == 0) {
+                    awayIndex = clubCount - 1;
+                }
+
+                IClub homeClub = currentClubs[homeIndex];
+                IClub awayClub = currentClubs[awayIndex];
+
+                IPlayer[] homePlayers = homeClub.getPlayers();
+                IPlayer[] awayPlayers = awayClub.getPlayers();
+
+                Formation formation = Formation.create433(); // usa qualquer formação base
+                ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers);
+                ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers);
+
+                Match game = new Match(
+                        homeClub,
+                        awayClub,
+                        false,
+                        homeTeam,
+                        awayTeam,
+                        0,
+                        0,
+                        Enums.EFormation.HomeFormation,
+                        Enums.EFormation.AwayFormation,
+                        round,
+                        null, // Sem eventos por agora
+                        0 // eventCount
+                );
+
+                matches[round][match] = game;
+            }
+        }
+
+        this.schedule = new Schedule(matches);
+    }
+
+    @Override
+    public IMatch[] getMatches() {
+        if (schedule != null) {
+            return schedule.getAllMatches();
+        } else {
+            return new IMatch[0];
+        }
+    }
+
+    @Override
+    public IMatch[] getMatches(int i) {
+        if (schedule != null) {
+            return schedule.getMatchesForRound(i);
+        } else {
+            return new IMatch[0];
+        }
+    }
+
+    @Override
+    public void simulateRound() {
+        if (currentRound < maxRounds) {
+            IMatch[] roundMatches = schedule.getMatchesForRound(currentRound);
+
+            if (simulatorStrategy != null) {
+                for (IMatch match : roundMatches) {
+                    simulatorStrategy.simulate(match);
+                }
             }
 
-            IClub homeClub = currentClubs[homeIndex];
-            IClub awayClub = currentClubs[awayIndex];
-
-            IPlayer[] homePlayers = homeClub.getPlayers(); 
-            IPlayer[] awayPlayers = awayClub.getPlayers();
-
-            Formation teamFormation = Formation.create433(); 
-
-            ITeam homeTeam = new Team(100, teamFormation, teamFormation.getPositions().length, homeClub, homePlayers);
-            ITeam awayTeam = new Team(100, teamFormation, teamFormation.getPositions().length, awayClub, awayPlayers);
-
-            // Enum indica se é jogo em casa ou fora
-            Enums.EFormation homeFormation = Enums.EFormation.HomeFormation;
-            Enums.EFormation awayFormation = Enums.EFormation.AwayFormation;
-
-            IMatch game = new Match(
-                homeClub, awayClub,
-                false,
-                homeTeam, awayTeam,
-                0, 0,
-                homeFormation, awayFormation,
-                round,
-                new IEvent[90], 0
-            );
-
-            matches[round][match] = game;
+            currentRound++;
+            currentMatches++;
         }
     }
 
-    schedule = new Schedule(matches);
-}
-
-
-  
-     
-     @Override
-     public IMatch[] getMatches(){
-          if (schedule != null) {
-        return schedule.getAllMatches();
-    } else {
-        return new IMatch[0];
-    }
- }
-     
-     @Override
-     public IMatch[] getMatches(int i){
-    if (schedule != null) {
-        return schedule.getMatchesForRound(i);
-    } else {
-        return new IMatch[0];
-    }
-}
-     
-     @Override
-     public void simulateRound(){
-          if (currentRound < maxRounds && simulatorStrategy != null) {
-        IMatch[] roundMatches = schedule.getMatchesForRound(currentRound);
-        for (IMatch match : roundMatches) {
-            simulatorStrategy.simulate(match);
+    @Override
+    public void simulateSeason() {
+        while (!isSeasonComplete()) {
+            simulateRound();
         }
-        currentRound++;
-        currentMatches++;
     }
-     }
-     
-     @Override
-     public void simulateSeason(){
-         while (!isSeasonComplete()) {
-        simulateRound();
-    } 
-     }
-     
-     @Override
-     public int getCurrentRound() {
+
+    @Override
+    public int getCurrentRound() {
         return this.currentRound;
     }
-     
-     @Override
-     public boolean isSeasonComplete(){
-         return currentRound >= maxRounds;
-     }
 
-     @Override
-     public void resetSeason(){
-    currentRound = 0;
-    currentMatches = 0;
-    schedule = null;
-    for (int i = 0; i < leagueStandings.length; i++) {
-        leagueStandings[i] = null;
-    }    
+    @Override
+    public boolean isSeasonComplete() {
+        return currentRound >= maxRounds;
     }
-     
-     @Override
-     public String displayMatchResult(IMatch imatch){
-      if (imatch instanceof Match m) {
-     return m.getHomeClub().getName() + " " + m.getHomeGoals() + " - " +
-       m.getAwayGoals() + " " + m.getAwayClub().getName();
-     }
-      return "Resultado indisponível";
-     }
-     
-     @Override
-     public void setMatchSimulator(MatchSimulatorStrategy mss){
-         this.simulatorStrategy = mss;
-     }
-     
-     @Override
-     public IStanding[] getLeagueStandings() {
+
+    @Override
+    public void resetSeason() {
+        currentRound = 0;
+        currentMatches = 0;
+        schedule = null;
+        for (int i = 0; i < leagueStandings.length; i++) {
+            leagueStandings[i] = null;
+        }
+    }
+
+    @Override
+    public String displayMatchResult(IMatch imatch) {
+        if (imatch instanceof Match m) {
+            return m.getHomeClub().getName() + " " + m.getHomeGoals() + " - "
+                    + m.getAwayGoals() + " " + m.getAwayClub().getName();
+        }
+        return "Resultado indisponível";
+    }
+
+    @Override
+    public void setMatchSimulator(MatchSimulatorStrategy mss) {
+        this.simulatorStrategy = mss;
+    }
+
+    @Override
+    public IStanding[] getLeagueStandings() {
         return this.leagueStandings;
     }
-     
-     @Override
-     public ISchedule getSchedule() {
+
+    @Override
+    public ISchedule getSchedule() {
         return this.schedule;
     }
-     
-     @Override
+
+    @Override
     public int getPointsPerWin() {
         return this.pointsPerWin;
     }
@@ -248,7 +252,7 @@ public class Season implements ISeason{
     public int getPointsPerLoss() {
         return this.pointsPerLoss;
     }
-    
+
     @Override
     public String getName() {
         return this.name;
@@ -268,7 +272,7 @@ public class Season implements ISeason{
     public int getCurrentMatches() {
         return this.currentMatches;
     }
-    
+
     @Override
     public int getNumberOfCurrentTeams() {
         return this.numberOfCurrentTeams;
@@ -277,12 +281,11 @@ public class Season implements ISeason{
     @Override
     public IClub[] getCurrentClubs() {
         return this.currentClubs;
-    }    
-    
+    }
+
     @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
-}
 
+}

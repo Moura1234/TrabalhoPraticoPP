@@ -21,7 +21,6 @@ import Simulation.*;
 import Team.*;
 import Enums.*;
 
-
 /**
  *
  * @author joaom
@@ -32,61 +31,78 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
 
         try {
             // 1. Carregar clubes do ficheiro JSON
             IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfilesCorrigidos/files/clubs.json");
-  
+
             System.out.println("Total de clubes carregados: " + clubs.length);
-for (int i = 0; i < clubs.length; i++) {
-    if (clubs[i] == null) {
-        System.out.println(" Clube nulo no índice: " + i);
-    } else {
-        System.out.println("" + clubs[i].getName());
-    }
-}
+            for (int i = 0; i < clubs.length; i++) {
+                if (clubs[i] == null) {
+                    System.out.println(" Clube nulo no índice: " + i);
+                } else {
+                    System.out.println("" + clubs[i].getName());
+                }
+            }
             // 2. Atribuir jogadores a cada clube
             for (IClub club : clubs) {
                 String fileName = null;
 
                 switch (club.getName()) {
                     case "Sport Lisboa e Benfica":
-                        fileName = "Benfica"; break;
+                        fileName = "Benfica";
+                        break;
                     case "Futebol Clube do Porto":
-                        fileName = "Porto"; break;
+                        fileName = "Porto";
+                        break;
                     case "Sporting Clube de Portugal":
-                        fileName = "Sporting"; break;
+                        fileName = "Sporting";
+                        break;
                     case "Sporting Clube de Braga":
-                        fileName = "Braga"; break;
+                        fileName = "Braga";
+                        break;
                     case "Vitoria Sport Clube":
-                        fileName = "Vitoria"; break;
+                        fileName = "Vitoria";
+                        break;
                     case "Boavista Futebol Clube":
-                        fileName = "Boavista"; break;
+                        fileName = "Boavista";
+                        break;
                     case "Casa Pia Atletico Clube":
-                        fileName = "CasaPia"; break;
+                        fileName = "CasaPia";
+                        break;
                     case "Grupo Desportivo Estoril Praia":
-                        fileName = "Estoril"; break;
+                        fileName = "Estoril";
+                        break;
                     case "Clube de Futebol Estrela da Amadora":
-                        fileName = "EstrelaAmadora"; break;
+                        fileName = "EstrelaAmadora";
+                        break;
                     case "Futebol Clube de Famalicao":
-                        fileName = "Famalicao"; break;
+                        fileName = "Famalicao";
+                        break;
                     case "Sport Clube Farense":
-                        fileName = "Farense"; break;
+                        fileName = "Farense";
+                        break;
                     case "Gil Vicente Futebol Clube":
-                        fileName = "GilVicente"; break;
+                        fileName = "GilVicente";
+                        break;
                     case "Moreirense Futebol Clube":
-                        fileName = "Moreirense"; break;
+                        fileName = "Moreirense";
+                        break;
                     case "Clube Desportivo Nacional":
-                        fileName = "Nacional"; break;
+                        fileName = "Nacional";
+                        break;
                     case "Rio Ave Futebol Clube":
-                        fileName = "RioAve"; break;
+                        fileName = "RioAve";
+                        break;
                     case "Clube Desportivo Santa Clara":
-                        fileName = "SantaClara"; break;
+                        fileName = "SantaClara";
+                        break;
                     case "AVS Futebol SAD":
-                        fileName = "AFS"; break;
+                        fileName = "AFS";
+                        break;
                     case "Futebol Clube de Arouca":
-                        fileName = "Arouca"; break;
+                        fileName = "Arouca";
+                        break;
                     default:
                         fileName = null;
                         break;
@@ -104,37 +120,46 @@ for (int i = 0; i < clubs.length; i++) {
 
             // 4. Criar uma época (Season)
             Season season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
-                clubs.length, clubs.length - 1, 0, 0,
-                clubs, clubs.length, clubs.length, null,
-                leagueStandings, new MatchSimulator()
+                    clubs.length, clubs.length - 1, 0, 0,
+                    clubs, clubs.length, clubs.length, null,
+                    leagueStandings, new MatchSimulator()
             );
 
             // 5. Gerar o calendário
             season.generateSchedule();
 
             // 6. Simular a 1ª jornada
-            season.simulateRound();
+            //season.simulateRound();
+            System.out.println("Jornada " + (season.getCurrentRound() + 1));
+            while (!season.isSeasonComplete()) {
+                season.simulateRound();
+            }
 
-            // 7. Mostrar resultados
-            IMatch[] matches = season.getMatches(season.getCurrentRound() - 1);
+            IMatch[] matches = season.getMatches(season.getCurrentRound());
             for (IMatch match : matches) {
-                Match m = (Match) match;
+                Match realMatch = (Match) match; // usamos cast para chamar métodos que não estão nas interfaces 
+
                 System.out.println(
-                    m.getHomeTeam().getClub().getName() + " " +
-                    m.getHomeGoals() + " - " +
-                    m.getAwayGoals() + " " +
-                    m.getAwayTeam().getClub().getName()
+                        realMatch.getHomeTeam().getClub().getName() + " "
+                        + realMatch.getHomeGoals() + " - "
+                        + realMatch.getAwayGoals() + " "
+                        + realMatch.getAwayTeam().getClub().getName()
                 );
             }
 
+//            // 7. Mostrar resultados
+//            IMatch[] matches = season.getMatches(season.getCurrentRound() - 1);
+//            for (IMatch match : matches) {
+//                Match m = (Match) match;
+//                System.out.println(
+//                    m.getHomeTeam().getClub().getName() + " " +
+//                    m.getHomeGoals() + " - " +
+//                    m.getAwayGoals() + " " +
+//                    m.getAwayTeam().getClub().getName()
+//                );
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
-
-
-
-    
-    
-
