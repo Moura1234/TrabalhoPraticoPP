@@ -4,7 +4,7 @@
  */
 package Simulation;
 
-import Event.GoalEvent;
+import Event.*;
 import Match.Match;
 import Player.Player;
 import Team.Team;
@@ -24,49 +24,67 @@ public class MatchSimulator implements MatchSimulatorStrategy {
 
     @Override
     public void simulate(IMatch imatch) {
-        Match match = (Match) imatch;
+         Match match = (Match) imatch;
 
-        IPlayer[] homePlayers = match.getHomeTeam().getPlayers();
-        IPlayer[] awayPlayers = match.getAwayTeam().getPlayers();
+    IPlayer[] homePlayers = match.getHomeTeam().getPlayers();
+    IPlayer[] awayPlayers = match.getAwayTeam().getPlayers();
 
-        int homeGoals = 0;
-        int awayGoals = 0;
+    int homeGoals = 0;
+    int awayGoals = 0;
 
-        Random random = new Random();
-        int numAttacks = 6 + random.nextInt(5); // entre 6 e 10 jogadas
+    IEvent[] events = new IEvent[90]; // máx 1 evento por minuto (podes ajustar)
+    int eventIndex = 0;
 
-        for (int i = 0; i < numAttacks; i++) {
+    for (int minute = 1; minute <= 90; minute += 5) {
+        if (random.nextDouble() < 0.6) { // 60% de chance de evento a cada 5 min
             boolean homeAttacking = random.nextBoolean();
-
-            IPlayer[] attackers;
-            IPlayer[] defenders;
-
-            if (homeAttacking) {
-                attackers = homePlayers;
-                defenders = awayPlayers;
-            } else {
-                attackers = awayPlayers;
-                defenders = homePlayers;
-            }
+            IPlayer[] attackers = homeAttacking ? homePlayers : awayPlayers;
+            IPlayer[] defenders = homeAttacking ? awayPlayers : homePlayers;
 
             IPlayer attacker = getRandomAttacker(attackers);
-            int attackPower = attacker.getShooting() + attacker.getStamina();
+            IPlayer defender = getRandomDefender(defenders);
 
-            int defensePower = getTeamDefense(defenders);
+            if (attacker == null) continue;
 
-            int chance = random.nextInt(attackPower + defensePower + 1);
-            if (chance < attackPower) {
-                if (homeAttacking) {
-                    homeGoals++;
-                } else {
-                    awayGoals++;
+            int shot = attacker.getShooting();
+            int defense = defender != null ? defender.getStamina() : 30;
+
+            if (shot > random.nextInt(shot + defense + 1)) {
+                // Golo
+                if (homeAttacking) homeGoals++;
+                else awayGoals++;
+
+                if (eventIndex < events.length) {
+                    events[eventIndex++] = new GoalEvent(attacker, "GOAL", minute);
+                }
+            } else {
+                
+                // Remate falhado
+                IPlayer goalkeeper = getGoalkeeper(defenders);
+                if (eventIndex < events.length) {
+                    events[eventIndex++] = new ShotEvent(attacker, goalkeeper, "SHOT", minute);
                 }
             }
+
+            // Eventos adicionais
+            if (random.nextDouble() < 0.1 && eventIndex < events.length) {
+                events[eventIndex++] = new FoulEvent(attacker, "FOUL", minute);
+            }
+
+            if (random.nextDouble() < 0.05 && eventIndex < events.length) {
+                events[eventIndex++] = new CornerEvent(attacker, "CORNER", minute);
+            }
+
+            if (random.nextDouble() < 0.03 && eventIndex < events.length) {
+                events[eventIndex++] = new GoalKickEvent(defender, "GOALKICK", minute);
+            }
         }
+    }
 
         match.setHomeGoals(homeGoals);
         match.setAwayGoals(awayGoals);
         match.setPlayed();
+        match.setEvents (events);
 
         System.out.println(
                 match.getHomeTeam().getClub().getName() + " "
@@ -95,6 +113,16 @@ public class MatchSimulator implements MatchSimulatorStrategy {
             return null;
         }
     }
+    
+   private IPlayer getRandomDefender(IPlayer[] players) {
+    for (IPlayer p : players) {
+        if (p != null && p.getPosition().toString().contains("DEFENDER")) {
+            return p;
+        }
+    }
+    return players[random.nextInt(players.length)];
+}
+ 
 
     private int getTeamDefense(IPlayer[] players) {
         int total = 0;
@@ -114,8 +142,8 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         return total / count;
     }
 
-    private Player getGoalkeeper(Team team) {
-        for (IPlayer p : team.getPlayers()) {
+    private Player getGoalkeeper(IPlayer[] players) {
+        for (IPlayer p : players) {
             if (p instanceof Player player && player.getPosition().toString().equals("GOALKEEPER")) {
                 return player;
             }
