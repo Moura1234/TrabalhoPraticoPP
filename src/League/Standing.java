@@ -107,4 +107,17 @@ public class Standing implements IStanding {
     points += pointsPerLoss;   
     }
     
+    public void updateStats(int goalsScored, int goalsConceded, int pointsPerWin, int pointsPerDraw, int pointsPerLoss) {
+    this.goalsScored += goalsScored;
+    this.goalsConceded += goalsConceded;
+
+    if (goalsScored > goalsConceded) {
+        addWin(pointsPerWin);
+    } else if (goalsScored == goalsConceded) {
+        addDraw(pointsPerDraw);
+    } else {
+        addLoss(pointsPerLoss);
+    }
+}
+    
 }

@@ -34,7 +34,7 @@ public class main {
 
         try {
             // 1. Carregar clubes do ficheiro JSON
-            IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfilesCorrigidos/files/clubs.json");
+            IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfiles/files/clubs.json");
 
             System.out.println("Total de clubes carregados: " + clubs.length);
             for (int i = 0; i < clubs.length; i++) {
@@ -73,7 +73,7 @@ public class main {
                     case "Grupo Desportivo Estoril Praia":
                         fileName = "Estoril";
                         break;
-                    case "Clube de Futebol Estrela da Amadora":
+                    case "C. Futebol Estrela da Amadora":
                         fileName = "EstrelaAmadora";
                         break;
                     case "Futebol Clube de Famalicao":
@@ -109,15 +109,35 @@ public class main {
                 }
 
                 if (fileName != null) {
-                    String path = "JSONfilesCorrigidos/files/players/" + fileName + ".json";
+                    String path = "JSONfiles/files/players/" + fileName + ".json";
                     IPlayer[] players = JsonManualLoader.loadPlayersFromJson(path);
                     ((Club) club).setPlayers(players); // Cast se IClub não tiver setPlayers
                 }
             }
 
             // 3. Criar classificações
-            IStanding[] leagueStandings = new Standing[clubs.length];
+        
 
+            
+            //Criar array de Team a partir do Club
+        Team[] teams = new Team[clubs.length];
+
+           for (int i = 0; i < clubs.length; i++) {
+             Club club = (Club) clubs[i];
+             IPlayer[] players = club.getPlayers();
+            teams[i] = new Team(i, Formation.create442(), 5, club, players);
+            
+            
+        }
+           
+                IStanding[] leagueStandings = new Standing[clubs.length];
+             for (int i = 0; i < clubs.length; i++) {
+             leagueStandings[i] = new Standing(teams[i]); 
+          }
+
+
+
+          
             // 4. Criar uma época (Season)
             Season season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
                     clubs.length, clubs.length - 1, 0, 0,
@@ -127,39 +147,122 @@ public class main {
 
             // 5. Gerar o calendário
             season.generateSchedule();
+            ISchedule schedule = season.getSchedule();
 
-            // 6. Simular a 1ª jornada
-            //season.simulateRound();
-            System.out.println("Jornada " + (season.getCurrentRound() + 1));
-            while (!season.isSeasonComplete()) {
-                season.simulateRound();
+      
+            
+            
+           System.out.println("Simulating Round " + (season.getCurrentRound() + 1));
+           while (!season.isSeasonComplete()) {
+           season.simulateRound();
+}
+
+           for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
+    IMatch[] roundMatches = schedule.getMatchesForRound(i);
+
+    for (IMatch match : roundMatches) {
+        Match realMatch = (Match) match;
+
+        if (realMatch.isPlayed()) {
+            Team home = (Team) realMatch.getHomeTeam();
+            Team away = (Team) realMatch.getAwayTeam();
+            int homeGoals = realMatch.getHomeGoals();
+            int awayGoals = realMatch.getAwayGoals();
+
+            Standing homeStanding = null;
+            Standing awayStanding = null;
+
+            for (int j = 0; j < leagueStandings.length; j++) {
+                if (leagueStandings[j].getTeam().getClub().equals(home.getClub())) {
+                    homeStanding = (Standing) leagueStandings[j];
+                }
+                if (leagueStandings[j].getTeam().getClub().equals(away.getClub())) {
+                    awayStanding = (Standing) leagueStandings[j];
+                }
             }
 
-            IMatch[] matches = season.getMatches(season.getCurrentRound());
-            for (IMatch match : matches) {
-                Match realMatch = (Match) match; // usamos cast para chamar métodos que não estão nas interfaces 
-
-                System.out.println(
-                        realMatch.getHomeTeam().getClub().getName() + " "
-                        + realMatch.getHomeGoals() + " - "
-                        + realMatch.getAwayGoals() + " "
-                        + realMatch.getAwayTeam().getClub().getName()
-                );
+            if (homeStanding != null && awayStanding != null) {
+                homeStanding.updateStats(homeGoals, awayGoals, 3, 1, 0);
+                awayStanding.updateStats(awayGoals, homeGoals, 3, 1, 0);
             }
-
-//            // 7. Mostrar resultados
-//            IMatch[] matches = season.getMatches(season.getCurrentRound() - 1);
-//            for (IMatch match : matches) {
-//                Match m = (Match) match;
-//                System.out.println(
-//                    m.getHomeTeam().getClub().getName() + " " +
-//                    m.getHomeGoals() + " - " +
-//                    m.getAwayGoals() + " " +
-//                    m.getAwayTeam().getClub().getName()
-//                );
-//            }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }
+
+          
+
+int totalRounds = schedule.getNumberOfRounds();
+
+for (int i = 0; i < totalRounds; i++) {
+    IMatch[] roundMatches = schedule.getMatchesForRound(i);
+
+    System.out.println("======================");
+    System.out.println("Round " + (i + 1));
+    System.out.println("======================");
+
+    for (IMatch match : roundMatches) {
+        Match realMatch = (Match) match; // cast necessário
+
+        if (realMatch.isPlayed()) {
+            System.out.printf("%-30s %2d - %-2d %-30s\n",
+                realMatch.getHomeTeam().getClub().getName(),
+                realMatch.getHomeGoals(),
+                realMatch.getAwayGoals(),
+                realMatch.getAwayTeam().getClub().getName());
+        }
+    }
+
+    System.out.println(); // linha em branco entre jornadas
+}
+
+
+for (int i = 0; i < leagueStandings.length - 1; i++) {
+    for (int j = i + 1; j < leagueStandings.length; j++) {
+        Standing s1 = (Standing) leagueStandings[i];
+        Standing s2 = (Standing) leagueStandings[j];
+
+        boolean swap = false;
+
+        if (s2.getPoints() > s1.getPoints()) {
+            swap = true;
+        } else if (s2.getPoints() == s1.getPoints()) {
+            if (s2.getGoalDifference() > s1.getGoalDifference()) {
+                swap = true;
+            }
+        }
+
+        if (swap) {
+            IStanding temp = leagueStandings[i];
+            leagueStandings[i] = leagueStandings[j];
+            leagueStandings[j] = temp;
+        }
+    }
+}
+
+  System.out.println("\n===== League Table =====\n");
+System.out.printf("    %-30s %5s %5s %5s %5s %5s %5s %5s\n",
+    "Team", "Pts", "W", "D", "L", "GS", "GC", "GD");
+
+for (IStanding s : leagueStandings) {
+    Standing st = (Standing) s;
+    System.out.printf("    %-30s %5d %5d %5d %5d %5d %5d %5d\n",
+        st.getTeam().getClub().getName(),
+        st.getPoints(),
+        st.getWins(),
+        st.getDraws(),
+        st.getLosses(),
+        st.getGoalScored(),
+        st.getGoalsConceded(),
+        st.getGoalDifference());
+}
+
+                
+          }
+         
+ catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    }
+
+
