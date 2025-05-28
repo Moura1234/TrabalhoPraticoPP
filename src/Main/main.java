@@ -36,7 +36,7 @@ public class main {
 
         try {
             // 1. Carregar clubes do ficheiro JSON
-            IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfiles/files/clubs.json");
+            IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfilesCorrigidos/files/clubs.json");
   
             System.out.println("Total de clubes carregados: " + clubs.length);
 for (int i = 0; i < clubs.length; i++) {
@@ -93,7 +93,7 @@ for (int i = 0; i < clubs.length; i++) {
                 }
 
                 if (fileName != null) {
-                    String path = "JSONfiles/files/players/" + fileName + ".json";
+                    String path = "JSONfilesCorrigidos/files/players/" + fileName + ".json";
                     IPlayer[] players = JsonManualLoader.loadPlayersFromJson(path);
                     ((Club) club).setPlayers(players); // Cast se IClub não tiver setPlayers
                 }

@@ -41,30 +41,30 @@ public Position[] getPositions() {
     
 public static Formation create442() {
     Position[] positions = {
-        Position.GK,
-        Position.LB, Position.CB, Position.CB, Position.RB,
-        Position.LW, Position.CM, Position.CM, Position.RW,
-        Position.ST, Position.ST
+        Position.GOALKEEPER,
+        Position.DEFENDER, Position.DEFENDER, Position.DEFENDER, Position.DEFENDER,
+        Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER,
+        Position.FORWARD, Position.FORWARD
     };
     return new Formation("4-4-2", 5, positions);
 }
 
 public static Formation create433() {
     Position[] positions = {
-        Position.GK,
-        Position.LB, Position.CB, Position.CB, Position.RB,
-        Position.CDM, Position.CM, Position.CAM,
-        Position.LW, Position.ST, Position.RW
+        Position.GOALKEEPER,
+        Position.DEFENDER, Position.DEFENDER, Position.DEFENDER, Position.DEFENDER,
+        Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER,
+        Position.FORWARD, Position.FORWARD, Position.FORWARD
     };
     return new Formation("4-3-3", 6, positions);
 }
 
 public static Formation create352() {
     Position[] positions = {
-        Position.GK,
-        Position.CB, Position.CB, Position.CB,
-        Position.LW, Position.CDM, Position.CM, Position.CAM, Position.RW,
-        Position.ST, Position.ST
+        Position.GOALKEEPER,
+        Position.DEFENDER, Position.DEFENDER, Position.DEFENDER,
+        Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER,
+        Position.FORWARD, Position.FORWARD
     };
     return new Formation("3-5-2", 4, positions);
 }

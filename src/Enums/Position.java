@@ -11,33 +11,51 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayerPosition;
  * @author joaom
  */
 public enum Position implements IPlayerPosition{
-    GK, LB, CB, RB, CDM, CM, CAM, LW, ST, RW;
-
+    GOALKEEPER, DEFENDER, MIDFIELDER, FORWARD;
+    
     @Override
-    public String getDescription() {
-        switch (this) {
-            case GK:
+    public String getDescription(){
+        switch(this){
+            case GOALKEEPER:
                 return "Goalkeeper";
-            case LB:
-                return "Left Back";
-            case CB:
-                return "Center Back";
-            case RB:
-                return "Right Back";   
-            case CDM:
-                return "Defensive Midfielder";
-            case CM:
-                return "Midfielder";  
-            case CAM:
-                return "Offensive Midfielder";
-            case LW:
-                return "Left Winger";    
-            case ST:
-                return "Striker";    
-            case RW:
-                return "Right Winger";
-            default:   
+            case DEFENDER:
+                return "Defender";
+            case MIDFIELDER:
+                return "Midfielder";
+            case FORWARD:
+                return "Forward";
+            default:
                 return "No position was found";
         }
     }
+    
+//    GK, LB, CB, RB, CDM, CM, CAM, LW, ST, RW;
+//
+//    @Override
+//    public String getDescription() {
+//        switch (this) {
+//            case GK:
+//                return "Goalkeeper";
+//            case LB:
+//                return "Left Back";
+//            case CB:
+//                return "Center Back";
+//            case RB:
+//                return "Right Back";   
+//            case CDM:
+//                return "Defensive Midfielder";
+//            case CM:
+//                return "Midfielder";  
+//            case CAM:
+//                return "Offensive Midfielder";
+//            case LW:
+//                return "Left Winger";    
+//            case ST:
+//                return "Striker";    
+//            case RW:
+//                return "Right Winger";
+//            default:   
+//                return "No position was found";
+//        }
+//    }
 }
