@@ -135,7 +135,7 @@ public class Main {
             }
 
             // 4. Criar uma época (Season)
-            Main.season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
+            season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
                     clubs.length, clubs.length - 1, 0, 0,
                     clubs, clubs.length, clubs.length, null,
                     leagueStandings, new MatchSimulator()
@@ -144,15 +144,14 @@ public class Main {
             season.setClubCount(clubs.length);
 
             
-
+                for (IClub club : clubs) {
+                 season.addClub(club); // essencial se currentClubs[] não for preenchido diretamente
+                }
+                
             // 5. Gerar o calendário
             season.generateSchedule();
             ISchedule schedule = season.getSchedule();
 
-            System.out.println("Simulating Round " + (season.getCurrentRound() + 1));
-            while (!season.isSeasonComplete()) {
-                season.simulateRound();
-            }
 
             for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
                 IMatch[] roundMatches = schedule.getMatchesForRound(i);
@@ -184,30 +183,6 @@ public class Main {
                         }
                     }
                 }
-            }
-
-            int totalRounds = schedule.getNumberOfRounds();
-
-            for (int i = 0; i < totalRounds; i++) {
-                IMatch[] roundMatches = schedule.getMatchesForRound(i);
-
-                System.out.println("======================");
-                System.out.println("Round " + (i + 1));
-                System.out.println("======================");
-
-                for (IMatch match : roundMatches) {
-                    Match realMatch = (Match) match; // cast necessário
-
-                    if (realMatch.isPlayed()) {
-                        System.out.printf("%-30s %2d - %-2d %-30s\n",
-                                realMatch.getHomeTeam().getClub().getName(),
-                                realMatch.getHomeGoals(),
-                                realMatch.getAwayGoals(),
-                                realMatch.getAwayTeam().getClub().getName());
-                    }
-                }
-
-                System.out.println(); // linha em branco entre jornadas
             }
 
             MainMenu.run();

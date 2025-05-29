@@ -27,10 +27,14 @@ public class CalendarMenu {
                 Match realMatch = (Match) match;
                 String home = match.getHomeClub().getName();
                 String away = match.getAwayClub().getName();
-                int homeGoals = realMatch.getHomeGoals();
-                int awayGoals = realMatch.getAwayGoals();
+              if (realMatch.isPlayed()) {
+             int homeGoals = realMatch.getHomeGoals();
+             int awayGoals = realMatch.getAwayGoals();
+             System.out.printf("%-30s %2d - %2d %-30s\n", home, homeGoals, awayGoals, away);
+             } else {
+            System.out.printf("%-30s   -   %-30s\n", home, away); // com traço
+    }
 
-                System.out.printf("%-30s %2d - %2d  %-30s\n", home, homeGoals, awayGoals, away);
             }
         }
     }

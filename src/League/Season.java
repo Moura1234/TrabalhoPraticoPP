@@ -102,14 +102,66 @@ public class Season implements ISeason {
         return false;
     }
 
-//    @Override
+    @Override
+    public void generateSchedule() {
+        if (clubCount < 2) {
+            throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
+        }
+
+        int totalRounds = clubCount - 1; // 17 jornadas 
+        int matchesPerRound = clubCount / 2; // 9 jogos por jornada
+        IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
+                
+
+        for (int round = 0; round < totalRounds; round++) {
+            for (int match = 0; match < matchesPerRound; match++) {
+                int homeIndex = (round + match) % (clubCount - 1);
+                int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
+
+                if (match == 0) {
+                    awayIndex = clubCount - 1;
+                }
+
+                IClub homeClub = currentClubs[homeIndex];
+                IClub awayClub = currentClubs[awayIndex];
+
+                IPlayer[] homePlayers = homeClub.getPlayers();
+                IPlayer[] awayPlayers = awayClub.getPlayers();
+
+                Formation formation = Formation.create433(); // usa qualquer formação base
+                ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers);
+                ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers);
+
+                Match game = new Match(
+                        homeClub,
+                        awayClub,
+                        false,
+                        homeTeam,
+                        awayTeam,
+                        0,
+                        0,
+                        Enums.EFormation.HomeFormation,
+                        Enums.EFormation.AwayFormation,
+                        round,
+                        null, // Sem eventos por agora
+                        0 // eventCount
+                );
+
+                matches[round][match] = game;
+            }
+        }
+
+        this.schedule = new Schedule(matches);
+    }
+    // @Override
 //    public void generateSchedule() {
+//
 //        if (clubCount < 2) {
 //            throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
 //        }
 //
-//        int totalRounds = clubCount - 1; // 17 jornadas 
-//        int matchesPerRound = clubCount / 2; // 9 jogos por jornada
+//        int totalRounds = clubCount - 1;
+//        int matchesPerRound = clubCount / 2;
 //        IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
 //
 //        for (int round = 0; round < totalRounds; round++) {
@@ -124,87 +176,20 @@ public class Season implements ISeason {
 //                IClub homeClub = currentClubs[homeIndex];
 //                IClub awayClub = currentClubs[awayIndex];
 //
-//                IPlayer[] homePlayers = homeClub.getPlayers();
-//                IPlayer[] awayPlayers = awayClub.getPlayers();
 //
-//                Formation formation = Formation.create433(); // usa qualquer formação base
-//                ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers);
-//                ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers);
-//
-//                Match game = new Match(
+//                // Criação do jogo sem resultado nem equipas montadas ainda
+//                IMatch game = new Match(
 //                        homeClub,
 //                        awayClub,
-//                        false,
-//                        homeTeam,
-//                        awayTeam,
-//                        0,
-//                        0,
-//                        Enums.EFormation.HomeFormation,
-//                        Enums.EFormation.AwayFormation,
-//                        round,
-//                        null, // Sem eventos por agora
-//                        0 // eventCount
+//                        round // apenas jornada marcada
 //                );
 //
 //                matches[round][match] = game;
 //            }
 //        }
 //
-//        this.schedule = new Schedule(matches);
+//        this.schedule = new Schedule(matches); // guarda o calendário completo
 //    }
-    @Override
-    public void generateSchedule() {
-        System.out.println("=== DEBUG currentClubs dentro de generateSchedule ===");
-        for (int i = 0; i < clubCount; i++) {
-            if (currentClubs[i] == null) {
-                System.out.println("❌ NULO no índice " + i);
-            } else {
-                System.out.println("✅ " + currentClubs[i].getName());
-            }
-        }
-
-        if (clubCount < 2) {
-            throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
-        }
-
-        int totalRounds = clubCount - 1;
-        int matchesPerRound = clubCount / 2;
-        IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
-
-        for (int round = 0; round < totalRounds; round++) {
-            for (int match = 0; match < matchesPerRound; match++) {
-                int homeIndex = (round + match) % (clubCount - 1);
-                int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
-                if (homeIndex < 0 || homeIndex >= clubCount || awayIndex < 0 || awayIndex >= clubCount || homeIndex == awayIndex) {
-                    System.out.println("❌ Índice inválido ou jogo contra si mesmo. Ignorar.");
-                    continue;
-                }
-
-                if (match == 0) {
-                    awayIndex = clubCount - 1;
-                }
-
-                IClub homeClub = currentClubs[homeIndex];
-                IClub awayClub = currentClubs[awayIndex];
-
-                if (homeClub == null || awayClub == null) {
-                    System.out.println("ERRO - homeClub ou awayClub null na ronda " + round);
-                    System.out.println("homeIndex = " + homeIndex + ", awayIndex = " + awayIndex);
-                }
-
-                // Criação do jogo sem resultado nem equipas montadas ainda
-                IMatch game = new Match(
-                        homeClub,
-                        awayClub,
-                        round // apenas jornada marcada
-                );
-
-                matches[round][match] = game;
-            }
-        }
-
-        this.schedule = new Schedule(matches); // guarda o calendário completo
-    }
 
     @Override
     public IMatch[] getMatches() {
@@ -232,13 +217,13 @@ public class Season implements ISeason {
             if (simulatorStrategy != null) {
                 for (IMatch match : roundMatches) {
                     if (match == null) {
-                        System.out.println("❌ Match nulo!");
+                        System.out.println(" Match nulo!");
                         continue;
                     }
                     if (match.getHomeClub() == null || match.getAwayClub() == null) {
-                        System.out.println("❌ Match com clube nulo na jornada " + currentRound);
-                        System.out.println("→ Home: " + match.getHomeClub());
-                        System.out.println("→ Away: " + match.getAwayClub());
+                        System.out.println(" Match com clube nulo na jornada " + currentRound);
+                        System.out.println(" Home: " + match.getHomeClub());
+                        System.out.println(" Away: " + match.getAwayClub());
                     }
 
                     prepareTeamsFor((Match) match);

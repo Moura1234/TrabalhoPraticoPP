@@ -4,6 +4,7 @@
  */
 package Menus;
 
+
 import java.io.*;
 import Main.Main;
 /**
@@ -34,10 +35,10 @@ public class MainMenu {
                         CalendarMenu.run();
                         break;
                     case "3":
-//                        SquadMenu.run(); 
+                       SquadMenu.run(); 
                         break;
                     case "4":
-//                        MatchSimulatorMenu.run(); 
+                       MatchSimulatorMenu.run(Main.season); 
                         break;
                     case "5":
                         System.out.println("Saving and exiting...");

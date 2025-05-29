@@ -148,6 +148,80 @@ public static IClub[] loadClubsFromJson(String filePath) {
     return result;
 }
 
+public static void loadClubName (IClub[] clubs){
+
+
+           for (IClub club : clubs) {
+                String fileName = null;
+
+                switch (club.getName()) {
+                    case "Sport Lisboa e Benfica":
+                        fileName = "Benfica";
+                        break;
+                    case "Futebol Clube do Porto":
+                        fileName = "Porto";
+                        break;
+                    case "Sporting Clube de Portugal":
+                        fileName = "Sporting";
+                        break;
+                    case "Sporting Clube de Braga":
+                        fileName = "Braga";
+                        break;
+                    case "Vitoria Sport Clube":
+                        fileName = "Vitoria";
+                        break;
+                    case "Boavista Futebol Clube":
+                        fileName = "Boavista";
+                        break;
+                    case "Casa Pia Atletico Clube":
+                        fileName = "CasaPia";
+                        break;
+                    case "Grupo Desportivo Estoril Praia":
+                        fileName = "Estoril";
+                        break;
+                    case "C. Futebol Estrela da Amadora":
+                        fileName = "EstrelaAmadora";
+                        break;
+                    case "Futebol Clube de Famalicao":
+                        fileName = "Famalicao";
+                        break;
+                    case "Sport Clube Farense":
+                        fileName = "Farense";
+                        break;
+                    case "Gil Vicente Futebol Clube":
+                        fileName = "GilVicente";
+                        break;
+                    case "Moreirense Futebol Clube":
+                        fileName = "Moreirense";
+                        break;
+                    case "Clube Desportivo Nacional":
+                        fileName = "Nacional";
+                        break;
+                    case "Rio Ave Futebol Clube":
+                        fileName = "RioAve";
+                        break;
+                    case "Clube Desportivo Santa Clara":
+                        fileName = "SantaClara";
+                        break;
+                    case "AVS Futebol SAD":
+                        fileName = "AFS";
+                        break;
+                    case "Futebol Clube de Arouca":
+                        fileName = "Arouca";
+                        break;
+                    default:
+                        fileName = null;
+                        break;
+                }
+
+                if (fileName != null) {
+                    String path = "JSONfiles/files/players/" + fileName + ".json";
+                    IPlayer[] players = JsonManualLoader.loadPlayersFromJson(path);
+                    ((Club) club).setPlayers(players); // Cast se IClub não tiver setPlayers
+                }
+            }
+}
+
     private static String extractString(String line) {
         return line.split(":")[1].trim().replace("\"", "").replace(",", "");
     }

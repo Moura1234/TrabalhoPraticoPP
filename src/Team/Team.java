@@ -116,7 +116,30 @@ public class Team implements ITeam {
         this.formation = i;
 
     }
+    
+    public void substitutePlayer(int index, IPlayer newPlayer) {
+    if (index < 0 || index >= playerCount) {
+        System.out.println("Invalid player index.");
+        return;
+    }
 
+    System.out.println("Substituting: " + players[index].getName() + " ➡ " + newPlayer.getName());
+    players[index] = newPlayer;
+}
+
+ 
+    public IPlayer[] getBenchPlayers() {
+    int benchSize = playerCount - 11;
+    if (benchSize <= 0) return new IPlayer[0];
+
+    IPlayer[] bench = new IPlayer[benchSize];
+    for (int i = 11; i < playerCount; i++) {
+        bench[i - 11] = players[i];
+    }
+    return bench;
+}
+    
+    
     @Override
     public String toString() {
         return "Team{"

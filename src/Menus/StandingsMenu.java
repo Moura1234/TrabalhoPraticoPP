@@ -14,6 +14,8 @@ import com.ppstudios.footballmanager.api.contracts.league.IStanding;
 public class StandingsMenu {
 
     public static void run(IStanding[] leagueStandings) {
+        orderStandings(leagueStandings);
+        
         System.out.println("\n===== League Table =====\n");
         System.out.printf("    %-30s %5s %5s %5s %5s %5s %5s %5s\n",
                 "Team", "Pts", "W", "D", "L", "GS", "GC", "GD");
