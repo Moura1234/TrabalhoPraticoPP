@@ -31,7 +31,7 @@ public class MainMenu {
                         StandingsMenu.run(Main.leagueStandings); 
                         break;
                     case "2":
-//                        CalendarMenu.run();
+                        CalendarMenu.run();
                         break;
                     case "3":
 //                        SquadMenu.run(); 

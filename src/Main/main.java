@@ -24,16 +24,17 @@ import Menus.MainMenu;
 
 /**
  *
- * @author joaom
+ * @author joaomjdbshdd
  */
 public class Main {
+
     public static IStanding[] leagueStandings;
+    public static Season season;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
 
         try {
             // 1. Carregar clubes do ficheiro JSON
@@ -117,113 +118,102 @@ public class Main {
                     ((Club) club).setPlayers(players); // Cast se IClub não tiver setPlayers
                 }
             }
-        
 
-            
             //Criar array de Team a partir do Club
-        Team[] teams = new Team[clubs.length];
+            Team[] teams = new Team[clubs.length];
 
-           for (int i = 0; i < clubs.length; i++) {
-             Club club = (Club) clubs[i];
-             IPlayer[] players = club.getPlayers();
-            teams[i] = new Team(i, Formation.create442(), 5, club, players);
-            
-            
-        }
-           
-                Main.leagueStandings = new Standing[clubs.length];
-             for (int i = 0; i < clubs.length; i++) {
-             Main.leagueStandings[i] = new Standing(teams[i]); 
-          }
+            for (int i = 0; i < clubs.length; i++) {
+                Club club = (Club) clubs[i];
+                IPlayer[] players = club.getPlayers();
+                teams[i] = new Team(i, Formation.create442(), 5, club, players);
 
+            }
 
+            Main.leagueStandings = new Standing[clubs.length];
+            for (int i = 0; i < clubs.length; i++) {
+                Main.leagueStandings[i] = new Standing(teams[i]);
+            }
 
-          
             // 4. Criar uma época (Season)
-            Season season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
+            Main.season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
                     clubs.length, clubs.length - 1, 0, 0,
                     clubs, clubs.length, clubs.length, null,
                     leagueStandings, new MatchSimulator()
             );
+            season.setCurrentClubs(clubs);
+            season.setClubCount(clubs.length);
+
+            
 
             // 5. Gerar o calendário
             season.generateSchedule();
             ISchedule schedule = season.getSchedule();
 
-      
-            
-            
-           System.out.println("Simulating Round " + (season.getCurrentRound() + 1));
-           while (!season.isSeasonComplete()) {
-           season.simulateRound();
-}
+            System.out.println("Simulating Round " + (season.getCurrentRound() + 1));
+            while (!season.isSeasonComplete()) {
+                season.simulateRound();
+            }
 
-           for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
-    IMatch[] roundMatches = schedule.getMatchesForRound(i);
+            for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
+                IMatch[] roundMatches = schedule.getMatchesForRound(i);
 
-    for (IMatch match : roundMatches) {
-        Match realMatch = (Match) match;
+                for (IMatch match : roundMatches) {
+                    Match realMatch = (Match) match;
 
-        if (realMatch.isPlayed()) {
-            Team home = (Team) realMatch.getHomeTeam();
-            Team away = (Team) realMatch.getAwayTeam();
-            int homeGoals = realMatch.getHomeGoals();
-            int awayGoals = realMatch.getAwayGoals();
+                    if (realMatch.isPlayed()) {
+                        Team home = (Team) realMatch.getHomeTeam();
+                        Team away = (Team) realMatch.getAwayTeam();
+                        int homeGoals = realMatch.getHomeGoals();
+                        int awayGoals = realMatch.getAwayGoals();
 
-            Standing homeStanding = null;
-            Standing awayStanding = null;
+                        Standing homeStanding = null;
+                        Standing awayStanding = null;
 
-            for (int j = 0; j < leagueStandings.length; j++) {
-                if (leagueStandings[j].getTeam().getClub().equals(home.getClub())) {
-                    homeStanding = (Standing) leagueStandings[j];
-                }
-                if (leagueStandings[j].getTeam().getClub().equals(away.getClub())) {
-                    awayStanding = (Standing) leagueStandings[j];
+                        for (int j = 0; j < leagueStandings.length; j++) {
+                            if (leagueStandings[j].getTeam().getClub().equals(home.getClub())) {
+                                homeStanding = (Standing) leagueStandings[j];
+                            }
+                            if (leagueStandings[j].getTeam().getClub().equals(away.getClub())) {
+                                awayStanding = (Standing) leagueStandings[j];
+                            }
+                        }
+
+                        if (homeStanding != null && awayStanding != null) {
+                            homeStanding.updateStats(homeGoals, awayGoals, 3, 1, 0);
+                            awayStanding.updateStats(awayGoals, homeGoals, 3, 1, 0);
+                        }
+                    }
                 }
             }
 
-            if (homeStanding != null && awayStanding != null) {
-                homeStanding.updateStats(homeGoals, awayGoals, 3, 1, 0);
-                awayStanding.updateStats(awayGoals, homeGoals, 3, 1, 0);
+            int totalRounds = schedule.getNumberOfRounds();
+
+            for (int i = 0; i < totalRounds; i++) {
+                IMatch[] roundMatches = schedule.getMatchesForRound(i);
+
+                System.out.println("======================");
+                System.out.println("Round " + (i + 1));
+                System.out.println("======================");
+
+                for (IMatch match : roundMatches) {
+                    Match realMatch = (Match) match; // cast necessário
+
+                    if (realMatch.isPlayed()) {
+                        System.out.printf("%-30s %2d - %-2d %-30s\n",
+                                realMatch.getHomeTeam().getClub().getName(),
+                                realMatch.getHomeGoals(),
+                                realMatch.getAwayGoals(),
+                                realMatch.getAwayTeam().getClub().getName());
+                    }
+                }
+
+                System.out.println(); // linha em branco entre jornadas
             }
-        }
-    }
-}
 
-          
+            MainMenu.run();
 
-int totalRounds = schedule.getNumberOfRounds();
-
-for (int i = 0; i < totalRounds; i++) {
-    IMatch[] roundMatches = schedule.getMatchesForRound(i);
-
-    System.out.println("======================");
-    System.out.println("Round " + (i + 1));
-    System.out.println("======================");
-
-    for (IMatch match : roundMatches) {
-        Match realMatch = (Match) match; // cast necessário
-
-        if (realMatch.isPlayed()) {
-            System.out.printf("%-30s %2d - %-2d %-30s\n",
-                realMatch.getHomeTeam().getClub().getName(),
-                realMatch.getHomeGoals(),
-                realMatch.getAwayGoals(),
-                realMatch.getAwayTeam().getClub().getName());
-        }
-    }
-
-    System.out.println(); // linha em branco entre jornadas
-}
-
-MainMenu.run();
-                
-          }
-         
- catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    }
-
-
+}

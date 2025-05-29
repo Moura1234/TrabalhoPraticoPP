@@ -46,6 +46,14 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
         this.eventCount = 0;
 }
 
+public Match(IClub home, IClub away, int round) {
+    this.homeClub = homeClub;
+    this.awayClub = awayClub;
+    this.round = round;
+    this.played = false; 
+}
+
+
 
     @Override
     public IClub getHomeClub() {
@@ -76,7 +84,15 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
     public int getHomeGoals() {
         return this.homeGoals;
     }
+    
+    public void setHomeTeam(ITeam homeTeam){
+        this.homeTeam = homeTeam;
+    }
 
+    public void setAwayTeam(ITeam awayTeam){
+        this.awayTeam = awayTeam;
+    }
+    
     public void setHomeGoals(int homeGoals) {
         this.homeGoals = homeGoals;
     }
