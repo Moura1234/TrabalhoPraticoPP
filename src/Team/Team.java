@@ -224,12 +224,20 @@ public class Team implements ITeam {
      */
     @Override
     public String toString() {
-        return "Team{"
-                + "club=" + club.getName()
-                + ", formation=" + formation
-                + ", playerCount=" + playerCount
-                + ", teamStrength=" + teamStrength
-                + '}';
+        return club.getName();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Team other = (Team) obj;
+        return this.club.getName().equals(other.club.getName());
+        // ou comparar club.getName() por exemplo
     }
 
     /**

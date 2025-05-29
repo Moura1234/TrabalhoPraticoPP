@@ -2,54 +2,55 @@ package League;
 
 import com.ppstudios.footballmanager.api.contracts.league.ILeague;
 import com.ppstudios.footballmanager.api.contracts.league.ISeason;
+import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.io.IOException;
 
 /**
  *
  * @author joaom
  */
-public class League implements ILeague{
+public class League implements ILeague {
+
     private String name;
-    private ISeason []seasons;
+    private ISeason[] seasons;
     private int seasonCount;
     private static final int MAX_SEASONS = 10;
-    
-    public League(String name, ISeason[] seasons, int seasonCount){
+
+    public League(String name, ISeason[] seasons, int seasonCount) {
         this.name = name;
         this.seasons = new ISeason[MAX_SEASONS];
         this.seasonCount = 0;
     }
-    
+
     @Override
-    public String getName(){
+    public String getName() {
         return this.name;
     }
-    
-    @Override 
-    public ISeason[] getSeasons(){
-          ISeason[] result = new ISeason[seasonCount];
-    for (int i = 0; i < seasonCount; i++) {
-        result[i] = seasons[i];
+
+    @Override
+    public ISeason[] getSeasons() {
+        ISeason[] result = new ISeason[seasonCount];
+        for (int i = 0; i < seasonCount; i++) {
+            result[i] = seasons[i];
+        }
+        return result;
+
     }
-    return result;
-     
-    }
-    
-     @Override
+
+    @Override
     public boolean createSeason(ISeason is) {
         if (seasonCount < MAX_SEASONS) {
-         seasons[seasonCount++] = is;
+            seasons[seasonCount++] = is;
 
-        return true; 
-    }
+            return true;
+        }
         return false;
     }
-    
-    
-    @Override 
-    public ISeason removeSeason(int i){
 
-         if (i >= 0 && i < seasonCount) {
+    @Override
+    public ISeason removeSeason(int i) {
+
+        if (i >= 0 && i < seasonCount) {
             ISeason removed = seasons[i];
             for (int j = i; j < seasonCount - 1; j++) {
                 seasons[j] = seasons[j + 1];
@@ -59,24 +60,24 @@ public class League implements ILeague{
         }
         return null;
     }
-    
+
     @Override
-    public ISeason getSeason(int i){
-      
+    public ISeason getSeason(int i) {
+
         if (i >= 0 && i < seasonCount) {
             return seasons[i];
-    }
+        }
         return null;
     }
-    
-     @Override
+
+    @Override
     public String toString() {
         return "League{name='" + name + "', seasonCount=" + seasonCount + "}";
     }
-    
+
     @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
+
 }

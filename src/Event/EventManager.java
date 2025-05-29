@@ -14,7 +14,7 @@ public class EventManager implements IEventManager {
 
     private IEvent[] events;
     private int eventCount;
-    
+
     public EventManager() {
         this.events = new IEvent[200];
         this.eventCount = 0;
@@ -46,6 +46,14 @@ public class EventManager implements IEventManager {
     @Override
     public int getEventCount() {
         return this.eventCount;
+    }
+
+    public void setEvents(IEvent[] events) {
+        this.events = events;
+    }
+
+    public void setEventCount(int count) {
+        this.eventCount = count;
     }
 
 }

@@ -24,6 +24,7 @@ public class CalendarMenu {
             IMatch[] matches = Main.season.getMatches(round);
 
             for (IMatch match : matches) {
+                if (match == null) continue;
                 Match realMatch = (Match) match;
                 String home = match.getHomeClub().getName();
                 String away = match.getAwayClub().getName();

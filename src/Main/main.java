@@ -21,9 +21,11 @@ import Simulation.*;
 import Team.*;
 import Enums.*;
 import Menus.MainMenu;
+import Menus.TeamSelectionMenu;
 
-/**3
- * 
+/**
+ * 3
+ *
  *
  * @author joaomjdbshdd
  */
@@ -135,29 +137,19 @@ public class Main {
                 Main.leagueStandings[i] = new Standing(teams[i]);
             }
 
-            // 4. Criar uma época (Season)
-            season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
-                    clubs.length, clubs.length - 1, 0, 0,
-                    clubs, clubs.length, clubs.length, null,
-                    leagueStandings, new MatchSimulator()
-            );
-            season.setCurrentClubs(clubs);
-            season.setClubCount(clubs.length);
+            int totalRounds = clubs.length - 1;
 
-            
-                for (IClub club : clubs) {
-                 season.addClub(club); // essencial se currentClubs[] não for preenchido diretamente
-                }
-                
-            // 5. Gerar o calendário
-            season.generateSchedule();
-            ISchedule schedule = season.getSchedule();
-
+            IMatch[][] rounds = new IMatch[totalRounds][];
+            for (int i = 0; i < totalRounds; i++) {
+                rounds[i] = new IMatch[clubs.length / 2];
+            }
+            Schedule schedule = new Schedule(rounds);
 
             for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
                 IMatch[] roundMatches = schedule.getMatchesForRound(i);
 
                 for (IMatch match : roundMatches) {
+                   if (match == null || !(match instanceof Match)) continue; 
                     Match realMatch = (Match) match;
 
                     if (realMatch.isPlayed()) {
@@ -186,6 +178,59 @@ public class Main {
                 }
             }
 
+            // 4. Criar uma época (Season)
+            season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
+                    clubs.length, clubs.length - 1, 0, 0,
+                    clubs, clubs.length, clubs.length, null,
+                    leagueStandings, new MatchSimulator(), teams, null
+            );
+            
+            season.setCurrentClubs(clubs);
+            season.setClubCount(clubs.length);
+
+            for (IClub club : clubs) {
+                season.addClub(club); // essencial se currentClubs[] não for preenchido diretamente
+            }
+            
+            season.generateSchedule();
+
+            // 5. Gerar o calendário
+            for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
+                IMatch[] roundMatches = schedule.getMatchesForRound(i);
+
+                for (IMatch match : roundMatches) {
+                    if (match == null) continue;
+                    Match realMatch = (Match) match;
+
+                    if (realMatch.isPlayed()) {
+                        Team home = (Team) realMatch.getHomeTeam();
+                        Team away = (Team) realMatch.getAwayTeam();
+                        int homeGoals = realMatch.getHomeGoals();
+                        int awayGoals = realMatch.getAwayGoals();
+
+                        Standing homeStanding = null;
+                        Standing awayStanding = null;
+
+                        for (int j = 0; j < leagueStandings.length; j++) {
+                            if (leagueStandings[j].getTeam().getClub().equals(home.getClub())) {
+                                homeStanding = (Standing) leagueStandings[j];
+                            }
+                            if (leagueStandings[j].getTeam().getClub().equals(away.getClub())) {
+                                awayStanding = (Standing) leagueStandings[j];
+                            }
+                        }
+
+                        if (homeStanding != null && awayStanding != null) {
+                            homeStanding.updateStats(homeGoals, awayGoals, 3, 1, 0);
+                            awayStanding.updateStats(awayGoals, homeGoals, 3, 1, 0);
+                        }
+                    }
+                }
+            }
+
+            ITeam userTeam = TeamSelectionMenu.run(season);
+            season.setUserTeam(userTeam);
+            
             MainMenu.run();
 
         } catch (Exception e) {

@@ -177,9 +177,10 @@ if (iteam.getClub().equals(homeClub)) {
     return eventManager.getEvents();    
      }
     
-    public void setEvents(IEvent[] events) {
-        this.event = events;
-    }
+  public void setEvents(IEvent[] events, int count) {
+    eventManager.setEvents(events);
+    eventManager.setEventCount(count);
+}
     
     @Override
      public int getEventCount(){

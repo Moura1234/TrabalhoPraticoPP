@@ -42,7 +42,7 @@ public class MainMenu {
                        MatchdaySimulatorMenu.run(Main.season); 
                         break;
                     case "5":   
-                        
+                        MatchSimulatorMenu.run (Main.season);
                     case "6":
                         System.out.println("Saving and exiting...");
                         // call save logic here if needed
@@ -51,7 +51,7 @@ public class MainMenu {
                         System.out.println("Invalid option. Please try again.");
                 }
 
-            } while (!option.equals("5"));
+            } while (!option.equals("6"));
 
         } catch (IOException e) {
             System.out.println("Error reading input: " + e.getMessage());

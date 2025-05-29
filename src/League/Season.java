@@ -39,8 +39,11 @@ public class Season implements ISeason {
     private ISchedule schedule;
     private IStanding[] leagueStandings;
     private MatchSimulatorStrategy simulatorStrategy;
+    private League league;
+    private ITeam[] teams;
+    private ITeam userTeam;
 
-    public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding[] leagueStandings, MatchSimulatorStrategy simulatorStrategy) {
+    public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding[] leagueStandings, MatchSimulatorStrategy simulatorStrategy, ITeam[] teams, ITeam userTeam) {
         this.name = name;
         this.year = year;
         this.pointsPerWin = pointsPerWin;
@@ -56,6 +59,8 @@ public class Season implements ISeason {
         this.schedule = schedule;
         this.leagueStandings = leagueStandings;
         this.simulatorStrategy = simulatorStrategy;
+        this.teams = teams;
+        this.userTeam = userTeam;
     }
 
     @Override
@@ -230,7 +235,6 @@ public class Season implements ISeason {
                     prepareTeamsFor((Match) match);
                     simulatorStrategy.simulate(match);
 
-                    // ✅ Atualizar standings
                     Match realMatch = (Match) match;
                     if (realMatch.isPlayed()) {
                         Team home = (Team) realMatch.getHomeTeam();
@@ -383,6 +387,44 @@ public class Season implements ISeason {
 
     public void setClubCount(int count) {
         this.clubCount = count;
+    }
+
+    public League getLeague() {
+        return this.league;
+    }
+
+    public ITeam[] getTeams() {
+        return this.teams;
+    }
+
+    public ITeam getUserTeam() {
+        return this.userTeam;
+    }
+
+    public void setUserTeam(ITeam team) {
+        this.userTeam = team;
+    }
+
+    public Match getNextMatchForTeam(ITeam team) {
+        if (schedule == null) {
+            return null;
+        }
+
+        for (int round = 0; round < schedule.getNumberOfRounds(); round++) {
+            IMatch[] matches = schedule.getMatchesForRound(round);
+            for (IMatch match : matches) {
+                if (match == null) {
+                    continue;
+                }
+                Match realMatch = (Match) match;
+
+                if (!realMatch.isPlayed()
+                        && (realMatch.getHomeTeam().equals(team) || realMatch.getAwayTeam().equals(team))) {
+                    return realMatch;
+                }
+            }
+        }
+        return null; // nenhum jogo por simular
     }
 
     @Override
