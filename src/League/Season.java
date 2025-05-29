@@ -111,7 +111,6 @@ public class Season implements ISeason {
         int totalRounds = clubCount - 1; // 17 jornadas 
         int matchesPerRound = clubCount / 2; // 9 jogos por jornada
         IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
-                
 
         for (int round = 0; round < totalRounds; round++) {
             for (int match = 0; match < matchesPerRound; match++) {
@@ -129,8 +128,8 @@ public class Season implements ISeason {
                 IPlayer[] awayPlayers = awayClub.getPlayers();
 
                 Formation formation = Formation.create433(); // usa qualquer formação base
-                ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers);
-                ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers);
+                ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers, homeIndex);
+                ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers, awayIndex);
 
                 Match game = new Match(
                         homeClub,
@@ -220,14 +219,32 @@ public class Season implements ISeason {
                         System.out.println(" Match nulo!");
                         continue;
                     }
+
                     if (match.getHomeClub() == null || match.getAwayClub() == null) {
                         System.out.println(" Match com clube nulo na jornada " + currentRound);
                         System.out.println(" Home: " + match.getHomeClub());
                         System.out.println(" Away: " + match.getAwayClub());
+                        continue;
                     }
 
                     prepareTeamsFor((Match) match);
                     simulatorStrategy.simulate(match);
+
+                    // ✅ Atualizar standings
+                    Match realMatch = (Match) match;
+                    if (realMatch.isPlayed()) {
+                        Team home = (Team) realMatch.getHomeTeam();
+                        Team away = (Team) realMatch.getAwayTeam();
+
+                        int homeGoals = realMatch.getHomeGoals();
+                        int awayGoals = realMatch.getAwayGoals();
+
+                        Standing homeStanding = (Standing) leagueStandings[home.getId()];
+                        Standing awayStanding = (Standing) leagueStandings[away.getId()];
+
+                        homeStanding.updateStats(homeGoals, awayGoals, 3, 1, 0);
+                        awayStanding.updateStats(awayGoals, homeGoals, 3, 1, 0);
+                    }
                 }
             }
 
@@ -245,11 +262,23 @@ public class Season implements ISeason {
 
         Formation formation = Formation.create433(); // ou outra, fixa ou aleatória
 
-        ITeam homeTeam = new Team(100, formation, formation.getPositions().length, home, homePlayers);
-        ITeam awayTeam = new Team(100, formation, formation.getPositions().length, away, awayPlayers);
+        int homeId = findClubIndex(home);
+        int awayId = findClubIndex(away);
+
+        ITeam homeTeam = new Team(100, formation, formation.getPositions().length, home, homePlayers, homeId);
+        ITeam awayTeam = new Team(100, formation, formation.getPositions().length, away, awayPlayers, awayId);
 
         match.setHomeTeam(homeTeam);
         match.setAwayTeam(awayTeam);
+    }
+
+    private int findClubIndex(IClub club) {
+        for (int i = 0; i < currentClubs.length; i++) {
+            if (currentClubs[i] == club) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     @Override

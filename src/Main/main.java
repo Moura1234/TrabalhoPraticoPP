@@ -22,7 +22,8 @@ import Team.*;
 import Enums.*;
 import Menus.MainMenu;
 
-/**
+/**3
+ * 
  *
  * @author joaomjdbshdd
  */
@@ -125,7 +126,7 @@ public class Main {
             for (int i = 0; i < clubs.length; i++) {
                 Club club = (Club) clubs[i];
                 IPlayer[] players = club.getPlayers();
-                teams[i] = new Team(i, Formation.create442(), 5, club, players);
+                teams[i] = new Team(i, Formation.create442(), 5, club, players, i);
 
             }
 

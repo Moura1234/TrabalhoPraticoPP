@@ -13,20 +13,23 @@ import java.io.IOException;
  * @author utilizador
  */
 public class Team implements ITeam {
+
     private int teamStrength;
     private IFormation formation;
     private int positionCount;
     private int playerCount;
     private IClub club;
     private IPlayer[] players;
+    private int id;
     private static final int MAX_PLAYERS = 18;
 
-    public Team(int teamStrength, IFormation formation, int positionCount, IClub club, IPlayer[] players) {
+    public Team(int teamStrength, IFormation formation, int positionCount, IClub club, IPlayer[] players, int id) {
         this.teamStrength = teamStrength;
         this.formation = formation;
         this.positionCount = positionCount;
         this.club = club;
         this.players = players;
+        this.id = id;
 
         if (players != null) {
             this.playerCount = players.length;
@@ -90,9 +93,9 @@ public class Team implements ITeam {
     }
 
     public int getPlayerCount() {
-           return this.playerCount;
-}
-    
+        return this.playerCount;
+    }
+
     @Override
     public int getPositionCount(IPlayerPosition ipp) {
         int count = 0;
@@ -103,7 +106,6 @@ public class Team implements ITeam {
         }
         return count;
     }
-
 
     @Override
     public boolean isValidPositionForFormation(IPlayerPosition ipp) {
@@ -116,30 +118,32 @@ public class Team implements ITeam {
         this.formation = i;
 
     }
-    
+
     public void substitutePlayer(int index, IPlayer newPlayer) {
-    if (index < 0 || index >= playerCount) {
-        System.out.println("Invalid player index.");
-        return;
+        if (index < 0 || index >= playerCount) {
+            System.out.println("Invalid player index.");
+            return;
+        }
+        players[index] = newPlayer;
     }
 
-    System.out.println("Substituting: " + players[index].getName() + " ➡ " + newPlayer.getName());
-    players[index] = newPlayer;
-}
-
- 
     public IPlayer[] getBenchPlayers() {
-    int benchSize = playerCount - 11;
-    if (benchSize <= 0) return new IPlayer[0];
+        int benchSize = playerCount - 11;
+        if (benchSize <= 0) {
+            return new IPlayer[0];
+        }
 
-    IPlayer[] bench = new IPlayer[benchSize];
-    for (int i = 11; i < playerCount; i++) {
-        bench[i - 11] = players[i];
+        IPlayer[] bench = new IPlayer[benchSize];
+        for (int i = 11; i < playerCount; i++) {
+            bench[i - 11] = players[i];
+        }
+        return bench;
     }
-    return bench;
-}
-    
-    
+
+    public int getId() {
+        return this.id;
+    }
+
     @Override
     public String toString() {
         return "Team{"
@@ -156,5 +160,3 @@ public class Team implements ITeam {
     }
 
 }
-
-

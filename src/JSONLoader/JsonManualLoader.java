@@ -8,6 +8,9 @@ package JSONLoader;
  *
  * @author utilizador
  */
+import java.io.InputStreamReader;
+import java.io.FileInputStream;
+import java.nio.charset.StandardCharsets;
 import Enums.Position;
 import Player.Player;
 import Team.Club;
@@ -26,7 +29,8 @@ public class JsonManualLoader {
     int count = 0;
 
     // 1ª passagem: contar jogadores
-    try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+    try (BufferedReader br = new BufferedReader(
+           new InputStreamReader(new FileInputStream(path), StandardCharsets.UTF_8))) {
         String line;
         while ((line = br.readLine()) != null) {
             if (line.trim().startsWith("}")) {
@@ -41,7 +45,8 @@ public class JsonManualLoader {
     int index = 0;
 
     // 2ª passagem: carregar jogadores
-    try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+    try (BufferedReader br = new BufferedReader(
+            new InputStreamReader(new FileInputStream(path), StandardCharsets.UTF_8))) {
         String line;
         String name = "", nationality = "", photo = "", birthDate = "", preferredFoot = "";
         int number = 0, shooting = 0, passing = 0, stamina = 0, defense = 0, speed = 0, reflexes = 0;
@@ -223,8 +228,17 @@ public static void loadClubName (IClub[] clubs){
 }
 
     private static String extractString(String line) {
-        return line.split(":")[1].trim().replace("\"", "").replace(",", "");
-    }
+    int start = line.indexOf(":") + 1;
+    String value = line.substring(start).trim();
+
+    // remover aspas e vírgula final, se existirem
+    if (value.startsWith("\"")) value = value.substring(1);
+    if (value.endsWith(",")) value = value.substring(0, value.length() - 1);
+    if (value.endsWith("\"")) value = value.substring(0, value.length() - 1);
+
+    return value;
+}
+
 
     private static int extractInt(String line) {
         return Integer.parseInt(line.split(":")[1].trim().replace(",", ""));
