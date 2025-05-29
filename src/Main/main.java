@@ -149,7 +149,9 @@ public class Main {
                 IMatch[] roundMatches = schedule.getMatchesForRound(i);
 
                 for (IMatch match : roundMatches) {
-                   if (match == null || !(match instanceof Match)) continue; 
+                    if (match == null || !(match instanceof Match)) {
+                        continue;
+                    }
                     Match realMatch = (Match) match;
 
                     if (realMatch.isPlayed()) {
@@ -184,14 +186,18 @@ public class Main {
                     clubs, clubs.length, clubs.length, null,
                     leagueStandings, new MatchSimulator(), teams, null
             );
-            
+
             season.setCurrentClubs(clubs);
             season.setClubCount(clubs.length);
 
             for (IClub club : clubs) {
-                season.addClub(club); // essencial se currentClubs[] não for preenchido diretamente
+                try {
+                    season.addClub(club);
+                } catch (IllegalStateException | IllegalArgumentException e) {
+                    System.out.println("Não foi possível adicionar o clube: " + club.getName() + " → " + e.getMessage());
+                }
             }
-            
+
             season.generateSchedule();
 
             // 5. Gerar o calendário
@@ -199,7 +205,9 @@ public class Main {
                 IMatch[] roundMatches = schedule.getMatchesForRound(i);
 
                 for (IMatch match : roundMatches) {
-                    if (match == null) continue;
+                    if (match == null) {
+                        continue;
+                    }
                     Match realMatch = (Match) match;
 
                     if (realMatch.isPlayed()) {
@@ -230,7 +238,7 @@ public class Main {
 
             ITeam userTeam = TeamSelectionMenu.run(season);
             season.setUserTeam(userTeam);
-            
+
             MainMenu.run();
 
         } catch (Exception e) {

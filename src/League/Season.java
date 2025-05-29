@@ -251,20 +251,33 @@ public class Season implements ISeason {
         }
     }
 
+    /**
+     * Simulates a round of matches.
+     *
+     * @throws IllegalStateException if the league is empty or not scheduled
+     */
     @Override
     public void simulateRound() {
+        if (clubCount == 0) {
+            throw new IllegalStateException("Cannot simulate round: league is empty.");
+        }
+
+        if (this.schedule == null) {
+            throw new IllegalStateException("Cannot simulate round: league has no schedule.");
+        }
+
         if (currentRound < maxRounds) {
             IMatch[] roundMatches = schedule.getMatchesForRound(currentRound);
 
             if (simulatorStrategy != null) {
                 for (IMatch match : roundMatches) {
                     if (match == null) {
-                        System.out.println(" Match nulo!");
+                        System.out.println("Match nulo!");
                         continue;
                     }
 
                     if (match.getHomeClub() == null || match.getAwayClub() == null) {
-                        System.out.println(" Match com clube nulo na jornada " + currentRound);
+                        System.out.println("Match com clube nulo na jornada " + currentRound);
                         System.out.println(" Home: " + match.getHomeClub());
                         System.out.println(" Away: " + match.getAwayClub());
                         continue;
