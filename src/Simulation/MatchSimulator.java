@@ -49,7 +49,7 @@ public class MatchSimulator implements MatchSimulatorStrategy {
                 }
 
                 int shot = attacker.getShooting();
-                int defense = defender != null ? defender.getStamina() : 30;
+                int defense = defender != null ? defender.getStamina()+ 20 : 50;
 
                 if (shot > random.nextInt(shot + defense + 1)) {
                     // Golo
@@ -72,7 +72,7 @@ public class MatchSimulator implements MatchSimulatorStrategy {
                 }
 
                 // Eventos adicionais
-                if (random.nextDouble() < 0.1 && eventIndex < events.length) {
+                if (random.nextDouble() < 0.4 && eventIndex < events.length) {
                     events[eventIndex++] = new FoulEvent(attacker, "FOUL", minute);
                 }
 
@@ -94,7 +94,6 @@ public class MatchSimulator implements MatchSimulatorStrategy {
             finalEvents[i] = events[i];
         }
         
-        System.out.println("DEBUG: total eventos = " + eventIndex);
 
         match.setEvents(finalEvents, eventIndex);
 

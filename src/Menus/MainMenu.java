@@ -6,7 +6,7 @@ package Menus;
 
 
 import java.io.*;
-import Main.main;
+import Main.Main;
 /**
  *
  * @author joaom
@@ -30,7 +30,7 @@ public class MainMenu {
 
                 switch (option) {
                     case "1":
-                        StandingsMenu.run(main.leagueStandings); 
+                        StandingsMenu.run(Main.leagueStandings); 
                         break;
                     case "2":
                         CalendarMenu.run();
@@ -39,10 +39,10 @@ public class MainMenu {
                        SquadMenu.run(); 
                         break;
                     case "4":
-                       MatchdaySimulatorMenu.run(main.season); 
+                       MatchdaySimulatorMenu.run(Main.season); 
                         break;
                     case "5":   
-                        MatchSimulatorMenu.run (main.season);
+                        MatchSimulatorMenu.run (Main.season);
                     case "6":
                         System.out.println("Saving and exiting...");
                         // call save logic here if needed

@@ -179,13 +179,16 @@ public class Main {
                     }
                 }
             }
-
+             League league = new League("Liga Portuguesa", null, 0);
+ 
             // 4. Criar uma época (Season)
             season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
                     clubs.length, clubs.length - 1, 0, 0,
                     clubs, clubs.length, clubs.length, null,
                     leagueStandings, new MatchSimulator(), teams, null
             );
+            
+            league.createSeason(season);
 
             season.setCurrentClubs(clubs);
             season.setClubCount(clubs.length);

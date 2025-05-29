@@ -6,7 +6,7 @@ package Menus;
 
 import Team.Team;
 import Player.Player;
-import Main.main;
+import Main.Main;
 import Team.Formation;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 import com.ppstudios.footballmanager.api.contracts.team.IClub;
@@ -27,7 +27,7 @@ public class SquadMenu {
 
         Scanner scanner = new Scanner(System.in);
 
-        ITeam team = main.season.getUserTeam();
+        ITeam team = Main.season.getUserTeam();
 
         int option;
         do {

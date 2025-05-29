@@ -10,7 +10,7 @@
 
 package League;
 
-import Enums.Position;
+import Enums.EPosition;
 import com.ppstudios.footballmanager.api.contracts.league.*;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
 import com.ppstudios.footballmanager.api.contracts.team.IClub;
@@ -342,6 +342,7 @@ public class Season implements ISeason {
         match.setAwayTeam(awayTeam);
     }
 
+    
     /**
      * Finds the index of the given club in the currentClubs array.
      *
@@ -386,6 +387,11 @@ public class Season implements ISeason {
     public int getCurrentRound() {
         return this.currentRound;
     }
+
+    public void setCurrentRound(int currentRound) {
+        this.currentRound = currentRound;
+    }
+    
 
     /**
      * Checks whether the season has completed all scheduled rounds.
