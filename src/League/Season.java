@@ -1,7 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
+
 package League;
 
 import Enums.Position;
@@ -19,8 +25,9 @@ import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 
 /**
- *
- * @author joaom
+ * Represents a football season, managing teams, schedule, simulation strategy,
+ * and league standings. Provides methods to control the lifecycle of the league
+ * from setup to simulation and results.
  */
 public class Season implements ISeason {
 
@@ -43,6 +50,28 @@ public class Season implements ISeason {
     private ITeam[] teams;
     private ITeam userTeam;
 
+    /**
+     * Constructs a Season object with the specified configuration and initial
+     * data.
+     *
+     * @param name The name of the season
+     * @param year The year the season takes place
+     * @param pointsPerWin Points awarded for a win
+     * @param pointsPerDraw Points awarded for a draw
+     * @param pointsPerLoss Points awarded (or deducted) for a loss
+     * @param maxTeams Maximum number of teams in the league
+     * @param maxRounds Maximum number of rounds to simulate
+     * @param currentRound The round the league is currently on
+     * @param currentMatches Number of matches simulated so far
+     * @param currentClubs Array of current clubs in the league
+     * @param clubCount Current number of clubs
+     * @param numberOfCurrentTeams Number of active teams
+     * @param schedule The schedule of matches
+     * @param leagueStandings Array storing each club's standing
+     * @param simulatorStrategy Strategy used to simulate matches
+     * @param teams Array of teams participating in the league
+     * @param userTeam The team controlled by the user
+     */
     public Season(String name, int year, int pointsPerWin, int pointsPerDraw, int pointsPerLoss, int maxTeams, int maxRounds, int currentRound, int currentMatches, IClub[] currentClubs, int clubCount, int numberOfCurrentTeams, ISchedule schedule, IStanding[] leagueStandings, MatchSimulatorStrategy simulatorStrategy, ITeam[] teams, ITeam userTeam) {
         this.name = name;
         this.year = year;
@@ -63,6 +92,11 @@ public class Season implements ISeason {
         this.userTeam = userTeam;
     }
 
+    /**
+     * Gets the year in which the season takes place.
+     *
+     * @return The season year
+     */
     @Override
     public int getYear() {
         return this.year;
@@ -196,43 +230,11 @@ public class Season implements ISeason {
         this.schedule = new Schedule(matches);
     }
 
-    // @Override
-//    public void generateSchedule() {
-//
-//        if (clubCount < 2) {
-//            throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
-//        }
-//
-//        int totalRounds = clubCount - 1;
-//        int matchesPerRound = clubCount / 2;
-//        IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
-//
-//        for (int round = 0; round < totalRounds; round++) {
-//            for (int match = 0; match < matchesPerRound; match++) {
-//                int homeIndex = (round + match) % (clubCount - 1);
-//                int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
-//
-//                if (match == 0) {
-//                    awayIndex = clubCount - 1;
-//                }
-//
-//                IClub homeClub = currentClubs[homeIndex];
-//                IClub awayClub = currentClubs[awayIndex];
-//
-//
-//                // Criação do jogo sem resultado nem equipas montadas ainda
-//                IMatch game = new Match(
-//                        homeClub,
-//                        awayClub,
-//                        round // apenas jornada marcada
-//                );
-//
-//                matches[round][match] = game;
-//            }
-//        }
-//
-//        this.schedule = new Schedule(matches); // guarda o calendário completo
-//    }
+    /**
+     * Retrieves all matches from the season schedule.
+     *
+     * @return Array of all matches, or empty array if schedule is not available
+     */
     @Override
     public IMatch[] getMatches() {
         if (schedule != null) {
@@ -242,6 +244,13 @@ public class Season implements ISeason {
         }
     }
 
+    /**
+     * Retrieves all matches for the specified round.
+     *
+     * @param i The round index
+     * @return Array of matches in that round, or empty array if schedule is not
+     * available
+     */
     @Override
     public IMatch[] getMatches(int i) {
         if (schedule != null) {
@@ -308,6 +317,12 @@ public class Season implements ISeason {
         }
     }
 
+    /**
+     * Prepares both home and away teams for the given match by assigning team
+     * objects with players, formations, and club information.
+     *
+     * @param match The match for which teams will be prepared
+     */
     private void prepareTeamsFor(Match match) {
         IClub home = match.getHomeClub();
         IClub away = match.getAwayClub();
@@ -327,6 +342,12 @@ public class Season implements ISeason {
         match.setAwayTeam(awayTeam);
     }
 
+    /**
+     * Finds the index of the given club in the currentClubs array.
+     *
+     * @param club The club to search for
+     * @return The index of the club in the array, or -1 if not found
+     */
     private int findClubIndex(IClub club) {
         for (int i = 0; i < currentClubs.length; i++) {
             if (currentClubs[i] == club) {
@@ -336,23 +357,49 @@ public class Season implements ISeason {
         return -1;
     }
 
+    /**
+     * Simulates a full season of matches by executing each round sequentially.
+     *
+     * @throws IllegalStateException if the league is empty or not scheduled
+     */
     @Override
     public void simulateSeason() {
+        if (clubCount == 0) {
+            throw new IllegalStateException("Cannot simulate season: league is empty.");
+        }
+
+        if (this.schedule == null) {
+            throw new IllegalStateException("Cannot simulate season: league has no schedule.");
+        }
+
         while (!isSeasonComplete()) {
             simulateRound();
         }
     }
 
+    /**
+     * Gets the index of the current round being simulated.
+     *
+     * @return The current round number
+     */
     @Override
     public int getCurrentRound() {
         return this.currentRound;
     }
 
+    /**
+     * Checks whether the season has completed all scheduled rounds.
+     *
+     * @return true if the season is complete, false otherwise
+     */
     @Override
     public boolean isSeasonComplete() {
         return currentRound >= maxRounds;
     }
 
+    /**
+     * Resets the season to its initial state, clearing standings and schedule.
+     */
     @Override
     public void resetSeason() {
         currentRound = 0;
@@ -363,6 +410,13 @@ public class Season implements ISeason {
         }
     }
 
+    /**
+     * Returns a string representation of the match result.
+     *
+     * @param imatch The match to display
+     * @return A formatted string with match result, or a fallback message if
+     * unavailable
+     */
     @Override
     public String displayMatchResult(IMatch imatch) {
         if (imatch instanceof Match m) {
@@ -372,90 +426,194 @@ public class Season implements ISeason {
         return "Resultado indisponível";
     }
 
+    /**
+     * Sets the strategy used to simulate matches in the league.
+     *
+     * @param mss The match simulation strategy to apply
+     */
     @Override
     public void setMatchSimulator(MatchSimulatorStrategy mss) {
         this.simulatorStrategy = mss;
     }
 
+    /**
+     * Gets the current league standings for all clubs in the season.
+     *
+     * @return An array of standings, one for each club
+     */
     @Override
     public IStanding[] getLeagueStandings() {
         return this.leagueStandings;
     }
 
+    /**
+     * Gets the schedule of matches for the season.
+     *
+     * @return The season's match schedule
+     */
     @Override
     public ISchedule getSchedule() {
         return this.schedule;
     }
 
+    /**
+     * Gets the number of points awarded for a win.
+     *
+     * @return The number of points awarded for a win
+     * @throws IllegalStateException if the match simulator is not initialized
+     */
     @Override
     public int getPointsPerWin() {
+        if (this.simulatorStrategy == null) {
+            throw new IllegalStateException("Match simulator is not initialized.");
+        }
         return this.pointsPerWin;
     }
 
+    /**
+     * Gets the number of points awarded for a draw.
+     *
+     * @return The number of points awarded for a draw
+     */
     @Override
     public int getPointsPerDraw() {
         return this.pointsPerDraw;
     }
 
+    /**
+     * Gets the number of points for a loss.
+     *
+     * @return The number of points awarded or deducted for a loss
+     * @throws IllegalStateException if the match simulator is not initialized
+     */
     @Override
     public int getPointsPerLoss() {
+        if (this.simulatorStrategy == null) {
+            throw new IllegalStateException("Match simulator is not initialized.");
+        }
         return this.pointsPerLoss;
     }
 
+    /**
+     * Gets the name of the season.
+     *
+     * @return The season name
+     */
     @Override
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Gets the maximum number of teams allowed in the league.
+     *
+     * @return Maximum number of teams
+     */
     @Override
     public int getMaxTeams() {
         return this.maxTeams;
     }
 
+    /**
+     * Gets the maximum number of rounds to be played in the season.
+     *
+     * @return Maximum number of rounds
+     */
     @Override
     public int getMaxRounds() {
         return this.maxRounds;
     }
 
+    /**
+     * Gets the current number of matches that have been simulated.
+     *
+     * @return The number of matches played so far
+     */
     @Override
     public int getCurrentMatches() {
         return this.currentMatches;
     }
 
+    /**
+     * Gets the current number of teams in the league.
+     *
+     * @return The number of active teams
+     */
     @Override
     public int getNumberOfCurrentTeams() {
         return this.numberOfCurrentTeams;
     }
 
+    /**
+     * Gets the array of current clubs participating in the league.
+     *
+     * @return Array of clubs currently in the league
+     */
     @Override
     public IClub[] getCurrentClubs() {
         return this.currentClubs;
     }
 
+    /**
+     * Sets the array of current clubs in the league.
+     *
+     * @param clubs Array of clubs to assign
+     */
     public void setCurrentClubs(IClub[] clubs) {
         this.currentClubs = clubs;
     }
 
+    /**
+     * Sets the number of clubs currently in the league.
+     *
+     * @param count Number of clubs
+     */
     public void setClubCount(int count) {
         this.clubCount = count;
     }
 
+    /**
+     * Gets the league instance associated with this season.
+     *
+     * @return The League object
+     */
     public League getLeague() {
         return this.league;
     }
 
+    /**
+     * Gets the array of all teams in the league.
+     *
+     * @return Array of teams
+     */
     public ITeam[] getTeams() {
         return this.teams;
     }
 
+    /**
+     * Gets the team controlled by the user.
+     *
+     * @return The user's team
+     */
     public ITeam getUserTeam() {
         return this.userTeam;
     }
 
+    /**
+     * Sets the team to be controlled by the user.
+     *
+     * @param team The user's selected team
+     */
     public void setUserTeam(ITeam team) {
         this.userTeam = team;
     }
 
+    /**
+     * Retrieves the next unplayed match for the specified team.
+     *
+     * @param team The team to find the next match for
+     * @return The next unplayed Match, or null if none remain
+     */
     public Match getNextMatchForTeam(ITeam team) {
         if (schedule == null) {
             return null;
@@ -478,6 +636,12 @@ public class Season implements ISeason {
         return null; // nenhum jogo por simular
     }
 
+    /**
+     * Exports the season data to a JSON file.
+     *
+     * @throws IOException If file writing fails
+     * @throws UnsupportedOperationException If method is not implemented
+     */
     @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
