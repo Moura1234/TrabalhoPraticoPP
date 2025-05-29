@@ -68,15 +68,29 @@ public class Season implements ISeason {
         return this.year;
     }
 
+    /**
+     * Adds a team to the league and updates the schedule.
+     *
+     * @param iclub The club to add
+     * @return true if the club was added successfully, false if the club
+     * already exists
+     * @throws IllegalArgumentException if the club is null or already in the
+     * league
+     * @throws IllegalStateException if the league is full
+     */
     @Override
     public boolean addClub(IClub iclub) {
+        if (iclub == null) {
+            throw new IllegalArgumentException("Club cannot be null.");
+        }
+
         if (clubCount >= maxTeams) {
-            return false;
+            throw new IllegalStateException("League is full. Cannot add more clubs.");
         }
 
         for (int i = 0; i < clubCount; i++) {
             if (currentClubs[i].equals(iclub)) {
-                return false; // clube existe
+                throw new IllegalArgumentException("Club is already in the league.");
             }
         }
 
@@ -86,11 +100,21 @@ public class Season implements ISeason {
         numberOfCurrentTeams++;
 
         return true;
-
     }
 
+    /**
+     * Removes a team from the league and updates the schedule.
+     *
+     * @param iclub The club to remove
+     * @return true if the club was removed successfully
+     * @throws IllegalArgumentException if the club is null
+     * @throws IllegalStateException if the club is not in the league
+     */
     @Override
     public boolean removeClub(IClub iclub) {
+        if (iclub == null) {
+            throw new IllegalArgumentException("Club cannot be null.");
+        }
 
         for (int i = 0; i < clubCount; i++) {
             if (currentClubs[i].equals(iclub)) {
@@ -98,23 +122,37 @@ public class Season implements ISeason {
                     currentClubs[j] = currentClubs[j + 1];
                     leagueStandings[j] = leagueStandings[j + 1];
                 }
+
                 currentClubs[--clubCount] = null;
                 leagueStandings[clubCount] = null;
                 numberOfCurrentTeams--;
                 return true;
             }
         }
-        return false;
+
+        throw new IllegalStateException("Club is not in the league.");
     }
 
+    /**
+     * Generates a schedule for the league. A schedule is a set of matches that
+     * determine the order in which teams will play against each other.
+     *
+     * @throws IllegalStateException if the league is empty or if a schedule
+     * already exists
+     */
     @Override
     public void generateSchedule() {
         if (clubCount < 2) {
-            throw new IllegalStateException("Número insuficiente de clubes para gerar calendário.");
+            throw new IllegalStateException("Insufficient number of clubs to generate a schedule.");
         }
 
-        int totalRounds = clubCount - 1; // 17 jornadas 
-        int matchesPerRound = clubCount / 2; // 9 jogos por jornada
+        // Verifica se já há calendário
+        if (this.schedule != null) {
+            throw new IllegalStateException("Schedule has already been generated.");
+        }
+
+        int totalRounds = clubCount - 1;
+        int matchesPerRound = clubCount / 2;
         IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
 
         for (int round = 0; round < totalRounds; round++) {
@@ -132,7 +170,7 @@ public class Season implements ISeason {
                 IPlayer[] homePlayers = homeClub.getPlayers();
                 IPlayer[] awayPlayers = awayClub.getPlayers();
 
-                Formation formation = Formation.create433(); // usa qualquer formação base
+                Formation formation = Formation.create433();
                 ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers, homeIndex);
                 ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers, awayIndex);
 
@@ -147,8 +185,8 @@ public class Season implements ISeason {
                         Enums.EFormation.HomeFormation,
                         Enums.EFormation.AwayFormation,
                         round,
-                        null, // Sem eventos por agora
-                        0 // eventCount
+                        null,
+                        0
                 );
 
                 matches[round][match] = game;
@@ -157,6 +195,7 @@ public class Season implements ISeason {
 
         this.schedule = new Schedule(matches);
     }
+
     // @Override
 //    public void generateSchedule() {
 //
@@ -194,7 +233,6 @@ public class Season implements ISeason {
 //
 //        this.schedule = new Schedule(matches); // guarda o calendário completo
 //    }
-
     @Override
     public IMatch[] getMatches() {
         if (schedule != null) {

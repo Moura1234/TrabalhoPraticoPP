@@ -15,7 +15,7 @@ import java.io.IOException;
  * @author joaom
  */
 public class Match implements IMatch {
-    
+
     private IClub homeClub;
     private IClub awayClub;
     private boolean played;
@@ -26,12 +26,12 @@ public class Match implements IMatch {
     private EFormation homeFormation;
     private EFormation awayFormation;
     private int round;
-    private IEvent [] event;
+    private IEvent[] event;
     private EventManager eventManager = new EventManager();
-    
+
     private int eventCount;
 
-public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, EFormation homeFormation, EFormation awayFormation, int round,IEvent[] event, int eventCount) {
+    public Match(IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, ITeam awayTeam, int homeGoals, int awayGoals, EFormation homeFormation, EFormation awayFormation, int round, IEvent[] event, int eventCount) {
         this.homeClub = homeClub;
         this.awayClub = awayClub;
         this.played = played;
@@ -44,16 +44,14 @@ public Match (IClub homeClub, IClub awayClub, boolean played, ITeam homeTeam, IT
         this.round = round;
         this.event = new IEvent[200];
         this.eventCount = 0;
-}
+    }
 
-public Match(IClub home, IClub away, int round) {
-    this.homeClub = homeClub;
-    this.awayClub = awayClub;
-    this.round = round;
-    this.played = false; 
-}
-
-
+    public Match(IClub home, IClub away, int round) {
+        this.homeClub = homeClub;
+        this.awayClub = awayClub;
+        this.round = round;
+        this.played = false;
+    }
 
     @Override
     public IClub getHomeClub() {
@@ -66,33 +64,33 @@ public Match(IClub home, IClub away, int round) {
     }
 
     @Override
-    public boolean isPlayed(){
-    return this.played;
-        
+    public boolean isPlayed() {
+        return this.played;
+
     }
-    
-    @Override
-   public ITeam getHomeTeam() {
-   return this.homeTeam;
-}
 
     @Override
-    public ITeam getAwayTeam(){
+    public ITeam getHomeTeam() {
+        return this.homeTeam;
+    }
+
+    @Override
+    public ITeam getAwayTeam() {
         return this.awayTeam;
     }
 
     public int getHomeGoals() {
         return this.homeGoals;
     }
-    
-    public void setHomeTeam(ITeam homeTeam){
+
+    public void setHomeTeam(ITeam homeTeam) {
         this.homeTeam = homeTeam;
     }
 
-    public void setAwayTeam(ITeam awayTeam){
+    public void setAwayTeam(ITeam awayTeam) {
         this.awayTeam = awayTeam;
     }
-    
+
     public void setHomeGoals(int homeGoals) {
         this.homeGoals = homeGoals;
     }
@@ -104,42 +102,39 @@ public Match(IClub home, IClub away, int round) {
     public int getAwayGoals() {
         return this.awayGoals;
     }
-    
+
     @Override
-     public void setPlayed() {
-        this.played = true; 
-     }
-     
-     @Override
-     public boolean isValid(){
-    return homeClub != null && awayClub != null &&
-           !homeClub.equals(awayClub) &&
-           homeTeam != null && awayTeam != null;
-     }
-    
+    public void setPlayed() {
+        this.played = true;
+    }
+
     @Override
-    public int getTotalByEvent(Class type, IClub iclub){
-    
+    public boolean isValid() {
+        return homeClub != null && awayClub != null
+                && !homeClub.equals(awayClub)
+                && homeTeam != null && awayTeam != null;
+    }
+
+    @Override
+    public int getTotalByEvent(Class type, IClub iclub) {
+
         return 0;
     }
-    
+
     @Override
-     public ITeam getWinner(){
-         if (homeGoals > awayGoals) {
-        return homeTeam;
-    } 
-         else if (awayGoals > homeGoals) {
-        return awayTeam;
-    } 
-       else{
-        return null; 
-    }    
+    public ITeam getWinner() {
+        if (homeGoals > awayGoals) {
+            return homeTeam;
+        } else if (awayGoals > homeGoals) {
+            return awayTeam;
+        } else {
+            return null;
+        }
     }
-     
-   @Override
-    public int getRound(){
-    
-    return this.round;    
+
+    @Override
+    public int getRound() {
+        return this.round;
     }
 
     public EFormation getHomeFormation() {
@@ -149,58 +144,56 @@ public Match(IClub home, IClub away, int round) {
     public EFormation getAwayFormation() {
         return this.awayFormation;
     }
-    
+
     @Override
-     public void setTeam(ITeam iteam) {
-         
-if (iteam.getClub().equals(homeClub)) {
-        this.homeTeam = iteam;
-    } else if (iteam.getClub().equals(awayClub)) {
-        this.awayTeam = iteam;
-    } else {
-        System.out.println("A equipa não pertence a este jogo.");
+    public void setTeam(ITeam iteam) {
+
+        if (iteam.getClub().equals(homeClub)) {
+            this.homeTeam = iteam;
+        } else if (iteam.getClub().equals(awayClub)) {
+            this.awayTeam = iteam;
+        } else {
+            System.out.println("A equipa não pertence a este jogo.");
+        }
+
     }
 
-     }
-    
     public String getResult() {
-        
+
         return homeClub.getName() + " " + homeGoals + " - " + awayGoals + " " + awayClub.getName();
-}
-    @Override
-    public void addEvent (IEvent ievent){
-       eventManager.addEvent(ievent); 
-     }
-    
-    @Override
-    public IEvent[] getEvents(){
-    return eventManager.getEvents();    
-     }
-    
-  public void setEvents(IEvent[] events, int count) {
-    eventManager.setEvents(events);
-    eventManager.setEventCount(count);
-}
-    
-    @Override
-     public int getEventCount(){
-         return eventManager.getEventCount();  
-     }
-     
-     public void setEventCount(int eventCount) {
-    this.eventCount = eventCount;
     }
-     
-    
-     @Override
+
+    @Override
+    public void addEvent(IEvent ievent) {
+        eventManager.addEvent(ievent);
+    }
+
+    @Override
+    public IEvent[] getEvents() {
+        return eventManager.getEvents();
+    }
+
+    public void setEvents(IEvent[] events, int count) {
+        eventManager.setEvents(events);
+        eventManager.setEventCount(count);
+    }
+
+    @Override
+    public int getEventCount() {
+        return eventManager.getEventCount();
+    }
+
+    public void setEventCount(int eventCount) {
+        this.eventCount = eventCount;
+    }
+
+    @Override
     public String toString() {
         return "Match between " + homeClub.getName() + " and " + awayClub.getName();
     }
-    
-     @Override
+
+    @Override
     public void exportToJson() throws IOException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    }
-
-
+}
