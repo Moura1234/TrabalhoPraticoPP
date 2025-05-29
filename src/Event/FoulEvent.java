@@ -21,7 +21,7 @@ public class FoulEvent extends Event{
         return this.player;
     }
 
-    // 70% de sucesso (foi falta mesmo)
+    
     public boolean isSuccessful() {
         return Math.random() < 0.7;
     }

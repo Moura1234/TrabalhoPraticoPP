@@ -27,9 +27,7 @@ public class SquadMenu {
 
         Scanner scanner = new Scanner(System.in);
 
-        IClub club = Main.season.getCurrentClubs()[0];
-        IPlayer[] players = club.getPlayers();
-        Team team = new Team(5, Formation.create442(), Formation.create442().getPositions().length, club, players, 0);
+        ITeam team = Main.season.getUserTeam();
 
         int option;
         do {
@@ -166,23 +164,26 @@ public class SquadMenu {
             return;
         }
 
-    int realOutIndex = startingIndices[out];
-int realInIndex = benchRealIndices[in - 11];
+        int realOutIndex = startingIndices[out];
+        int realInIndex = benchRealIndices[in - 11];
 
-((Team) team).substitutePlayer(realOutIndex, realInIndex); 
+        ((Team) team).substitutePlayer(realOutIndex, realInIndex);
 
-System.out.println("Substitution made: " + players[realOutIndex].getName()
-        + "  (<-)   |   (->)  " + players[realInIndex].getName());
-    
+        System.out.println("Substitution made: " + players[realOutIndex].getName()
+                + "  (<-)   |   (->)  " + players[realInIndex].getName());
+
     }
 
     public static void showBench(ITeam team) {
-        IPlayer[] bench = ((Team) team).getBenchPlayers();
+        IPlayer[] allPlayers = team.getPlayers();
+        int starters = ((Formation) team.getFormation()).getPositions().length;
+
         System.out.println("\n--- Bench Players ---");
-        for (int i = 0; i < bench.length; i++) {
-            if (bench[i] != null) {
-                System.out.println(i + ". " + bench[i].getName() + " (" + bench[i].getPosition() + ")");
+        for (int i = starters; i < allPlayers.length; i++) {
+            if (allPlayers[i] != null) {
+                System.out.println(i + ". " + allPlayers[i].getName() + " (" + allPlayers[i].getPosition() + ")");
             }
         }
     }
+
 }

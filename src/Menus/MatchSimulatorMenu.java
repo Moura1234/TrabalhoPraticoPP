@@ -9,6 +9,7 @@ import League.Season;
 import Match.Match;
 import Simulation.MatchSimulator;
 import com.ppstudios.footballmanager.api.contracts.event.IEvent;
+import com.ppstudios.footballmanager.api.contracts.event.IGoalEvent;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.util.Scanner;
 
@@ -42,7 +43,13 @@ public class MatchSimulatorMenu {
         System.out.println("\n--- MATCH EVENTS ---");
         for (int i = 0; i < nextMatch.getEventCount(); i++) {
             IEvent e = nextMatch.getEvents()[i];
-            System.out.printf("%d' - %s\n", e.getMinute(), e.getDescription());
+
+            if (e instanceof IGoalEvent) {
+                IGoalEvent goal = (IGoalEvent) e;
+                System.out.printf("%d' - GOAL by %s\n", e.getMinute(), goal.getPlayer().getName());
+            } else {
+                System.out.printf("%d' - %s\n", e.getMinute(), e.getDescription());
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ import Player.Player;
  *
  * @author joaom
  */
-public class ShotEvent extends Event {
+public class ShotEvent extends Event implements IGoalEvent {
 
     private IPlayer shooter;
     private IPlayer goalkeeper;
@@ -26,8 +26,8 @@ public class ShotEvent extends Event {
     public IPlayer getShooter() {
         return this.shooter;
     }
-    
-    public IPlayer getGoalkeeper(){
+
+    public IPlayer getGoalkeeper() {
         return this.goalkeeper;
     }
 
@@ -37,7 +37,12 @@ public class ShotEvent extends Event {
         double chance = (shotSkill - reflexes + 50) / 100.0;
         return Math.random() < chance;
     }
-    
+
+    @Override
+    public IPlayer getPlayer() {
+        return shooter;
+    }
+
     @Override
     public String toString() {
         return getMinute() + "' - SHOT by " + shooter.getName();
