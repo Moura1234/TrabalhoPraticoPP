@@ -6,14 +6,14 @@ package Menus;
 
 import Team.Team;
 import Player.Player;
-import Main.Main;
+import Main.main;
 import Team.Formation;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 import com.ppstudios.footballmanager.api.contracts.team.IClub;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import java.util.Scanner;
-import Enums.Position;
+import Enums.EPosition;
 
 /**
  *
@@ -27,7 +27,7 @@ public class SquadMenu {
 
         Scanner scanner = new Scanner(System.in);
 
-        ITeam team = Main.season.getUserTeam();
+        ITeam team = main.season.getUserTeam();
 
         int option;
         do {
@@ -65,13 +65,13 @@ public class SquadMenu {
 
     public static void viewStartingXI(ITeam team) {
         IPlayer[] players = team.getPlayers();
-        Position[] formationPositions = ((Formation) team.getFormation()).getPositions();
+        EPosition[] formationPositions = ((Formation) team.getFormation()).getPositions();
         boolean[] used = new boolean[players.length];
 
         System.out.println("\n--- Starting XI (" + formationPositions.length + ") ---");
 
         int printed = 0;
-        for (Position requiredPosition : formationPositions) {
+        for (EPosition requiredPosition : formationPositions) {
             for (int i = 0; i < players.length; i++) {
                 if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
                     IPlayer p = players[i];
@@ -119,7 +119,7 @@ public class SquadMenu {
 
     public static void substitute(ITeam team) {
         IPlayer[] players = team.getPlayers();
-        Position[] formationPositions = ((Formation) team.getFormation()).getPositions();
+        EPosition[] formationPositions = ((Formation) team.getFormation()).getPositions();
         boolean[] used = new boolean[players.length];
         int[] startingIndices = new int[formationPositions.length];
         int[] benchRealIndices = new int[players.length]; // array fixo para armazenar os índices reais dos suplentes
@@ -128,7 +128,7 @@ public class SquadMenu {
         System.out.println("\n--- Starting XI (" + formationPositions.length + ") ---");
 
         int printed = 0;
-        for (Position requiredPosition : formationPositions) {
+        for (EPosition requiredPosition : formationPositions) {
             for (int i = 0; i < players.length; i++) {
                 if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
                     IPlayer p = players[i];

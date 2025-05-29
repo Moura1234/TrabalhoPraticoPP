@@ -11,7 +11,7 @@ package JSONLoader;
 import java.io.InputStreamReader;
 import java.io.FileInputStream;
 import java.nio.charset.StandardCharsets;
-import Enums.Position;
+import Enums.EPosition;
 import Player.Player;
 import Team.Club;
 import java.io.BufferedReader;
@@ -51,7 +51,7 @@ public class JsonManualLoader {
         String name = "", nationality = "", photo = "", birthDate = "", preferredFoot = "";
         int number = 0, shooting = 0, passing = 0, stamina = 0, defense = 0, speed = 0, reflexes = 0;
         float height = 0f, weight = 0f;
-        Position position = null;
+        EPosition position = null;
 
         while ((line = br.readLine()) != null) {
             line = line.trim();
@@ -69,7 +69,7 @@ public class JsonManualLoader {
             else if (line.startsWith("\"position\""))
                 
             try {
-            position = Position.valueOf(extractString(line).toUpperCase());
+            position = EPosition.valueOf(extractString(line).toUpperCase());
             } catch (Exception e) {
             position = null; 
             }

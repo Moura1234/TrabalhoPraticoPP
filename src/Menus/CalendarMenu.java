@@ -5,7 +5,7 @@
 package Menus;
 
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
-import Main.Main;
+import Main.main;
 import Match.Match;
 /**
  *
@@ -15,13 +15,13 @@ public class CalendarMenu {
     public static void run() {
         System.out.println("\n===== CALENDAR =====");
 
-        int totalRounds = Main.season.getMaxRounds(); // assumes you have this method
+        int totalRounds = main.season.getMaxRounds(); // assumes you have this method
         for (int round = 0; round < totalRounds; round++) {
             System.out.println("\n======================");
             System.out.println("Round " + (round + 1));
             System.out.println("======================");
 
-            IMatch[] matches = Main.season.getMatches(round);
+            IMatch[] matches = main.season.getMatches(round);
 
             for (IMatch match : matches) {
                 if (match == null) continue;

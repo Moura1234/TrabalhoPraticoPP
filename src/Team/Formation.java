@@ -6,7 +6,7 @@ package Team;
 
 import com.ppstudios.footballmanager.api.contracts.team.*;
 import java.io.IOException;
-import Enums.Position;
+import Enums.EPosition;
 
 /**
  *
@@ -16,16 +16,16 @@ public class Formation implements IFormation {
 
     private String displayName;
     private int tacticalAdvantage;
-    private Position[] positions;
+    private EPosition[] positions;
 
-    public Formation(String displayName, int tacticalAdvantage, Position[] positions) {
+    public Formation(String displayName, int tacticalAdvantage, EPosition[] positions) {
         this.displayName = displayName;
         this.tacticalAdvantage = tacticalAdvantage;
         this.positions = positions;
 
     }
     
-public Position[] getPositions() {
+public EPosition[] getPositions() {
     return this.positions;
 }
 
@@ -40,31 +40,31 @@ public Position[] getPositions() {
     }
     
 public static Formation create442() {
-    Position[] positions = {
-        Position.GOALKEEPER,
-        Position.DEFENDER, Position.DEFENDER, Position.DEFENDER, Position.DEFENDER,
-        Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER,
-        Position.FORWARD, Position.FORWARD
+    EPosition[] positions = {
+        EPosition.GOALKEEPER,
+        EPosition.DEFENDER, EPosition.DEFENDER, EPosition.DEFENDER, EPosition.DEFENDER,
+        EPosition.MIDFIELDER, EPosition.MIDFIELDER, EPosition.MIDFIELDER, EPosition.MIDFIELDER,
+        EPosition.FORWARD, EPosition.FORWARD
     };
     return new Formation("4-4-2", 5, positions);
 }
 
 public static Formation create433() {
-    Position[] positions = {
-        Position.GOALKEEPER,
-        Position.DEFENDER, Position.DEFENDER, Position.DEFENDER, Position.DEFENDER,
-        Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER,
-        Position.FORWARD, Position.FORWARD, Position.FORWARD
+    EPosition[] positions = {
+        EPosition.GOALKEEPER,
+        EPosition.DEFENDER, EPosition.DEFENDER, EPosition.DEFENDER, EPosition.DEFENDER,
+        EPosition.MIDFIELDER, EPosition.MIDFIELDER, EPosition.MIDFIELDER,
+        EPosition.FORWARD, EPosition.FORWARD, EPosition.FORWARD
     };
     return new Formation("4-3-3", 6, positions);
 }
 
 public static Formation create352() {
-    Position[] positions = {
-        Position.GOALKEEPER,
-        Position.DEFENDER, Position.DEFENDER, Position.DEFENDER,
-        Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER, Position.MIDFIELDER,
-        Position.FORWARD, Position.FORWARD
+    EPosition[] positions = {
+        EPosition.GOALKEEPER,
+        EPosition.DEFENDER, EPosition.DEFENDER, EPosition.DEFENDER,
+        EPosition.MIDFIELDER, EPosition.MIDFIELDER, EPosition.MIDFIELDER, EPosition.MIDFIELDER, EPosition.MIDFIELDER,
+        EPosition.FORWARD, EPosition.FORWARD
     };
     return new Formation("3-5-2", 4, positions);
 }

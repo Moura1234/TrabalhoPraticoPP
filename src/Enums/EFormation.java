@@ -9,5 +9,16 @@ package Enums;
  * @author utilizador
  */
 public enum EFormation {
-    HomeFormation, AwayFormation
+    HomeFormation, AwayFormation;
+    
+    public String EFormationToString(){
+        switch(this){
+            case HomeFormation:
+                return "Home Formation";
+            case AwayFormation:
+                return "Away Formation";
+            default:
+                return "Error!";
+        }
+    }
 }

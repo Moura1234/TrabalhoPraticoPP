@@ -9,5 +9,17 @@ package Enums;
  * @author utilizador
  */
 public enum EClub {
-   HomeClub, AwayClub 
+    HomeClub, AwayClub;
+
+    public String EClubToString() {
+        switch (this) {
+            case HomeClub:
+                return "Home Club";
+            case AwayClub:
+                return "Away Club";
+            default:
+                return "Error!";
+                           
+        }
+    }
 }

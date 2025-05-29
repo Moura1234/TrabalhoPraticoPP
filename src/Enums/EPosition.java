@@ -10,7 +10,7 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayerPosition;
  *
  * @author joaom
  */
-public enum Position implements IPlayerPosition{
+public enum EPosition implements IPlayerPosition{
     GOALKEEPER, DEFENDER, MIDFIELDER, FORWARD;
     
     @Override

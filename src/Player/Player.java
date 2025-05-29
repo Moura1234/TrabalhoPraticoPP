@@ -12,11 +12,11 @@ package Player;
 
 import com.ppstudios.footballmanager.api.contracts.player.*;
 import java.time.LocalDate;
-import Enums.Position;
+import Enums.EPosition;
 import java.io.IOException;
 import com.ppstudios.footballmanager.api.contracts.player.PreferredFoot;
 import java.time.LocalDate;
-import Enums.Position;
+import Enums.EPosition;
 
 /**
  * Class representing a football player with personal and technical attributes.
