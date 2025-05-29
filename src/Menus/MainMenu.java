@@ -23,7 +23,8 @@ public class MainMenu {
                 System.out.println("2 - View calendar");
                 System.out.println("3 - Manage squad");
                 System.out.println("4 - Simulate matchday");
-                System.out.println("5 - Save and exit");
+                System.out.println("5 - Simulate next match");
+                System.out.println("6 - Save and exit");
                 System.out.print("Option: ");
                 option = br.readLine();
 
@@ -38,9 +39,11 @@ public class MainMenu {
                        SquadMenu.run(); 
                         break;
                     case "4":
-                       MatchSimulatorMenu.run(Main.season); 
+                       MatchdaySimulatorMenu.run(Main.season); 
                         break;
-                    case "5":
+                    case "5":   
+                        
+                    case "6":
                         System.out.println("Saving and exiting...");
                         // call save logic here if needed
                         break;
