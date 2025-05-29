@@ -124,6 +124,8 @@ public class SquadMenu {
         Position[] formationPositions = ((Formation) team.getFormation()).getPositions();
         boolean[] used = new boolean[players.length];
         int[] startingIndices = new int[formationPositions.length];
+        int[] benchRealIndices = new int[players.length]; // array fixo para armazenar os índices reais dos suplentes
+        int benchCount = 0;
 
         System.out.println("\n--- Starting XI (" + formationPositions.length + ") ---");
 
@@ -133,7 +135,7 @@ public class SquadMenu {
                 if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
                     IPlayer p = players[i];
                     used[i] = true;
-                    startingIndices[printed] = i; // armazenar o índice do titular
+                    startingIndices[printed] = i; // índice real
                     System.out.printf("%d. %s (%s)\n", printed, p.getName(), p.getPosition().getDescription());
                     printed++;
                     break;
@@ -141,34 +143,37 @@ public class SquadMenu {
             }
         }
 
-        // Mostrar banco com os restantes jogadores
+        // Mostrar banco com mapeamento visual -> real
         System.out.println("\n--- Bench Players ---");
-        int benchIndex = 11;
+        int displayIndex = 11;
         for (int i = 0; i < players.length; i++) {
             if (!used[i] && players[i] != null) {
-                System.out.printf("%d. %s (%s)\n", benchIndex, players[i].getName(), players[i].getPosition().getDescription());
-                benchIndex++;
+                System.out.printf("%d. %s (%s)\n", displayIndex, players[i].getName(), players[i].getPosition().getDescription());
+                benchRealIndices[benchCount] = i; // guardar índice real
+                benchCount++;
+                displayIndex++;
             }
         }
 
-        // Substituição
-        System.out.print("\nPlayer OUT index (0–10): ");
+        System.out.print("\nPlayer OUT index (0-10): ");
         int out = Integer.parseInt(scanner.nextLine());
 
-        System.out.print("Player IN index (11–18): ");
+        System.out.print("Player IN index (11-" + (10 + benchCount) + "): ");
         int in = Integer.parseInt(scanner.nextLine());
 
-        if (out < 0 || out >= startingIndices.length || in < 11 || in >= players.length) {
+        if (out < 0 || out >= startingIndices.length || (in - 11) < 0 || (in - 11) >= benchCount) {
             System.out.println("Invalid substitution indices.");
             return;
         }
 
-        int realOutIndex = startingIndices[out];
+    int realOutIndex = startingIndices[out];
+int realInIndex = benchRealIndices[in - 11];
 
-        ((Team) team).substitutePlayer(realOutIndex, players[in]);
+((Team) team).substitutePlayer(realOutIndex, realInIndex); 
 
-        System.out.println("Substitution made: " + players[realOutIndex].getName()
-                + "  (⟵)   |   (⟶)  " + players[in].getName());
+System.out.println("Substitution made: " + players[realOutIndex].getName()
+        + "  (<-)   |   (->)  " + players[realInIndex].getName());
+    
     }
 
     public static void showBench(ITeam team) {

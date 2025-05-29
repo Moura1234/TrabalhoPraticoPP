@@ -119,13 +119,15 @@ public class Team implements ITeam {
 
     }
 
-    public void substitutePlayer(int index, IPlayer newPlayer) {
-        if (index < 0 || index >= playerCount) {
-            System.out.println("Invalid player index.");
-            return;
-        }
-        players[index] = newPlayer;
+   public void substitutePlayer(int indexOut, int indexIn) {
+    if (indexOut < 0 || indexOut >= playerCount || indexIn < 0 || indexIn >= playerCount) {
+        System.out.println("Invalid substitution indices.");
+        return;
     }
+
+    players[indexOut] = players[indexIn];
+    players[indexIn] = null; // remover do banco
+}
 
     public IPlayer[] getBenchPlayers() {
         int benchSize = playerCount - 11;
