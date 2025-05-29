@@ -65,31 +65,24 @@ public class SquadMenu {
         } while (option != 5);
     }
 
-    public static int[] printStartingXI(ITeam team) {
+    public static void viewStartingXI(ITeam team) {
         IPlayer[] players = team.getPlayers();
-        Position[] formation = ((Formation) team.getFormation()).getPositions();
+        Position[] formationPositions = ((Formation) team.getFormation()).getPositions();
         boolean[] used = new boolean[players.length];
-        int[] indices = new int[formation.length];
 
-        System.out.println("\n--- Starting XI (" + formation.length + ") ---");
+        System.out.println("\n--- Starting XI (" + formationPositions.length + ") ---");
 
         int printed = 0;
-        for (Position required : formation) {
+        for (Position requiredPosition : formationPositions) {
             for (int i = 0; i < players.length; i++) {
-                if (!used[i] && players[i] != null && players[i].getPosition() == required) {
-                    System.out.printf("%d. %s (%s)\n", ++printed, players[i].getName(), players[i].getPosition().getDescription());
+                if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
+                    IPlayer p = players[i];
                     used[i] = true;
-                    indices[printed - 1] = i;
+                    System.out.printf("%d. %s (%s)\n", ++printed, p.getName(), p.getPosition().getDescription());
                     break;
                 }
             }
         }
-
-        return indices;
-    }
-
-    public static void viewStartingXI(ITeam team) {
-        printStartingXI(team);
     }
 
     public static void changeFormation(ITeam team) {
@@ -127,86 +120,64 @@ public class SquadMenu {
     }
 
     public static void substitute(ITeam team) {
-        Scanner scanner = new Scanner(System.in);
-        int[] starters = printStartingXI(team); // mostra titulares
+        IPlayer[] players = team.getPlayers();
+        Position[] formationPositions = ((Formation) team.getFormation()).getPositions();
+        boolean[] used = new boolean[players.length];
+        int[] startingIndices = new int[formationPositions.length];
 
-        printBenchPlayers(team, starters);      // mostra banco
+        System.out.println("\n--- Starting XI (" + formationPositions.length + ") ---");
 
-        System.out.print("\nPlayer OUT index (1–" + starters.length + "): ");
-        int outIndex = Integer.parseInt(scanner.nextLine()) - 1;
+        int printed = 0;
+        for (Position requiredPosition : formationPositions) {
+            for (int i = 0; i < players.length; i++) {
+                if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
+                    IPlayer p = players[i];
+                    used[i] = true;
+                    startingIndices[printed] = i; // armazenar o índice do titular
+                    System.out.printf("%d. %s (%s)\n", printed, p.getName(), p.getPosition().getDescription());
+                    printed++;
+                    break;
+                }
+            }
+        }
 
-        System.out.print("Player IN index (11–17): ");
-        int inIndex = Integer.parseInt(scanner.nextLine());
+        // Mostrar banco com os restantes jogadores
+        System.out.println("\n--- Bench Players ---");
+        int benchIndex = 11;
+        for (int i = 0; i < players.length; i++) {
+            if (!used[i] && players[i] != null) {
+                System.out.printf("%d. %s (%s)\n", benchIndex, players[i].getName(), players[i].getPosition().getDescription());
+                benchIndex++;
+            }
+        }
 
-        if (outIndex < 0 || outIndex >= starters.length || inIndex < 11 || inIndex >= team.getPlayers().length) {
+        // Substituição
+        System.out.print("\nPlayer OUT index (0–10): ");
+        int out = Integer.parseInt(scanner.nextLine());
+
+        System.out.print("Player IN index (11–18): ");
+        int in = Integer.parseInt(scanner.nextLine());
+
+        if (out < 0 || out >= startingIndices.length || in < 11 || in >= players.length) {
             System.out.println("Invalid substitution indices.");
             return;
         }
 
-        ((Team) team).substitutePlayer(starters[outIndex], team.getPlayers()[inIndex]);
+        int realOutIndex = startingIndices[out];
 
-        System.out.println("Substitution made: "
-                + team.getPlayers()[starters[outIndex]].getName() + "  -  "
-                + team.getPlayers()[inIndex].getName());
-    }
+        ((Team) team).substitutePlayer(realOutIndex, players[in]);
 
-    //        Position[] formationPositions = team.getFormation().getPositions();
-    //        IPlayer[] players = team.getPlayers();
-    //
-    //        System.out.println("\n--- Starting XI ---");
-    //        int count = 0;
-    //
-    //        for (int i = 0; i < formationPositions.length; i++) {
-    //            Position pos = formationPositions[i];
-    //
-    //            for (int j = 0; j < allPlayers.length; j++) {
-    //                if (!used[j] && allPlayers[j].getPosition().equals(pos)) {
-    //                    System.out.println(i + ". " + allPlayers[j].getName() + " (" + pos + ")");
-    //                    used[j] = true;
-    //                    count++;
-    //                    break;
-    //                }
-    //            }
-    //        }
-    //        System.out.println("\n--- Bench Players ---");
-    //        for (int i = 11; i < players.length; i++) {
-    //            if (players[i] != null) {
-    //                System.out.println(i + ". " + players[i].getName() + " (" + players[i].getPosition() + ")");
-    //            }
-    //        }
-    //
-    //        System.out.print("\nPlayer OUT(0–10): ");
-    //        int out = Integer.parseInt(scanner.nextLine());
-    //
-    //        System.out.print("Player IN(11–17): ");
-    //        int in = Integer.parseInt(scanner.nextLine());
-    //
-    //        if (out < 0 || out >= 11 || in < 11 || in >= players.length) {
-    //            System.out.println("Invalid substitution indices.");
-    //            return;
-    //        }
-    //
-    //        ((Team) team).substitutePlayer(out, players[in]);
-    //        System.out.println("Substitution made: " + players[out].getName() + " (<-)  |  (->) " + players[in].getName());
-    //    }
-    public static void printBenchPlayers(ITeam team, int[] startingIndices) {
-        IPlayer[] players = team.getPlayers();
-        boolean[] isStarter = new boolean[players.length];
-
-        for (int index : startingIndices) {
-            isStarter[index] = true;
-        }
-
-        System.out.println("\n--- Bench Players ---");
-        for (int i = 0; i < players.length; i++) {
-            if (!isStarter[i] && players[i] != null) {
-                System.out.printf("%d. %s (%s)\n", i, players[i].getName(), players[i].getPosition().getDescription());
-            }
-        }
+        System.out.println("Substitution made: " + players[realOutIndex].getName()
+                + "  (⟵)   |   (⟶)  " + players[in].getName());
     }
 
     public static void showBench(ITeam team) {
-        printBenchPlayers(team);
-
+        IPlayer[] bench = ((Team) team).getBenchPlayers();
+        System.out.println("\n--- Bench Players ---");
+        for (int i = 0; i < bench.length; i++) {
+            if (bench[i] != null) {
+                System.out.println(i + ". " + bench[i].getName() + " (" + bench[i].getPosition() + ")");
+            }
+        }
     }
 }
