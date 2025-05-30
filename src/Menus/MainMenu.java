@@ -9,7 +9,7 @@
  */
 package Menus;
 
-import static Exporter.ExporterHtml.SeasonHtmlGenerator;
+
 import java.io.*;
 import Main.Main;
 import com.ppstudios.footballmanager.api.contracts.data.htmlgenerators.SeasonHtmlGenerator;

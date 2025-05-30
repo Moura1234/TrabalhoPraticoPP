@@ -5,7 +5,6 @@
 package Exporter;
 
 import com.ppstudios.footballmanager.api.contracts.league.ISeason;
-import com.ppstudios.footballmanager.api.contracts.data.*;
 
 /**
  *
