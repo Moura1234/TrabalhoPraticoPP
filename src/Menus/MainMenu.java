@@ -1,6 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package Menus;
 
@@ -10,11 +15,14 @@ import Main.Main;
 import com.ppstudios.footballmanager.api.contracts.data.htmlgenerators.SeasonHtmlGenerator;
 
 /**
- *
- * @author joaom
+ * Displays the main menu and handles user interaction. Allows access to
+ * standings, calendar, squad, simulation, and export options.
  */
 public class MainMenu {
 
+    /**
+     * Runs the main menu loop until the user chooses to exit.
+     */
     public static void run() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String option;
@@ -56,7 +64,7 @@ public class MainMenu {
                         } catch (IOException e) {
                             System.out.println("Error exporting season: " + e.getMessage());
                         }
-                        
+
                         break;
                     default:
                         System.out.println("Invalid option. Please try again.");
