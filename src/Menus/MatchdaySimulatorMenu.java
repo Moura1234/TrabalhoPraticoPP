@@ -23,7 +23,7 @@ public class MatchdaySimulatorMenu {
         int round = season.getCurrentRound();
         System.out.println("\n Simulating Round " + (round + 1) + "...");
 
-        season.simulateRound(); // simula a próxima jornada
+        season.simulateRound(); 
 
         IMatch[] matches = season.getMatches(round);
 

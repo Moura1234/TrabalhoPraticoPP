@@ -15,7 +15,7 @@ public class CalendarMenu {
     public static void run() {
         System.out.println("\n===== CALENDAR =====");
 
-        int totalRounds = Main.season.getMaxRounds(); // assumes you have this method
+        int totalRounds = Main.season.getMaxRounds(); 
         for (int round = 0; round < totalRounds; round++) {
             System.out.println("\n======================");
             System.out.println("Round " + (round + 1));
@@ -33,7 +33,7 @@ public class CalendarMenu {
              int awayGoals = realMatch.getAwayGoals();
              System.out.printf("%-30s %2d - %2d %-30s\n", home, homeGoals, awayGoals, away);
              } else {
-            System.out.printf("%-30s   -   %-30s\n", home, away); // com traço
+            System.out.printf("%-30s   vs.   %-30s\n", home, away); 
     }
 
             }

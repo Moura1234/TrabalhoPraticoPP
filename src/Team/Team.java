@@ -242,7 +242,7 @@ public class Team implements ITeam {
         }
         Team other = (Team) obj;
         return this.club.getName().equals(other.club.getName());
-        // ou comparar club.getName() por exemplo
+        
     }
 
     /**

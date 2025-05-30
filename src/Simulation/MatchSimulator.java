@@ -32,11 +32,11 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         int homeGoals = 0;
         int awayGoals = 0;
 
-        IEvent[] events = new IEvent[90]; // máx 1 evento por minuto (podes ajustar)
+        IEvent[] events = new IEvent[90]; 
         int eventIndex = 0;
 
         for (int minute = 1; minute <= 90; minute += 5) {
-            if (random.nextDouble() < 0.6) { // 60% de chance de evento a cada 5 min
+            if (random.nextDouble() < 0.6) { 
                 boolean homeAttacking = random.nextBoolean();
                 IPlayer[] attackers = homeAttacking ? homePlayers : awayPlayers;
                 IPlayer[] defenders = homeAttacking ? awayPlayers : homePlayers;
@@ -52,7 +52,7 @@ public class MatchSimulator implements MatchSimulatorStrategy {
                 int defense = defender != null ? defender.getStamina()+ 20 : 50;
 
                 if (shot > random.nextInt(shot + defense + 1)) {
-                    // Golo
+                    
                     if (homeAttacking) {
                         homeGoals++;
                     } else {
@@ -64,14 +64,14 @@ public class MatchSimulator implements MatchSimulatorStrategy {
                     }
                 } else {
 
-                    // Remate falhado
+                    
                     IPlayer goalkeeper = getGoalkeeper(defenders);
                     if (eventIndex < events.length) {
                         events[eventIndex++] = new ShotEvent(attacker, goalkeeper, "SHOT", minute);
                     }
                 }
 
-                // Eventos adicionais
+                
                 if (random.nextDouble() < 0.4 && eventIndex < events.length) {
                     events[eventIndex++] = new FoulEvent(attacker, "FOUL", minute);
                 }
@@ -149,7 +149,7 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         }
 
         if (count == 0) {
-            return 1; // evitar divisão por zero
+            return 1; 
         }
         return total / count;
     }

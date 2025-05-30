@@ -40,18 +40,11 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            // 1. Carregar clubes do ficheiro JSON
+            
             IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfiles/files/clubs.json");
 
-            System.out.println("Total de clubes carregados: " + clubs.length);
-            for (int i = 0; i < clubs.length; i++) {
-                if (clubs[i] == null) {
-                    System.out.println(" Clube nulo no índice: " + i);
-                } else {
-                    System.out.println("" + clubs[i].getName());
-                }
-            }
-            // 2. Atribuir jogadores a cada clube
+            
+            
             for (IClub club : clubs) {
                 String fileName = null;
 
@@ -118,11 +111,11 @@ public class Main {
                 if (fileName != null) {
                     String path = "JSONfiles/files/players/" + fileName + ".json";
                     IPlayer[] players = JsonManualLoader.loadPlayersFromJson(path);
-                    ((Club) club).setPlayers(players); // Cast se IClub não tiver setPlayers
+                    ((Club) club).setPlayers(players); 
                 }
             }
 
-            //Criar array de Team a partir do Club
+          
             Team[] teams = new Team[clubs.length];
 
             for (int i = 0; i < clubs.length; i++) {
@@ -181,29 +174,20 @@ public class Main {
             }
              League league = new League("Liga Portuguesa", null, 0);
  
-            // 4. Criar uma época (Season)
+            
             season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
                     clubs.length, clubs.length - 1, 0, 0,
                     clubs, clubs.length, clubs.length, null,
-                    leagueStandings, new MatchSimulator(), teams, null
-            );
+                    leagueStandings, new MatchSimulator(), teams, null);
             
             league.createSeason(season);
 
             season.setCurrentClubs(clubs);
             season.setClubCount(clubs.length);
 
-            for (IClub club : clubs) {
-                try {
-                    season.addClub(club);
-                } catch (IllegalStateException | IllegalArgumentException e) {
-                    System.out.println("Não foi possível adicionar o clube: " + club.getName() + " → " + e.getMessage());
-                }
-            }
-
             season.generateSchedule();
 
-            // 5. Gerar o calendário
+            
             for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
                 IMatch[] roundMatches = schedule.getMatchesForRound(i);
 

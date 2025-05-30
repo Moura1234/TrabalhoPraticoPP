@@ -4,8 +4,10 @@
  */
 package Menus;
 
+import static Exporter.Exporter.SeasonHtmlGenerator;
 import java.io.*;
 import Main.Main;
+import com.ppstudios.footballmanager.api.contracts.data.htmlgenerators.SeasonHtmlGenerator;
 
 /**
  *
@@ -47,6 +49,8 @@ public class MainMenu {
                     case "6":
                         System.out.println("Saving and exiting...");
                         try {
+                            SeasonHtmlGenerator.generate(Main.season, "season_export.html");
+                            System.out.println("Season successfully exported to HTML.");
                             Main.season.exportToJson();
                             System.out.println("Season successfully exported to JSON.");
                         } catch (IOException e) {

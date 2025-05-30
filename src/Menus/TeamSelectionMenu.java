@@ -23,7 +23,7 @@ public class TeamSelectionMenu {
         
     System.out.println("==============================================");
     System.out.println("==============================================");
-    System.out.println("             Football Manager 26              ");
+    System.out.println("             Football Manager 25              ");
     System.out.println("==============================================");
     System.out.println("==============================================\n");
    

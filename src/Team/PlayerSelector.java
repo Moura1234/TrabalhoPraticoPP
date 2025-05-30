@@ -55,17 +55,17 @@ public class PlayerSelector implements IPlayerSelector {
         int bestScore = -1;
 
         for (IPlayer p : players) {
-            // Skip null or incomplete players
+            
             if (p == null || p.getPosition() == null || p.getPosition().getDescription() == null) {
                 continue;
             }
 
-            // Position must match
+           
             if (!p.getPosition().getDescription().equalsIgnoreCase(ipp.getDescription())) {
                 continue;
             }
 
-            // Calculate average score
+            
             int score = (p.getShooting() + p.getPassing() + p.getStamina() + p.getSpeed()) / 4;
 
             if (score > bestScore) {

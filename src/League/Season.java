@@ -180,7 +180,6 @@ public class Season implements ISeason {
             throw new IllegalStateException("Insufficient number of clubs to generate a schedule.");
         }
 
-        // Verifica se já há calendário
         if (this.schedule != null) {
             throw new IllegalStateException("Schedule has already been generated.");
         }
@@ -330,7 +329,7 @@ public class Season implements ISeason {
         IPlayer[] homePlayers = home.getPlayers();
         IPlayer[] awayPlayers = away.getPlayers();
 
-        Formation formation = Formation.create433(); // ou outra, fixa ou aleatória
+        Formation formation = Formation.create433();
 
         int homeId = findClubIndex(home);
         int awayId = findClubIndex(away);
@@ -637,7 +636,7 @@ public class Season implements ISeason {
                 }
             }
         }
-        return null; 
+        return null;
     }
 
     /**
@@ -648,67 +647,62 @@ public class Season implements ISeason {
      */
     @Override
     public void exportToJson() throws IOException {
-            StringBuilder json = new StringBuilder();
-            json.append("{\n");
-            json.append("  \"competition\": \"" + name + "\",\n");
-            json.append("  \"year\": " + year + ",\n");
+        StringBuilder json = new StringBuilder();
+        json.append("{\n");
+        json.append("  \"competition\": \"" + name + "\",\n");
+        json.append("  \"year\": " + year + ",\n");
 
-            
-            json.append("  \"teams\": [\n");
-            for (int i = 0; i < teams.length; i++) {
-                ITeam t = teams[i];
-                if (t != null) {
-                    json.append("    {\n");
-                    json.append("      \"name\": \"" + t.getClub().getName() + "\"\n");
-                    json.append("    }");
-                    if (i < teams.length - 1) {
-                        json.append(",");
-                    }
-                    json.append("\n");
-                }
-            }
-            json.append("  ],\n");
-
-            
-            json.append("  \"rounds\": [\n");
-            for (int r = 0; r < schedule.getNumberOfRounds(); r++) {
-                IMatch[] matches = schedule.getMatchesForRound(r);
+        json.append("  \"teams\": [\n");
+        for (int i = 0; i < teams.length; i++) {
+            ITeam t = teams[i];
+            if (t != null) {
                 json.append("    {\n");
-                json.append("      \"round\": " + (r + 1) + ",\n");
-                json.append("      \"matches\": [\n");
-
-                for (int m = 0; m < matches.length; m++) {
-                    Match match = (Match) matches[m];
-                    json.append("        {\n");
-                    json.append("          \"home\": \"" + match.getHomeTeam().getClub().getName() + "\",\n");
-                    json.append("          \"away\": \"" + match.getAwayTeam().getClub().getName() + "\",\n");
-                    json.append("          \"score\": \"" + match.getHomeGoals() + " - " + match.getAwayGoals() + "\"\n");
-                    json.append("        }");
-                    if (m < matches.length - 1) {
-                        json.append(",");
-                    }
-                    json.append("\n");
-                }
-
-                json.append("      ]\n");
+                json.append("      \"name\": \"" + t.getClub().getName() + "\"\n");
                 json.append("    }");
-                if (r < schedule.getNumberOfRounds() - 1) {
+                if (i < teams.length - 1) {
                     json.append(",");
                 }
                 json.append("\n");
             }
-            json.append("  ]\n");
-
-            json.append("}");
-
-           
-            FileWriter writer = new FileWriter("season_export.json");
-            writer.write(json.toString());
-            writer.close();
-
-            System.out.println("Season export completed: season_export.json");
         }
+        json.append("  ],\n");
 
+        json.append("  \"rounds\": [\n");
+        for (int r = 0; r < schedule.getNumberOfRounds(); r++) {
+            IMatch[] matches = schedule.getMatchesForRound(r);
+            json.append("    {\n");
+            json.append("      \"round\": " + (r + 1) + ",\n");
+            json.append("      \"matches\": [\n");
+
+            for (int m = 0; m < matches.length; m++) {
+                Match match = (Match) matches[m];
+                json.append("        {\n");
+                json.append("          \"home\": \"" + match.getHomeTeam().getClub().getName() + "\",\n");
+                json.append("          \"away\": \"" + match.getAwayTeam().getClub().getName() + "\",\n");
+                json.append("          \"score\": \"" + match.getHomeGoals() + " - " + match.getAwayGoals() + "\"\n");
+                json.append("        }");
+                if (m < matches.length - 1) {
+                    json.append(",");
+                }
+                json.append("\n");
+            }
+
+            json.append("      ]\n");
+            json.append("    }");
+            if (r < schedule.getNumberOfRounds() - 1) {
+                json.append(",");
+            }
+            json.append("\n");
+        }
+        json.append("  ]\n");
+
+        json.append("}");
+
+        FileWriter writer = new FileWriter("season_export.json");
+        writer.write(json.toString());
+        writer.close();
+
+        System.out.println("Season export completed: season_export.json");
     }
 
-
+}

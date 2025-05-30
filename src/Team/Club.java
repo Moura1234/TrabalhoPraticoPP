@@ -270,7 +270,7 @@ public class Club implements IClub {
 
         for (int i = 0; i < playerCount; i++) {
             if (players[i] == ip) {
-                // Shift players to remove the one at index i
+                
                 for (int j = i; j < playerCount - 1; j++) {
                     players[j] = players[j + 1];
                 }
