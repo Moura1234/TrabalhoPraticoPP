@@ -21,7 +21,6 @@ import com.ppstudios.footballmanager.api.contracts.event.IGoalEvent;
 import com.ppstudios.footballmanager.api.contracts.league.IStanding;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
-import java.util.Scanner;
 
 /**
  * Simulates a specific match selected by the user. Displays the match result

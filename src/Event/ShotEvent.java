@@ -19,8 +19,8 @@ import Player.Player;
  */
 public class ShotEvent extends Event implements IEvent {
 
-    private IPlayer shooter;
-    private IPlayer goalkeeper;
+    private final IPlayer shooter;
+    private final IPlayer goalkeeper;
 
     /**
      * Constructs a ShotEvent with the specified shooter, goalkeeper,

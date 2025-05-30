@@ -9,7 +9,6 @@
  */
 package Event;
 
-import com.ppstudios.footballmanager.api.contracts.event.*;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 
 /**

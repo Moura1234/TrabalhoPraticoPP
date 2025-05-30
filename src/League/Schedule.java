@@ -21,7 +21,7 @@ import java.io.IOException;
  */
 public class Schedule implements ISchedule {
 
-    private IMatch[][] rounds;
+    private final IMatch[][] rounds;
 
     /**
      * Constructs a schedule with the given rounds of matches.

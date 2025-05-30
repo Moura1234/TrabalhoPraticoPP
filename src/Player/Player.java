@@ -11,12 +11,9 @@
 package Player;
 
 import com.ppstudios.footballmanager.api.contracts.player.*;
-import java.time.LocalDate;
-import Enums.EPosition;
 import java.io.IOException;
 import com.ppstudios.footballmanager.api.contracts.player.PreferredFoot;
 import java.time.LocalDate;
-import Enums.EPosition;
 
 /**
  * Class representing a football player with personal and technical attributes.
@@ -24,21 +21,21 @@ import Enums.EPosition;
  */
 public class Player implements IPlayer {
 
-    private String name;
-    private LocalDate birthDate;
-    private String nationality;
-    private int number;
-    private int shooting;
-    private int passing;
-    private int stamina;
-    private int defense;
-    private int speed;
-    private int reflexes;
+    private final String name;
+    private final LocalDate birthDate;
+    private final String nationality;
+    private final int number;
+    private final int shooting;
+    private final int passing;
+    private final int stamina;
+    private final int defense;
+    private final int speed;
+    private final int reflexes;
     private IPlayerPosition position;
-    private String photo;
-    private float height;
-    private float weight;
-    private PreferredFoot preferredFoot;
+    private final String photo;
+    private final float height;
+    private final float weight;
+    private final PreferredFoot preferredFoot;
 
     /**
      * Constructs a Player with all attributes defined.

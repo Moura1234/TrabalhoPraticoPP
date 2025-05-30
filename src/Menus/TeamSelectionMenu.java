@@ -11,7 +11,6 @@ package Menus;
 
 import League.League;
 import League.Season;
-import com.ppstudios.footballmanager.api.contracts.team.IClub;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.util.Scanner;
 

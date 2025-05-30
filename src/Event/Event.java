@@ -18,8 +18,8 @@ import java.io.IOException;
  */
 public class Event implements IEvent {
 
-    private String description;
-    private int minute;
+    private final String description;
+    private final int minute;
 
     /**
      * Constructs an Event with the specified description and minute.

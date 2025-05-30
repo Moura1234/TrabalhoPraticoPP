@@ -19,9 +19,9 @@ import Enums.EPosition;
  */
 public class Formation implements IFormation {
 
-    private String displayName;
-    private int tacticalAdvantage;
-    private EPosition[] positions;
+    private final String displayName;
+    private final int tacticalAdvantage;
+    private final EPosition[] positions;
 
     /**
      * Constructs a Formation with the specified name, tactical advantage, and

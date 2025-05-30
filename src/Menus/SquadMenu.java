@@ -10,11 +10,9 @@
 package Menus;
 
 import Team.Team;
-import Player.Player;
 import Main.Main;
 import Team.Formation;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
-import com.ppstudios.footballmanager.api.contracts.team.IClub;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import java.util.Scanner;

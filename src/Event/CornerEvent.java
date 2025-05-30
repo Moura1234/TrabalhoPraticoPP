@@ -9,7 +9,6 @@
  */
 package Event;
 
-import com.ppstudios.footballmanager.api.contracts.event.*;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 
 /**
@@ -19,7 +18,7 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
  */
 public class CornerEvent extends Event {
 
-    private IPlayer taker;
+    private final IPlayer taker;
 
     /**
      * Constructs a CornerEvent with the specified taker, description, and

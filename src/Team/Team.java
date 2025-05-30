@@ -23,13 +23,13 @@ import java.io.IOException;
  */
 public class Team implements ITeam {
 
-    private int teamStrength;
+    private final int teamStrength;
     private IFormation formation;
-    private int positionCount;
+    private final int positionCount;
     private int playerCount;
-    private IClub club;
-    private IPlayer[] players;
-    private int id;
+    private final IClub club;
+    private final IPlayer[] players;
+    private final int id;
     private static final int MAX_PLAYERS = 18;
     private IPlayer[] startingPlayers;
 

@@ -20,16 +20,15 @@ import java.io.IOException;
  */
 public class Club implements IClub {
 
-    private String name;
+    private final String name;
     private IPlayer[] players;
-    private String code;
-    private String country;
-    private int foundedYear;
-    private String stadiumName;
-    private String logo;
-    private String playerPosition;
-    private String targetPosition;
-    private IPlayer selected;
+    private final String code;
+    private final String country;
+    private final int foundedYear;
+    private final String stadiumName;
+    private final String logo;
+    private final String playerPosition;
+    private final String targetPosition;
     private int playerCount;
     private static final int MAX_PLAYERS = 18;
 
@@ -59,7 +58,6 @@ public class Club implements IClub {
         this.logo = logo;
         this.playerPosition = playerPosition;
         this.targetPosition = targetPosition;
-        this.selected = selected;
         playerCount = 0;
     }
 

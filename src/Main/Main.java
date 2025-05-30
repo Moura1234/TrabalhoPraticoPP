@@ -9,22 +9,15 @@
  */
 package Main;
 
-import java.time.LocalDate;
-import Enums.*;
 import com.ppstudios.footballmanager.api.contracts.player.*;
-import com.ppstudios.footballmanager.api.contracts.event.*;
 import com.ppstudios.footballmanager.api.contracts.league.*;
 import com.ppstudios.footballmanager.api.contracts.match.*;
-import com.ppstudios.footballmanager.api.contracts.simulation.*;
 import com.ppstudios.footballmanager.api.contracts.team.*;
-import Event.*;
 import JSONLoader.*;
 import League.*;
 import Match.*;
-import Player.*;
 import Simulation.*;
 import Team.*;
-import Enums.*;
 import Menus.MainMenu;
 import Menus.TeamSelectionMenu;
 
@@ -227,4 +220,4 @@ public class Main {
         }
     }
 }
-//
+

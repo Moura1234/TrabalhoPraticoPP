@@ -12,7 +12,6 @@ package League;
 
 import com.ppstudios.footballmanager.api.contracts.league.ILeague;
 import com.ppstudios.footballmanager.api.contracts.league.ISeason;
-import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.io.IOException;
 
 /**
@@ -21,8 +20,8 @@ import java.io.IOException;
  */
 public class League implements ILeague {
 
-    private String name;
-    private ISeason[] seasons;
+    private final String name;
+    private final ISeason[] seasons;
     private int seasonCount;
     private static final int MAX_SEASONS = 10;
 

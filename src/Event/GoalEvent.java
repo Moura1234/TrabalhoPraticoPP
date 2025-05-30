@@ -19,7 +19,7 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
  */
 public class GoalEvent extends Event implements IGoalEvent {
 
-    private IPlayer player;
+    private final IPlayer player;
 
     /**
      * Constructs a new GoalEvent.

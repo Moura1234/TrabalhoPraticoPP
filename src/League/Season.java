@@ -18,9 +18,7 @@ import java.io.IOException;
 import Match.Match;
 import Team.Formation;
 import Team.Team;
-import com.ppstudios.footballmanager.api.contracts.event.IEvent;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
-import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.io.FileWriter;
 
@@ -31,12 +29,12 @@ import java.io.FileWriter;
  */
 public class Season implements ISeason {
 
-    private String name;
-    private int year;
-    private int pointsPerWin;
-    private int pointsPerDraw;
-    private int pointsPerLoss;
-    private int maxTeams;
+    private final String name;
+    private final int year;
+    private final int pointsPerWin;
+    private final int pointsPerDraw;
+    private final int pointsPerLoss;
+    private final int maxTeams;
     private int maxRounds;
     private int currentRound;
     private int currentMatches;

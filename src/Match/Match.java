@@ -9,9 +9,7 @@
  */
 package Match;
 
-import Enums.EClub;
 import Enums.EFormation;
-import Enums.ETeam;
 import Event.EventManager;
 import com.ppstudios.footballmanager.api.contracts.event.IEvent;
 import com.ppstudios.footballmanager.api.contracts.match.IMatch;
@@ -38,7 +36,6 @@ public class Match implements IMatch {
     private IEvent[] event;
     private EventManager eventManager = new EventManager();
 
-    private int eventCount;
 
     /**
      * Constructs a match with full information including teams, goals, and
@@ -69,7 +66,6 @@ public class Match implements IMatch {
         this.awayFormation = awayFormation;
         this.round = round;
         this.event = new IEvent[200];
-        this.eventCount = 0;
     }
 
     /**
@@ -369,7 +365,6 @@ public class Match implements IMatch {
      * @param eventCount The new event count
      */
     public void setEventCount(int eventCount) {
-        this.eventCount = eventCount;
     }
 
     /**

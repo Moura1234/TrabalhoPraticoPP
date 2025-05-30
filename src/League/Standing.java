@@ -20,7 +20,7 @@ import com.ppstudios.footballmanager.api.contracts.team.*;
  */
 public class Standing implements IStanding {
 
-    private ITeam team;
+    private final ITeam team;
     private int points;
     private int win;
     private int draw;

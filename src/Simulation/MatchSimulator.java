@@ -14,7 +14,6 @@ import Event.*;
 import Match.Match;
 import Player.Player;
 import Team.Formation;
-import Team.Team;
 import com.ppstudios.footballmanager.api.contracts.event.*;
 import com.ppstudios.footballmanager.api.contracts.match.*;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;

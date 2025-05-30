@@ -18,7 +18,7 @@ import com.ppstudios.footballmanager.api.contracts.player.IPlayerPosition;
  */
 public class PlayerPosition implements IPlayerPosition {
 
-    private String description;
+    private final String description;
 
     /**
      * Constructs a PlayerPosition with the specified description.
