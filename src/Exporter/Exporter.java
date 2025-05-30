@@ -14,6 +14,7 @@ import com.ppstudios.footballmanager.api.contracts.data.*;
 public class Exporter {
     
     public static void SeasonHtmlGenerator(ISeason season, String outputPath) {
+        
     }
     
       
