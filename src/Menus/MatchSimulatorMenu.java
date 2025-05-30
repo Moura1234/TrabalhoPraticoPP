@@ -30,6 +30,8 @@ public class MatchSimulatorMenu {
 
     /**
      * Runs the match simulator menu and handles user input.
+     *
+     * @param season The season being simulated
      */
     public static void run(Season season) {
 

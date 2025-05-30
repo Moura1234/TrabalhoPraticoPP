@@ -42,10 +42,10 @@ public class Season implements ISeason {
     private int clubCount;
     private int numberOfCurrentTeams;
     private ISchedule schedule;
-    private IStanding[] leagueStandings;
+    private final IStanding[] leagueStandings;
     private MatchSimulatorStrategy simulatorStrategy;
     private League league;
-    private ITeam[] teams;
+    private final ITeam[] teams;
     private ITeam userTeam;
 
     /**
