@@ -10,12 +10,18 @@
 package Enums;
 
 /**
- *
- * @author joaom
+ * Represents the tactical advantage type a team may have during a match. It
+ * defines whether the team is playing offensively, defensively, or in a
+ * balanced manner
  */
 public enum ETacticalAdvantageType {
     OFFENSIVE, DEFENSIVE, BALANCED;
 
+    /**
+     * Converts the tactical advantage type to a descriptive human-readable string.
+     *
+     * @return A string describing the advantage type
+     */
     public String ETacticalAdvantageTypeToString() {
         switch (this) {
             case OFFENSIVE:

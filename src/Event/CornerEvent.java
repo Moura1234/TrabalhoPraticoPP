@@ -1,31 +1,63 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package Event;
+
 import com.ppstudios.footballmanager.api.contracts.event.*;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
+
 /**
- *
- * @author joaom
+ * Represents a corner kick event in a football match. Contains information
+ * about the player who takes the corner and determines if the play results in a
+ * dangerous situation.
  */
-public class CornerEvent extends Event{
+public class CornerEvent extends Event {
+
     private IPlayer taker;
 
+    /**
+     * Constructs a CornerEvent with the specified taker, description, and
+     * minute.
+     *
+     * @param taker The player who takes the corner
+     * @param description A brief description of the event
+     * @param minute The minute the event occurred
+     */
     public CornerEvent(IPlayer taker, String description, int minute) {
         super(description, minute);
         this.taker = taker;
     }
 
+    /**
+     * Gets the player who took the corner.
+     *
+     * @return The corner taker
+     */
     public IPlayer getTaker() {
         return this.taker;
     }
 
-    // 25% de probabilidade de resultar em jogada perigosa
+    /**
+     * Determines whether the corner kick leads to a dangerous play. There is a
+     * 25% chance of being considered dangerous.
+     *
+     * @return true if the play is dangerous, false otherwise
+     */
     public boolean isDangerous() {
         return Math.random() < 0.25;
     }
-    
+
+    /**
+     * Returns a string representation of the corner event.
+     *
+     * @return A formatted string indicating the minute and the taker
+     */
     @Override
     public String toString() {
         return getMinute() + "' - CORNER by " + taker.getName();
