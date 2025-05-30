@@ -11,7 +11,7 @@ import com.ppstudios.footballmanager.api.contracts.data.*;
  *
  * @author utilizador
  */
-public class Exporter {
+public class ExporterHtml {
     
     public static void SeasonHtmlGenerator(ISeason season, String outputPath) {
         
