@@ -1,6 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package Menus;
 
@@ -11,22 +16,25 @@ import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.util.Scanner;
 
 /**
- *
- * @author utilizador
+ * Allows the user to select a team from the available options.
  */
 public class TeamSelectionMenu {
 
- 
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Displays a list of available teams and allows the user to choose one.
+     *
+     * @param season The season containing the teams
+     * @return The team selected by the user
+     */
     public static ITeam run(Season season) {
-        
-    System.out.println("==============================================");
-    System.out.println("==============================================");
-    System.out.println("             Football Manager 25              ");
-    System.out.println("==============================================");
-    System.out.println("==============================================\n");
-   
+
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("             Football Manager 25              ");
+        System.out.println("==============================================");
+        System.out.println("==============================================\n");
 
         League league = season.getLeague();
         ITeam[] teams = season.getTeams();
@@ -34,8 +42,8 @@ public class TeamSelectionMenu {
         System.out.println("===== TEAM SELECTION =====");
         for (int i = 0; i < teams.length; i++) {
             if (teams[i] != null) {
-            System.out.println(i + ". " + teams[i]);
-  
+                System.out.println(i + ". " + teams[i]);
+
             }
         }
 
@@ -57,5 +65,3 @@ public class TeamSelectionMenu {
     }
 
 }
- 
-

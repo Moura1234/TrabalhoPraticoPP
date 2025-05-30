@@ -1,6 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package Menus;
 
@@ -19,11 +24,14 @@ import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.util.Scanner;
 
 /**
- *
- * @author utilizador
+ * Simulates a specific match selected by the user. Displays the match result
+ * after simulation.
  */
 public class MatchSimulatorMenu {
 
+    /**
+     * Runs the match simulator menu and handles user input.
+     */
     public static void run(Season season) {
 
         League league = season.getLeague();
