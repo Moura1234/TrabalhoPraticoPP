@@ -305,12 +305,12 @@ public class Season implements ISeason {
             if (simulatorStrategy != null) {
                 for (IMatch match : roundMatches) {
                     if (match == null) {
-                        System.out.println("Match nulo!");
+                        System.out.println("Match null!");
                         continue;
                     }
 
                     if (match.getHomeClub() == null || match.getAwayClub() == null) {
-                        System.out.println("Match com clube nulo na jornada " + currentRound);
+                        System.out.println("Match with null club on matchday " + currentRound);
                         System.out.println(" Home: " + match.getHomeClub());
                         System.out.println(" Away: " + match.getAwayClub());
                         continue;
