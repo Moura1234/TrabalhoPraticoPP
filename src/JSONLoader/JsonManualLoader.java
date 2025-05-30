@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package JSONLoader;
 
-/**
- *
- * @author utilizador
- */
+
 import java.io.InputStreamReader;
 import java.io.FileInputStream;
 import java.nio.charset.StandardCharsets;
@@ -23,8 +25,21 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+/**
+ * Utility class responsible for loading player and club data from JSON files.
+ * It reads and parses JSON-formatted files to instantiate IPlayer and IClub
+ * objects. This manual loader uses BufferedReader and simple parsing
+ * techniques.
+ */
 public class JsonManualLoader {
 
+    /**
+     * Loads players from a JSON file located at the given path.
+     *
+     * @param path the path to the JSON file containing player data
+     * @return an array of IPlayer objects created from the JSON data
+     * @throws RuntimeException if an error occurs during reading or parsing
+     */
     public static IPlayer[] loadPlayersFromJson(String path) {
         int count = 0;
 
@@ -93,7 +108,7 @@ public class JsonManualLoader {
 
                     if (position == null) {
                         System.out.println("️ Jogador com posicao invalida: " + name);
-                        continue; 
+                        continue;
                     }
                     IPlayer p = new Player(
                             name,
@@ -123,6 +138,14 @@ public class JsonManualLoader {
         return players;
     }
 
+    /**
+     * Loads clubs from a JSON file at the specified path. Each club is
+     * constructed with basic metadata and an empty player array.
+     *
+     * @param filePath the path to the JSON file containing clubs
+     * @return an array of IClub objects parsed from the JSON file
+     * @throws RuntimeException if the file can't be read or parsed
+     */
     public static IClub[] loadClubsFromJson(String filePath) {
         IClub[] clubs = new IClub[100];
         int index = 0;
@@ -161,6 +184,13 @@ public class JsonManualLoader {
         return result;
     }
 
+    /**
+     * Loads the correct JSON file of players for each club by matching the club
+     * name to a known file name. Populates each club with its respective
+     * players.
+     *
+     * @param clubs array of IClub objects to which players will be assigned
+     */
     public static void loadClubName(IClub[] clubs) {
 
         for (IClub club : clubs) {
@@ -229,16 +259,21 @@ public class JsonManualLoader {
             if (fileName != null) {
                 String path = "JSONfiles/files/players/" + fileName + ".json";
                 IPlayer[] players = JsonManualLoader.loadPlayersFromJson(path);
-                ((Club) club).setPlayers(players); 
+                ((Club) club).setPlayers(players);
             }
         }
     }
 
+    /**
+     * Extracts a String value from a JSON line.
+     *
+     * @param line the JSON-formatted line
+     * @return the extracted String value
+     */
     private static String extractString(String line) {
         int start = line.indexOf(":") + 1;
         String value = line.substring(start).trim();
 
-        
         if (value.startsWith("\"")) {
             value = value.substring(1);
         }
@@ -252,10 +287,22 @@ public class JsonManualLoader {
         return value;
     }
 
+    /**
+     * Extracts an integer value from a JSON line.
+     *
+     * @param line the JSON-formatted line
+     * @return the extracted integer
+     */
     private static int extractInt(String line) {
         return Integer.parseInt(line.split(":")[1].trim().replace(",", ""));
     }
 
+    /**
+     * Extracts a float value from a JSON line.
+     *
+     * @param line the JSON-formatted line
+     * @return the extracted float
+     */
     private static float extractFloat(String line) {
         return Float.parseFloat(line.split(":")[1].trim().replace(",", ""));
     }

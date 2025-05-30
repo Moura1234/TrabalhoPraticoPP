@@ -1,6 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package Main;
 
@@ -23,12 +28,6 @@ import Enums.*;
 import Menus.MainMenu;
 import Menus.TeamSelectionMenu;
 
-/**
- * 
- *
- *
- * @author joaomjdbshdd
- */
 public class Main {
 
     public static IStanding[] leagueStandings;
@@ -40,11 +39,9 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            
+
             IClub[] clubs = JsonManualLoader.loadClubsFromJson("JSONfiles/files/clubs.json");
 
-            
-            
             for (IClub club : clubs) {
                 String fileName = null;
 
@@ -111,11 +108,10 @@ public class Main {
                 if (fileName != null) {
                     String path = "JSONfiles/files/players/" + fileName + ".json";
                     IPlayer[] players = JsonManualLoader.loadPlayersFromJson(path);
-                    ((Club) club).setPlayers(players); 
+                    ((Club) club).setPlayers(players);
                 }
             }
 
-          
             Team[] teams = new Team[clubs.length];
 
             for (int i = 0; i < clubs.length; i++) {
@@ -172,14 +168,13 @@ public class Main {
                     }
                 }
             }
-             League league = new League("Liga Portuguesa", null, 0);
- 
-            
+            League league = new League("Liga Portuguesa", null, 0);
+
             season = new Season("Liga Portuguesa", 2025, 3, 1, 0,
                     clubs.length, clubs.length - 1, 0, 0,
                     clubs, clubs.length, clubs.length, null,
                     leagueStandings, new MatchSimulator(), teams, null);
-            
+
             league.createSeason(season);
 
             season.setCurrentClubs(clubs);
@@ -187,7 +182,6 @@ public class Main {
 
             season.generateSchedule();
 
-            
             for (int i = 0; i < schedule.getNumberOfRounds(); i++) {
                 IMatch[] roundMatches = schedule.getMatchesForRound(i);
 

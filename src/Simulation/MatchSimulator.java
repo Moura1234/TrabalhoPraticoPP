@@ -1,6 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ * Nome: João Miguel Oliveira Moura
+ * Número: 8230310
+ * Turma: LSIRC 1T2
+ *
+ * Nome: Rodrigo António Amorim Gonçalo Soares
+ * Número: 8230329
+ * Turma: LSIRC 1T2
  */
 package Simulation;
 
@@ -18,13 +23,18 @@ import com.ppstudios.footballmanager.api.contracts.team.ITeam;
 import java.util.Random;
 
 /**
- *
- * @author utilizador
+ * Simulates the logic of a football match using basic probability and player
+ * attributes.
  */
 public class MatchSimulator implements MatchSimulatorStrategy {
 
     private final Random random = new Random();
 
+    /**
+     * Simulates a match by generating events and calculating the final score.
+     *
+     * @param imatch The match to simulate
+     */
     @Override
     public void simulate(IMatch imatch) {
         Match match = (Match) imatch;
@@ -106,6 +116,12 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         );
     }
 
+    /**
+     * Retrieves a random attacking player from the given team.
+     *
+     * @param players Array of players
+     * @return A random attacker or null if none found
+     */
     private IPlayer getRandomAttacker(IPlayer[] players) {
         Player[] attackers = new Player[players.length];
         int count = 0;
@@ -127,6 +143,12 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         }
     }
 
+    /**
+     * Retrieves a random defender from the given team.
+     *
+     * @param players Array of players
+     * @return A random defender
+     */
     private IPlayer getRandomDefender(IPlayer[] players) {
         for (IPlayer p : players) {
             if (p != null && p.getPosition().toString().contains("DEFENDER")) {
@@ -136,6 +158,12 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         return players[random.nextInt(players.length)];
     }
 
+    /**
+     * Calculates the average defensive score of a team.
+     *
+     * @param players Array of players
+     * @return Average defense value
+     */
     private int getTeamDefense(IPlayer[] players) {
         int total = 0;
         int count = 0;
@@ -154,6 +182,12 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         return total / count;
     }
 
+    /**
+     * Finds the goalkeeper from the given list of players.
+     *
+     * @param players Array of players
+     * @return The goalkeeper or null if not found
+     */
     private Player getGoalkeeper(IPlayer[] players) {
         for (IPlayer p : players) {
             if (p instanceof Player player && player.getPosition().toString().equals("GOALKEEPER")) {
@@ -163,6 +197,12 @@ public class MatchSimulator implements MatchSimulatorStrategy {
         return null;
     }
 
+    /**
+     * Gets the starting players from a team based on its formation.
+     *
+     * @param team The team to extract starting players from
+     * @return An array of starting players
+     */
     private IPlayer[] getStartingPlayers(ITeam team) {
         IPlayer[] allPlayers = team.getPlayers();
         EPosition[] positions = ((Formation) team.getFormation()).getPositions();
