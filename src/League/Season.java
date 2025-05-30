@@ -7,7 +7,6 @@
  * Número: 8230329
  * Turma: LSIRC 1T2
  */
-
 package League;
 
 import Enums.EPosition;
@@ -23,6 +22,7 @@ import com.ppstudios.footballmanager.api.contracts.event.IEvent;
 import com.ppstudios.footballmanager.api.contracts.player.IPlayer;
 import com.ppstudios.footballmanager.api.contracts.team.IFormation;
 import com.ppstudios.footballmanager.api.contracts.team.ITeam;
+import java.io.FileWriter;
 
 /**
  * Represents a football season, managing teams, schedule, simulation strategy,
@@ -342,7 +342,6 @@ public class Season implements ISeason {
         match.setAwayTeam(awayTeam);
     }
 
-    
     /**
      * Finds the index of the given club in the currentClubs array.
      *
@@ -391,7 +390,6 @@ public class Season implements ISeason {
     public void setCurrentRound(int currentRound) {
         this.currentRound = currentRound;
     }
-    
 
     /**
      * Checks whether the season has completed all scheduled rounds.
@@ -639,7 +637,7 @@ public class Season implements ISeason {
                 }
             }
         }
-        return null; // nenhum jogo por simular
+        return null; 
     }
 
     /**
@@ -650,7 +648,67 @@ public class Season implements ISeason {
      */
     @Override
     public void exportToJson() throws IOException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+            StringBuilder json = new StringBuilder();
+            json.append("{\n");
+            json.append("  \"competition\": \"" + name + "\",\n");
+            json.append("  \"year\": " + year + ",\n");
+
+            
+            json.append("  \"teams\": [\n");
+            for (int i = 0; i < teams.length; i++) {
+                ITeam t = teams[i];
+                if (t != null) {
+                    json.append("    {\n");
+                    json.append("      \"name\": \"" + t.getClub().getName() + "\"\n");
+                    json.append("    }");
+                    if (i < teams.length - 1) {
+                        json.append(",");
+                    }
+                    json.append("\n");
+                }
+            }
+            json.append("  ],\n");
+
+            
+            json.append("  \"rounds\": [\n");
+            for (int r = 0; r < schedule.getNumberOfRounds(); r++) {
+                IMatch[] matches = schedule.getMatchesForRound(r);
+                json.append("    {\n");
+                json.append("      \"round\": " + (r + 1) + ",\n");
+                json.append("      \"matches\": [\n");
+
+                for (int m = 0; m < matches.length; m++) {
+                    Match match = (Match) matches[m];
+                    json.append("        {\n");
+                    json.append("          \"home\": \"" + match.getHomeTeam().getClub().getName() + "\",\n");
+                    json.append("          \"away\": \"" + match.getAwayTeam().getClub().getName() + "\",\n");
+                    json.append("          \"score\": \"" + match.getHomeGoals() + " - " + match.getAwayGoals() + "\"\n");
+                    json.append("        }");
+                    if (m < matches.length - 1) {
+                        json.append(",");
+                    }
+                    json.append("\n");
+                }
+
+                json.append("      ]\n");
+                json.append("    }");
+                if (r < schedule.getNumberOfRounds() - 1) {
+                    json.append(",");
+                }
+                json.append("\n");
+            }
+            json.append("  ]\n");
+
+            json.append("}");
+
+           
+            FileWriter writer = new FileWriter("season_export.json");
+            writer.write(json.toString());
+            writer.close();
+
+            System.out.println("Season export completed: season_export.json");
+        }
+
     }
 
-}
+

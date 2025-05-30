@@ -122,7 +122,7 @@ public class SquadMenu {
         EPosition[] formationPositions = ((Formation) team.getFormation()).getPositions();
         boolean[] used = new boolean[players.length];
         int[] startingIndices = new int[formationPositions.length];
-        int[] benchRealIndices = new int[players.length]; // array fixo para armazenar os índices reais dos suplentes
+        int[] benchRealIndices = new int[players.length]; 
         int benchCount = 0;
 
         System.out.println("\n--- Starting XI (" + formationPositions.length + ") ---");
@@ -133,7 +133,7 @@ public class SquadMenu {
                 if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
                     IPlayer p = players[i];
                     used[i] = true;
-                    startingIndices[printed] = i; // índice real
+                    startingIndices[printed] = i; 
                     System.out.printf("%d. %s (%s)\n", printed, p.getName(), p.getPosition().getDescription());
                     printed++;
                     break;
@@ -141,13 +141,13 @@ public class SquadMenu {
             }
         }
 
-        // Mostrar banco com mapeamento visual -> real
+        
         System.out.println("\n--- Bench Players ---");
         int displayIndex = 11;
         for (int i = 0; i < players.length; i++) {
             if (!used[i] && players[i] != null) {
                 System.out.printf("%d. %s (%s)\n", displayIndex, players[i].getName(), players[i].getPosition().getDescription());
-                benchRealIndices[benchCount] = i; // guardar índice real
+                benchRealIndices[benchCount] = i; 
                 benchCount++;
                 displayIndex++;
             }
@@ -175,13 +175,26 @@ public class SquadMenu {
     }
 
     public static void showBench(ITeam team) {
-        IPlayer[] allPlayers = team.getPlayers();
-        int starters = ((Formation) team.getFormation()).getPositions().length;
+        IPlayer[] players = team.getPlayers();
+        EPosition[] formationPositions = ((Formation) team.getFormation()).getPositions();
+        boolean[] used = new boolean[players.length];
+
+        
+        for (EPosition requiredPosition : formationPositions) {
+            for (int i = 0; i < players.length; i++) {
+                if (!used[i] && players[i] != null && players[i].getPosition() == requiredPosition) {
+                    used[i] = true;
+                    break;
+                }
+            }
+        }
 
         System.out.println("\n--- Bench Players ---");
-        for (int i = starters; i < allPlayers.length; i++) {
-            if (allPlayers[i] != null) {
-                System.out.println(i + ". " + allPlayers[i].getName() + " (" + allPlayers[i].getPosition() + ")");
+        int displayIndex = 1;
+        for (int i = 0; i < players.length; i++) {
+            if (!used[i] && players[i] != null) {
+                System.out.printf("%d. %s (%s)\n", displayIndex, players[i].getName(), players[i].getPosition().getDescription());
+                displayIndex++;
             }
         }
     }

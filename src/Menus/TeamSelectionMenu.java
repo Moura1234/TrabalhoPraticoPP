@@ -20,6 +20,14 @@ public class TeamSelectionMenu {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static ITeam run(Season season) {
+        
+    System.out.println("==============================================");
+    System.out.println("==============================================");
+    System.out.println("             Football Manager 26              ");
+    System.out.println("==============================================");
+    System.out.println("==============================================\n");
+   
+
         League league = season.getLeague();
         ITeam[] teams = season.getTeams();
 

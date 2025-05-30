@@ -4,15 +4,16 @@
  */
 package Menus;
 
-
 import java.io.*;
 import Main.Main;
+
 /**
  *
  * @author joaom
  */
 public class MainMenu {
-      public static void run() {
+
+    public static void run() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String option;
 
@@ -30,22 +31,28 @@ public class MainMenu {
 
                 switch (option) {
                     case "1":
-                        StandingsMenu.run(Main.leagueStandings); 
+                        StandingsMenu.run(Main.leagueStandings);
                         break;
                     case "2":
                         CalendarMenu.run();
                         break;
                     case "3":
-                       SquadMenu.run(); 
+                        SquadMenu.run();
                         break;
                     case "4":
-                       MatchdaySimulatorMenu.run(Main.season); 
+                        MatchdaySimulatorMenu.run(Main.season);
                         break;
-                    case "5":   
-                        MatchSimulatorMenu.run (Main.season);
+                    case "5":
+                        MatchSimulatorMenu.run(Main.season);
                     case "6":
                         System.out.println("Saving and exiting...");
-                        // call save logic here if needed
+                        try {
+                            Main.season.exportToJson();
+                            System.out.println("Season successfully exported to JSON.");
+                        } catch (IOException e) {
+                            System.out.println("Error exporting season: " + e.getMessage());
+                        }
+                        
                         break;
                     default:
                         System.out.println("Invalid option. Please try again.");
@@ -58,4 +65,3 @@ public class MainMenu {
         }
     }
 }
-
