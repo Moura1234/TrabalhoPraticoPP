@@ -197,6 +197,7 @@ public class SquadMenu {
                 displayIndex++;
             }
         }
-    }
+   }
 
 }
+

@@ -53,6 +53,11 @@ public class CornerEvent extends Event {
         return Math.random() < 0.25;
     }
 
+    @Override
+    public String getDescription(){
+        return "CORNER by" + taker.getName();
+    }
+    
     /**
      * Returns a string representation of the corner event.
      *
@@ -60,6 +65,6 @@ public class CornerEvent extends Event {
      */
     @Override
     public String toString() {
-        return getMinute() + "' - CORNER by " + taker.getName();
+        return getMinute() + " - " + getDescription();
     }
 }

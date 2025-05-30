@@ -31,6 +31,7 @@ public class Team implements ITeam {
     private IPlayer[] players;
     private int id;
     private static final int MAX_PLAYERS = 18;
+    private IPlayer[] startingPlayers;
 
     /**
      * Constructs a team with the specified attributes.
@@ -48,6 +49,7 @@ public class Team implements ITeam {
         this.positionCount = positionCount;
         this.club = club;
         this.players = players;
+        this.startingPlayers = startingPlayers;
         this.id = id;
 
         if (players != null) {
@@ -242,7 +244,7 @@ public class Team implements ITeam {
         }
         Team other = (Team) obj;
         return this.club.getName().equals(other.club.getName());
-        
+
     }
 
     /**

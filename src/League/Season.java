@@ -179,31 +179,40 @@ public class Season implements ISeason {
         if (clubCount < 2) {
             throw new IllegalStateException("Insufficient number of clubs to generate a schedule.");
         }
-
         if (this.schedule != null) {
             throw new IllegalStateException("Schedule has already been generated.");
         }
-
-        int totalRounds = clubCount - 1;
+        maxRounds = (clubCount - 1) * 2;
         int matchesPerRound = clubCount / 2;
-        IMatch[][] matches = new IMatch[totalRounds][matchesPerRound];
+        IMatch[][] matches = new IMatch[maxRounds][matchesPerRound];
 
-        for (int round = 0; round < totalRounds; round++) {
+        for (int round = 0; round < maxRounds; round++) {
             for (int match = 0; match < matchesPerRound; match++) {
                 int homeIndex = (round + match) % (clubCount - 1);
                 int awayIndex = (clubCount - 1 - match + round) % (clubCount - 1);
-
                 if (match == 0) {
                     awayIndex = clubCount - 1;
                 }
+                IClub homeClub, awayClub;
+                int homeIndexEffective, awayIndexEffective;
 
-                IClub homeClub = currentClubs[homeIndex];
-                IClub awayClub = currentClubs[awayIndex];
+                if (round < maxRounds / 2) {
+                    homeClub = currentClubs[homeIndex];
+                    awayClub = currentClubs[awayIndex];
+                    homeIndexEffective = homeIndex;
+                    awayIndexEffective = awayIndex;
+                } else {
 
-                IPlayer[] homePlayers = homeClub.getPlayers();
-                IPlayer[] awayPlayers = awayClub.getPlayers();
+                    homeClub = currentClubs[awayIndex];
+                    awayClub = currentClubs[homeIndex];
+                    homeIndexEffective = awayIndex;
+                    awayIndexEffective = homeIndex;
+                }
 
                 Formation formation = Formation.create433();
+                IPlayer[] homePlayers = getStartingPlayers(homeClub, formation);
+                IPlayer[] awayPlayers = getStartingPlayers(awayClub, formation);
+
                 ITeam homeTeam = new Team(100, formation, formation.getPositions().length, homeClub, homePlayers, homeIndex);
                 ITeam awayTeam = new Team(100, formation, formation.getPositions().length, awayClub, awayPlayers, awayIndex);
 
@@ -221,12 +230,28 @@ public class Season implements ISeason {
                         null,
                         0
                 );
-
                 matches[round][match] = game;
             }
         }
-
         this.schedule = new Schedule(matches);
+    }
+
+    private IPlayer[] getStartingPlayers(IClub club, Formation formation) {
+        EPosition[] positions = formation.getPositions();
+        IPlayer[] allPlayers = club.getPlayers();
+        IPlayer[] starting11 = new IPlayer[positions.length];
+        boolean[] used = new boolean[allPlayers.length];
+
+        for (int i = 0; i < positions.length; i++) {
+            for (int j = 0; j < allPlayers.length; j++) {
+                if (!used[j] && allPlayers[j] != null && allPlayers[j].getPosition() == positions[i]) {
+                    starting11[i] = allPlayers[j];
+                    used[j] = true;
+                    break;
+                }
+            }
+        }
+        return starting11;
     }
 
     /**

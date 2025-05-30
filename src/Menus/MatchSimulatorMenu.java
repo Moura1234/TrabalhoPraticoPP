@@ -4,7 +4,7 @@
  */
 package Menus;
 
-import Event.ShotEvent;
+import Event.*;
 import static Event.Statistics.isFromTeam;
 import League.League;
 import League.Season;
@@ -26,10 +26,10 @@ public class MatchSimulatorMenu {
 
     public static void run(Season season) {
 
-        League league = season.getLeague(); 
+        League league = season.getLeague();
 
-        ITeam userTeam = season.getUserTeam(); 
-        Match nextMatch = season.getNextMatchForTeam(userTeam); 
+        ITeam userTeam = season.getUserTeam();
+        Match nextMatch = season.getNextMatchForTeam(userTeam);
 
         if (nextMatch == null) {
             System.out.println("There´s no more games to simulate.");
@@ -42,7 +42,6 @@ public class MatchSimulatorMenu {
         MatchSimulator simulator = new MatchSimulator();
         System.out.println("\n--- Simulating Round " + (currentRound + 1) + " ---");
 
-
         for (IMatch im : roundMatches) {
             Match match = (Match) im;
 
@@ -51,7 +50,6 @@ public class MatchSimulatorMenu {
                 updateStandings(match, season.getLeagueStandings());
             }
         }
-
 
         season.setCurrentRound(currentRound + 1);
 
@@ -62,7 +60,6 @@ public class MatchSimulatorMenu {
                 + nextMatch.getAwayTeam().getClub().getName()
         );
 
-
         System.out.println("\n--- MATCH EVENTS ---");
         for (int i = 0; i < nextMatch.getEventCount(); i++) {
             IEvent e = nextMatch.getEvents()[i];
@@ -70,7 +67,20 @@ public class MatchSimulatorMenu {
             if (e instanceof IGoalEvent) {
                 IGoalEvent goal = (IGoalEvent) e;
                 System.out.printf("%d' - GOAL by %s\n", e.getMinute(), goal.getPlayer().getName());
+            } else if (e instanceof ShotEvent) {
+                ShotEvent shot = (ShotEvent) e;
+                System.out.printf("%d' - SHOT by %s\n", e.getMinute(), shot.getShooter().getName());
+            } else if (e instanceof FoulEvent) {
+                FoulEvent foul = (FoulEvent) e;
+                System.out.printf("%d' - FOUL by %s\n", e.getMinute(), foul.getPlayer().getName());
+            } else if (e instanceof CornerEvent) {
+                CornerEvent corner = (CornerEvent) e;
+                System.out.printf("%d' - CORNER by %s\n", e.getMinute(), corner.getTaker().getName());
+            } else if (e instanceof GoalKickEvent) {
+                GoalKickEvent gk = (GoalKickEvent) e;
+                System.out.printf("%d' - GOAL KICK by %s\n", e.getMinute(), gk.getGoalkeeper().getName());
             } else {
+                // fallback para eventos genéricos
                 System.out.printf("%d' - %s\n", e.getMinute(), e.getDescription());
             }
         }
